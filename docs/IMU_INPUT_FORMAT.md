@@ -1,0 +1,17 @@
+# Exact training input and output conventions
+
+Feature files are already preprocessed at 25 FPS. Neither the CLI nor the example performs device calibration, filtering, resampling, or acceleration scaling for you.
+
+Sensor order: left wrist, right wrist, left thigh/pocket, right thigh/pocket, head. The processed six-sensor dataset additionally contains pelvis, which is discarded. Actual DIP preprocessing selects raw indices `[7,8,9,10,0,2]`; comments elsewhere in the repository contain a different mapping and must not override the actual code.
+
+The first 15 features are five global acceleration triples, divided by 30. The last 45 are five global orientation matrices flattened row-major. These are two blocks, not five interleaved 12-vectors. Missing sensors have all 12 corresponding values zeroed. Input `imu` is finite float32 `[T,60]` or `[B,T,60]`. Optional `lengths` is `[1]` or `[B]` with integer counts between 1 and T; padding must also be finite. Optional scalar `fps` is 25. NPZ must contain no pickle objects; tensor-only PT dictionaries are supported.
+
+Matrices act on column vectors. Acceleration is world-frame linear acceleration in m/s² before division by 30. Synthetic AMASS acceleration is the second position difference in meters at 60 FPS multiplied by 3600; it contains no gravity. DIP acceleration is consumed as supplied. Physical devices must provide compatible gravity-compensated acceleration and calibrated sensor/segment orientations in a common global frame.
+
+AMASS synthetic sensor vertices are `[1961,5424,876,4362,411]`; global FK orientation joint IDs are `[18,19,1,2,15]`. Wrist-worn sensors therefore use forearm segment rotations. AMASS alignment to DIP uses `[[1,0,0],[0,0,1],[0,-1,0]]` on root rotation and translation. The training dataset never reads `normalize="no_translation"`: there is no extra pelvis-relative rotation, root acceleration subtraction, transposition, or fitted standardization.
+
+Original 60→25 FPS preprocessing samples at `arange(0,N,60/25)`, interpolates floor/ceil values with the last index clamped, and applies a centered five-sample acceleration average at 25 FPS, using available samples at edges. Orientation entries are interpolated directly, not SLERPed or projected onto SO(3). Pose ground truth is interpolated as axis angles before conversion to matrices. DIP preprocessing first performs four forward/backward NaN-fill passes and trims six source frames at each edge. Do not process the existing 25 FPS data again. Inference rejects non-finite files rather than silently repairing them.
+
+Outputs contain `pose`, `lengths`, and `fps`. Pose is float32 `[T,144]` or `[B,T,144]`: 24 local SMPL rotations represented as the first matrix column XYZ followed by the second column XYZ. Root rotation is global; other rotations are relative to parents. The repository `imuposer.math.r6d_to_rotation_matrix` is the original Gram-Schmidt conversion; `tools.runtime.pose_rotations` additionally checks validity. Trim pads first: zero padding does not represent a valid rotation. No translation or body shape is predicted.
+
+The architecture and all state tensors are unchanged. The original bidirectional model uses future frames inside each window. Original training windows are 125 frames; longer sequences, splitting, overlap, or bounded-lookahead approximations change context. The acceleration filter independently needs two future samples (80 ms).

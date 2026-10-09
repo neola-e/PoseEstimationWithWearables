@@ -1,3 +1,62 @@
+# Pose Estimation With Wearables — team research code
+
+Our team builds on [FIGLAB/IMUPoser](https://github.com/FIGLAB/IMUPoser). The original attribution, LICENSE, and research instructions are retained below. The following section documents our tested post-training additions.
+
+## Pretrained Model — Quick Start
+
+After this branch is merged, clone the team repository. Use Ubuntu/Linux/WSL and Python 3.10:
+
+```bash
+git clone https://github.com/neola-e/PoseEstimationWithWearables.git
+cd PoseEstimationWithWearables
+python3.10 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements-inference.txt
+python -m pip install -e src/
+```
+
+This installs CPU PyTorch 2.7.0, NumPy 1.23.5, Lightning 1.9.5, and the original package. No AMASS, training logs, WandB account, GPU, SMPL model, or retraining is needed for inference. The original research requirements below describe the earlier training environment; use requirements-inference.txt for this quick start.
+
+### Obtain the checkpoint separately
+
+**Approved download URL: pending licensing review.** Request the Epoch 55 checkpoint directly from the project maintainer through an approved team channel. No public download or GitHub Release has been created. Place it at `checkpoints/imuposer_global_best.ckpt`, or pass `--checkpoint`/set `IMUPOSER_CHECKPOINT` to its actual location. The loader supports both the original 123 MB Lightning checkpoint and the smaller portable inference-only file; they have identical network tensors and different container hashes. See docs/MODEL_CARD.md for both SHA-256 hashes and provenance. Only load trusted checkpoints: the full Lightning format contains a pickled Config object.
+
+### Run CPU inference
+
+```bash
+python examples/example_inference.py --checkpoint checkpoints/imuposer_global_best.ckpt
+python tools/infer.py --checkpoint checkpoints/imuposer_global_best.ckpt --input outputs/synthetic_imu.npz --output outputs/custom_prediction.npz --device cpu
+IMUPOSER_CHECKPOINT=checkpoints/imuposer_global_best.ckpt python tests/test_post_training.py
+```
+
+The example produces **125 finite `[125,144]` pose predictions**, writes outputs/example_prediction.npz and outputs/synthetic_imu.npz, and reports CPU peak RAM. Synthetic identity orientations and arbitrary small accelerations are an **interface smoke test only**, not an accuracy demonstration. Replace the input file with your own correctly preprocessed sequence. Generated outputs and checkpoints are ignored by Git. Optional DIP/SMPL tests skip explicitly when authorized external assets are not configured.
+
+### Custom inputs and outputs
+
+Input NPZ: finite float32 `imu` shaped `[T,60]` or `[B,T,60]`; optional integer `lengths` shaped `[1]` or `[B]`; optional scalar `fps=25`. Tensor-only PT dictionaries use the same keys. All five world-frame acceleration XYZ triples occupy columns 0:15 and are divided by 30; all five row-major global 3×3 orientations occupy columns 15:60. Sensor order is **left wrist, right wrist, left thigh/pocket, right thigh/pocket, head**. Missing sensors have both their acceleration and orientation values zeroed.
+
+Output `pose` is `[T,144]` or `[B,T,144]`, containing 24 local SMPL rotations in 6D (first matrix column XYZ then second column XYZ), plus lengths and fps. Trim padded frames before rotation conversion or FK; the wrapper returns zero padding. No shape or root translation is predicted. See docs/IMU_INPUT_FORMAT.md for exact preprocessing and coordinate conventions.
+
+### Optional DIP evaluation and skeleton visualization
+
+Acquire DIP and the male SMPL model independently under their licenses. DIP evaluation uses only the authorized processed test file; angular/MSE metrics do not need SMPL. Position metrics and skeleton rendering additionally need a licensed SMPL asset and the optional dependencies:
+
+```bash
+python -m pip install -r requirements-visualization.txt
+python tools/eval_dip.py --checkpoint checkpoints/imuposer_global_best.ckpt --data data/processed_imuposer_25fps/dip_test.pt --sequences 0 1 2 --max-frames 125 --smpl-model data/external/smpl/male.pkl --example-dir outputs/local_dip --output outputs/local_dip/dip_test_metrics.json
+python tools/visualize_pose.py --input outputs/local_dip/dip_prediction.npz --smpl-model data/external/smpl/male.pkl --output outputs/local_dip/predicted_vs_groundtruth.gif --frames 125
+```
+
+The renderer uses original SMPL FK and hierarchy, mean male shape, zero translation, fixed meter axes, and streamed GIF frames. Labels distinguish prediction and ground truth. These commands require the separately obtained assets at the illustrated paths; no dataset or new model asset is included in this change.
+
+Previously evaluated **375 valid frames** yielded pose MSE **0.01605**, mean local joint-angle error **13.51°**, and root-relative MPJPE **3.26 cm**. These are three five-second prefixes, **not full-dataset benchmark results**. Pose MSE differs from the training validation metric **0.01031**, which includes joint-position loss. Full per-window values and conventions are in docs/dip_subset_metrics.json.
+
+### Real sensors and latency
+
+The unchanged LSTM is bidirectional and uses future frames in each supplied window; training used 125-frame windows. This is not causal zero-lookahead streaming. Centered acceleration smoothing itself adds 80 ms future context. Log synchronized physical sensors offline first, then verify units, gravity compensation, a common global frame, sensor-to-segment mounting calibration, and the exact 25 FPS feature layout. Device drift, pocket motion, and unfamiliar actions can cause domain shift. Validate an explicit lookahead/latency policy before building a real-time adapter.
+
+## Original IMUPoser research documentation
+
 # IMUPoser: Full-Body Pose Estimation using IMUs in Phones, Watches, and Earbuds
 Click to watch the video!
 <p align="center">

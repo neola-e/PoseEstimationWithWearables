@@ -1,0 +1,5 @@
+# Install in the inference environment only when using licensed SMPL assets.
+scipy==1.10.1
+matplotlib==3.7.5
+Pillow==12.3.0
+chumpy==0.70
