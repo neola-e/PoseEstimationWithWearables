@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "protocol_sha256": "2144b72d4061dd786f09870426d9158e1666ba9157c342fb232bf31309666aa4",
+  "models": {
+    "amass_epoch59": {
+      "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=59-val_loss=validation_step_loss=0.01017.ckpt",
+      "sha256": "02b9211b57ca36ae3fb13dcacc4b008b49a31fd360ebea516b73d103bd2a5058",
+      "epoch": 59,
+      "global_step": 165060,
+      "known_difference": "Initialization trained with 25 masks including five-sensor global; 24-mask fine-tuning does not undo that exposure"
+    },
+    "dip_final_2ep": {
+      "path": "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_final_v1/checkpoints/epoch_002_9d8a49a977cb.ckpt",
+      "sha256": "996a3e2df21ac675df8f777d975d0700f3836c1d835bb898044a714e6cb5f7d8",
+      "completed_epochs": 2,
+      "global_step": 162
+    }
+  },
+  "coverage": {
+    "masks": 24,
+    "recordings_per_mask": 19,
+    "frames_per_mask": 24078,
+    "pairs": 456
+  },
+  "training_performed": false,
+  "checkpoint_selection_performed": false,
+  "overall": {
+    "amass_epoch59": {
+      "mpjre_deg": 30.26336936232276,
+      "mpjpe_cm": 11.655862332170324,
+      "mpjve_cm": 14.595482185214328,
+      "jitter_100_m_s3": 1.6131986874530824
+    },
+    "dip_final_2ep": {
+      "mpjre_deg": 22.468695538949348,
+      "mpjpe_cm": 9.540189965441042,
+      "mpjve_cm": 11.968888162663644,
+      "jitter_100_m_s3": 1.0483555131716968
+    }
+  },
+  "changes": {
+    "mpjre_deg": {
+      "after_minus_before": -7.794673823373412,
+      "improvement_percent": 25.756133529129155
+    },
+    "mpjpe_cm": {
+      "after_minus_before": -2.1156723667292816,
+      "improvement_percent": 18.15114408901347
+    },
+    "mpjve_cm": {
+      "after_minus_before": -2.626594022550684,
+      "improvement_percent": 17.995938669374723
+    },
+    "jitter_100_m_s3": {
+      "after_minus_before": -0.5648431742813855,
+      "improvement_percent": 35.01386274824955
+    }
+  }
+}

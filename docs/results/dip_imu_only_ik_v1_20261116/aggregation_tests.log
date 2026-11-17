@@ -1,0 +1,11 @@
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+test_24_masks_collapse_to_12_groups_with_known_multiplicities (test_ik_aggregation.IkAggregationTests) ... ok
+test_jitter_denominator_and_sequence_equal_are_distinct (test_ik_aggregation.IkAggregationTests) ... ok
+test_missing_duplicate_wrong_count_and_reference_change_fail (test_ik_aggregation.IkAggregationTests) ... ok
+test_primary_weights_masks_and_auxiliary_weights_groups (test_ik_aggregation.IkAggregationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.018s
+
+OK

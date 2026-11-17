@@ -2,6 +2,23 @@
 
 Our team builds on [FIGLAB/IMUPoser](https://github.com/FIGLAB/IMUPoser). The original attribution, LICENSE, and research instructions are retained below. The following section documents our tested post-training additions.
 
+## Current reproduction work — November 16, 2026
+
+Start with the [team handoff](docs/TEAM_HANDOFF.md), [research log](docs/RESEARCH_LOG.md), and [paper alignment audit](docs/PAPER_EVALUATION_ALIGNMENT.md). We have completed the DIP fine-tuning comparison, IMU-only IK baseline, jitter diagnosis, and a separate Temporal IK experiment. Consumer-device deployment is planned; an iPhone client is not implemented yet.
+
+The fixed evaluation covers both held-out DIP participants, all 19 recordings, and 24 sensor combinations. MPJVE measures **mesh vertex position error**, not velocity. These results use our documented protocol and are not a claim of exact numerical equivalence to the paper.
+
+| Model / refinement | MPJRE ° ↓ | MPJPE cm ↓ | MPJVE cm ↓ | Jitter, 100 m/s³ ↓ |
+|---|---:|---:|---:|---:|
+| AMASS Epoch 59 | 30.26337 | 11.65586 | 14.59548 | 1.61320 |
+| DIP final, two epochs | 22.46870 | 9.54019 | 11.96889 | 1.04836 |
+| DIP + framewise IMU-only IK | 22.16620 | 9.42636 | 11.82258 | 1.22145 |
+| DIP + Temporal IK, separate experiment | 22.16886 | 9.42868 | 11.82466 | 1.16742 |
+
+See the [fine-tuning comparison](docs/DIP_FINETUNING_COMPARISON.md), [IK baseline](docs/IMU_ONLY_IK.md), [jitter analysis](docs/IK_JITTER_DIAGNOSIS.md), and [Temporal IK report](docs/TEMPORAL_IK_EXPERIMENT.md) for provenance, per-mask results, figures, and independent validation. Versioned reports and compact result artifacts are included; datasets, new model assets, checkpoints, and full prediction caches must be obtained separately. Historical manifests retain the original local paths and hashes.
+
+The Epoch 55 quick start below is the earlier inference handoff. It is separate from the Epoch 59 initialization and final DIP weights in the current study. For the next deployment stage, see the [consumer-device roadmap](docs/CONSUMER_DEVICE_ROADMAP.md).
+
 ## Pretrained Model — Quick Start
 
 After this branch is merged, clone the team repository. Use Ubuntu/Linux/WSL and Python 3.10:

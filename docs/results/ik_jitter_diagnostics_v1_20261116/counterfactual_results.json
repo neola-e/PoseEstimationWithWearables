@@ -1,0 +1,5498 @@
+{
+  "overall": {
+    "restore_pelvis": 1.0907178191188378,
+    "restore_hips": 1.205684165706709,
+    "restore_arms": 1.2058443295804357,
+    "restore_head": 1.2214404253576179,
+    "pelvis_only": 1.1900669177878054
+  },
+  "baseline": {
+    "network_final": {
+      "mpjre_deg": 22.468695538949348,
+      "mpjpe_cm": 9.540189965441042,
+      "mpjve_cm": 11.968888162663644,
+      "jitter_100_m_s3": 1.0483555131716968
+    },
+    "network_final_ik": {
+      "mpjre_deg": 22.166202200337022,
+      "mpjpe_cm": 9.426361324729543,
+      "mpjve_cm": 11.822584249532738,
+      "jitter_100_m_s3": 1.221451001428478
+    }
+  },
+  "rows": [
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.8877394171724526,
+        "restore_hips": 0.8877394171724526,
+        "restore_arms": 0.8549571515757745,
+        "restore_head": 0.8875743842405047,
+        "pelvis_only": 0.8547921186438266
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.839304977415002,
+        "restore_hips": 1.839304977415002,
+        "restore_arms": 1.8332890502496781,
+        "restore_head": 1.8395225877606867,
+        "pelvis_only": 1.8335066605953634
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.3163358803159257,
+        "restore_hips": 1.3163358803159257,
+        "restore_arms": 1.2814761698373822,
+        "restore_head": 1.3158945350211553,
+        "pelvis_only": 1.2810348245426122
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.7651072178397249,
+        "restore_hips": 0.7651072178397249,
+        "restore_arms": 0.7016844968892726,
+        "restore_head": 0.7647238504755768,
+        "pelvis_only": 0.7013011295251246
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 0.9148865494578422,
+        "restore_hips": 0.9148865494578422,
+        "restore_arms": 0.8543003405505606,
+        "restore_head": 0.9144679238727714,
+        "pelvis_only": 0.85388171496549
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 0.8182752296664766,
+        "restore_hips": 0.8182752296664766,
+        "restore_arms": 0.7385382567916348,
+        "restore_head": 0.8179594050297884,
+        "pelvis_only": 0.7382224321549465
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 0.8779139189375601,
+        "restore_hips": 0.8779139189375601,
+        "restore_arms": 0.8112690901743846,
+        "restore_head": 0.8774721836271631,
+        "pelvis_only": 0.8108273548639876
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.7366428157345126,
+        "restore_hips": 3.7366428157345126,
+        "restore_arms": 3.7328651150848717,
+        "restore_head": 3.7368123272424656,
+        "pelvis_only": 3.733034626592825
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.48572490395511514,
+        "restore_hips": 0.48572490395511514,
+        "restore_arms": 0.4514574090778249,
+        "restore_head": 0.48524530796282794,
+        "pelvis_only": 0.45097781308553764
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.8975940789159759,
+        "restore_hips": 0.8975940789159759,
+        "restore_arms": 0.8564974159300407,
+        "restore_head": 0.8972911262437028,
+        "pelvis_only": 0.8561944632577678
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.8268532036699672,
+        "restore_hips": 0.8268532036699672,
+        "restore_arms": 0.7680883075831088,
+        "restore_head": 0.8260873017883723,
+        "pelvis_only": 0.7673224057015139
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 1.067328835014502,
+        "restore_hips": 1.067328835014502,
+        "restore_arms": 1.0312544107249206,
+        "restore_head": 1.0667223250670226,
+        "pelvis_only": 1.0306479007774412
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.4801567975172956,
+        "restore_hips": 0.4801567975172956,
+        "restore_arms": 0.4232510933396124,
+        "restore_head": 0.4795422361383364,
+        "pelvis_only": 0.42263653196065326
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 0.9242626725101186,
+        "restore_hips": 0.9242626725101186,
+        "restore_arms": 0.8575421668552213,
+        "restore_head": 0.923994453662523,
+        "pelvis_only": 0.8572739480076258
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 0.9931614209472671,
+        "restore_hips": 0.9931614209472671,
+        "restore_arms": 0.9463767795950369,
+        "restore_head": 0.9930152335649527,
+        "pelvis_only": 0.9462305922127221
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.4041101026975236,
+        "restore_hips": 3.4041101026975236,
+        "restore_arms": 3.443206602330232,
+        "restore_head": 3.4051027865170114,
+        "pelvis_only": 3.444199286149719
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 4.28737132440716,
+        "restore_hips": 4.28737132440716,
+        "restore_arms": 4.318439737869017,
+        "restore_head": 4.289070707924018,
+        "pelvis_only": 4.320139121385875
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.526326102511855,
+        "restore_hips": 2.526326102511855,
+        "restore_arms": 2.5104768868487004,
+        "restore_head": 2.526676114021585,
+        "pelvis_only": 2.5108268983584305
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.42060116751033483,
+        "restore_hips": 0.42060116751033483,
+        "restore_arms": 0.3837093699410431,
+        "restore_head": 0.4204021554376318,
+        "pelvis_only": 0.3835103578683401
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.8066907919801458,
+        "restore_hips": 0.9691257916668576,
+        "restore_arms": 0.9669101674905051,
+        "restore_head": 0.9796320261295557,
+        "pelvis_only": 0.9564039330278071
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.5089075136883436,
+        "restore_hips": 1.7044990120143013,
+        "restore_arms": 1.7175217985874596,
+        "restore_head": 1.7263992823071288,
+        "pelvis_only": 1.6956215282946323
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.9342462459753869,
+        "restore_hips": 1.1182120867822354,
+        "restore_arms": 1.1359707227668165,
+        "restore_head": 1.143188291400917,
+        "pelvis_only": 1.1109945181481349
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 1.0221492049154746,
+        "restore_hips": 1.1908768977580702,
+        "restore_arms": 1.2253347671270531,
+        "restore_head": 1.2437178537644804,
+        "pelvis_only": 1.1724938111206424
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.1452865876190264,
+        "restore_hips": 1.2687323245763866,
+        "restore_arms": 1.3021659631803217,
+        "restore_head": 1.3148711871800896,
+        "pelvis_only": 1.2560271005766188
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.7008956151285555,
+        "restore_hips": 1.8161565739786112,
+        "restore_arms": 1.8858481560772995,
+        "restore_head": 1.8901075016825206,
+        "pelvis_only": 1.8118972283733903
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.4897146065558289,
+        "restore_hips": 1.557582576531474,
+        "restore_arms": 1.6137380136328436,
+        "restore_head": 1.631887788663317,
+        "pelvis_only": 1.5394328015010004
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 4.052241475208925,
+        "restore_hips": 4.252575163591389,
+        "restore_arms": 4.2990411111321185,
+        "restore_head": 4.281935662047228,
+        "pelvis_only": 4.26968061267628
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.3123765376517571,
+        "restore_hips": 0.38603356352980606,
+        "restore_arms": 0.3778951917275567,
+        "restore_head": 0.39556110224121255,
+        "pelvis_only": 0.3683676530161501
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.6940238853791385,
+        "restore_hips": 0.9863393360007193,
+        "restore_arms": 0.9842908459781908,
+        "restore_head": 1.0018454571069164,
+        "pelvis_only": 0.9687847248719937
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.9319207898449442,
+        "restore_hips": 1.1755532814181766,
+        "restore_arms": 1.1875191440509203,
+        "restore_head": 1.206794144371752,
+        "pelvis_only": 1.1562782810973447
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.8897489060611727,
+        "restore_hips": 1.2165214481538056,
+        "restore_arms": 1.2166501977870547,
+        "restore_head": 1.2267709299921339,
+        "pelvis_only": 1.2064007159487269
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.8624879294210676,
+        "restore_hips": 0.9667742624735043,
+        "restore_arms": 1.006862058984153,
+        "restore_head": 1.0235239003883307,
+        "pelvis_only": 0.9501124210693261
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.6230203493311262,
+        "restore_hips": 1.7208507190045481,
+        "restore_arms": 1.792086052939451,
+        "restore_head": 1.7997259622896646,
+        "pelvis_only": 1.7132108096543337
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.532907285440664,
+        "restore_hips": 1.666659618306714,
+        "restore_arms": 1.7099293332021228,
+        "restore_head": 1.7155459883282886,
+        "pelvis_only": 1.6610429631805477
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.857136806069451,
+        "restore_hips": 4.110473647067289,
+        "restore_arms": 4.131152485452787,
+        "restore_head": 4.106834947859607,
+        "pelvis_only": 4.134791184660468
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 4.8314120186448335,
+        "restore_hips": 5.154891420713434,
+        "restore_arms": 5.1815812429435475,
+        "restore_head": 5.146806048197357,
+        "pelvis_only": 5.1896666154596245
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.25992186241342,
+        "restore_hips": 2.408263584270447,
+        "restore_arms": 2.414795468699951,
+        "restore_head": 2.4195874788674416,
+        "pelvis_only": 2.403471574102957
+      }
+    },
+    {
+      "mask": "rw_lp_rp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.25944125214330166,
+        "restore_hips": 0.33411503217671074,
+        "restore_arms": 0.33424623667537895,
+        "restore_head": 0.34412565296116987,
+        "pelvis_only": 0.3242356158909198
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.8752259626639184,
+        "restore_hips": 1.140751476876389,
+        "restore_arms": 1.114849780298811,
+        "restore_head": 1.1467755853985666,
+        "pelvis_only": 1.1088256717766334
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.5995354768090002,
+        "restore_hips": 1.8531140322710982,
+        "restore_arms": 1.85777024367405,
+        "restore_head": 1.866738803983359,
+        "pelvis_only": 1.8441454719617894
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.2993925926547123,
+        "restore_hips": 1.6435633053617127,
+        "restore_arms": 1.6330540244725904,
+        "restore_head": 1.66309464020219,
+        "pelvis_only": 1.6135226896321135
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.9207854039369318,
+        "restore_hips": 1.0430170809301855,
+        "restore_arms": 1.040982044762966,
+        "restore_head": 1.0794348805430791,
+        "pelvis_only": 1.0045642451500725
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.0149694573274497,
+        "restore_hips": 1.0950243370977275,
+        "restore_arms": 1.0879919000149465,
+        "restore_head": 1.1306100936801482,
+        "pelvis_only": 1.0524061434325256
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.281074652198547,
+        "restore_hips": 1.4301030691812409,
+        "restore_arms": 1.4434912910259465,
+        "restore_head": 1.485069753872632,
+        "pelvis_only": 1.3885246063345553
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.283154765682874,
+        "restore_hips": 1.357618093590937,
+        "restore_arms": 1.3610584088192836,
+        "restore_head": 1.409714441673108,
+        "pelvis_only": 1.3089620607371122
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 4.006868282757106,
+        "restore_hips": 4.137408624275929,
+        "restore_arms": 4.191524540792367,
+        "restore_head": 4.166412269577177,
+        "pelvis_only": 4.162520895491118
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.4103822491549141,
+        "restore_hips": 0.5087273362611724,
+        "restore_arms": 0.48917153181006456,
+        "restore_head": 0.5183439803183547,
+        "pelvis_only": 0.4795548877528822
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.8994735318627904,
+        "restore_hips": 1.1268617915491017,
+        "restore_arms": 1.1050750833571188,
+        "restore_head": 1.1447799476278668,
+        "pelvis_only": 1.0871569272783537
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.8334100808030055,
+        "restore_hips": 1.2346765226213607,
+        "restore_arms": 1.1970521028482055,
+        "restore_head": 1.2456666840451942,
+        "pelvis_only": 1.1860619414243723
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 1.0680026227084196,
+        "restore_hips": 1.4702204629455928,
+        "restore_arms": 1.4522227996128374,
+        "restore_head": 1.4868540313904948,
+        "pelvis_only": 1.4355892311679357
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.7146471005699777,
+        "restore_hips": 0.8742125621271682,
+        "restore_arms": 0.8496046254406733,
+        "restore_head": 0.9024134373238079,
+        "pelvis_only": 0.8214037502440337
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.32485361389158,
+        "restore_hips": 1.407832191326789,
+        "restore_arms": 1.4133006553613812,
+        "restore_head": 1.4627876198560117,
+        "pelvis_only": 1.3583452268321585
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.3026939608061436,
+        "restore_hips": 1.4412892048606158,
+        "restore_arms": 1.4415352708119797,
+        "restore_head": 1.4806870943534438,
+        "pelvis_only": 1.4021373813191522
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.432538136913832,
+        "restore_hips": 3.521286666307915,
+        "restore_arms": 3.5832789250937127,
+        "restore_head": 3.5614647199748015,
+        "pelvis_only": 3.543100871426826
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 4.3652440710268765,
+        "restore_hips": 4.602780976477048,
+        "restore_arms": 4.631244714960124,
+        "restore_head": 4.614088664935915,
+        "pelvis_only": 4.619937026501257
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.403484158565404,
+        "restore_hips": 2.6105043787883186,
+        "restore_arms": 2.600112674409956,
+        "restore_head": 2.612228353444112,
+        "pelvis_only": 2.598388699754162
+      }
+    },
+    {
+      "mask": "lw_rw_rp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.3684506503547242,
+        "restore_hips": 0.46243799178605877,
+        "restore_arms": 0.4450973105208037,
+        "restore_head": 0.4708351075828272,
+        "pelvis_only": 0.43670019472403543
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.7653543820639634,
+        "restore_hips": 1.0560147611710775,
+        "restore_arms": 1.0384192007185822,
+        "restore_head": 1.0601697327662085,
+        "pelvis_only": 1.0342207897479367
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.15540428776846,
+        "restore_hips": 1.2903397674484491,
+        "restore_arms": 1.2962347911116907,
+        "restore_head": 1.302764154678882,
+        "pelvis_only": 1.284213742320332
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.0235570103492966,
+        "restore_hips": 1.246149080287277,
+        "restore_arms": 1.2240566480148707,
+        "restore_head": 1.2502021672106132,
+        "pelvis_only": 1.22037083922428
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.884830584004213,
+        "restore_hips": 0.9487801333709821,
+        "restore_arms": 0.9666483788636588,
+        "restore_head": 0.9887331193281927,
+        "pelvis_only": 0.9270164230872474
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.0086418127518477,
+        "restore_hips": 1.1121684150251776,
+        "restore_arms": 1.124347167867692,
+        "restore_head": 1.1415204145787088,
+        "pelvis_only": 1.0949270893109446
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.3060914313020748,
+        "restore_hips": 1.4408887144779012,
+        "restore_arms": 1.4654209948973007,
+        "restore_head": 1.4948288421020761,
+        "pelvis_only": 1.4121617451099948
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.2238183871297534,
+        "restore_hips": 1.3321720325216098,
+        "restore_arms": 1.3411046789875143,
+        "restore_head": 1.3706252382361128,
+        "pelvis_only": 1.3029803550125871
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.7125341391957973,
+        "restore_hips": 3.8259339426968086,
+        "restore_arms": 3.8768263315828615,
+        "restore_head": 3.854984659007822,
+        "pelvis_only": 3.848391336846601
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.35362034913411017,
+        "restore_hips": 0.4498663352579044,
+        "restore_arms": 0.44500617749408294,
+        "restore_head": 0.458607254873466,
+        "pelvis_only": 0.43600863489657776
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.8367161632880845,
+        "restore_hips": 1.0121789374998302,
+        "restore_arms": 0.9993631194194046,
+        "restore_head": 1.0203505861219222,
+        "pelvis_only": 0.9915030443216654
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.7602195542961221,
+        "restore_hips": 0.9695142076320039,
+        "restore_arms": 0.9608699386224496,
+        "restore_head": 0.9782078871303448,
+        "pelvis_only": 0.9514649136839103
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.7767647142743874,
+        "restore_hips": 1.0432458252518046,
+        "restore_arms": 1.0461740917897988,
+        "restore_head": 1.0613662863041777,
+        "pelvis_only": 1.0279318138515858
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.7231998435769572,
+        "restore_hips": 0.8394195082189494,
+        "restore_arms": 0.834700230627509,
+        "restore_head": 0.8666942820566693,
+        "pelvis_only": 0.807476192658346
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.3514946959420027,
+        "restore_hips": 1.462992721309677,
+        "restore_arms": 1.471858497903816,
+        "restore_head": 1.4997525763875443,
+        "pelvis_only": 1.4366109894119392
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.3773164047701254,
+        "restore_hips": 1.5276853800008083,
+        "restore_arms": 1.535213356887812,
+        "restore_head": 1.556903451422518,
+        "pelvis_only": 1.5070088798881989
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.6275606685493527,
+        "restore_hips": 3.8880963247146267,
+        "restore_arms": 3.9291297878977236,
+        "restore_head": 3.9108468807676577,
+        "pelvis_only": 3.9100432993057366
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.97989494791029,
+        "restore_hips": 4.15393599303339,
+        "restore_arms": 4.160418570020717,
+        "restore_head": 4.15445786653462,
+        "pelvis_only": 4.162793584650461
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.1444986928256298,
+        "restore_hips": 2.2596946847351878,
+        "restore_arms": 2.273632315108498,
+        "restore_head": 2.28098674572767,
+        "pelvis_only": 2.252974789358557
+      }
+    },
+    {
+      "mask": "lw_rp_h",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.29029877444298674,
+        "restore_hips": 0.36046866097579555,
+        "restore_arms": 0.35889139441021223,
+        "restore_head": 0.37076709142446673,
+        "pelvis_only": 0.34836321491411837
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.7519571449598379,
+        "restore_hips": 0.8800768543171449,
+        "restore_arms": 0.868616837706545,
+        "restore_head": 0.8859481723791598,
+        "pelvis_only": 0.8623470679574965
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.3719262111093407,
+        "restore_hips": 1.5905126254416038,
+        "restore_arms": 1.5970415908688929,
+        "restore_head": 1.6088747573191287,
+        "pelvis_only": 1.579036517856815
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.8764223269571609,
+        "restore_hips": 1.144457732313873,
+        "restore_arms": 1.1421851390900062,
+        "restore_head": 1.153082030405468,
+        "pelvis_only": 1.1337320805285853
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.8869404232879,
+        "restore_hips": 0.962556515152266,
+        "restore_arms": 0.9893310261488432,
+        "restore_head": 1.0050237376761841,
+        "pelvis_only": 0.9472842072782991
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 0.9959435466145078,
+        "restore_hips": 1.0507461222484045,
+        "restore_arms": 1.069364032058901,
+        "restore_head": 1.0922654587710918,
+        "pelvis_only": 1.0284437306626508
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.2924033529828989,
+        "restore_hips": 1.4176837033204084,
+        "restore_arms": 1.4539204243589998,
+        "restore_head": 1.4724965617928516,
+        "pelvis_only": 1.3999264631050325
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.2109369145457776,
+        "restore_hips": 1.273012457428384,
+        "restore_arms": 1.2981133082517742,
+        "restore_head": 1.3165851350579667,
+        "pelvis_only": 1.255406010971827
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.6987347129776866,
+        "restore_hips": 3.844486152373614,
+        "restore_arms": 3.880638314466396,
+        "restore_head": 3.8762833093534077,
+        "pelvis_only": 3.849644687628341
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.337089959118145,
+        "restore_hips": 0.43640940320189886,
+        "restore_arms": 0.43317096236938907,
+        "restore_head": 0.4468888133069325,
+        "pelvis_only": 0.4223532944602919
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.6356119183288566,
+        "restore_hips": 0.8979809709145273,
+        "restore_arms": 0.8929507754869018,
+        "restore_head": 0.9091001814650375,
+        "pelvis_only": 0.8819759884709707
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.8605731063451246,
+        "restore_hips": 1.1647934134812572,
+        "restore_arms": 1.168862347795795,
+        "restore_head": 1.1833375002683229,
+        "pelvis_only": 1.149711331749761
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.8507527166164357,
+        "restore_hips": 1.245338630991854,
+        "restore_arms": 1.2341394157864531,
+        "restore_head": 1.2564198416398722,
+        "pelvis_only": 1.2229626604997792
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.702537854033486,
+        "restore_hips": 0.7941393496107394,
+        "restore_arms": 0.8141644226566926,
+        "restore_head": 0.8341235307787928,
+        "pelvis_only": 0.7742964250532164
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.3354943755800823,
+        "restore_hips": 1.5039591313368563,
+        "restore_arms": 1.5272518908083557,
+        "restore_head": 1.551008871356467,
+        "pelvis_only": 1.482027071040151
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.3464481810319144,
+        "restore_hips": 1.4567020804929067,
+        "restore_arms": 1.4776751785193243,
+        "restore_head": 1.4911043373537654,
+        "pelvis_only": 1.443711166161949
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.660282838640857,
+        "restore_hips": 3.7764423848724733,
+        "restore_arms": 3.8283717153886903,
+        "restore_head": 3.8029241953684036,
+        "pelvis_only": 3.804327521950727
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 5.114057589822499,
+        "restore_hips": 5.4089333012119285,
+        "restore_arms": 5.417110436782171,
+        "restore_head": 5.405140351259153,
+        "pelvis_only": 5.424471800507937
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.2339575492404116,
+        "restore_hips": 2.435789251090166,
+        "restore_arms": 2.4362599126557107,
+        "restore_head": 2.4386653345443308,
+        "pelvis_only": 2.434510733142873
+      }
+    },
+    {
+      "mask": "rw_rp_h",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.28848692070251125,
+        "restore_hips": 0.394333037923402,
+        "restore_arms": 0.39396391162847366,
+        "restore_head": 0.403592111719164,
+        "pelvis_only": 0.3843824117608818
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.7728712084207773,
+        "restore_hips": 1.0175136094572292,
+        "restore_arms": 1.0159114903427076,
+        "restore_head": 1.0336415067555533,
+        "pelvis_only": 0.9997835930443837
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.233708135758677,
+        "restore_hips": 1.3992872722223304,
+        "restore_arms": 1.4072856081168488,
+        "restore_head": 1.4122888949479995,
+        "pelvis_only": 1.3942839853911797
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.0764931214591653,
+        "restore_hips": 1.360258535329437,
+        "restore_arms": 1.347168663994637,
+        "restore_head": 1.3700205648491535,
+        "pelvis_only": 1.3374066344749205
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 1.0021158879266114,
+        "restore_hips": 1.1100889424602522,
+        "restore_arms": 1.1617852548305514,
+        "restore_head": 1.1886727364255585,
+        "pelvis_only": 1.083201460865245
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.1647696986644418,
+        "restore_hips": 1.2655549507817951,
+        "restore_arms": 1.296503604257609,
+        "restore_head": 1.312413417856012,
+        "pelvis_only": 1.249645137183392
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.6593378403501189,
+        "restore_hips": 1.75909464422775,
+        "restore_arms": 1.823223337946491,
+        "restore_head": 1.8426002571216673,
+        "pelvis_only": 1.7397177250525735
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.4239396650499399,
+        "restore_hips": 1.5391749059304367,
+        "restore_arms": 1.5870979029741152,
+        "restore_head": 1.6094243483623814,
+        "pelvis_only": 1.5168484605421708
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 4.032085710836261,
+        "restore_hips": 4.2280900030364545,
+        "restore_arms": 4.242936458530283,
+        "restore_head": 4.237935156298236,
+        "pelvis_only": 4.233091305268503
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.3188722742669236,
+        "restore_hips": 0.39458581303114554,
+        "restore_arms": 0.3899284129923497,
+        "restore_head": 0.4066700040740755,
+        "pelvis_only": 0.37784422194941975
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.8349038879388512,
+        "restore_hips": 0.9885428524596708,
+        "restore_arms": 1.0027789805253986,
+        "restore_head": 1.019786818888487,
+        "pelvis_only": 0.9715350140965822
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.9020728920370891,
+        "restore_hips": 1.1201624143259026,
+        "restore_arms": 1.1325767896532475,
+        "restore_head": 1.1540827325056398,
+        "pelvis_only": 1.0986564714735108
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.8334208330126097,
+        "restore_hips": 1.1125847490129763,
+        "restore_arms": 1.1052391885528465,
+        "restore_head": 1.1144413971217588,
+        "pelvis_only": 1.103382540444064
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.831704984927093,
+        "restore_hips": 0.9254924725591414,
+        "restore_arms": 0.952692614921136,
+        "restore_head": 0.9797664556627121,
+        "pelvis_only": 0.898418631817565
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.576542555926546,
+        "restore_hips": 1.629331596508451,
+        "restore_arms": 1.6879494389219518,
+        "restore_head": 1.7031796784107052,
+        "pelvis_only": 1.6141013570196976
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.532466749706039,
+        "restore_hips": 1.6416449924867595,
+        "restore_arms": 1.68470406783166,
+        "restore_head": 1.7020052358711275,
+        "pelvis_only": 1.6243438244472919
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.746822311694881,
+        "restore_hips": 3.922317015040868,
+        "restore_arms": 3.9505256869908756,
+        "restore_head": 3.936609211595746,
+        "pelvis_only": 3.9362334904359972
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 4.100092181342757,
+        "restore_hips": 4.300569478406436,
+        "restore_arms": 4.305806053403163,
+        "restore_head": 4.298089158691408,
+        "pelvis_only": 4.308286373118193
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.1268294214158776,
+        "restore_hips": 2.2499112963067094,
+        "restore_arms": 2.262627556286043,
+        "restore_head": 2.271983294433345,
+        "pelvis_only": 2.2405555581594085
+      }
+    },
+    {
+      "mask": "lw_lp_rp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.2565102030555486,
+        "restore_hips": 0.34137787415229115,
+        "restore_arms": 0.34229012534901815,
+        "restore_head": 0.3530621066388791,
+        "pelvis_only": 0.33060589286243025
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.8943562199972455,
+        "restore_hips": 1.1737933946693446,
+        "restore_arms": 1.1554483244140306,
+        "restore_head": 1.181381296999644,
+        "pelvis_only": 1.1478604220837314
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 2.1513645337607845,
+        "restore_hips": 2.386108465920297,
+        "restore_arms": 2.3906092105247123,
+        "restore_head": 2.393780451641353,
+        "pelvis_only": 2.382937224803656
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.2958737097299875,
+        "restore_hips": 1.641940570123277,
+        "restore_arms": 1.6167497354501095,
+        "restore_head": 1.6469793336179859,
+        "pelvis_only": 1.6117109719554004
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.8522072126576726,
+        "restore_hips": 0.9850836280532056,
+        "restore_arms": 0.9785108376338204,
+        "restore_head": 1.0222260480581307,
+        "pelvis_only": 0.941368417628895
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.0108333844541562,
+        "restore_hips": 1.1368806859145473,
+        "restore_arms": 1.1360358700751674,
+        "restore_head": 1.171213497738206,
+        "pelvis_only": 1.1017030582515088
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.3569152540790386,
+        "restore_hips": 1.521598434965965,
+        "restore_arms": 1.5248792365584296,
+        "restore_head": 1.5671912524240446,
+        "pelvis_only": 1.4792864191003503
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.2568537413944647,
+        "restore_hips": 1.4135167129717636,
+        "restore_arms": 1.4028264010510767,
+        "restore_head": 1.4581946545228284,
+        "pelvis_only": 1.3581484595000122
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.998996467983574,
+        "restore_hips": 4.1967738016639595,
+        "restore_arms": 4.261658220198438,
+        "restore_head": 4.24043304129844,
+        "pelvis_only": 4.217998980563958
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.4007692183612425,
+        "restore_hips": 0.4939268052039199,
+        "restore_arms": 0.4694344737930561,
+        "restore_head": 0.5001702704777844,
+        "pelvis_only": 0.4631910085191916
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.8978211071093257,
+        "restore_hips": 1.0968094575556102,
+        "restore_arms": 1.0780369071312412,
+        "restore_head": 1.1122722552423745,
+        "pelvis_only": 1.062574109444477
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.8573368615423234,
+        "restore_hips": 1.230682234946041,
+        "restore_arms": 1.2005978986667736,
+        "restore_head": 1.2478419458549093,
+        "pelvis_only": 1.183438187757905
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 1.0846647061040948,
+        "restore_hips": 1.4362364200511988,
+        "restore_arms": 1.4118175166425653,
+        "restore_head": 1.4413326342434118,
+        "pelvis_only": 1.4067213024503524
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.713608409536298,
+        "restore_hips": 0.8601210530805248,
+        "restore_arms": 0.8465700033809445,
+        "restore_head": 0.8861779120742693,
+        "pelvis_only": 0.8205131443872
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.1963010585217366,
+        "restore_hips": 1.2618029668213158,
+        "restore_arms": 1.258051742560165,
+        "restore_head": 1.305313677606169,
+        "pelvis_only": 1.214541031775312
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.2465330335649387,
+        "restore_hips": 1.3951651193694203,
+        "restore_arms": 1.393176211298513,
+        "restore_head": 1.4278980314226175,
+        "pelvis_only": 1.3604432992453162
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.382887871818441,
+        "restore_hips": 3.58712325128389,
+        "restore_arms": 3.6270753277625216,
+        "restore_head": 3.6048430491622248,
+        "pelvis_only": 3.609355529884187
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 4.209029278243271,
+        "restore_hips": 4.405065865032413,
+        "restore_arms": 4.407275053174107,
+        "restore_head": 4.392848083164804,
+        "pelvis_only": 4.419492835041716
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.3904930536337847,
+        "restore_hips": 2.5247274407056763,
+        "restore_arms": 2.5245256088603414,
+        "restore_head": 2.5366773553648043,
+        "pelvis_only": 2.5125756942012125
+      }
+    },
+    {
+      "mask": "lw_rw_lp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.34415300953669453,
+        "restore_hips": 0.4484765958781995,
+        "restore_arms": 0.42570203443788324,
+        "restore_head": 0.4532409525752562,
+        "pelvis_only": 0.4209376777408265
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.7739472400945254,
+        "restore_hips": 1.0458108762161187,
+        "restore_arms": 1.0349895987638538,
+        "restore_head": 1.0535517482257624,
+        "pelvis_only": 1.0269257411586763
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.1332674297049445,
+        "restore_hips": 1.2767987198170276,
+        "restore_arms": 1.2935242339693511,
+        "restore_head": 1.2923422332120742,
+        "pelvis_only": 1.2778221814992854
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.0083887398245097,
+        "restore_hips": 1.2988775680640288,
+        "restore_arms": 1.2841976964482884,
+        "restore_head": 1.3054548358214515,
+        "pelvis_only": 1.278171369152902
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.860658498476901,
+        "restore_hips": 0.9654541269313539,
+        "restore_arms": 0.9837453656412477,
+        "restore_head": 1.0089170399716485,
+        "pelvis_only": 0.9402251872816231
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.0222143698941142,
+        "restore_hips": 1.1108795599977943,
+        "restore_arms": 1.1246049993704426,
+        "restore_head": 1.1411654363756762,
+        "pelvis_only": 1.0948816594173805
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.3417802527606701,
+        "restore_hips": 1.450697815106473,
+        "restore_arms": 1.4807610850835582,
+        "restore_head": 1.5098372089941976,
+        "pelvis_only": 1.4233189142034504
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.2373057759665862,
+        "restore_hips": 1.3243506856632816,
+        "restore_arms": 1.3414973899257867,
+        "restore_head": 1.371642248864237,
+        "pelvis_only": 1.2948351014056383
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.7083980716198135,
+        "restore_hips": 3.8962165133398003,
+        "restore_arms": 3.9261861170498493,
+        "restore_head": 3.909644856284441,
+        "pelvis_only": 3.9136555645864854
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.32240284961789567,
+        "restore_hips": 0.4047826627659335,
+        "restore_arms": 0.39397368983638814,
+        "restore_head": 0.4092104112514244,
+        "pelvis_only": 0.3893105002943001
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.8170465723486727,
+        "restore_hips": 0.983556924404651,
+        "restore_arms": 0.9836700901163979,
+        "restore_head": 0.9999574810360822,
+        "pelvis_only": 0.9672582832101856
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.8133875476271032,
+        "restore_hips": 1.0380500173716551,
+        "restore_arms": 1.0369469433271072,
+        "restore_head": 1.0553955930525774,
+        "pelvis_only": 1.0196719908386316
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.7961521764498645,
+        "restore_hips": 1.1195527071239735,
+        "restore_arms": 1.0954805396593859,
+        "restore_head": 1.1185044991262567,
+        "pelvis_only": 1.0962216568887577
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.6911941997245531,
+        "restore_hips": 0.796155664584875,
+        "restore_arms": 0.8069449887346807,
+        "restore_head": 0.8272501560308794,
+        "pelvis_only": 0.7761213884552061
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.2665930770905804,
+        "restore_hips": 1.3720940242661155,
+        "restore_arms": 1.3882061361032538,
+        "restore_head": 1.409053511120739,
+        "pelvis_only": 1.3522227562179259
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.3095268473779824,
+        "restore_hips": 1.4438036841849204,
+        "restore_arms": 1.4588821982020388,
+        "restore_head": 1.4759487155891973,
+        "pelvis_only": 1.4278417809212616
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.5584650417942334,
+        "restore_hips": 3.800045473422013,
+        "restore_arms": 3.8074617385091316,
+        "restore_head": 3.807591600206742,
+        "pelvis_only": 3.80647389588478
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.7607838434011858,
+        "restore_hips": 3.8917362866816974,
+        "restore_arms": 3.8924970909134826,
+        "restore_head": 3.897978665650845,
+        "pelvis_only": 3.887737165382683
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 1.9486484118092378,
+        "restore_hips": 2.047228128735263,
+        "restore_arms": 2.071219079062279,
+        "restore_head": 2.0725748270116413,
+        "pelvis_only": 2.0464333608651093
+      }
+    },
+    {
+      "mask": "lw_lp_h",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.2629661209256684,
+        "restore_hips": 0.3532239634668419,
+        "restore_arms": 0.34690411023938666,
+        "restore_head": 0.35840378999873324,
+        "pelvis_only": 0.34131118952577916
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.7416040583453565,
+        "restore_hips": 0.8393433208907293,
+        "restore_arms": 0.8310513912851026,
+        "restore_head": 0.8499053891925549,
+        "pelvis_only": 0.8200636713994608
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.3045242611755576,
+        "restore_hips": 1.5363956502550025,
+        "restore_arms": 1.5378044442533367,
+        "restore_head": 1.5421557119911957,
+        "pelvis_only": 1.5322678795731821
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.8959057374105889,
+        "restore_hips": 1.118010463303189,
+        "restore_arms": 1.1173063275051565,
+        "restore_head": 1.131154597652351,
+        "pelvis_only": 1.1040557754170888
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.862651570759651,
+        "restore_hips": 0.9828526148131571,
+        "restore_arms": 0.9984524566754882,
+        "restore_head": 1.0214897222488624,
+        "pelvis_only": 0.960589916814869
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.0448641145278328,
+        "restore_hips": 1.1046936835685677,
+        "restore_arms": 1.115367270718121,
+        "restore_head": 1.1368761615041503,
+        "pelvis_only": 1.0839172806698576
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.3489694105926673,
+        "restore_hips": 1.4914348478346349,
+        "restore_arms": 1.5189536622000677,
+        "restore_head": 1.5302672318636572,
+        "pelvis_only": 1.4817124309333523
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.2585956562127267,
+        "restore_hips": 1.3640548099350627,
+        "restore_arms": 1.3968861672651847,
+        "restore_head": 1.4144562335905013,
+        "pelvis_only": 1.347479629553915
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.806947381581732,
+        "restore_hips": 3.942312053211641,
+        "restore_arms": 3.97492199448029,
+        "restore_head": 3.965309636517602,
+        "pelvis_only": 3.9526575219258744
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.327595658103042,
+        "restore_hips": 0.37985911886403423,
+        "restore_arms": 0.3689209123176559,
+        "restore_head": 0.3876798300438757,
+        "pelvis_only": 0.36083602167720874
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.642675977973889,
+        "restore_hips": 0.8954369276181682,
+        "restore_arms": 0.8831131100807587,
+        "restore_head": 0.9041096676628773,
+        "pelvis_only": 0.8745297418140447
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.839755073572346,
+        "restore_hips": 1.112431856353404,
+        "restore_arms": 1.1046251037496417,
+        "restore_head": 1.1211254950904612,
+        "pelvis_only": 1.0956126763135612
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.8353382113713905,
+        "restore_hips": 1.1936636064890893,
+        "restore_arms": 1.1761450321709228,
+        "restore_head": 1.1983218006107397,
+        "pelvis_only": 1.17163042033558
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.7089201205462043,
+        "restore_hips": 0.8375441257130682,
+        "restore_arms": 0.84966497974297,
+        "restore_head": 0.8661841832625409,
+        "pelvis_only": 0.8213630232902795
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.2072574804258538,
+        "restore_hips": 1.2947471495949179,
+        "restore_arms": 1.3170949244276724,
+        "restore_head": 1.3350196570266288,
+        "pelvis_only": 1.277857365782933
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.2613117166483958,
+        "restore_hips": 1.4286797022210325,
+        "restore_arms": 1.4417137469902772,
+        "restore_head": 1.4558865901415698,
+        "pelvis_only": 1.4155735615953176
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.7043372909067234,
+        "restore_hips": 3.8710887729712846,
+        "restore_arms": 3.8659198929945116,
+        "restore_head": 3.8506573796215786,
+        "pelvis_only": 3.888587633867098
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 4.9085850260477555,
+        "restore_hips": 5.299186829622943,
+        "restore_arms": 5.3004164076924996,
+        "restore_head": 5.279899940046721,
+        "pelvis_only": 5.322698587711171
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.1054227393478016,
+        "restore_hips": 2.3005684405913756,
+        "restore_arms": 2.3030293156632893,
+        "restore_head": 2.310449390883162,
+        "pelvis_only": 2.293348688198081
+      }
+    },
+    {
+      "mask": "rw_lp_h",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.2586422143750531,
+        "restore_hips": 0.35941452804450696,
+        "restore_arms": 0.35272046038030536,
+        "restore_head": 0.36295392578977936,
+        "pelvis_only": 0.3488122291587212
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.9496261009615974,
+        "restore_hips": 0.9496261009615974,
+        "restore_arms": 0.9243730808774727,
+        "restore_head": 0.9496261009615974,
+        "pelvis_only": 0.9243730808774727
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 2.4660059160661945,
+        "restore_hips": 2.4660059160661945,
+        "restore_arms": 2.4658383782851945,
+        "restore_head": 2.4660059160661945,
+        "pelvis_only": 2.4658383782851945
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.3862897670491308,
+        "restore_hips": 1.3862897670491308,
+        "restore_arms": 1.354013151993303,
+        "restore_head": 1.3862897670491308,
+        "pelvis_only": 1.354013151993303
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.6363823856222193,
+        "restore_hips": 0.6363823856222193,
+        "restore_arms": 0.5733773288878707,
+        "restore_head": 0.6363823856222193,
+        "pelvis_only": 0.5733773288878707
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 0.858500821144214,
+        "restore_hips": 0.858500821144214,
+        "restore_arms": 0.8050728562520161,
+        "restore_head": 0.858500821144214,
+        "pelvis_only": 0.8050728562520161
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 0.7739439942642987,
+        "restore_hips": 0.7739439942642987,
+        "restore_arms": 0.6946752354893441,
+        "restore_head": 0.7739439942642987,
+        "pelvis_only": 0.6946752354893441
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 0.8852615561909327,
+        "restore_hips": 0.8852615561909327,
+        "restore_arms": 0.8211450575030317,
+        "restore_head": 0.8852615561909327,
+        "pelvis_only": 0.8211450575030317
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.520834335161333,
+        "restore_hips": 3.520834335161333,
+        "restore_arms": 3.5152325104259012,
+        "restore_head": 3.520834335161333,
+        "pelvis_only": 3.5152325104259012
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.5331676205433021,
+        "restore_hips": 0.5331676205433021,
+        "restore_arms": 0.5000591484710228,
+        "restore_head": 0.5331676205433021,
+        "pelvis_only": 0.5000591484710228
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 1.0234725752665754,
+        "restore_hips": 1.0234725752665754,
+        "restore_arms": 0.9815737062372907,
+        "restore_head": 1.0234725752665754,
+        "pelvis_only": 0.9815737062372907
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.881736631686303,
+        "restore_hips": 0.881736631686303,
+        "restore_arms": 0.821524727281784,
+        "restore_head": 0.881736631686303,
+        "pelvis_only": 0.821524727281784
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 1.1871927909828617,
+        "restore_hips": 1.1871927909828617,
+        "restore_arms": 1.155870051803711,
+        "restore_head": 1.1871927909828617,
+        "pelvis_only": 1.155870051803711
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.45360224822326756,
+        "restore_hips": 0.45360224822326756,
+        "restore_arms": 0.40569588102503873,
+        "restore_head": 0.45360224822326756,
+        "pelvis_only": 0.40569588102503873
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 0.8601103030244743,
+        "restore_hips": 0.8601103030244743,
+        "restore_arms": 0.7840128397686688,
+        "restore_head": 0.8601103030244743,
+        "pelvis_only": 0.7840128397686688
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 0.8442946614852334,
+        "restore_hips": 0.8442946614852334,
+        "restore_arms": 0.7916665746444649,
+        "restore_head": 0.8442946614852334,
+        "pelvis_only": 0.7916665746444649
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 2.865341137677461,
+        "restore_hips": 2.865341137677461,
+        "restore_arms": 2.8928840888758867,
+        "restore_head": 2.865341137677461,
+        "pelvis_only": 2.8928840888758867
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 4.5077197570502054,
+        "restore_hips": 4.5077197570502054,
+        "restore_arms": 4.530680848668877,
+        "restore_head": 4.5077197570502054,
+        "pelvis_only": 4.530680848668877
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.862287544149585,
+        "restore_hips": 2.862287544149585,
+        "restore_arms": 2.8470650143107843,
+        "restore_head": 2.862287544149585,
+        "pelvis_only": 2.8470650143107843
+      }
+    },
+    {
+      "mask": "lw_rw",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.48449808527604593,
+        "restore_hips": 0.48449808527604593,
+        "restore_arms": 0.45084005664402715,
+        "restore_head": 0.48449808527604593,
+        "pelvis_only": 0.45084005664402715
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.7857546446778162,
+        "restore_hips": 1.1230546451332022,
+        "restore_arms": 1.1130593940719278,
+        "restore_head": 1.1305327075229383,
+        "pelvis_only": 1.1055813316821914
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.2090839349852203,
+        "restore_hips": 1.440834382104589,
+        "restore_arms": 1.4512307287358626,
+        "restore_head": 1.4527134627680274,
+        "pelvis_only": 1.4393516480724242
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.078406326963105,
+        "restore_hips": 1.4476888558479508,
+        "restore_arms": 1.4334502110618457,
+        "restore_head": 1.4560948882669242,
+        "pelvis_only": 1.4250441786428723
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.8595442591136759,
+        "restore_hips": 1.0005911778764207,
+        "restore_arms": 1.0217742324901353,
+        "restore_head": 1.0417839274671905,
+        "pelvis_only": 0.980581482899366
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 0.991820903252887,
+        "restore_hips": 1.1364044922306888,
+        "restore_arms": 1.146789865873452,
+        "restore_head": 1.161433776130222,
+        "pelvis_only": 1.1217605819739191
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.3584147696261613,
+        "restore_hips": 1.5216238195180787,
+        "restore_arms": 1.5378092344232925,
+        "restore_head": 1.5650931851792118,
+        "pelvis_only": 1.4943398687621599
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.279271331181122,
+        "restore_hips": 1.4382720649227272,
+        "restore_arms": 1.4545425018817988,
+        "restore_head": 1.479879522354942,
+        "pelvis_only": 1.412935044449584
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.490870351164463,
+        "restore_hips": 3.7248403838308786,
+        "restore_arms": 3.747462605666444,
+        "restore_head": 3.7463566155115178,
+        "pelvis_only": 3.725946373985804
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.34105004171646314,
+        "restore_hips": 0.44339795122741404,
+        "restore_arms": 0.4359646939490625,
+        "restore_head": 0.4511916151032185,
+        "pelvis_only": 0.4281710300732582
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.8844252514791248,
+        "restore_hips": 1.1181736892512175,
+        "restore_arms": 1.1204815295935016,
+        "restore_head": 1.134998424050689,
+        "pelvis_only": 1.1036567947940301
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.907590241401961,
+        "restore_hips": 1.1854465656111204,
+        "restore_arms": 1.1861705897590118,
+        "restore_head": 1.2044648289460218,
+        "pelvis_only": 1.1671523264241106
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.8155999467342836,
+        "restore_hips": 1.1857201013539613,
+        "restore_arms": 1.168194951263821,
+        "restore_head": 1.1855259160822305,
+        "pelvis_only": 1.1683891365355519
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.7087460666133214,
+        "restore_hips": 0.8520254586947131,
+        "restore_arms": 0.8612885545092813,
+        "restore_head": 0.8813254433904397,
+        "pelvis_only": 0.8319885698135545
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.219581175591707,
+        "restore_hips": 1.3492340134617071,
+        "restore_arms": 1.356789187787748,
+        "restore_head": 1.380817469040779,
+        "pelvis_only": 1.3252057322086765
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.2476607407214293,
+        "restore_hips": 1.4349736312219243,
+        "restore_arms": 1.450550862684552,
+        "restore_head": 1.4706247563074655,
+        "pelvis_only": 1.414899737599011
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.0615962470758045,
+        "restore_hips": 3.2862795654176193,
+        "restore_arms": 3.2953960695253666,
+        "restore_head": 3.2946863676116958,
+        "pelvis_only": 3.2869892673312906
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.2495934189293103,
+        "restore_hips": 3.5100750623610595,
+        "restore_arms": 3.5139173319289063,
+        "restore_head": 3.506292242383301,
+        "pelvis_only": 3.517700151906664
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 1.9934668306202368,
+        "restore_hips": 2.094465668649018,
+        "restore_arms": 2.1018605089960487,
+        "restore_head": 2.1137359521091135,
+        "pelvis_only": 2.082590225535953
+      }
+    },
+    {
+      "mask": "lw_lp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.26858302827976793,
+        "restore_hips": 0.37108171465454554,
+        "restore_arms": 0.3667324352023963,
+        "restore_head": 0.37735772786652544,
+        "pelvis_only": 0.3604564219904164
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.7442080053421352,
+        "restore_hips": 1.0942262722802847,
+        "restore_arms": 1.083883353084131,
+        "restore_head": 1.096912885782137,
+        "pelvis_only": 1.0811967395822786
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.2616738778487064,
+        "restore_hips": 1.550926897177029,
+        "restore_arms": 1.5484985204336659,
+        "restore_head": 1.5511459364468922,
+        "pelvis_only": 1.5482794811638023
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.0520878151695734,
+        "restore_hips": 1.4634626464970715,
+        "restore_arms": 1.4341102398979024,
+        "restore_head": 1.4613589792448725,
+        "pelvis_only": 1.4362139071501014
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.9359368788377627,
+        "restore_hips": 1.0740926122443142,
+        "restore_arms": 1.0809268288657519,
+        "restore_head": 1.1076705867916528,
+        "pelvis_only": 1.0473488543184137
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 0.9953732963633112,
+        "restore_hips": 1.1551152766433885,
+        "restore_arms": 1.1600846161587852,
+        "restore_head": 1.179427206675978,
+        "pelvis_only": 1.135772686126196
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.3188099045738844,
+        "restore_hips": 1.5003539536240762,
+        "restore_arms": 1.5252261847181665,
+        "restore_head": 1.5543535065946208,
+        "pelvis_only": 1.4712266317476221
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.271554150713576,
+        "restore_hips": 1.4428862928924835,
+        "restore_arms": 1.452609127004918,
+        "restore_head": 1.482695591583859,
+        "pelvis_only": 1.4127998283135421
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.4672765072392844,
+        "restore_hips": 3.688491505739074,
+        "restore_arms": 3.730766644792558,
+        "restore_head": 3.7101085740520587,
+        "pelvis_only": 3.7091495764795734
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.34890541615051646,
+        "restore_hips": 0.4533206188190123,
+        "restore_arms": 0.4491778628158597,
+        "restore_head": 0.4630069353074527,
+        "pelvis_only": 0.4394915463274194
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.861151124064656,
+        "restore_hips": 1.1236835594461358,
+        "restore_arms": 1.1192864981699824,
+        "restore_head": 1.132237295342319,
+        "pelvis_only": 1.1107327622737992
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.8270662211001998,
+        "restore_hips": 1.1346669631619783,
+        "restore_arms": 1.125388974890268,
+        "restore_head": 1.141825857644212,
+        "pelvis_only": 1.118230080408034
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.7976353182614127,
+        "restore_hips": 1.119443743595163,
+        "restore_arms": 1.1163965035212315,
+        "restore_head": 1.131938952956164,
+        "pelvis_only": 1.1039012941602306
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.7541155404623836,
+        "restore_hips": 0.9430941337931497,
+        "restore_arms": 0.943100360996917,
+        "restore_head": 0.9734422220401433,
+        "pelvis_only": 0.9127522727499232
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.3419598071073353,
+        "restore_hips": 1.5301064739062804,
+        "restore_arms": 1.5388149597541616,
+        "restore_head": 1.566526427430591,
+        "pelvis_only": 1.5023950062298512
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.305947482455623,
+        "restore_hips": 1.4958731518195518,
+        "restore_arms": 1.5064747391760582,
+        "restore_head": 1.527730927788564,
+        "pelvis_only": 1.4746169632070458
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.290372474659883,
+        "restore_hips": 3.5934390269540226,
+        "restore_arms": 3.631235105006486,
+        "restore_head": 3.621614470482502,
+        "pelvis_only": 3.603059661478007
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.301298387463015,
+        "restore_hips": 3.6464024054021955,
+        "restore_arms": 3.6708590279685533,
+        "restore_head": 3.6527146793229157,
+        "pelvis_only": 3.6645467540478336
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.0617729744326745,
+        "restore_hips": 2.2277358932343096,
+        "restore_arms": 2.2338064021340456,
+        "restore_head": 2.2447959708596215,
+        "pelvis_only": 2.2167463245087347
+      }
+    },
+    {
+      "mask": "lw_rp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.30220944535826727,
+        "restore_hips": 0.3913654213543539,
+        "restore_arms": 0.39162954695010155,
+        "restore_head": 0.40209287669638355,
+        "pelvis_only": 0.380902091608072
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.792604201006269,
+        "restore_hips": 0.792604201006269,
+        "restore_arms": 0.7715718829084273,
+        "restore_head": 0.7922420186667332,
+        "pelvis_only": 0.7712097005688918
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.2072829644949,
+        "restore_hips": 1.2072829644949,
+        "restore_arms": 1.1980977670885575,
+        "restore_head": 1.2069952762134881,
+        "pelvis_only": 1.1978100788071455
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.0042189200461689,
+        "restore_hips": 1.0042189200461689,
+        "restore_arms": 0.9836376521664062,
+        "restore_head": 1.0037123007702318,
+        "pelvis_only": 0.9831310328904691
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.5877821486249172,
+        "restore_hips": 0.5877821486249172,
+        "restore_arms": 0.5673477528477023,
+        "restore_head": 0.5874357796808034,
+        "pelvis_only": 0.5670013839035886
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 0.8387925688635894,
+        "restore_hips": 0.8387925688635894,
+        "restore_arms": 0.8100088980058808,
+        "restore_head": 0.8387152182103382,
+        "pelvis_only": 0.8099315473526297
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 0.7905258155060985,
+        "restore_hips": 0.7905258155060985,
+        "restore_arms": 0.743524634746063,
+        "restore_head": 0.7899468890178166,
+        "pelvis_only": 0.7429457082577811
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 0.7689514208452971,
+        "restore_hips": 0.7689514208452971,
+        "restore_arms": 0.7303961915065257,
+        "restore_head": 0.7684093620158106,
+        "pelvis_only": 0.7298541326770391
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.0079990870479247,
+        "restore_hips": 3.0079990870479247,
+        "restore_arms": 3.0109637922847914,
+        "restore_head": 3.0074441040066535,
+        "pelvis_only": 3.01040880924352
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.52673507873462,
+        "restore_hips": 0.52673507873462,
+        "restore_arms": 0.506427234338596,
+        "restore_head": 0.5264074704567999,
+        "pelvis_only": 0.506099626060776
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.8523458358791639,
+        "restore_hips": 0.8523458358791639,
+        "restore_arms": 0.8362574168405197,
+        "restore_head": 0.852086819803763,
+        "pelvis_only": 0.8359984007651188
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.7260882159314235,
+        "restore_hips": 0.7260882159314235,
+        "restore_arms": 0.6987304889846996,
+        "restore_head": 0.7253433528044109,
+        "pelvis_only": 0.6979856258576868
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.8117369885955467,
+        "restore_hips": 0.8117369885955467,
+        "restore_arms": 0.7886010699952409,
+        "restore_head": 0.8111017476259106,
+        "pelvis_only": 0.7879658290256047
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.45636913588753075,
+        "restore_hips": 0.45636913588753075,
+        "restore_arms": 0.4334349872190144,
+        "restore_head": 0.45573036721658516,
+        "pelvis_only": 0.43279621854806893
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 0.8838065405197878,
+        "restore_hips": 0.8838065405197878,
+        "restore_arms": 0.8480341816569427,
+        "restore_head": 0.8834046346585529,
+        "pelvis_only": 0.8476322757957075
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 0.9617999333224158,
+        "restore_hips": 0.9617999333224158,
+        "restore_arms": 0.9341514004439812,
+        "restore_head": 0.9618533584141494,
+        "pelvis_only": 0.9342048255357146
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.1733042587924247,
+        "restore_hips": 3.1733042587924247,
+        "restore_arms": 3.173107252987242,
+        "restore_head": 3.173995179802794,
+        "pelvis_only": 3.173798173997612
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.236803341505023,
+        "restore_hips": 3.236803341505023,
+        "restore_arms": 3.2331444063245662,
+        "restore_head": 3.237706021569522,
+        "pelvis_only": 3.2340470863890647
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.600392214937725,
+        "restore_hips": 2.600392214937725,
+        "restore_arms": 2.591394549953774,
+        "restore_head": 2.600962512690336,
+        "pelvis_only": 2.5919648477063846
+      }
+    },
+    {
+      "mask": "lw_h",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.36769310965135205,
+        "restore_hips": 0.36769310965135205,
+        "restore_arms": 0.3513073757356638,
+        "restore_head": 0.36740835221413803,
+        "pelvis_only": 0.35102261829844994
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.803129932363233,
+        "restore_hips": 1.11472412163447,
+        "restore_arms": 1.1069032709652955,
+        "restore_head": 1.118084550233424,
+        "pelvis_only": 1.1035428423663418
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.3971550549195946,
+        "restore_hips": 1.6191885733636082,
+        "restore_arms": 1.625487427945324,
+        "restore_head": 1.6275511935678757,
+        "pelvis_only": 1.6171248077410567
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.9701408134224624,
+        "restore_hips": 1.339450815339927,
+        "restore_arms": 1.3372705316012796,
+        "restore_head": 1.3459163551581295,
+        "pelvis_only": 1.3308049917830769
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.875218062087044,
+        "restore_hips": 1.0629587167150907,
+        "restore_arms": 1.0758444429719967,
+        "restore_head": 1.0965356698413218,
+        "pelvis_only": 1.0422674898457653
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.0464101182330376,
+        "restore_hips": 1.2041615249930167,
+        "restore_arms": 1.2187504784180956,
+        "restore_head": 1.2380844919611522,
+        "pelvis_only": 1.1848275114499602
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.4164943067290237,
+        "restore_hips": 1.6201246277039179,
+        "restore_arms": 1.6523319091619124,
+        "restore_head": 1.6611339352470167,
+        "pelvis_only": 1.6113226016188131
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.3005210860273264,
+        "restore_hips": 1.4686660361955406,
+        "restore_arms": 1.4949064158498238,
+        "restore_head": 1.5113597699953083,
+        "pelvis_only": 1.4522126820500554
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.4080427564632485,
+        "restore_hips": 3.6559286849859944,
+        "restore_arms": 3.6985644326439906,
+        "restore_head": 3.6877741565994087,
+        "pelvis_only": 3.666718961030577
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.3398296873842945,
+        "restore_hips": 0.41595222604063387,
+        "restore_arms": 0.4064523098726485,
+        "restore_head": 0.42226558464595315,
+        "pelvis_only": 0.4001389512673294
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.7149006691868108,
+        "restore_hips": 1.0577735635652692,
+        "restore_arms": 1.0414947647804886,
+        "restore_head": 1.059568494088717,
+        "pelvis_only": 1.0396998342570405
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.901947750670137,
+        "restore_hips": 1.1988065789633584,
+        "restore_arms": 1.1943645320907643,
+        "restore_head": 1.2090453269373074,
+        "pelvis_only": 1.184125784116815
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.9040015520463388,
+        "restore_hips": 1.2522319969808533,
+        "restore_arms": 1.2440761883744769,
+        "restore_head": 1.262091592159465,
+        "pelvis_only": 1.2342165931958649
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.7232662394834166,
+        "restore_hips": 0.9231026602839896,
+        "restore_arms": 0.9337226995431769,
+        "restore_head": 0.9486951646376569,
+        "pelvis_only": 0.9081301951895097
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.1728385293757406,
+        "restore_hips": 1.3019532461057859,
+        "restore_arms": 1.3272547019224925,
+        "restore_head": 1.3407320210605107,
+        "pelvis_only": 1.2884759269677675
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.2069543530317177,
+        "restore_hips": 1.3956357404518578,
+        "restore_arms": 1.4104357679023982,
+        "restore_head": 1.4234798159609923,
+        "pelvis_only": 1.3825916923932642
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.2751500165480256,
+        "restore_hips": 3.5378149905524996,
+        "restore_arms": 3.5435737335833477,
+        "restore_head": 3.53022916183087,
+        "pelvis_only": 3.551159562304977
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 4.589159213702916,
+        "restore_hips": 4.983179535520917,
+        "restore_arms": 5.006967846368294,
+        "restore_head": 4.978182970568406,
+        "pelvis_only": 5.011964411320806
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.1465433711263615,
+        "restore_hips": 2.337883082785406,
+        "restore_arms": 2.3367691564224202,
+        "restore_head": 2.3451534977576656,
+        "pelvis_only": 2.329498741450161
+      }
+    },
+    {
+      "mask": "rw_lp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.27949601523645123,
+        "restore_hips": 0.39667578995525665,
+        "restore_arms": 0.3877715722978725,
+        "restore_head": 0.40075040484057006,
+        "pelvis_only": 0.38369695741255927
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.8377012057746829,
+        "restore_hips": 1.0792268686742243,
+        "restore_arms": 1.0704951237861493,
+        "restore_head": 1.08168094691644,
+        "pelvis_only": 1.0680410455439335
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.5255292104298916,
+        "restore_hips": 1.7643129360684913,
+        "restore_arms": 1.7794736500151311,
+        "restore_head": 1.7840746544595714,
+        "pelvis_only": 1.7597119316240506
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.9342114031611266,
+        "restore_hips": 1.3209962684116963,
+        "restore_arms": 1.3219927408911447,
+        "restore_head": 1.3330802248168232,
+        "pelvis_only": 1.3099087844860176
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.9028998584469144,
+        "restore_hips": 1.0274045763102744,
+        "restore_arms": 1.0470392606478116,
+        "restore_head": 1.0722667503151058,
+        "pelvis_only": 1.0021770866429804
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.0006128629335016,
+        "restore_hips": 1.108081561547487,
+        "restore_arms": 1.1283780691435725,
+        "restore_head": 1.1495972558279024,
+        "pelvis_only": 1.086862374863157
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.3187773129300755,
+        "restore_hips": 1.5477968571611,
+        "restore_arms": 1.5872085601165489,
+        "restore_head": 1.5996758783476346,
+        "pelvis_only": 1.5353295389300141
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.250885457180721,
+        "restore_hips": 1.365425508393472,
+        "restore_arms": 1.3982976898478756,
+        "restore_head": 1.4191025588664166,
+        "pelvis_only": 1.3446206393749314
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.4337457094361263,
+        "restore_hips": 3.592812402244412,
+        "restore_arms": 3.6391316318740454,
+        "restore_head": 3.6351658489317793,
+        "pelvis_only": 3.5967781851866785
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.3476588130432681,
+        "restore_hips": 0.5018435932424699,
+        "restore_arms": 0.49348238929368454,
+        "restore_head": 0.509991722109229,
+        "pelvis_only": 0.48533426042692546
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.6878007740485927,
+        "restore_hips": 1.0306014221054132,
+        "restore_arms": 1.0229177603785253,
+        "restore_head": 1.0371304244583264,
+        "pelvis_only": 1.0163887580256117
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.9604584003478388,
+        "restore_hips": 1.3131613316980328,
+        "restore_arms": 1.3097587272136344,
+        "restore_head": 1.3284708760366502,
+        "pelvis_only": 1.294449182875017
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.8980164518675936,
+        "restore_hips": 1.3873938661454457,
+        "restore_arms": 1.3770012984401283,
+        "restore_head": 1.394243435429123,
+        "pelvis_only": 1.3701517291564511
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.7252453243385593,
+        "restore_hips": 0.8561803007873107,
+        "restore_arms": 0.8704511527256718,
+        "restore_head": 0.890534437206342,
+        "pelvis_only": 0.8360970163066406
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.3350357000794781,
+        "restore_hips": 1.548692235003765,
+        "restore_arms": 1.584581656642978,
+        "restore_head": 1.5979416764874355,
+        "pelvis_only": 1.5353322151593078
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.3011734179425278,
+        "restore_hips": 1.4128616359198967,
+        "restore_arms": 1.4351654720073304,
+        "restore_head": 1.4515129798376016,
+        "pelvis_only": 1.3965141280896258
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.2556421047069013,
+        "restore_hips": 3.5356472468218687,
+        "restore_arms": 3.5888295808481505,
+        "restore_head": 3.5675008341795116,
+        "pelvis_only": 3.556975993490508
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 5.098978486817734,
+        "restore_hips": 5.458142435233935,
+        "restore_arms": 5.522524216331998,
+        "restore_head": 5.473128831555803,
+        "pelvis_only": 5.507537820010128
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.2863989625084202,
+        "restore_hips": 2.5103885763491336,
+        "restore_arms": 2.508957145074417,
+        "restore_head": 2.5174636725983466,
+        "pelvis_only": 2.5018820488252036
+      }
+    },
+    {
+      "mask": "rw_rp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.31188169670932037,
+        "restore_hips": 0.43378547548768176,
+        "restore_arms": 0.4327304850647018,
+        "restore_head": 0.4422416020609818,
+        "pelvis_only": 0.42427435849140194
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.8153942740290241,
+        "restore_hips": 0.8153942740290241,
+        "restore_arms": 0.7945003796025363,
+        "restore_head": 0.8149485373904939,
+        "pelvis_only": 0.7940546429640062
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.4466672550252104,
+        "restore_hips": 1.4466672550252104,
+        "restore_arms": 1.4344578776606045,
+        "restore_head": 1.44627144375968,
+        "pelvis_only": 1.4340620663950734
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.9592824019645718,
+        "restore_hips": 0.9592824019645718,
+        "restore_arms": 0.9321307521988175,
+        "restore_head": 0.9588322733278559,
+        "pelvis_only": 0.9316806235621015
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.630984488273369,
+        "restore_hips": 0.630984488273369,
+        "restore_arms": 0.6022218161367509,
+        "restore_head": 0.6305698943876034,
+        "pelvis_only": 0.6018072222509853
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 0.8716986941876668,
+        "restore_hips": 0.8716986941876668,
+        "restore_arms": 0.8476212178732117,
+        "restore_head": 0.8715045180137916,
+        "pelvis_only": 0.8474270416993365
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 0.7399458749419725,
+        "restore_hips": 0.7399458749419725,
+        "restore_arms": 0.7017077832790943,
+        "restore_head": 0.7397168000556763,
+        "pelvis_only": 0.7014787083927985
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 0.832249925348631,
+        "restore_hips": 0.832249925348631,
+        "restore_arms": 0.8004031746284112,
+        "restore_head": 0.8318376650071154,
+        "pelvis_only": 0.7999909142868955
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.1853001417046527,
+        "restore_hips": 3.1853001417046527,
+        "restore_arms": 3.196822101716478,
+        "restore_head": 3.185270318378634,
+        "pelvis_only": 3.196792278390459
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.47468355027592357,
+        "restore_hips": 0.47468355027592357,
+        "restore_arms": 0.45385345925091697,
+        "restore_head": 0.4743656773621902,
+        "pelvis_only": 0.4535355863371835
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.674159853232247,
+        "restore_hips": 0.674159853232247,
+        "restore_arms": 0.6537062572662562,
+        "restore_head": 0.6737790148733659,
+        "pelvis_only": 0.653325418907375
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.8467025358045833,
+        "restore_hips": 0.8467025358045833,
+        "restore_arms": 0.8272018703018169,
+        "restore_head": 0.8461094067015184,
+        "pelvis_only": 0.8266087411987519
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.8852217758473219,
+        "restore_hips": 0.8852217758473219,
+        "restore_arms": 0.8594659514685913,
+        "restore_head": 0.8843887054769222,
+        "pelvis_only": 0.8586328810981915
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.4391794117679077,
+        "restore_hips": 0.4391794117679077,
+        "restore_arms": 0.41549847152120484,
+        "restore_head": 0.43854965483516506,
+        "pelvis_only": 0.41486871458846225
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 0.7934589931699035,
+        "restore_hips": 0.7934589931699035,
+        "restore_arms": 0.7599531094875034,
+        "restore_head": 0.7930153268130818,
+        "pelvis_only": 0.7595094431306818
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 0.8987259075842263,
+        "restore_hips": 0.8987259075842263,
+        "restore_arms": 0.8722089161100428,
+        "restore_head": 0.8984469435859487,
+        "pelvis_only": 0.8719299521117649
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 3.2326566806167794,
+        "restore_hips": 3.2326566806167794,
+        "restore_arms": 3.237014855603799,
+        "restore_head": 3.2328506334695453,
+        "pelvis_only": 3.2372088084565642
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 5.032935388965641,
+        "restore_hips": 5.032935388965641,
+        "restore_arms": 5.048208510487913,
+        "restore_head": 5.033887655870953,
+        "pelvis_only": 5.049160777393224
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 2.265250854061449,
+        "restore_hips": 2.265250854061449,
+        "restore_arms": 2.25986528919955,
+        "restore_head": 2.265043236206939,
+        "pelvis_only": 2.2596576713450403
+      }
+    },
+    {
+      "mask": "rw_h",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.4075093212387767,
+        "restore_hips": 0.4075093212387767,
+        "restore_arms": 0.3915808597922323,
+        "restore_head": 0.4072266930716305,
+        "pelvis_only": 0.39129823162508615
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.5578758149608989,
+        "restore_hips": 0.6079109570976088,
+        "restore_arms": 0.6216423012356718,
+        "restore_head": 0.6216423012356718,
+        "pelvis_only": 0.6079109570976088
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 0.9195595868619355,
+        "restore_hips": 0.9663239165350805,
+        "restore_arms": 0.9950404888181942,
+        "restore_head": 0.9950404888181942,
+        "pelvis_only": 0.9663239165350805
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.5905559360806872,
+        "restore_hips": 0.6221244933472719,
+        "restore_arms": 0.6428754267613018,
+        "restore_head": 0.6428754267613018,
+        "pelvis_only": 0.6221244933472719
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 1.309299027950534,
+        "restore_hips": 1.460841754473476,
+        "restore_arms": 1.521482549913738,
+        "restore_head": 1.521482549913738,
+        "pelvis_only": 1.460841754473476
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.4695891607826357,
+        "restore_hips": 1.5968423045896545,
+        "restore_arms": 1.6448128984390422,
+        "restore_head": 1.6448128984390422,
+        "pelvis_only": 1.5968423045896545
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.806955999682266,
+        "restore_hips": 1.9987775264743004,
+        "restore_arms": 2.0797971174088414,
+        "restore_head": 2.0797971174088414,
+        "pelvis_only": 1.9987775264743004
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.5599713197466198,
+        "restore_hips": 1.7163002799425469,
+        "restore_arms": 1.7701495617405842,
+        "restore_head": 1.7701495617405842,
+        "pelvis_only": 1.7163002799425469
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.9986387086332518,
+        "restore_hips": 4.260989921448142,
+        "restore_arms": 4.290110636762146,
+        "restore_head": 4.290110636762146,
+        "pelvis_only": 4.260989921448142
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.21120877276664485,
+        "restore_hips": 0.21942012780562797,
+        "restore_arms": 0.2299573595778609,
+        "restore_head": 0.2299573595778609,
+        "pelvis_only": 0.21942012780562797
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.5939433850012997,
+        "restore_hips": 0.6285808105649743,
+        "restore_arms": 0.6590664894727964,
+        "restore_head": 0.6590664894727964,
+        "pelvis_only": 0.6285808105649743
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.6867235890755521,
+        "restore_hips": 0.7427607063124404,
+        "restore_arms": 0.7785706399180863,
+        "restore_head": 0.7785706399180863,
+        "pelvis_only": 0.7427607063124404
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.280072380809109,
+        "restore_hips": 0.3266213308746102,
+        "restore_arms": 0.3403325501117488,
+        "restore_head": 0.3403325501117488,
+        "pelvis_only": 0.3266213308746102
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.9352358115998343,
+        "restore_hips": 1.0663753301486303,
+        "restore_arms": 1.1120933151940122,
+        "restore_head": 1.1120933151940122,
+        "pelvis_only": 1.0663753301486303
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.7244598255136716,
+        "restore_hips": 1.9246545550427125,
+        "restore_arms": 1.9796839174881964,
+        "restore_head": 1.9796839174881964,
+        "pelvis_only": 1.9246545550427125
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.6154349735626385,
+        "restore_hips": 1.7592152578446913,
+        "restore_arms": 1.816844007484364,
+        "restore_head": 1.816844007484364,
+        "pelvis_only": 1.7592152578446913
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 5.62399843774686,
+        "restore_hips": 5.816767172859838,
+        "restore_arms": 5.859725247909544,
+        "restore_head": 5.859725247909544,
+        "pelvis_only": 5.816767172859838
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.949373357952463,
+        "restore_hips": 3.998378563962741,
+        "restore_arms": 4.00880111536863,
+        "restore_head": 4.00880111536863,
+        "pelvis_only": 3.998378563962741
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 1.7457179016983073,
+        "restore_hips": 1.8386209189824296,
+        "restore_arms": 1.8678613520228995,
+        "restore_head": 1.8678613520228995,
+        "pelvis_only": 1.8386209189824296
+      }
+    },
+    {
+      "mask": "lp_rp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.15740959018196518,
+        "restore_hips": 0.18309661547941825,
+        "restore_arms": 0.19042471357568364,
+        "restore_head": 0.19042471357568364,
+        "pelvis_only": 0.18309661547941825
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.6395320601524291,
+        "restore_hips": 0.785474938070687,
+        "restore_arms": 0.7898587803119187,
+        "restore_head": 0.78960254385512,
+        "pelvis_only": 0.7852187016138882
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 0.8949680750114797,
+        "restore_hips": 0.9881456108389512,
+        "restore_arms": 1.009887340164507,
+        "restore_head": 1.009890922156139,
+        "pelvis_only": 0.9881491928305833
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.5447456332022952,
+        "restore_hips": 0.5871516256141996,
+        "restore_arms": 0.5911941053955764,
+        "restore_head": 0.5913216292921186,
+        "pelvis_only": 0.5872791495107419
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.9834155407293652,
+        "restore_hips": 1.1143787159447873,
+        "restore_arms": 1.146040697580082,
+        "restore_head": 1.1465013604089676,
+        "pelvis_only": 1.1148393787736728
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.3297994638438615,
+        "restore_hips": 1.4102015979637585,
+        "restore_arms": 1.4386518908715997,
+        "restore_head": 1.439116217373556,
+        "pelvis_only": 1.410665924465715
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.4594784166113561,
+        "restore_hips": 1.6190203639627447,
+        "restore_arms": 1.6641092766923455,
+        "restore_head": 1.6649166007757337,
+        "pelvis_only": 1.619827688046133
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.2724988814796698,
+        "restore_hips": 1.3945565708868488,
+        "restore_arms": 1.4285528700432517,
+        "restore_head": 1.4289393265611534,
+        "pelvis_only": 1.3949430274047507
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.5515372213865777,
+        "restore_hips": 3.710624949382403,
+        "restore_arms": 3.7235825302628376,
+        "restore_head": 3.724131226448816,
+        "pelvis_only": 3.7111736455683815
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.22804451886101468,
+        "restore_hips": 0.2582013100425244,
+        "restore_arms": 0.26372580506242616,
+        "restore_head": 0.2635984822314183,
+        "pelvis_only": 0.2580739872115165
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.5455665450666838,
+        "restore_hips": 0.6236767762073989,
+        "restore_arms": 0.6358220299118849,
+        "restore_head": 0.6356488762866722,
+        "pelvis_only": 0.6235036225821863
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.5851924783598499,
+        "restore_hips": 0.6820501911654805,
+        "restore_arms": 0.7019061698796055,
+        "restore_head": 0.7016330476924554,
+        "pelvis_only": 0.6817770689783306
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.3127230785074331,
+        "restore_hips": 0.3957532050302519,
+        "restore_arms": 0.4014801670416779,
+        "restore_head": 0.40122770440897265,
+        "pelvis_only": 0.39550074239754673
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.8232347546556983,
+        "restore_hips": 0.8962407341356601,
+        "restore_arms": 0.9239555649207015,
+        "restore_head": 0.9240419590148925,
+        "pelvis_only": 0.8963271282298513
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.3854675452678689,
+        "restore_hips": 1.5233953387586912,
+        "restore_arms": 1.561904603373732,
+        "restore_head": 1.5628310294398795,
+        "pelvis_only": 1.5243217648248386
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.3137313816275518,
+        "restore_hips": 1.4582528327813862,
+        "restore_arms": 1.4936299352959972,
+        "restore_head": 1.4943101458802923,
+        "pelvis_only": 1.4589330433656813
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 4.421570955145527,
+        "restore_hips": 4.584122978996664,
+        "restore_arms": 4.567423136677878,
+        "restore_head": 4.568907342759069,
+        "pelvis_only": 4.585607185077855
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.449807062338897,
+        "restore_hips": 3.5631989867946667,
+        "restore_arms": 3.570828131459915,
+        "restore_head": 3.571269380351177,
+        "pelvis_only": 3.563640235685928
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 1.4968489038446466,
+        "restore_hips": 1.6391079528759684,
+        "restore_arms": 1.662343261666142,
+        "restore_head": 1.6632057638340445,
+        "pelvis_only": 1.6399704550438705
+      }
+    },
+    {
+      "mask": "lp_h",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.15258975187410695,
+        "restore_hips": 0.21158920818217036,
+        "restore_arms": 0.2127775669853412,
+        "restore_head": 0.21267140496618972,
+        "pelvis_only": 0.21148304616301888
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.9222024196952124,
+        "restore_hips": 1.0737992843891948,
+        "restore_arms": 1.0833196893341346,
+        "restore_head": 1.0831849969342684,
+        "pelvis_only": 1.0736645919893284
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.363193961386755,
+        "restore_hips": 1.4951555527334284,
+        "restore_arms": 1.5205769695182085,
+        "restore_head": 1.520642104185819,
+        "pelvis_only": 1.4952206874010399
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.5927292655492203,
+        "restore_hips": 0.6057971353298937,
+        "restore_arms": 0.6203799173111303,
+        "restore_head": 0.6204206776697917,
+        "pelvis_only": 0.6058378956885551
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 1.1198586981818635,
+        "restore_hips": 1.2369917856510246,
+        "restore_arms": 1.2714362158817039,
+        "restore_head": 1.2714668010510568,
+        "pelvis_only": 1.2370223708203776
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.3466194175160882,
+        "restore_hips": 1.503285377777862,
+        "restore_arms": 1.529634234097893,
+        "restore_head": 1.5299546760246279,
+        "pelvis_only": 1.5036058197045967
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.4024112455232902,
+        "restore_hips": 1.5381225391708666,
+        "restore_arms": 1.5893283471893613,
+        "restore_head": 1.5897050263896284,
+        "pelvis_only": 1.5384992183711343
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.2818699783855652,
+        "restore_hips": 1.3921198695099062,
+        "restore_arms": 1.4231154251745874,
+        "restore_head": 1.4237069119477264,
+        "pelvis_only": 1.3927113562830453
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.8489241720844363,
+        "restore_hips": 3.985845917414942,
+        "restore_arms": 4.010633086664518,
+        "restore_head": 4.010864948480017,
+        "pelvis_only": 3.9860777792304414
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.25249813558591727,
+        "restore_hips": 0.30427085768225504,
+        "restore_arms": 0.3160540255344922,
+        "restore_head": 0.3159692853342937,
+        "pelvis_only": 0.3041861174820565
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.530499494429882,
+        "restore_hips": 0.6125012680087759,
+        "restore_arms": 0.6341530486900859,
+        "restore_head": 0.6341421795570933,
+        "pelvis_only": 0.6124903988757834
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.6053721651313676,
+        "restore_hips": 0.6937027350719397,
+        "restore_arms": 0.7001887624156257,
+        "restore_head": 0.6998731077976268,
+        "pelvis_only": 0.6933870804539407
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.36722228407723606,
+        "restore_hips": 0.4361434653550551,
+        "restore_arms": 0.45369499414707365,
+        "restore_head": 0.4535292359077694,
+        "pelvis_only": 0.43597770711575096
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.845883969280228,
+        "restore_hips": 0.9754356375044425,
+        "restore_arms": 1.0055822970892974,
+        "restore_head": 1.006165069386071,
+        "pelvis_only": 0.9760184098012165
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.4502392685217496,
+        "restore_hips": 1.6179746170537366,
+        "restore_arms": 1.6531700676816816,
+        "restore_head": 1.6539229016219297,
+        "pelvis_only": 1.6187274509939842
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.386376359552166,
+        "restore_hips": 1.5455453047655192,
+        "restore_arms": 1.5754718924140536,
+        "restore_head": 1.5760721331258498,
+        "pelvis_only": 1.5461455454773156
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 4.34197630862052,
+        "restore_hips": 4.669558637092908,
+        "restore_arms": 4.67578157021377,
+        "restore_head": 4.67661949597705,
+        "pelvis_only": 4.670396562856186
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.7272818976676154,
+        "restore_hips": 3.834544496841172,
+        "restore_arms": 3.859347477411819,
+        "restore_head": 3.85959446973184,
+        "pelvis_only": 3.834791489161193
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 1.8054659613384536,
+        "restore_hips": 1.9058758857691995,
+        "restore_arms": 1.916605881135229,
+        "restore_head": 1.9169687970374192,
+        "pelvis_only": 1.9062388016713896
+      }
+    },
+    {
+      "mask": "rp_h",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.15891315792484295,
+        "restore_hips": 0.2071063604615371,
+        "restore_arms": 0.21265572229238822,
+        "restore_head": 0.21252731537717104,
+        "pelvis_only": 0.20697795354631998
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.8707609820125571,
+        "restore_hips": 0.8707609820125571,
+        "restore_arms": 0.8526199813175512,
+        "restore_head": 0.8707609820125571,
+        "pelvis_only": 0.8526199813175512
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 2.1211227890166167,
+        "restore_hips": 2.1211227890166167,
+        "restore_arms": 2.11992929207628,
+        "restore_head": 2.1211227890166167,
+        "pelvis_only": 2.11992929207628
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.1755278489653513,
+        "restore_hips": 1.1755278489653513,
+        "restore_arms": 1.1540196584661773,
+        "restore_head": 1.1755278489653513,
+        "pelvis_only": 1.1540196584661773
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.6231220717280642,
+        "restore_hips": 0.6231220717280642,
+        "restore_arms": 0.5932670696815375,
+        "restore_head": 0.6231220717280642,
+        "pelvis_only": 0.5932670696815375
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 0.7459476297351298,
+        "restore_hips": 0.7459476297351298,
+        "restore_arms": 0.7174592627191609,
+        "restore_head": 0.7459476297351298,
+        "pelvis_only": 0.7174592627191609
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 0.8072923626236613,
+        "restore_hips": 0.8072923626236613,
+        "restore_arms": 0.773184161158303,
+        "restore_head": 0.8072923626236613,
+        "pelvis_only": 0.773184161158303
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 0.8036111804443418,
+        "restore_hips": 0.8036111804443418,
+        "restore_arms": 0.764882214549155,
+        "restore_head": 0.8036111804443418,
+        "pelvis_only": 0.764882214549155
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 2.593409892616716,
+        "restore_hips": 2.593409892616716,
+        "restore_arms": 2.6010495645829637,
+        "restore_head": 2.593409892616716,
+        "pelvis_only": 2.6010495645829637
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.5430346780993678,
+        "restore_hips": 0.5430346780993678,
+        "restore_arms": 0.5225158228492572,
+        "restore_head": 0.5430346780993678,
+        "pelvis_only": 0.5225158228492572
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.9835916146897177,
+        "restore_hips": 0.9835916146897177,
+        "restore_arms": 0.9685314737418289,
+        "restore_head": 0.9835916146897177,
+        "pelvis_only": 0.9685314737418289
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.9795442804754617,
+        "restore_hips": 0.9795442804754617,
+        "restore_arms": 0.9564020561490864,
+        "restore_head": 0.9795442804754617,
+        "pelvis_only": 0.9564020561490864
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.9003626839138924,
+        "restore_hips": 0.9003626839138924,
+        "restore_arms": 0.8735060313114815,
+        "restore_head": 0.9003626839138924,
+        "pelvis_only": 0.8735060313114815
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.47209124307625394,
+        "restore_hips": 0.47209124307625394,
+        "restore_arms": 0.45329717605597497,
+        "restore_head": 0.47209124307625394,
+        "pelvis_only": 0.45329717605597497
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 0.8491374671783116,
+        "restore_hips": 0.8491374671783116,
+        "restore_arms": 0.8136482354324699,
+        "restore_head": 0.8491374671783116,
+        "pelvis_only": 0.8136482354324699
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.1737937952699973,
+        "restore_hips": 1.1737937952699973,
+        "restore_arms": 1.1413838339459699,
+        "restore_head": 1.1737937952699973,
+        "pelvis_only": 1.1413838339459699
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 2.720630369463844,
+        "restore_hips": 2.720630369463844,
+        "restore_arms": 2.730679345134901,
+        "restore_head": 2.720630369463844,
+        "pelvis_only": 2.730679345134901
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.5902162873513737,
+        "restore_hips": 3.5902162873513737,
+        "restore_arms": 3.57527084301278,
+        "restore_head": 3.5902162873513737,
+        "pelvis_only": 3.57527084301278
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 5.197477093341836,
+        "restore_hips": 5.197477093341836,
+        "restore_arms": 5.19029401387557,
+        "restore_head": 5.197477093341836,
+        "pelvis_only": 5.19029401387557
+      }
+    },
+    {
+      "mask": "lw",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.4689663089381716,
+        "restore_hips": 0.4689663089381716,
+        "restore_arms": 0.45230895608827315,
+        "restore_head": 0.4689663089381716,
+        "pelvis_only": 0.45230895608827315
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.8720883119220321,
+        "restore_hips": 0.8720883119220321,
+        "restore_arms": 0.8547458306205451,
+        "restore_head": 0.8720883119220321,
+        "pelvis_only": 0.8547458306205451
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 1.80422788902938,
+        "restore_hips": 1.80422788902938,
+        "restore_arms": 1.7997397194207903,
+        "restore_head": 1.80422788902938,
+        "pelvis_only": 1.7997397194207903
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 1.0924054606347955,
+        "restore_hips": 1.0924054606347955,
+        "restore_arms": 1.0765453323466256,
+        "restore_head": 1.0924054606347955,
+        "pelvis_only": 1.0765453323466256
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.6224697348151528,
+        "restore_hips": 0.6224697348151528,
+        "restore_arms": 0.5876000136260714,
+        "restore_head": 0.6224697348151528,
+        "pelvis_only": 0.5876000136260714
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 0.870172098177041,
+        "restore_hips": 0.870172098177041,
+        "restore_arms": 0.8415672681877092,
+        "restore_head": 0.870172098177041,
+        "pelvis_only": 0.8415672681877092
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 0.6508645697157178,
+        "restore_hips": 0.6508645697157178,
+        "restore_arms": 0.6159765303033848,
+        "restore_head": 0.6508645697157178,
+        "pelvis_only": 0.6159765303033848
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 0.7159751182803942,
+        "restore_hips": 0.7159751182803942,
+        "restore_arms": 0.6806433841485514,
+        "restore_head": 0.7159751182803942,
+        "pelvis_only": 0.6806433841485514
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.0101800876871234,
+        "restore_hips": 3.0101800876871234,
+        "restore_arms": 3.0139207329774815,
+        "restore_head": 3.0101800876871234,
+        "pelvis_only": 3.0139207329774815
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.5701815640429483,
+        "restore_hips": 0.5701815640429483,
+        "restore_arms": 0.5502567577570509,
+        "restore_head": 0.5701815640429483,
+        "pelvis_only": 0.5502567577570509
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.8551827654416791,
+        "restore_hips": 0.8551827654416791,
+        "restore_arms": 0.8321625908428403,
+        "restore_head": 0.8551827654416791,
+        "pelvis_only": 0.8321625908428403
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 1.2082701165393468,
+        "restore_hips": 1.2082701165393468,
+        "restore_arms": 1.1886960684970005,
+        "restore_head": 1.2082701165393468,
+        "pelvis_only": 1.1886960684970005
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 1.0473839535704745,
+        "restore_hips": 1.0473839535704745,
+        "restore_arms": 1.0229432089634793,
+        "restore_head": 1.0473839535704745,
+        "pelvis_only": 1.0229432089634793
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.4247551482459126,
+        "restore_hips": 0.4247551482459126,
+        "restore_arms": 0.40548519425933244,
+        "restore_head": 0.4247551482459126,
+        "pelvis_only": 0.40548519425933244
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 0.7356009766763498,
+        "restore_hips": 0.7356009766763498,
+        "restore_arms": 0.7049921229858112,
+        "restore_head": 0.7356009766763498,
+        "pelvis_only": 0.7049921229858112
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 0.7560924600251546,
+        "restore_hips": 0.7560924600251546,
+        "restore_arms": 0.7280996252358841,
+        "restore_head": 0.7560924600251546,
+        "pelvis_only": 0.7280996252358841
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 2.688935384857186,
+        "restore_hips": 2.688935384857186,
+        "restore_arms": 2.684050482417096,
+        "restore_head": 2.688935384857186,
+        "pelvis_only": 2.684050482417096
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 6.932620588035678,
+        "restore_hips": 6.932620588035678,
+        "restore_arms": 6.951668738480679,
+        "restore_head": 6.932620588035678,
+        "pelvis_only": 6.951668738480679
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 3.171487704538285,
+        "restore_hips": 3.171487704538285,
+        "restore_arms": 3.164481359777058,
+        "restore_head": 3.171487704538285,
+        "pelvis_only": 3.164481359777058
+      }
+    },
+    {
+      "mask": "rw",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.5914299606205325,
+        "restore_hips": 0.5914299606205325,
+        "restore_arms": 0.5739499528714908,
+        "restore_head": 0.5914299606205325,
+        "pelvis_only": 0.5739499528714908
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.48469184118481345,
+        "restore_hips": 0.5062499100310214,
+        "restore_arms": 0.5080520330293811,
+        "restore_head": 0.5080520330293811,
+        "pelvis_only": 0.5062499100310214
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 0.762295008855654,
+        "restore_hips": 0.8908838469819866,
+        "restore_arms": 0.8952698829249865,
+        "restore_head": 0.8952698829249865,
+        "pelvis_only": 0.8908838469819866
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.45608609458948884,
+        "restore_hips": 0.4844940950921823,
+        "restore_arms": 0.5021352484996702,
+        "restore_head": 0.5021352484996702,
+        "pelvis_only": 0.4844940950921823
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 1.2343811746285964,
+        "restore_hips": 1.4186990997927582,
+        "restore_arms": 1.4430662144894788,
+        "restore_head": 1.4430662144894788,
+        "pelvis_only": 1.4186990997927582
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.395087769040386,
+        "restore_hips": 1.5980781833854132,
+        "restore_arms": 1.612127911547741,
+        "restore_head": 1.612127911547741,
+        "pelvis_only": 1.5980781833854132
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.5927024447646116,
+        "restore_hips": 1.8814734784489833,
+        "restore_arms": 1.9212987498468388,
+        "restore_head": 1.9212987498468388,
+        "pelvis_only": 1.8814734784489833
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.4626208130327354,
+        "restore_hips": 1.7086294534412938,
+        "restore_arms": 1.7465765079692148,
+        "restore_head": 1.7465765079692148,
+        "pelvis_only": 1.7086294534412938
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.345495986127349,
+        "restore_hips": 3.54605056721139,
+        "restore_arms": 3.583541151090285,
+        "restore_head": 3.583541151090285,
+        "pelvis_only": 3.54605056721139
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.20299700569498705,
+        "restore_hips": 0.21948025679060768,
+        "restore_arms": 0.2238306655649221,
+        "restore_head": 0.2238306655649221,
+        "pelvis_only": 0.21948025679060768
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.5619105637012333,
+        "restore_hips": 0.609796610700685,
+        "restore_arms": 0.6160124832884812,
+        "restore_head": 0.6160124832884812,
+        "pelvis_only": 0.609796610700685
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.620239355681363,
+        "restore_hips": 0.7503327835700889,
+        "restore_arms": 0.7612821235271909,
+        "restore_head": 0.7612821235271909,
+        "pelvis_only": 0.7503327835700889
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.22621475558351023,
+        "restore_hips": 0.3028135300897184,
+        "restore_arms": 0.2977817062724353,
+        "restore_head": 0.2977817062724353,
+        "pelvis_only": 0.3028135300897184
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 1.002023853867089,
+        "restore_hips": 1.134119453150755,
+        "restore_arms": 1.1544078172207448,
+        "restore_head": 1.1544078172207448,
+        "pelvis_only": 1.134119453150755
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.4109190688141293,
+        "restore_hips": 1.6206783943052927,
+        "restore_arms": 1.6583099188457588,
+        "restore_head": 1.6583099188457588,
+        "pelvis_only": 1.6206783943052927
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.3397555089595985,
+        "restore_hips": 1.580022073705159,
+        "restore_arms": 1.6116203355619958,
+        "restore_head": 1.6116203355619958,
+        "pelvis_only": 1.580022073705159
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 4.278190722932603,
+        "restore_hips": 4.500809851282118,
+        "restore_arms": 4.535492062966257,
+        "restore_head": 4.535492062966257,
+        "pelvis_only": 4.500809851282118
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.35498314220177,
+        "restore_hips": 3.4681814959969954,
+        "restore_arms": 3.500137505508379,
+        "restore_head": 3.500137505508379,
+        "pelvis_only": 3.4681814959969954
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 1.7580353164247868,
+        "restore_hips": 1.9609713929206742,
+        "restore_arms": 1.9812133789284818,
+        "restore_head": 1.9812133789284818,
+        "pelvis_only": 1.9609713929206742
+      }
+    },
+    {
+      "mask": "lp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.151534662580541,
+        "restore_hips": 0.16768818731931812,
+        "restore_arms": 0.16861141191511642,
+        "restore_head": 0.16861141191511642,
+        "pelvis_only": 0.16768818731931812
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.5435493303425889,
+        "restore_hips": 0.6796511493647921,
+        "restore_arms": 0.6752994967585192,
+        "restore_head": 0.6752994967585192,
+        "pelvis_only": 0.6796511493647921
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 0.9111349443177624,
+        "restore_hips": 1.0400954629072559,
+        "restore_arms": 1.0542066588207657,
+        "restore_head": 1.0542066588207657,
+        "pelvis_only": 1.0400954629072559
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.4814294605089757,
+        "restore_hips": 0.5835335201865811,
+        "restore_arms": 0.5864660156300578,
+        "restore_head": 0.5864660156300578,
+        "pelvis_only": 0.5835335201865811
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 1.2683182890418983,
+        "restore_hips": 1.5118456494302999,
+        "restore_arms": 1.551556786493738,
+        "restore_head": 1.551556786493738,
+        "pelvis_only": 1.5118456494302999
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.3265111796184506,
+        "restore_hips": 1.503235351038932,
+        "restore_arms": 1.5231920451738745,
+        "restore_head": 1.5231920451738745,
+        "pelvis_only": 1.503235351038932
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 1.4813849715803038,
+        "restore_hips": 1.8317603216491343,
+        "restore_arms": 1.8806201000906697,
+        "restore_head": 1.8806201000906697,
+        "pelvis_only": 1.8317603216491343
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 1.4206804360445202,
+        "restore_hips": 1.648442380349993,
+        "restore_arms": 1.6919394205457985,
+        "restore_head": 1.6919394205457985,
+        "pelvis_only": 1.648442380349993
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 3.7754908949538457,
+        "restore_hips": 4.172919375189652,
+        "restore_arms": 4.225402635736889,
+        "restore_head": 4.225402635736889,
+        "pelvis_only": 4.172919375189652
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.24077706141799093,
+        "restore_hips": 0.34407911829034965,
+        "restore_arms": 0.3473876797187536,
+        "restore_head": 0.3473876797187536,
+        "pelvis_only": 0.34407911829034965
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.5757610434806852,
+        "restore_hips": 0.732251295486858,
+        "restore_arms": 0.7393220625774649,
+        "restore_head": 0.7393220625774649,
+        "pelvis_only": 0.732251295486858
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 1.09003628097237,
+        "restore_hips": 1.221910083811241,
+        "restore_arms": 1.227464173394621,
+        "restore_head": 1.227464173394621,
+        "pelvis_only": 1.221910083811241
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.28599066272520174,
+        "restore_hips": 0.3655666978044132,
+        "restore_arms": 0.36720580392035124,
+        "restore_head": 0.36720580392035124,
+        "pelvis_only": 0.3655666978044132
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.9172791044366746,
+        "restore_hips": 1.0984327996061123,
+        "restore_arms": 1.11818252735293,
+        "restore_head": 1.11818252735293,
+        "pelvis_only": 1.0984327996061123
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 1.4821070320589065,
+        "restore_hips": 1.7955174121499973,
+        "restore_arms": 1.8337989084608484,
+        "restore_head": 1.8337989084608484,
+        "pelvis_only": 1.7955174121499973
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 1.3760160676950965,
+        "restore_hips": 1.6522096393076138,
+        "restore_arms": 1.6806512555216446,
+        "restore_head": 1.6806512555216446,
+        "pelvis_only": 1.6522096393076138
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 4.539549724914756,
+        "restore_hips": 4.841375352334267,
+        "restore_arms": 4.88504572530306,
+        "restore_head": 4.88504572530306,
+        "pelvis_only": 4.841375352334267
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.352538410361388,
+        "restore_hips": 3.576684143881081,
+        "restore_arms": 3.641338942419287,
+        "restore_head": 3.641338942419287,
+        "pelvis_only": 3.576684143881081
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 1.9189934679985858,
+        "restore_hips": 2.0462101075631294,
+        "restore_arms": 2.0590638309909783,
+        "restore_head": 2.0590638309909783,
+        "pelvis_only": 2.0462101075631294
+      }
+    },
+    {
+      "mask": "rp",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.15061332110938577,
+        "restore_hips": 0.20207312950358147,
+        "restore_arms": 0.2042424330635766,
+        "restore_head": 0.2042424330635766,
+        "pelvis_only": 0.20207312950358147
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 0,
+      "jerk_samples": 1975,
+      "values": {
+        "restore_pelvis": 0.7397990112752468,
+        "restore_hips": 0.7397990112752468,
+        "restore_arms": 0.7397990112752468,
+        "restore_head": 0.7391350167569669,
+        "pelvis_only": 0.7391350167569669
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 1,
+      "jerk_samples": 1093,
+      "values": {
+        "restore_pelvis": 0.7928610670582485,
+        "restore_hips": 0.7928610670582485,
+        "restore_arms": 0.7928610670582485,
+        "restore_head": 0.7920699415457715,
+        "pelvis_only": 0.7920699415457715
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 2,
+      "jerk_samples": 882,
+      "values": {
+        "restore_pelvis": 0.5874287293730022,
+        "restore_hips": 0.5874287293730022,
+        "restore_arms": 0.5874287293730022,
+        "restore_head": 0.5870667296425686,
+        "pelvis_only": 0.5870667296425686
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 3,
+      "jerk_samples": 1145,
+      "values": {
+        "restore_pelvis": 0.8620311169174637,
+        "restore_hips": 0.8620311169174637,
+        "restore_arms": 0.8620311169174637,
+        "restore_head": 0.8615168773554548,
+        "pelvis_only": 0.8615168773554548
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 4,
+      "jerk_samples": 1059,
+      "values": {
+        "restore_pelvis": 1.5277043131831463,
+        "restore_hips": 1.5277043131831463,
+        "restore_arms": 1.5277043131831463,
+        "restore_head": 1.527478664437869,
+        "pelvis_only": 1.527478664437869
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 5,
+      "jerk_samples": 1204,
+      "values": {
+        "restore_pelvis": 0.7834942597639315,
+        "restore_hips": 0.7834942597639315,
+        "restore_arms": 0.7834942597639315,
+        "restore_head": 0.7829404950735223,
+        "pelvis_only": 0.7829404950735223
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 6,
+      "jerk_samples": 1249,
+      "values": {
+        "restore_pelvis": 0.9116772685562519,
+        "restore_hips": 0.9116772685562519,
+        "restore_arms": 0.9116772685562519,
+        "restore_head": 0.9114287615890804,
+        "pelvis_only": 0.9114287615890804
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 7,
+      "jerk_samples": 487,
+      "values": {
+        "restore_pelvis": 5.39692937455858,
+        "restore_hips": 5.39692937455858,
+        "restore_arms": 5.39692937455858,
+        "restore_head": 5.396581791041001,
+        "pelvis_only": 5.396581791041001
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 8,
+      "jerk_samples": 1884,
+      "values": {
+        "restore_pelvis": 0.516418419809325,
+        "restore_hips": 0.516418419809325,
+        "restore_arms": 0.516418419809325,
+        "restore_head": 0.5159735212391957,
+        "pelvis_only": 0.5159735212391957
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 9,
+      "jerk_samples": 2330,
+      "values": {
+        "restore_pelvis": 0.4244383198168527,
+        "restore_hips": 0.4244383198168527,
+        "restore_arms": 0.4244383198168527,
+        "restore_head": 0.423820154836587,
+        "pelvis_only": 0.423820154836587
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 10,
+      "jerk_samples": 1380,
+      "values": {
+        "restore_pelvis": 0.4182161732312298,
+        "restore_hips": 0.4182161732312298,
+        "restore_arms": 0.4182161732312298,
+        "restore_head": 0.4174792433127496,
+        "pelvis_only": 0.4174792433127496
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 11,
+      "jerk_samples": 944,
+      "values": {
+        "restore_pelvis": 0.2911606739393343,
+        "restore_hips": 0.2911606739393343,
+        "restore_arms": 0.2911606739393343,
+        "restore_head": 0.29031101608638726,
+        "pelvis_only": 0.29031101608638726
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 12,
+      "jerk_samples": 1500,
+      "values": {
+        "restore_pelvis": 0.5526169142820345,
+        "restore_hips": 0.5526169142820345,
+        "restore_arms": 0.5526169142820345,
+        "restore_head": 0.552103487418668,
+        "pelvis_only": 0.552103487418668
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 13,
+      "jerk_samples": 1258,
+      "values": {
+        "restore_pelvis": 0.9060655022087742,
+        "restore_hips": 0.9060655022087742,
+        "restore_arms": 0.9060655022087742,
+        "restore_head": 0.905738980963867,
+        "pelvis_only": 0.905738980963867
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 14,
+      "jerk_samples": 1555,
+      "values": {
+        "restore_pelvis": 0.9829738835213145,
+        "restore_hips": 0.9829738835213145,
+        "restore_arms": 0.9829738835213145,
+        "restore_head": 0.9828030002374034,
+        "pelvis_only": 0.9828030002374034
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 15,
+      "jerk_samples": 353,
+      "values": {
+        "restore_pelvis": 9.706437313931747,
+        "restore_hips": 9.706437313931747,
+        "restore_arms": 9.706437313931747,
+        "restore_head": 9.706194659199852,
+        "pelvis_only": 9.706194659199852
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 16,
+      "jerk_samples": 622,
+      "values": {
+        "restore_pelvis": 3.5273196028334555,
+        "restore_hips": 3.5273196028334555,
+        "restore_arms": 3.5273196028334555,
+        "restore_head": 3.5274304276468724,
+        "pelvis_only": 3.5274304276468724
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 17,
+      "jerk_samples": 847,
+      "values": {
+        "restore_pelvis": 1.6030686322340921,
+        "restore_hips": 1.6030686322340921,
+        "restore_arms": 1.6030686322340921,
+        "restore_head": 1.6032616278151914,
+        "pelvis_only": 1.6032616278151914
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 18,
+      "jerk_samples": 2254,
+      "values": {
+        "restore_pelvis": 0.2781327905878351,
+        "restore_hips": 0.2781327905878351,
+        "restore_arms": 0.2781327905878351,
+        "restore_head": 0.2775641397001249,
+        "pelvis_only": 0.2775641397001249
+      }
+    }
+  ],
+  "interpretation": "Removing/retaining a component probes the kinematic source; nonlinear norm effects must not be summed"
+}

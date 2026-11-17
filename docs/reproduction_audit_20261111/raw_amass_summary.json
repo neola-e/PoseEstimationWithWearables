@@ -1,0 +1,187 @@
+[
+  {
+    "subset": "ACCAD",
+    "raw_recordings_matching_glob": 252,
+    "framerates": {
+      "120.0": 252
+    },
+    "accepted_fps_recordings": 252,
+    "accepted_fps_and_length_recordings": 252
+  },
+  {
+    "subset": "BioMotionLab_NTroje",
+    "raw_recordings_matching_glob": 3061,
+    "framerates": {
+      "120.0": 3061
+    },
+    "accepted_fps_recordings": 3061,
+    "accepted_fps_and_length_recordings": 3060
+  },
+  {
+    "subset": "BMLhandball",
+    "raw_recordings_matching_glob": 649,
+    "framerates": {
+      "120.0": 649
+    },
+    "accepted_fps_recordings": 649,
+    "accepted_fps_and_length_recordings": 649
+  },
+  {
+    "subset": "BMLmovi",
+    "raw_recordings_matching_glob": 1801,
+    "framerates": {
+      "120.0": 1801
+    },
+    "accepted_fps_recordings": 1801,
+    "accepted_fps_and_length_recordings": 1801
+  },
+  {
+    "subset": "CMU",
+    "raw_recordings_matching_glob": 2082,
+    "framerates": {
+      "120.0": 1587,
+      "60.0": 495
+    },
+    "accepted_fps_recordings": 2082,
+    "accepted_fps_and_length_recordings": 2079
+  },
+  {
+    "subset": "DanceDB",
+    "raw_recordings_matching_glob": 153,
+    "framerates": {
+      "120.0": 153
+    },
+    "accepted_fps_recordings": 153,
+    "accepted_fps_and_length_recordings": 153
+  },
+  {
+    "subset": "DFaust_67",
+    "raw_recordings_matching_glob": 129,
+    "framerates": {
+      "60.0": 129
+    },
+    "accepted_fps_recordings": 129,
+    "accepted_fps_and_length_recordings": 129
+  },
+  {
+    "subset": "EKUT",
+    "raw_recordings_matching_glob": 349,
+    "framerates": {
+      "100.0": 349
+    },
+    "accepted_fps_recordings": 0,
+    "accepted_fps_and_length_recordings": 0
+  },
+  {
+    "subset": "Eyes_Japan_Dataset",
+    "raw_recordings_matching_glob": 750,
+    "framerates": {
+      "120.0": 693,
+      "250.0": 57
+    },
+    "accepted_fps_recordings": 693,
+    "accepted_fps_and_length_recordings": 693
+  },
+  {
+    "subset": "HUMAN4D",
+    "raw_recordings_matching_glob": 148,
+    "framerates": {
+      "120.0": 148
+    },
+    "accepted_fps_recordings": 148,
+    "accepted_fps_and_length_recordings": 148
+  },
+  {
+    "subset": "HumanEva",
+    "raw_recordings_matching_glob": 28,
+    "framerates": {
+      "120.0": 28
+    },
+    "accepted_fps_recordings": 28,
+    "accepted_fps_and_length_recordings": 28
+  },
+  {
+    "subset": "KIT",
+    "raw_recordings_matching_glob": 4232,
+    "framerates": {
+      "100.0": 4232
+    },
+    "accepted_fps_recordings": 0,
+    "accepted_fps_and_length_recordings": 0
+  },
+  {
+    "subset": "MPI_HDM05",
+    "raw_recordings_matching_glob": 215,
+    "framerates": {
+      "120.0": 215
+    },
+    "accepted_fps_recordings": 215,
+    "accepted_fps_and_length_recordings": 215
+  },
+  {
+    "subset": "MPI_Limits",
+    "raw_recordings_matching_glob": 35,
+    "framerates": {
+      "120.0": 35
+    },
+    "accepted_fps_recordings": 35,
+    "accepted_fps_and_length_recordings": 35
+  },
+  {
+    "subset": "MPI_mosh",
+    "raw_recordings_matching_glob": 77,
+    "framerates": {
+      "120.0": 38,
+      "100.0": 39
+    },
+    "accepted_fps_recordings": 38,
+    "accepted_fps_and_length_recordings": 38
+  },
+  {
+    "subset": "SFU",
+    "raw_recordings_matching_glob": 44,
+    "framerates": {
+      "120.0": 44
+    },
+    "accepted_fps_recordings": 44,
+    "accepted_fps_and_length_recordings": 44
+  },
+  {
+    "subset": "SSM_synced",
+    "raw_recordings_matching_glob": 30,
+    "framerates": {
+      "59.9999885559082": 13,
+      "120.00004577636719": 17
+    },
+    "accepted_fps_recordings": 30,
+    "accepted_fps_and_length_recordings": 30
+  },
+  {
+    "subset": "TCD_handMocap",
+    "raw_recordings_matching_glob": 62,
+    "framerates": {
+      "120.0": 53,
+      "150.0": 9
+    },
+    "accepted_fps_recordings": 53,
+    "accepted_fps_and_length_recordings": 53
+  },
+  {
+    "subset": "TotalCapture",
+    "raw_recordings_matching_glob": 37,
+    "framerates": {
+      "60.0": 37
+    },
+    "accepted_fps_recordings": 37,
+    "accepted_fps_and_length_recordings": 37
+  },
+  {
+    "subset": "Transitions_mocap",
+    "raw_recordings_matching_glob": 110,
+    "framerates": {
+      "120.0": 110
+    },
+    "accepted_fps_recordings": 110,
+    "accepted_fps_and_length_recordings": 110
+  }
+]

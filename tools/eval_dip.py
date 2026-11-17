@@ -55,7 +55,13 @@ def evaluate(predictor, dataset, body=None, example_dir=None):
             "selected_sequence_ids": dataset.sequence_ids, "sensor_combo": dataset.combo,
             "max_frames_per_sequence": dataset.max_frames, "frames_evaluated": frames,
             "windows_evaluated": len(rows), "fps": 25, "padding_in_metrics": False,
-            "context": "Independent windows of at most 125 frames, as in training; tails truncated by max_frames",
+            "context": (
+                "Independent non-overlapping windows of at most 125 frames; "
+                "all selected sequence frames retained, including final partial windows"
+                if dataset.max_frames is None
+                else
+                "Independent non-overlapping windows of at most 125 frames; "
+                f"limited to the first {dataset.max_frames} frames per sequence"),
             "metrics": metrics, "per_window": rows,
             "metric_conventions": {"pose_representation_mse": "Mean squared error over valid frames and 144 raw 6D values; not training validation loss",
                                    "angular": "SO(3) geodesic mean over all 24 joints; root included",
@@ -66,7 +72,10 @@ def evaluate(predictor, dataset, body=None, example_dir=None):
                            "training_validation_metric": predictor.validation_score},
             "device": str(predictor.device), "elapsed_seconds": round(time.perf_counter() - started, 3),
             "peak_process_ram_mib": peak_ram_mib(),
-            "scope": "Small deterministic subset; not full DIP benchmark or paper-comparable metrics"}
+            "scope": ( "Full DIP test split; not necessarily paper-comparable"
+                         if dataset.max_frames is None
+                         and len(dataset.sequence_ids) == dataset.total_sequences
+                         else "Selected DIP test subset")}
 
 
 def main():
@@ -75,6 +84,7 @@ def main():
     parser.add_argument("--data", default="data/processed_imuposer_25fps/dip_test.pt")
     parser.add_argument("--sequences", type=int, nargs="+", default=[0, 1, 2])
     parser.add_argument("--max-frames", type=int, default=125)
+    parser.add_argument("--full-test", action="store_true", help="Evaluate the entire DIP test dataset")
     parser.add_argument("--combo", choices=list(amass_combos), default="global")
     parser.add_argument("--output", default="outputs/local_dip/dip_test_metrics.json")
     parser.add_argument("--example-dir", help="Save first window's IMU/prediction/GT locally; licensed data")
@@ -82,10 +92,31 @@ def main():
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--threads", type=int, default=2)
     args = parser.parse_args()
+    
+
+    if args.full_test:
+        sequence_ids = None
+        max_frames = None
+    else:
+        sequence_ids = args.sequences
+        max_frames = args.max_frames
+
     torch.set_grad_enabled(False)
-    predictor = PosePredictor(args.checkpoint, args.device, args.threads)
-    dataset = DipTestSubset(args.data, predictor.training_config, args.sequences,
-                            args.max_frames, args.combo)
+
+    predictor = PosePredictor(
+        args.checkpoint,
+        args.device,
+        args.threads
+    )
+
+    dataset = DipTestSubset(
+        args.data,
+        predictor.training_config,
+        sequence_ids,
+        max_frames,
+        args.combo
+    )
+
     body = load_body_model(args.smpl_model) if args.smpl_model else None
     with torch.inference_mode():
         report = evaluate(predictor, dataset, body, args.example_dir)

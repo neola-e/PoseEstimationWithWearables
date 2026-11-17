@@ -1,0 +1,63 @@
+{
+  "chosen_weight": 0.001,
+  "eligible": true,
+  "targets": {
+    "mpjre_deg": 19.91028953111503,
+    "mpjpe_cm": 8.493649423916402,
+    "mpjve_cm": 10.528788812286326
+  },
+  "candidates": [
+    {
+      "weight": 0.001,
+      "eligible": true,
+      "spatial_violation": 0,
+      "jitter": 1.3494803540893232,
+      "metrics": {
+        "mpjre_deg": 19.647338889826944,
+        "mpjpe_cm": 8.410287515911232,
+        "mpjve_cm": 10.47713377828196,
+        "jitter_100_m_s3": 1.3494803540893232
+      }
+    },
+    {
+      "weight": 0.01,
+      "eligible": false,
+      "spatial_violation": 0,
+      "jitter": 1.4346234695468105,
+      "metrics": {
+        "mpjre_deg": 19.693964906572827,
+        "mpjpe_cm": 8.448134292545337,
+        "mpjve_cm": 10.513172064073702,
+        "jitter_100_m_s3": 1.4346234695468105
+      }
+    },
+    {
+      "weight": 0.1,
+      "eligible": false,
+      "spatial_violation": 0.003538336376631978,
+      "jitter": 1.442149699158165,
+      "metrics": {
+        "mpjre_deg": 19.79163413013181,
+        "mpjpe_cm": 8.486920000005822,
+        "mpjve_cm": 10.566043208742714,
+        "jitter_100_m_s3": 1.442149699158165
+      }
+    },
+    {
+      "weight": 1.0,
+      "eligible": false,
+      "spatial_violation": 0.006503842128729659,
+      "jitter": 1.4281199513038156,
+      "metrics": {
+        "mpjre_deg": 19.862139175275104,
+        "mpjpe_cm": 8.500074496838065,
+        "mpjve_cm": 10.589301826000943,
+        "jitter_100_m_s3": 1.4281199513038156
+      }
+    }
+  ],
+  "rule": "Prefer all3 errors no worse than raw and retain >=50% framewise-IK vertex gain, with jitter lower than framewise IK. Among eligible minimize jitter; if none, minimize normalized spatial violation then jitter. Positive weights only; no test selection.",
+  "calibration_protocol_sha256": "a8f05acc0be366588ad32eb3aa391f307441e33c6f21aa988c78896513680d4e",
+  "test_data_opened": false,
+  "elapsed_seconds": 153.47630070298328
+}

@@ -1,0 +1,42 @@
+{
+  "run_id": "wk8tfuyl",
+  "metadata_selected_fields": {
+    "startedAt": "2026-10-06T07:13:33.692914Z",
+    "program": "/home/alex/research/IMUPoser/scripts/2. Train/1. Train Global Model.py",
+    "codePath": "scripts/2. Train/1. Train Global Model.py",
+    "args": [
+      "--combo_id",
+      "global",
+      "--experiment",
+      "IMUPoserGlobalModel",
+      "--num_workers",
+      "0"
+    ],
+    "python": "CPython 3.10.21",
+    "os": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "git": {
+      "remote": "https://github.com/FIGLAB/IMUPoser.git",
+      "commit": "a0e9d33b9c57d6737d711185b62084e17684b0e2"
+    },
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "gpu_count": 1
+  },
+  "final_summary_selected_fields": {
+    "epoch": 64,
+    "trainer/global_step": 178814,
+    "validation_step_loss": 0.010610468685626984,
+    "train_loss": 0.008006912656128407,
+    "val_loss": 0.010610470548272133,
+    "_runtime": 186263
+  },
+  "validation_history_records": 65,
+  "wandb_binary_records_read": 474291,
+  "minimum_logged_validation": {
+    "epoch": 59,
+    "trainer/global_step": 165059,
+    "validation_step_loss": 0.010172522626817226,
+    "val_loss": 0.010172517970204353
+  },
+  "config_yaml_model_config_value": "Config object repr rather than serialized hyperparameter fields",
+  "privacy_note": "W&B email, host, device UUID and unrelated telemetry are omitted."
+}

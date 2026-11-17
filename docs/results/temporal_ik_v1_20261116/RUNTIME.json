@@ -1,0 +1,10 @@
+{
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "executable": "/home/alex/miniconda3/envs/imuposer/bin/python",
+  "torch": "2.7.0+cu128",
+  "numpy": "1.23.5",
+  "scipy": "1.10.1",
+  "imuposer_path": "/home/alex/research/IMUPoser/src/imuposer/__init__.py",
+  "inference_and_metrics_device": "cpu",
+  "training_performed": false
+}

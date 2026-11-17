@@ -1,0 +1,44 @@
+{
+  "verified": true,
+  "run_id": "58592e9dbc11470f9990bacb20d6aa9f",
+  "stage": "development",
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "epochs": 30,
+  "global_step": 1860,
+  "execution_sources_verified": 31,
+  "best_epoch": 2,
+  "best_validation_loss": 0.019974888814836028,
+  "last_validation_loss": 0.021441573262262193,
+  "first_train_loss": 0.021669100699875193,
+  "best_epoch_train_loss": 0.014204701058016782,
+  "last_train_loss": 0.0034657378076710776,
+  "last_validation_above_best_percent": 7.342641358468072,
+  "sum_recorded_train_validation_seconds": 921.1938821259537,
+  "gpu_peak_allocated_mib": 2906.05322265625,
+  "peak_ram_mib": 2147.19,
+  "run_created_utc": "2026-11-15T07:56:51.101086+00:00",
+  "completion_file_mtime_utc": "2026-11-15T08:12:20.071434+00:00",
+  "checkpoint_hashes": {
+    "best": {
+      "path": "checkpoints/epoch_002_03a6585efa03.ckpt",
+      "sha256": "4515e13ae95ee5ec49ff90d941c81149ec4c583ba293aadf21abe17de699ba16"
+    },
+    "last": {
+      "path": "checkpoints/epoch_030_6da9e5d52b29.ckpt",
+      "sha256": "298e8580decef1ca2ee9b08370a714116f336a5d652b8919770e30000aa21501"
+    }
+  },
+  "selection": {
+    "run": "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_dev_v1",
+    "state_sha256": "d0ede132a6ca4e280fc6b67ed3432bbba30316cd574d4887b529014bb96e3c36",
+    "best_checkpoint": {
+      "path": "checkpoints/epoch_002_03a6585efa03.ckpt",
+      "sha256": "4515e13ae95ee5ec49ff90d941c81149ec4c583ba293aadf21abe17de699ba16"
+    },
+    "selected_epochs": 2,
+    "validation_loss": 0.019974888814836028
+  },
+  "test_data_opened": false,
+  "final_run_directory_exists": false
+}

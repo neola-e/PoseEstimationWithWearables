@@ -9,17 +9,19 @@ from runtime import load_torch
 
 
 class DipTestSubset(GlobalModelDataset):
-    def __init__(self, path, config, sequence_ids=(0,), max_frames=125, combo="global"):
+    def __init__(self, path, config, sequence_ids=(0,), max_frames=None, combo="global"):
         self.path = Path(path)
         if self.path.name != "dip_test.pt":
             raise ValueError("Expected dip_test.pt; train/validation files are not accepted")
-        if not sequence_ids or len(set(sequence_ids)) != len(sequence_ids):
-            raise ValueError("Provide distinct sequence IDs")
-        if max_frames < 1:
+        if sequence_ids is not None:
+            if not sequence_ids or len(set(sequence_ids)) != len(sequence_ids):
+                raise ValueError("Provide distinct sequence IDs")
+        if max_frames is not None and max_frames < 1:
             raise ValueError("max_frames must be positive")
         if combo not in amass_combos:
             raise ValueError("Unknown sensor combination")
-        self.sequence_ids = list(sequence_ids)
+        self.sequence_ids = (
+            None if sequence_ids is None else list(sequence_ids))
         self.max_frames = max_frames
         self.combo = combo
         super().__init__(split="test", config=config)
@@ -29,6 +31,8 @@ class DipTestSubset(GlobalModelDataset):
         # Deserialize the 34 MB test file once; retain only selected windows.
         data = load_torch(self.path)
         self.total_sequences = len(data["acc"])
+        if self.sequence_ids is None:
+            self.sequence_ids = list(range(self.total_sequences))
         self.imu, self.pose, self.imu_masks, self.records = [], [], [], []
         mask = torch.zeros(60, dtype=torch.bool)
         sensors = amass_combos[self.combo]
@@ -44,7 +48,7 @@ class DipTestSubset(GlobalModelDataset):
                 raise ValueError("Unexpected processed DIP IMU schema")
             if pose.shape != (original, 24, 3, 3):
                 raise ValueError("Unexpected processed DIP pose schema")
-            count = min(original, self.max_frames)
+            count = original if self.max_frames is None else min(original, self.max_frames)
             # Exact GlobalModelDataset preprocessing. No extra normalization.
             x = torch.cat([(acc[:count, :5] / self.config.acc_scale).flatten(1),
                            ori[:count, :5].float().flatten(1)], dim=1)

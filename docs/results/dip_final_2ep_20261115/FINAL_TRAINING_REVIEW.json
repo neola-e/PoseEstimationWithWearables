@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "run_id": "448a01bc15f742b4be28ddbe4aab0e1f",
+  "epochs": 2,
+  "global_step": 162,
+  "cuda_device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "train_samples": 20736,
+  "validation_samples": 0,
+  "selection_epochs": 2,
+  "optimizer_states_verified": 20,
+  "final_checkpoint_sha256": "996a3e2df21ac675df8f777d975d0700f3836c1d835bb898044a714e6cb5f7d8",
+  "eligible_for_final_reporting": true,
+  "pretrained_epoch": 59,
+  "test_data_opened_during_training": false,
+  "training_sources_verified": 31
+}

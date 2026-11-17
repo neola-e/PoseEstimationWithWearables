@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "input_hashes_rechecked": 31,
+  "original_sources_rechecked": true,
+  "checkpoint_history_best_matches": true,
+  "data_manifest_files": 20,
+  "raw_candidate_files": 14244,
+  "model_or_dataset_asset_copied": false
+}

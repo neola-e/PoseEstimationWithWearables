@@ -1,0 +1,11 @@
+test_future_input_perturbation_cannot_change_earlier_outputs (test_temporal_ik.TemporalIKTests) ... ok
+test_identity_and_unavailable_channels_are_unchanged (test_temporal_ik.TemporalIKTests) ... ok
+test_jerk_penalty_known_cubic_and_invalid_settings (test_temporal_ik.TemporalIKTests) ... ok
+test_joint_kinematics_known_two_segment_chain (test_temporal_ik.TemporalIKTests) ... ok
+test_no_fake_startup_or_record_boundary_penalty (test_temporal_ik.TemporalIKTests) ... ok
+test_zero_weight_matches_frozen_framewise_algorithm (test_temporal_ik.TemporalIKTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.097s
+
+OK

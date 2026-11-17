@@ -1,0 +1,876 @@
+{
+  "best": {
+    "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=59-val_loss=validation_step_loss=0.01017.ckpt",
+    "bytes": 128200142,
+    "sha256": "02b9211b57ca36ae3fb13dcacc4b008b49a31fd360ebea516b73d103bd2a5058",
+    "mtime_utc": "2026-10-08T07:15:44.501679+00:00",
+    "epoch": 59,
+    "global_step": 165060,
+    "lightning_version": "1.9.5",
+    "serialized_config_instance": {
+      "experiment": "IMUPoserGlobalModel_global",
+      "model": "GlobalModelIMUPoser",
+      "root_dir": "/home/alex/research/IMUPoser/scripts/2. Train/../..",
+      "joints_set": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "pred_joints_set": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "mkdir": true,
+      "normalize": "no_translation",
+      "r6d": true,
+      "use_joint_loss": true,
+      "use_glb_rot_loss": false,
+      "use_acc_recon_loss": false,
+      "pred_last_frame": false,
+      "use_vposer_loss": false,
+      "use_vel_loss": false,
+      "num_workers": 0,
+      "device": "cuda:0",
+      "smpl_model_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../src/imuposer/smpl/model.pkl",
+      "og_smpl_model_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../src/imuposer/smpl/basicmodel_m_lbs_10_207_0_v1.0.0.pkl",
+      "raw_dip_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../data/raw/DIP_IMU",
+      "raw_amass_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../data/raw/AMASS",
+      "processed_imu_poser": "/home/alex/research/IMUPoser/scripts/2. Train/../../data/processed_imuposer",
+      "processed_imu_poser_25fps": "/home/alex/research/IMUPoser/scripts/2. Train/../../data/processed_imuposer_25fps",
+      "vposer_ckpt_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../extern/vposer_v2_05",
+      "checkpoint_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332",
+      "loss_type": "mse"
+    },
+    "effective_current_class_defaults_not_serialized": {
+      "batch_size": {
+        "value": 256,
+        "serialized_as_instance_attribute": false
+      },
+      "max_sample_len": {
+        "value": 300,
+        "serialized_as_instance_attribute": false
+      },
+      "acc_scale": {
+        "value": 30,
+        "serialized_as_instance_attribute": false
+      },
+      "train_pct": {
+        "value": 0.9,
+        "serialized_as_instance_attribute": false
+      },
+      "torch_seed": {
+        "value": 0,
+        "serialized_as_instance_attribute": false
+      }
+    },
+    "state_dict_shapes": {
+      "dip_model.rnn.weight_ih_l0": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.weight_hh_l0": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.bias_ih_l0": [
+        2048
+      ],
+      "dip_model.rnn.bias_hh_l0": [
+        2048
+      ],
+      "dip_model.rnn.weight_ih_l0_reverse": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.weight_hh_l0_reverse": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.bias_ih_l0_reverse": [
+        2048
+      ],
+      "dip_model.rnn.bias_hh_l0_reverse": [
+        2048
+      ],
+      "dip_model.rnn.weight_ih_l1": [
+        2048,
+        1024
+      ],
+      "dip_model.rnn.weight_hh_l1": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.bias_ih_l1": [
+        2048
+      ],
+      "dip_model.rnn.bias_hh_l1": [
+        2048
+      ],
+      "dip_model.rnn.weight_ih_l1_reverse": [
+        2048,
+        1024
+      ],
+      "dip_model.rnn.weight_hh_l1_reverse": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.bias_ih_l1_reverse": [
+        2048
+      ],
+      "dip_model.rnn.bias_hh_l1_reverse": [
+        2048
+      ],
+      "dip_model.linear1.weight": [
+        512,
+        60
+      ],
+      "dip_model.linear1.bias": [
+        512
+      ],
+      "dip_model.linear2.weight": [
+        144,
+        1024
+      ],
+      "dip_model.linear2.bias": [
+        144
+      ]
+    },
+    "network_parameters": 10680976,
+    "network_tensors_finite": true,
+    "callbacks": {
+      "EarlyStopping{'monitor': 'validation_step_loss', 'mode': 'min'}": {
+        "wait_count": 0,
+        "stopped_epoch": 0,
+        "best_score": 0.010172522626817226,
+        "patience": 5
+      },
+      "ModelCheckpoint{'monitor': 'validation_step_loss', 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None}": {
+        "monitor": "validation_step_loss",
+        "best_model_score": 0.010172522626817226,
+        "best_model_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=59-val_loss=validation_step_loss=0.01017.ckpt",
+        "current_score": 0.010172522626817226,
+        "dirpath": "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332",
+        "best_k_models": {
+          "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=52-val_loss=validation_step_loss=0.01055.ckpt": 0.010552219115197659,
+          "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=55-val_loss=validation_step_loss=0.01031.ckpt": 0.010310699231922626,
+          "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=56-val_loss=validation_step_loss=0.01048.ckpt": 0.01048052217811346,
+          "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=58-val_loss=validation_step_loss=0.01036.ckpt": 0.010357468388974667,
+          "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=59-val_loss=validation_step_loss=0.01017.ckpt": 0.010172522626817226
+        },
+        "kth_best_model_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=52-val_loss=validation_step_loss=0.01055.ckpt",
+        "kth_value": 0.010552219115197659,
+        "last_model_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/last.ckpt"
+      }
+    },
+    "loops": {
+      "fit_loop": {
+        "state_dict": {},
+        "epoch_loop.state_dict": {
+          "_batches_that_stepped": 165060
+        },
+        "epoch_loop.batch_progress": {
+          "total": {
+            "ready": 165060,
+            "completed": 165060,
+            "started": 165060,
+            "processed": 165060
+          },
+          "current": {
+            "ready": 2751,
+            "completed": 2751,
+            "started": 2751,
+            "processed": 2751
+          },
+          "is_last_batch": true
+        },
+        "epoch_loop.scheduler_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0
+          }
+        },
+        "epoch_loop.batch_loop.state_dict": {},
+        "epoch_loop.batch_loop.optimizer_loop.state_dict": {},
+        "epoch_loop.batch_loop.optimizer_loop.optim_progress": {
+          "optimizer": {
+            "step": {
+              "total": {
+                "ready": 165060,
+                "completed": 165060
+              },
+              "current": {
+                "ready": 2751,
+                "completed": 2751
+              }
+            },
+            "zero_grad": {
+              "total": {
+                "ready": 165060,
+                "completed": 165060,
+                "started": 165060
+              },
+              "current": {
+                "ready": 2751,
+                "completed": 2751,
+                "started": 2751
+              }
+            }
+          },
+          "optimizer_position": 1
+        },
+        "epoch_loop.batch_loop.manual_loop.state_dict": {},
+        "epoch_loop.batch_loop.manual_loop.optim_step_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0
+          }
+        },
+        "epoch_loop.val_loop.state_dict": {},
+        "epoch_loop.val_loop.dataloader_progress": {
+          "total": {
+            "ready": 60,
+            "completed": 60
+          },
+          "current": {
+            "ready": 1,
+            "completed": 1
+          }
+        },
+        "epoch_loop.val_loop.epoch_loop.state_dict": {},
+        "epoch_loop.val_loop.epoch_loop.batch_progress": {
+          "total": {
+            "ready": 306,
+            "completed": 306,
+            "started": 306,
+            "processed": 306
+          },
+          "current": {
+            "ready": 306,
+            "completed": 306,
+            "started": 306,
+            "processed": 306
+          },
+          "is_last_batch": true
+        },
+        "epoch_progress": {
+          "total": {
+            "ready": 60,
+            "completed": 59,
+            "started": 60,
+            "processed": 60
+          },
+          "current": {
+            "ready": 60,
+            "completed": 59,
+            "started": 60,
+            "processed": 60
+          }
+        }
+      },
+      "validate_loop": {
+        "state_dict": {},
+        "dataloader_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0
+          }
+        },
+        "epoch_loop.state_dict": {},
+        "epoch_loop.batch_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          },
+          "is_last_batch": false
+        }
+      },
+      "test_loop": {
+        "state_dict": {},
+        "dataloader_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0
+          }
+        },
+        "epoch_loop.state_dict": {},
+        "epoch_loop.batch_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          },
+          "is_last_batch": false
+        }
+      },
+      "predict_loop": {
+        "state_dict": {},
+        "dataloader_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0
+          }
+        },
+        "epoch_loop.state_dict": {},
+        "epoch_loop.batch_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          }
+        }
+      }
+    },
+    "optimizer_parameter_groups": [
+      [
+        {
+          "lr": 0.0003,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "eps": 1e-08,
+          "weight_decay": 0,
+          "amsgrad": false,
+          "maximize": false,
+          "foreach": null,
+          "capturable": false,
+          "differentiable": false,
+          "fused": null,
+          "decoupled_weight_decay": false,
+          "params": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        }
+      ]
+    ],
+    "optimizer_state_steps": [
+      [
+        165060.0
+      ]
+    ],
+    "lr_schedulers": [],
+    "rng_state_or_split_keys": []
+  },
+  "last": {
+    "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/last.ckpt",
+    "bytes": 128200142,
+    "sha256": "eceff78758d94c7d048874e2ec9c6f312de0abbdcef639b1be6df078034b112f",
+    "mtime_utc": "2026-10-08T10:57:56.438467+00:00",
+    "epoch": 64,
+    "global_step": 178815,
+    "lightning_version": "1.9.5",
+    "serialized_config_instance": {
+      "experiment": "IMUPoserGlobalModel_global",
+      "model": "GlobalModelIMUPoser",
+      "root_dir": "/home/alex/research/IMUPoser/scripts/2. Train/../..",
+      "joints_set": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "pred_joints_set": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "mkdir": true,
+      "normalize": "no_translation",
+      "r6d": true,
+      "use_joint_loss": true,
+      "use_glb_rot_loss": false,
+      "use_acc_recon_loss": false,
+      "pred_last_frame": false,
+      "use_vposer_loss": false,
+      "use_vel_loss": false,
+      "num_workers": 0,
+      "device": "cuda:0",
+      "smpl_model_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../src/imuposer/smpl/model.pkl",
+      "og_smpl_model_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../src/imuposer/smpl/basicmodel_m_lbs_10_207_0_v1.0.0.pkl",
+      "raw_dip_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../data/raw/DIP_IMU",
+      "raw_amass_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../data/raw/AMASS",
+      "processed_imu_poser": "/home/alex/research/IMUPoser/scripts/2. Train/../../data/processed_imuposer",
+      "processed_imu_poser_25fps": "/home/alex/research/IMUPoser/scripts/2. Train/../../data/processed_imuposer_25fps",
+      "vposer_ckpt_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../extern/vposer_v2_05",
+      "checkpoint_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332",
+      "loss_type": "mse"
+    },
+    "effective_current_class_defaults_not_serialized": {
+      "batch_size": {
+        "value": 256,
+        "serialized_as_instance_attribute": false
+      },
+      "max_sample_len": {
+        "value": 300,
+        "serialized_as_instance_attribute": false
+      },
+      "acc_scale": {
+        "value": 30,
+        "serialized_as_instance_attribute": false
+      },
+      "train_pct": {
+        "value": 0.9,
+        "serialized_as_instance_attribute": false
+      },
+      "torch_seed": {
+        "value": 0,
+        "serialized_as_instance_attribute": false
+      }
+    },
+    "state_dict_shapes": {
+      "dip_model.rnn.weight_ih_l0": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.weight_hh_l0": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.bias_ih_l0": [
+        2048
+      ],
+      "dip_model.rnn.bias_hh_l0": [
+        2048
+      ],
+      "dip_model.rnn.weight_ih_l0_reverse": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.weight_hh_l0_reverse": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.bias_ih_l0_reverse": [
+        2048
+      ],
+      "dip_model.rnn.bias_hh_l0_reverse": [
+        2048
+      ],
+      "dip_model.rnn.weight_ih_l1": [
+        2048,
+        1024
+      ],
+      "dip_model.rnn.weight_hh_l1": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.bias_ih_l1": [
+        2048
+      ],
+      "dip_model.rnn.bias_hh_l1": [
+        2048
+      ],
+      "dip_model.rnn.weight_ih_l1_reverse": [
+        2048,
+        1024
+      ],
+      "dip_model.rnn.weight_hh_l1_reverse": [
+        2048,
+        512
+      ],
+      "dip_model.rnn.bias_ih_l1_reverse": [
+        2048
+      ],
+      "dip_model.rnn.bias_hh_l1_reverse": [
+        2048
+      ],
+      "dip_model.linear1.weight": [
+        512,
+        60
+      ],
+      "dip_model.linear1.bias": [
+        512
+      ],
+      "dip_model.linear2.weight": [
+        144,
+        1024
+      ],
+      "dip_model.linear2.bias": [
+        144
+      ]
+    },
+    "network_parameters": 10680976,
+    "network_tensors_finite": true,
+    "callbacks": {
+      "EarlyStopping{'monitor': 'validation_step_loss', 'mode': 'min'}": {
+        "wait_count": 5,
+        "stopped_epoch": 64,
+        "best_score": 0.010172522626817226,
+        "patience": 5
+      },
+      "ModelCheckpoint{'monitor': 'validation_step_loss', 'mode': 'min', 'every_n_train_steps': 0, 'every_n_epochs': 1, 'train_time_interval': None}": {
+        "monitor": "validation_step_loss",
+        "best_model_score": 0.010172522626817226,
+        "best_model_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=59-val_loss=validation_step_loss=0.01017.ckpt",
+        "current_score": 0.010292185470461845,
+        "dirpath": "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332",
+        "best_k_models": {
+          "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=55-val_loss=validation_step_loss=0.01031.ckpt": 0.010310699231922626,
+          "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=58-val_loss=validation_step_loss=0.01036.ckpt": 0.010357468388974667,
+          "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=59-val_loss=validation_step_loss=0.01017.ckpt": 0.010172522626817226,
+          "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=60-val_loss=validation_step_loss=0.01022.ckpt": 0.010219404473900795,
+          "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=62-val_loss=validation_step_loss=0.01029.ckpt": 0.010292185470461845
+        },
+        "kth_best_model_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=58-val_loss=validation_step_loss=0.01036.ckpt",
+        "kth_value": 0.010357468388974667,
+        "last_model_path": "/home/alex/research/IMUPoser/scripts/2. Train/../../checkpoints/IMUPoserGlobalModel_global-10062026-021332/last.ckpt"
+      }
+    },
+    "loops": {
+      "fit_loop": {
+        "state_dict": {},
+        "epoch_loop.state_dict": {
+          "_batches_that_stepped": 178815
+        },
+        "epoch_loop.batch_progress": {
+          "total": {
+            "ready": 178815,
+            "completed": 178815,
+            "started": 178815,
+            "processed": 178815
+          },
+          "current": {
+            "ready": 2751,
+            "completed": 2751,
+            "started": 2751,
+            "processed": 2751
+          },
+          "is_last_batch": true
+        },
+        "epoch_loop.scheduler_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0
+          }
+        },
+        "epoch_loop.batch_loop.state_dict": {},
+        "epoch_loop.batch_loop.optimizer_loop.state_dict": {},
+        "epoch_loop.batch_loop.optimizer_loop.optim_progress": {
+          "optimizer": {
+            "step": {
+              "total": {
+                "ready": 178815,
+                "completed": 178815
+              },
+              "current": {
+                "ready": 2751,
+                "completed": 2751
+              }
+            },
+            "zero_grad": {
+              "total": {
+                "ready": 178815,
+                "completed": 178815,
+                "started": 178815
+              },
+              "current": {
+                "ready": 2751,
+                "completed": 2751,
+                "started": 2751
+              }
+            }
+          },
+          "optimizer_position": 1
+        },
+        "epoch_loop.batch_loop.manual_loop.state_dict": {},
+        "epoch_loop.batch_loop.manual_loop.optim_step_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0
+          }
+        },
+        "epoch_loop.val_loop.state_dict": {},
+        "epoch_loop.val_loop.dataloader_progress": {
+          "total": {
+            "ready": 65,
+            "completed": 65
+          },
+          "current": {
+            "ready": 1,
+            "completed": 1
+          }
+        },
+        "epoch_loop.val_loop.epoch_loop.state_dict": {},
+        "epoch_loop.val_loop.epoch_loop.batch_progress": {
+          "total": {
+            "ready": 306,
+            "completed": 306,
+            "started": 306,
+            "processed": 306
+          },
+          "current": {
+            "ready": 306,
+            "completed": 306,
+            "started": 306,
+            "processed": 306
+          },
+          "is_last_batch": true
+        },
+        "epoch_progress": {
+          "total": {
+            "ready": 65,
+            "completed": 64,
+            "started": 65,
+            "processed": 65
+          },
+          "current": {
+            "ready": 65,
+            "completed": 64,
+            "started": 65,
+            "processed": 65
+          }
+        }
+      },
+      "validate_loop": {
+        "state_dict": {},
+        "dataloader_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0
+          }
+        },
+        "epoch_loop.state_dict": {},
+        "epoch_loop.batch_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          },
+          "is_last_batch": false
+        }
+      },
+      "test_loop": {
+        "state_dict": {},
+        "dataloader_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0
+          }
+        },
+        "epoch_loop.state_dict": {},
+        "epoch_loop.batch_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          },
+          "is_last_batch": false
+        }
+      },
+      "predict_loop": {
+        "state_dict": {},
+        "dataloader_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0
+          }
+        },
+        "epoch_loop.state_dict": {},
+        "epoch_loop.batch_progress": {
+          "total": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          },
+          "current": {
+            "ready": 0,
+            "completed": 0,
+            "started": 0,
+            "processed": 0
+          }
+        }
+      }
+    },
+    "optimizer_parameter_groups": [
+      [
+        {
+          "lr": 0.0003,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "eps": 1e-08,
+          "weight_decay": 0,
+          "amsgrad": false,
+          "maximize": false,
+          "foreach": null,
+          "capturable": false,
+          "differentiable": false,
+          "fused": null,
+          "decoupled_weight_decay": false,
+          "params": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        }
+      ]
+    ],
+    "optimizer_state_steps": [
+      [
+        178815.0
+      ]
+    ],
+    "lr_schedulers": [],
+    "rng_state_or_split_keys": []
+  }
+}

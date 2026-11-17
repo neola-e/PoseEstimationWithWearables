@@ -1,0 +1,25 @@
+{
+  "status": "configuration_and_data_verified",
+  "plan": {
+    "stage": "final",
+    "epochs": 2,
+    "batch_size": 256,
+    "train_samples": 20736,
+    "validation_samples": 0,
+    "train_batches": 81,
+    "test_data_opened": false,
+    "protocol_sha256": "79bde74ead3f596c5806e3fa1d0cd5b07fcfb6260b0c9e81c218771ba50441ad",
+    "selection": {
+      "run": "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_dev_v1",
+      "state_sha256": "d0ede132a6ca4e280fc6b67ed3432bbba30316cd574d4887b529014bb96e3c36",
+      "best_checkpoint": {
+        "path": "checkpoints/epoch_002_03a6585efa03.ckpt",
+        "sha256": "4515e13ae95ee5ec49ff90d941c81149ec4c583ba293aadf21abe17de699ba16"
+      },
+      "selected_epochs": 2,
+      "validation_loss": 0.019974888814836028
+    }
+  },
+  "cuda_available": false,
+  "training_started": false
+}

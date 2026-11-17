@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-11T21:25:52.527775+00:00",
+  "comparison_rows": 17,
+  "documentation_local_links_checked": 55,
+  "processed_files": 20,
+  "processed_sequence_rows": 9614,
+  "raw_recording_rows": 14244,
+  "preprocessing_sequence_field_checks": 28842,
+  "historical_validation_epochs_checked": 65,
+  "best_epoch": 59,
+  "best_score": 0.010172522626817226,
+  "current_data_step_arithmetic_matches_both_checkpoints": true,
+  "all_18_report_subset_rows_match_manifest": true,
+  "original_sensor_study_files_unchanged": 46,
+  "prior_evaluated_source_hashes_unchanged": true,
+  "model_or_dataset_assets_copied": false,
+  "training_performed": false,
+  "model_inference_performed": false,
+  "historical_file_identity_certified": false
+}

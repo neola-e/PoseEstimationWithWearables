@@ -7,7 +7,7 @@ class Config:
                  joints_set=None, loss_type=None, mkdir=True, normalize=False,
                  r6d=False, device=None, use_joint_loss=False, use_glb_rot_loss=False,
                  use_acc_recon_loss=False, pred_joints_set=None, pred_last_frame=False,
-                 use_vposer_loss=False, use_vel_loss=False):
+                 use_vposer_loss=False, use_vel_loss=False, num_workers=0):
         self.experiment = experiment
         self.model = model
         self.root_dir = Path(project_root_dir).absolute()
@@ -23,6 +23,8 @@ class Config:
         self.pred_last_frame = pred_last_frame
         self.use_vposer_loss = use_vposer_loss
         self.use_vel_loss = use_vel_loss
+        # Load batches in the main process by default to limit host memory overhead.
+        self.num_workers = num_workers
 
         if device != None:
             if 'cpu' in device:
