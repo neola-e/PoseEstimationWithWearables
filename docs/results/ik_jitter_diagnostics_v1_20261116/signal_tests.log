@@ -1,0 +1,10 @@
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+test_known_frequency_band_and_energy (test_jitter_diagnostics.JitterDiagnosticTests) ... ok
+test_signed_contributions_add_with_shared_denominator (test_jitter_diagnostics.JitterDiagnosticTests) ... ok
+test_third_difference_polynomials_and_no_cross_recording (test_jitter_diagnostics.JitterDiagnosticTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

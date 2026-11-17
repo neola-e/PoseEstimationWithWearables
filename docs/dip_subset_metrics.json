@@ -1,0 +1,75 @@
+{
+  "split": "DIP-IMU test (preprocessing subjects s_09, s_10)",
+  "data_file": "data/processed_imuposer_25fps/dip_test.pt",
+  "available_sequences": 19,
+  "selected_sequence_ids": [
+    0,
+    1,
+    2
+  ],
+  "sensor_combo": "global",
+  "max_frames_per_sequence": 125,
+  "frames_evaluated": 375,
+  "windows_evaluated": 3,
+  "fps": 25,
+  "padding_in_metrics": false,
+  "context": "Independent windows of at most 125 frames, as in training; tails truncated by max_frames",
+  "metrics": {
+    "pose_representation_mse": 0.016047360602627844,
+    "mean_local_joint_angle_deg": 13.508703231811523,
+    "root_relative_mpjpe_cm": 3.258464423318704,
+    "joint_position_mse_m2": 0.0006744972585390011,
+    "mean_global_joint_angle_deg": 12.87958558400472
+  },
+  "per_window": [
+    {
+      "sequence_id": 0,
+      "start_frame": 0,
+      "frames": 125,
+      "original_frames": 1978,
+      "pose_representation_mse": 0.013256554171328516,
+      "mean_local_joint_angle_deg": 12.662384986877441,
+      "root_relative_mpjpe_cm": 3.4517325460910797,
+      "joint_position_mse_m2": 0.0008731945417821407,
+      "mean_global_joint_angle_deg": 12.285428047180176
+    },
+    {
+      "sequence_id": 1,
+      "start_frame": 0,
+      "frames": 125,
+      "original_frames": 1096,
+      "pose_representation_mse": 0.01368522033766776,
+      "mean_local_joint_angle_deg": 12.930224418640137,
+      "root_relative_mpjpe_cm": 3.0137745663523674,
+      "joint_position_mse_m2": 0.0005177600542083383,
+      "mean_global_joint_angle_deg": 12.405055046081543
+    },
+    {
+      "sequence_id": 2,
+      "start_frame": 0,
+      "frames": 125,
+      "original_frames": 885,
+      "pose_representation_mse": 0.02120030729888725,
+      "mean_local_joint_angle_deg": 14.933500289916992,
+      "root_relative_mpjpe_cm": 3.309886157512665,
+      "joint_position_mse_m2": 0.0006325371796265244,
+      "mean_global_joint_angle_deg": 13.948273658752441
+    }
+  ],
+  "metric_conventions": {
+    "pose_representation_mse": "Mean squared error over valid frames and 144 raw 6D values; not training validation loss",
+    "angular": "SO(3) geodesic mean over all 24 joints; root included",
+    "joint_position": "Repository SMPL FK, mean male shape, zero translation, all 24 joints including root; no rigid alignment; meters internally"
+  },
+  "checkpoint": {
+    "path": "checkpoints/imuposer_global_best.ckpt (original Lightning format, distributed separately)",
+    "epoch": 55,
+    "global_step": 154056,
+    "sha256": "a0e3dc1ca51897b2e0af89e7c04bf44e98061ffe008ab4f895816c876597a81b",
+    "training_validation_metric": 0.010310699231922626
+  },
+  "device": "cpu",
+  "elapsed_seconds": 0.139,
+  "peak_process_ram_mib": 889.91,
+  "scope": "Small deterministic subset; not full DIP benchmark or paper-comparable metrics"
+}

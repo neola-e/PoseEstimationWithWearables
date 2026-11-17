@@ -1,0 +1,616 @@
+{
+  "format": "dip-imu-only-ik-v1",
+  "frozen_utc": "2026-11-16T23:21:50.398612+00:00",
+  "baseline_run": "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_finetune_comparison_cpu_v1",
+  "baseline_protocol_sha256": "2144b72d4061dd786f09870426d9158e1666ba9157c342fb232bf31309666aa4",
+  "baseline_original_manifest_sha256": "e3ec7a3e1c645db966e9a79b86a9eefdd6c7e836ec79c130a40bed8267171569",
+  "checkpoint": {
+    "path": "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_final_v1/checkpoints/epoch_002_9d8a49a977cb.ckpt",
+    "sha256": "996a3e2df21ac675df8f777d975d0700f3836c1d835bb898044a714e6cb5f7d8",
+    "completed_epochs": 2,
+    "global_step": 162
+  },
+  "training_protocol_sha256": "79bde74ead3f596c5806e3fa1d0cd5b07fcfb6260b0c9e81c218771ba50441ad",
+  "model_order": [
+    "network_final",
+    "network_final_ik"
+  ],
+  "data": {
+    "path": "/home/alex/research/IMUPoser/data/processed_imuposer_25fps/dip_test.pt",
+    "sha256": "352ce4f1312fbc7d496ce3d3d3c7287f01389624b75296ce4e349868b958b475",
+    "subjects": [
+      "s_09",
+      "s_10"
+    ],
+    "sequences": 19,
+    "frames_per_mask": 24078,
+    "jerk_samples_per_mask": 24021
+  },
+  "smpl": {
+    "path": "/home/alex/research/IMUPoser/src/imuposer/smpl/basicmodel_m_lbs_10_207_0_v1.0.0.pkl",
+    "sha256": "0e8c0bbbbc635dcb166ed29c303fb4bef16ea5f623e5a89263495a9e403575bd"
+  },
+  "records": [
+    {
+      "subject": "s_09",
+      "source_file": "01_a.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_09/01_a.pkl",
+      "raw_sha256": "0c86df4729856661cb1c2490afcda45ceaa7773f7d388734d7aa73a74c2e07b1",
+      "sequence_id": 0,
+      "frames": 1978,
+      "processed_sha256": {
+        "acc": "abab2d3eae65d2fcdbeae57b733588b5b82f828c189a386b8cd6d5a8da1ebe02",
+        "ori": "8d952811687b670ab6d54e86ed1115943ca51f90e653890b64181328e3fd4cd2",
+        "pose": "9e8d0b4f8a403d68250d16d6d8cae55e55edfc8180a6ac120873051371a86a8f"
+      }
+    },
+    {
+      "subject": "s_09",
+      "source_file": "01_b.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_09/01_b.pkl",
+      "raw_sha256": "371083f632637ff1408fff25a9bbf4d3edaf9a458434bb0178cbf9867da65e72",
+      "sequence_id": 1,
+      "frames": 1096,
+      "processed_sha256": {
+        "acc": "ca361a93e4ff9e57f9fa91944bff749f9fb36ad1f7be0554c74ac22c1779ce57",
+        "ori": "f60ad98dcfdc452be2acb9fee7e1cb205e8f620e8df0758e16d9375ff9ae8737",
+        "pose": "6feac2ccb07d3f1d4f6805c75411da8ee992a9659b7f6bfee7693d3637f935f1"
+      }
+    },
+    {
+      "subject": "s_09",
+      "source_file": "01_c.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_09/01_c.pkl",
+      "raw_sha256": "b7490e0552469378215a2e7a99a3b3370615b6374fe6443b36f76fbb9000d32e",
+      "sequence_id": 2,
+      "frames": 885,
+      "processed_sha256": {
+        "acc": "09dc9cc17eee72ef483908e5dfd43bc5eaddd9be7bc9e9e4388facafacfd4b94",
+        "ori": "a06ff3567ae2149c9404c2e1726670f42e465db989e9bd4378d37321f7b0c98d",
+        "pose": "724a96561819a7d0c0f03b1b50d58b18c2d13977ff34cd2cc1c286a3f1566481"
+      }
+    },
+    {
+      "subject": "s_09",
+      "source_file": "02_a.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_09/02_a.pkl",
+      "raw_sha256": "410835a7c081d15edf520263f9420cb63d83810ca4fb826075427f400e140979",
+      "sequence_id": 3,
+      "frames": 1148,
+      "processed_sha256": {
+        "acc": "8be899ec4029a185e3b98061b157c4d68dd2dbbeea7b948806c6069841e3000c",
+        "ori": "ec8ea4cb83b4a7e9da34b4e9f084a7baf952787658593337b7a75a8da33c5146",
+        "pose": "0c73657e647687609703bab8b87006f3803554821774fba989e90d7ab3e75291"
+      }
+    },
+    {
+      "subject": "s_09",
+      "source_file": "02_b.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_09/02_b.pkl",
+      "raw_sha256": "092cefd1094cde375076f329c3c31edbc78bd426f05ddf6d81d2bb900b5830a1",
+      "sequence_id": 4,
+      "frames": 1062,
+      "processed_sha256": {
+        "acc": "c7a089f845b8a4dd766066e318958a29ef80bea1664f4df06f9b63a550636d03",
+        "ori": "ce0c9050d81976b81f47d1b9256439661af2eb4b490ac1bcac46144aa47ae64c",
+        "pose": "0338eea4d39787b2dee15a9e76256f9692d4b6147af3e7cbb37efb4728facad3"
+      }
+    },
+    {
+      "subject": "s_09",
+      "source_file": "03_a.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_09/03_a.pkl",
+      "raw_sha256": "b7e4b587c8c2ab460d21e5f6fa275281e8550b906b35970b89d8c338629d0fb2",
+      "sequence_id": 5,
+      "frames": 1207,
+      "processed_sha256": {
+        "acc": "6233bb27db1408139ed42ac3fbee4b17c0749102f2cc14d498297ea88a453eb8",
+        "ori": "a4f7ee447733aa3a2c17e36f135d91dc913a45e2c61674f7041c67dedf2f2a87",
+        "pose": "003a7735d314e1d9a94d66df046b1f093a85100cc01d6191241f2a1b0f071a66"
+      }
+    },
+    {
+      "subject": "s_09",
+      "source_file": "03_b.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_09/03_b.pkl",
+      "raw_sha256": "d1e1d074c7b749815862edc5b3d19c9b5211079915e43008d26ebe7545f00cdb",
+      "sequence_id": 6,
+      "frames": 1252,
+      "processed_sha256": {
+        "acc": "fb51b138e4f73ba9ce6eed2a9d35ffaecd42d2123ebb38194b77c02d23d36601",
+        "ori": "81b38a4f5343dcceb3602d003c6f52990692241fddfabb75fb871368b4dfad15",
+        "pose": "360d6785b42e8de76b4a0a80f6597212a16504e381d837872ff1363c1e8ed9de"
+      }
+    },
+    {
+      "subject": "s_09",
+      "source_file": "04.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_09/04.pkl",
+      "raw_sha256": "56c5ee09cda0e75a4ba46d33306b5dc628bfa0e2306840529f6a8a78be6042c9",
+      "sequence_id": 7,
+      "frames": 490,
+      "processed_sha256": {
+        "acc": "ae8a09633895234b5f63279f2c9d1332ea8f87de97cee24885b6e33f78e9baee",
+        "ori": "cb9c891e85a494a14f514a2d407b69a7c363dfb01c5921d8bf4a4f97c81df4ad",
+        "pose": "2dfef102bf29221c68ae1e1771bdd54508d03e8613cbb28c275ec425dcd06517"
+      }
+    },
+    {
+      "subject": "s_09",
+      "source_file": "05.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_09/05.pkl",
+      "raw_sha256": "ef41c6b85e58d98df9852749010f9d6bb30049a95b44fba1f7ccf869f0edeb46",
+      "sequence_id": 8,
+      "frames": 1887,
+      "processed_sha256": {
+        "acc": "414251d467bcbdc96d20df80fadeeef5da3544800913751cf9e19900062f2e6a",
+        "ori": "13f0956e5dad86a1ac5cf6c7ddfb17c1d2f8c52744af4873fd05192f133dfdf1",
+        "pose": "25dab0f5e72c25e7664e60401cdcaff99168d0deb2988c3bb1faa5511272b203"
+      }
+    },
+    {
+      "subject": "s_10",
+      "source_file": "01_a.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/01_a.pkl",
+      "raw_sha256": "373eae5c5e3fd9e8340b2c1d29e1028a9da823e6e438aa9b66e6891c2c2f4a8c",
+      "sequence_id": 9,
+      "frames": 2333,
+      "processed_sha256": {
+        "acc": "0a2c4c13c93d6b48ce47a968ec26544a5a3e3888b3a3a5aa19d82737904bcc7e",
+        "ori": "e0a062c49698973b5552b9a1598736a2084ce15433187b2175c25570e7fad25f",
+        "pose": "3eefcb0e7e256edc91f983412c1098dcbe26128cc5b8e6d5877a26e92bab285a"
+      }
+    },
+    {
+      "subject": "s_10",
+      "source_file": "01_b.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/01_b.pkl",
+      "raw_sha256": "f8154e814d405e524ca017fd96ee2387dc18e52dd723c49d42888e076d942b99",
+      "sequence_id": 10,
+      "frames": 1383,
+      "processed_sha256": {
+        "acc": "7b1a4c3c59307cdc214ec245237d0fb9471fa021675f0bc0c7b5692426cfda30",
+        "ori": "e39a8d0e63418b9d01d9f39680e73d5732ab5b9461f9bc795f8ec2b2144cb0ac",
+        "pose": "0f5552ed25dcc681c467727aa55c563c39d66152edf14e20188ff9a2b385e4ce"
+      }
+    },
+    {
+      "subject": "s_10",
+      "source_file": "01_c.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/01_c.pkl",
+      "raw_sha256": "02c0fc529b7c002cd6bc1487f41eb44e215524fdfb5bc800f9337e1911628b1c",
+      "sequence_id": 11,
+      "frames": 947,
+      "processed_sha256": {
+        "acc": "c22e1779ac8ee150edec8dcc243056c66d536844c1304fbc21ee150c7a86c6a0",
+        "ori": "6e224ba3c83b72eb3519049c6c843ad5617d5e83424070db7d5e1d814d3e49ef",
+        "pose": "afef56035b4c30cb06a82835dac1accdc068c249296ae123e42e7cdac65e989f"
+      }
+    },
+    {
+      "subject": "s_10",
+      "source_file": "02.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/02.pkl",
+      "raw_sha256": "d66f91009e60d3c7684a160689e30351b7cf8d95750d5a2e8cb70e4255ae0025",
+      "sequence_id": 12,
+      "frames": 1503,
+      "processed_sha256": {
+        "acc": "b6723a56bfa284560857e0109b6a26519bee3795af899c9d922cde3a4203f859",
+        "ori": "16b52f6ec09620e2a18a75a23897b348b19f0da9a9a1c921f25d7aeec9d9b157",
+        "pose": "05aad18b1a8d4895ad6724a355a940fe6242083789d34d56ffad19dd6720c155"
+      }
+    },
+    {
+      "subject": "s_10",
+      "source_file": "03_a.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/03_a.pkl",
+      "raw_sha256": "6af37efc5fbe4c9dc782a19110bb2da1b8e9b528e07b6db355f5e5b0bedeb647",
+      "sequence_id": 13,
+      "frames": 1261,
+      "processed_sha256": {
+        "acc": "dbeeda01900655f1dd45917ea0f2fabf56b4717acffa297d8f39f7bdd3a7608f",
+        "ori": "53a1e253b44bc3773aa8673c5c089b9cfd74dc325564c4ea9c087990bf40950e",
+        "pose": "e4db652427d2ae03293ba66d0b12943c237c4d99422c4bcf102be5921929535e"
+      }
+    },
+    {
+      "subject": "s_10",
+      "source_file": "03_b.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/03_b.pkl",
+      "raw_sha256": "206e4cdbd0340369c6010a9656c1073826f8ae8c3a461038cd886fdf96d54ff5",
+      "sequence_id": 14,
+      "frames": 1558,
+      "processed_sha256": {
+        "acc": "24007844a15df2fd9b0e3c60c2ecd3bdf6872122d3215fa085148cd319bd5526",
+        "ori": "e0b3f87cdb1b6d4b5520ac30ef65b33f2575eae8e64f7a5f31299eb06ac6aa2d",
+        "pose": "bb4162310a23753da20224c50f8bea3d2c576ef9841211cc1338e7112ff35e14"
+      }
+    },
+    {
+      "subject": "s_10",
+      "source_file": "04_a.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/04_a.pkl",
+      "raw_sha256": "2ae14f85a4786f9aadb3feea10e4898ce8c492c3d332e7aa4f824864c7eaae39",
+      "sequence_id": 15,
+      "frames": 356,
+      "processed_sha256": {
+        "acc": "0f3d5931280de79e43e4e89939248521f33406a084216f5747475bde5389a9f0",
+        "ori": "f2b32ad38277eca66eaa61700ea62deb8dd39783b24543a8532c040fbb6a840a",
+        "pose": "6239fc3e548ed5ad7a15c855bb6bdf39124c3eb60b38dd0c6076f1ac0174907b"
+      }
+    },
+    {
+      "subject": "s_10",
+      "source_file": "04_b.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/04_b.pkl",
+      "raw_sha256": "a3cd391bd31f6a8a826f3284a1bf5319dffa4fa93065365ac401cfb4385a8a50",
+      "sequence_id": 16,
+      "frames": 625,
+      "processed_sha256": {
+        "acc": "6c864770de01bd9b0b3635b5cf183fe798eb0e23daf5b190cdb4113dce62376d",
+        "ori": "94b3dbecd451543d31dbe2aa062f4171c50b5a09923d8981ba23e01548b7a2e9",
+        "pose": "4732b43450c9b01fb2100202a6975e42ce1ce122a5469992b3181287b920aa57"
+      }
+    },
+    {
+      "subject": "s_10",
+      "source_file": "04_c.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/04_c.pkl",
+      "raw_sha256": "ca7280db04c52e622bc24aac8c591a0ce03e011e34881e9463e5feadec861fa1",
+      "sequence_id": 17,
+      "frames": 850,
+      "processed_sha256": {
+        "acc": "2035be26bc373c142e1410e6db187d52c27574f4bbc90ae3863d7b93bb4817ab",
+        "ori": "82a4dfff0a9f2021c67ee4a633209ab0b8bc911a1092555b963586644c64efc7",
+        "pose": "cb1312c79c4d8a8000618f802fc506f0102593657364fa33b9cfde1b47cf9e7d"
+      }
+    },
+    {
+      "subject": "s_10",
+      "source_file": "05.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/05.pkl",
+      "raw_sha256": "8ec48b7d470291a68e549273b8549274bfe98b796de4ad5c8d13fa67daacc4ae",
+      "sequence_id": 18,
+      "frames": 2257,
+      "processed_sha256": {
+        "acc": "eedd3543cea05145668916a40ae8b774380b40948a049c7c5e6aeedce5496340",
+        "ori": "f35276347f27a5b1458d3edd2fa773c551dd3d09c1af8b82308c90a4e4ed9394",
+        "pose": "737cd9ebc8bc53ec7513add6c2730623d104bc21a8e3c9555853327a59dcfcc5"
+      }
+    }
+  ],
+  "mask_order": [
+    "lw_rw_h",
+    "rw_lp_rp",
+    "lw_rw_rp",
+    "lw_rp_h",
+    "rw_rp_h",
+    "lw_lp_rp",
+    "lw_rw_lp",
+    "lw_lp_h",
+    "rw_lp_h",
+    "lw_rw",
+    "lw_lp",
+    "lw_rp",
+    "lw_h",
+    "rw_lp",
+    "rw_rp",
+    "rw_h",
+    "lp_rp",
+    "lp_h",
+    "rp_h",
+    "lw",
+    "rw",
+    "lp",
+    "rp",
+    "h"
+  ],
+  "masks": {
+    "lw_rw_h": [
+      0,
+      1,
+      4
+    ],
+    "rw_lp_rp": [
+      1,
+      2,
+      3
+    ],
+    "lw_rw_rp": [
+      0,
+      1,
+      3
+    ],
+    "lw_rp_h": [
+      0,
+      3,
+      4
+    ],
+    "rw_rp_h": [
+      1,
+      3,
+      4
+    ],
+    "lw_lp_rp": [
+      0,
+      2,
+      3
+    ],
+    "lw_rw_lp": [
+      0,
+      1,
+      2
+    ],
+    "lw_lp_h": [
+      0,
+      2,
+      4
+    ],
+    "rw_lp_h": [
+      1,
+      2,
+      4
+    ],
+    "lw_rw": [
+      0,
+      1
+    ],
+    "lw_lp": [
+      0,
+      2
+    ],
+    "lw_rp": [
+      0,
+      3
+    ],
+    "lw_h": [
+      0,
+      4
+    ],
+    "rw_lp": [
+      1,
+      2
+    ],
+    "rw_rp": [
+      1,
+      3
+    ],
+    "rw_h": [
+      1,
+      4
+    ],
+    "lp_rp": [
+      2,
+      3
+    ],
+    "lp_h": [
+      2,
+      4
+    ],
+    "rp_h": [
+      3,
+      4
+    ],
+    "lw": [
+      0
+    ],
+    "rw": [
+      1
+    ],
+    "lp": [
+      2
+    ],
+    "rp": [
+      3
+    ],
+    "h": [
+      4
+    ]
+  },
+  "network_inference": {
+    "window": 125,
+    "stride": 1,
+    "output": "last valid frame",
+    "startup": "available prefix",
+    "state": "reset every window and recording",
+    "batch_size": 64,
+    "filter": "Inherited centered acceleration mean; no extra smoothing",
+    "fps": 25,
+    "feature_dim": 60,
+    "acc_scale": 30,
+    "precision": "FP32, TF32 disabled, no AMP",
+    "execution_device": "cpu"
+  },
+  "metrics": {
+    "implementation": "unchanged tools/paper_metrics.py",
+    "device": "CPU",
+    "fk_chunk": 32,
+    "joints": 24,
+    "vertices": 6890,
+    "pose_blendshape": false,
+    "shape": "same mean male SMPL",
+    "spatial_alignment": "pelvis translation only",
+    "trajectory_translation": "zero for both",
+    "jitter": "whole-recording third difference; no boundary crossing",
+    "primary": [
+      "mpjre_deg",
+      "mpjpe_cm",
+      "mpjve_cm",
+      "jitter_100_m_s3"
+    ],
+    "aggregation": "Frame-weight spatial and T-3-weight jerk within each mask; equal mean over all24 masks",
+    "refinement": "none for either model"
+  },
+  "ik": {
+    "iterations": 10,
+    "learning_rate": 0.001,
+    "frame_batch": 256,
+    "device": "cpu",
+    "sensor_segment_joints": [
+      18,
+      19,
+      1,
+      2,
+      15
+    ],
+    "optimized_by_sensor": [
+      [
+        16,
+        18
+      ],
+      [
+        17,
+        19
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        12,
+        15
+      ]
+    ],
+    "parameterization": "right-multiplicative local SO(3) rotation-vector increments, float64; output float32",
+    "objective": "per-frame mean squared 3x3 global orientation residual over available sensors; summed across frames for backward",
+    "adam": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0,
+      "foreach": false,
+      "fused": false
+    },
+    "targets": "positive full-rank provided orientation matrices projected to SO(3) by SVD; IK-only, original input unchanged",
+    "selection": "final tenth update, no early stopping, best-iterate choice, rollback or GT calibration",
+    "state": "fresh zero increments and Adam moments for every frame; simultaneous available constraints",
+    "priors": "prediction initialization and frozen unselected local joints; no extra loss or joint limits",
+    "temporal_information": "prediction[t] plus available orientation[t] only; no added smoothing or cross-frame state"
+  },
+  "primary_aggregation": "same F03: within-mask frame/T-3 weighting then equal average of24 masks",
+  "auxiliary_aggregation": [
+    "sequence-equal within mask",
+    "12 mirror-collapsed group means and group-equal overall",
+    "subject-specific frame-weighted means; subject-equal overall"
+  ],
+  "paper_table2_reference": {
+    "mpjre_deg": 23.9,
+    "mpjpe_cm": 9.7,
+    "mpjve_cm": 12.1,
+    "jitter_100_m_s3": 1.9
+  },
+  "paper_comparison_status": "Descriptive only; unknown author IK settings and aggregation prevent strict numerical equivalence",
+  "known_conventions": {
+    "learning_rate": "1e-3 from cited AvatarPoser paper, NOT recovered IMUPoser parameter; AvatarPoser code default differs",
+    "head_hip_selection": "sensed segment and immediate parent; unpublished index list reconstructed",
+    "rotation_parameterization_and_projection": "explicit implementation choices, not specified by IMUPoser",
+    "window_and_aggregation": "F03 preserved; author overlap/startup/exact reduction not recovered"
+  },
+  "runtime": {
+    "torch": "2.7.0+cu128",
+    "parts": 2,
+    "threads_per_part": 2,
+    "network_inference_performed": false
+  },
+  "protected_files": {
+    "/home/alex/research/PoseEstimationWithWearables/tools/compare_dip_finetuning.py": "c14acda83c252a71c245e1eaa195139885c9a622025e3ce96f502a217f1010bd",
+    "/home/alex/research/PoseEstimationWithWearables/tools/runtime.py": "5537415807cb10ce9520b2aebf30c0a6baa8777ed2882c71d244530c4ee71a4a",
+    "/home/alex/research/PoseEstimationWithWearables/tools/window_inference.py": "3b59047460cb8b579499f0cc449d2d7bf0377965f5c004415727566ce1220ece",
+    "/home/alex/research/PoseEstimationWithWearables/tools/paper_metrics.py": "fec683fe11d74e160735bab9233aacedbe25c345b757806b1659f2350b1afb97",
+    "/home/alex/research/PoseEstimationWithWearables/tools/dip_finetuning.py": "282da422bbc98438e4a3af3158cf9dce631a169429fa2b3e89ee238e8e0aa2f8",
+    "/home/alex/research/PoseEstimationWithWearables/tools/eval_wrist_pocket_dev.py": "c53ed06af2ba769706c83d4e14dcc83a4ce4f6954cec2559932003accd92c151",
+    "/home/alex/research/PoseEstimationWithWearables/tools/train_dip_finetuning.py": "c1ccbd8d6ec6eda8b333951389716da95abb7adf4d6c866e6276f2d9cdd4eeda",
+    "/home/alex/research/PoseEstimationWithWearables/tests/test_compare_dip_finetuning.py": "84ea0f2688cb6d65e737b477907b009a3f0b12af84e57d75654cd02b2609d264",
+    "/home/alex/research/IMUPoser/src/imuposer/__init__.py": "48a02a55f448f80cbd3e880ebd0b87205c62f3e64b95e657877b7edc71d88239",
+    "/home/alex/research/IMUPoser/src/imuposer/config.py": "84207bade683401b9c0e16e87a952ea43af99edd2dc334277fa5db5b29070a24",
+    "/home/alex/research/IMUPoser/src/imuposer/datasets/__init__.py": "682d6ba0836d298afb9142a61757d13bd4081df4ed3fd95b9059a3a9545f46e0",
+    "/home/alex/research/IMUPoser/src/imuposer/datasets/globalModelDataset.py": "76cd2a5940fe4b687a73d9e72394140e542291f3ed091822a10f6e2b7aeda588",
+    "/home/alex/research/IMUPoser/src/imuposer/datasets/globalModelDatasetFineTuneDIP.py": "0219109122dd74c248309880055ff5ce0869285ea9a347dddf33657dd799d409",
+    "/home/alex/research/IMUPoser/src/imuposer/datasets/utils.py": "58bb844d309789d2535fee87f3e008045416ce89e4130edd52499f994d155a87",
+    "/home/alex/research/IMUPoser/src/imuposer/math/__init__.py": "1bc6ca9838707e7c71429ae07246b9d60afa0952429828cd614deb2101a93f55",
+    "/home/alex/research/IMUPoser/src/imuposer/math/angular.py": "57f3757df2eb5da22684397b326217eeb590fcee22576459c506dd263877909d",
+    "/home/alex/research/IMUPoser/src/imuposer/math/general.py": "dde398a12d98265a1d5ecf8db2f11259a63e0bbbeb3da924dae70e5681893c98",
+    "/home/alex/research/IMUPoser/src/imuposer/math/spatial.py": "dc0557443f41cb1e4213b5f4175c70798a2489c6dd186071be896e349915fc99",
+    "/home/alex/research/IMUPoser/src/imuposer/models/LSTMs/IMUPoser_Model.py": "e9c7207c9fa1e3f77c1c344c4684964a5e4d8a50f8944b1c8dd25c1467f03f24",
+    "/home/alex/research/IMUPoser/src/imuposer/models/LSTMs/IMUPoser_Model_FineTune.py": "4a577d2abd941ed310a0a1ed27618258daf3564b17a20968c77eeba3a73a67c3",
+    "/home/alex/research/IMUPoser/src/imuposer/models/LSTMs/RNN.py": "513de4770fea869997e95771236ab0911e1ad589cbf12df02f189e04a3ae31e4",
+    "/home/alex/research/IMUPoser/src/imuposer/models/LSTMs/__init__.py": "b0957579ef0b20ae13a0b9cce3092784c2d89fc51428539925a1bd79ca4fcfa0",
+    "/home/alex/research/IMUPoser/src/imuposer/models/__init__.py": "34860f226daed0b5389246b58345e4378ce16ba9122a174c141a6d17cd192367",
+    "/home/alex/research/IMUPoser/src/imuposer/models/loss_functions.py": "c88acb29e22aee71a532847a080a3d6020e5a5cb026d72078a415a96f87013d5",
+    "/home/alex/research/IMUPoser/src/imuposer/models/utils.py": "c044d69deb6becddd7469331294d51f407d4d6f4e2a2c17834025903468157dd",
+    "/home/alex/research/IMUPoser/src/imuposer/smpl/__init__.py": "f94dc92ffef7446b3b3afcc5cac3736b869587b63c7ca156c231ea0aca6e4712",
+    "/home/alex/research/IMUPoser/src/imuposer/smpl/parametricModel.py": "275441939d8abdb95cd58c0f9b4ee1d36111a1b9a767432c45788c9ba1ca57e0",
+    "/home/alex/research/IMUPoser/src/imuposer/smpl/smpl_vert_segmentation.py": "03e680a605c7176c1abba9ae26f104d1294a01b1accecda141aed5d4a20181a2",
+    "/home/alex/research/IMUPoser/src/imuposer/utils.py": "d44a2b6c98372b8200b89d473d29670f135812657c9beda5ca2b74fc652f4e9a",
+    "/home/alex/research/PoseEstimationWithWearables/tools/compare_dip_finetuning_cpu.py": "1e7c74a9f891b4c11b29f6b562e172d7cebb07396366d8e44bd2b968eb708a95",
+    "/home/alex/research/PoseEstimationWithWearables/tools/imu_only_ik.py": "388f55267291fc7ab93a898d84d5cdad05078b548a4a65429a4639ff7864bfdb",
+    "/home/alex/research/PoseEstimationWithWearables/tools/eval_imu_only_ik.py": "f825bfa1973a7d0d2a3615234fece195aa565afad542d4aebc04493e8abce6a9",
+    "/home/alex/research/PoseEstimationWithWearables/tools/audit_imu_only_ik.py": "5f14b6d1ac0128eeaf859e54173575d02c3f6eeb1fdc3e157cd371964cf42887",
+    "/home/alex/research/PoseEstimationWithWearables/tools/validate_imu_only_ik.py": "bf7af8f46d1e1037f663133193fdda7b7a4a44cac5b59b8f5128046a54228352",
+    "/home/alex/research/PoseEstimationWithWearables/tests/test_imu_only_ik.py": "b99cc5715cfa2d0c32011302d248af4de7f99f45a361ec46b770d51ebb70064d",
+    "/home/alex/research/PoseEstimationWithWearables/tests/test_ik_aggregation.py": "808f9c9e61a97c93aa749570700b342f0b87f88140aeae5d6ea7a7411fc9befa",
+    "/home/alex/research/IMUPoser/data/processed_imuposer_25fps/dip_test.pt": "352ce4f1312fbc7d496ce3d3d3c7287f01389624b75296ce4e349868b958b475",
+    "/home/alex/research/IMUPoser/src/imuposer/smpl/basicmodel_m_lbs_10_207_0_v1.0.0.pkl": "0e8c0bbbbc635dcb166ed29c303fb4bef16ea5f623e5a89263495a9e403575bd",
+    "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=59-val_loss=validation_step_loss=0.01017.ckpt": "02b9211b57ca36ae3fb13dcacc4b008b49a31fd360ebea516b73d103bd2a5058",
+    "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_final_v1/checkpoints/epoch_002_9d8a49a977cb.ckpt": "996a3e2df21ac675df8f777d975d0700f3836c1d835bb898044a714e6cb5f7d8",
+    "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_finetuning_v1_20261114/PROTOCOL.json": "79bde74ead3f596c5806e3fa1d0cd5b07fcfb6260b0c9e81c218771ba50441ad",
+    "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_finetune_comparison_cpu_v1/PROTOCOL.json": "2144b72d4061dd786f09870426d9158e1666ba9157c342fb232bf31309666aa4",
+    "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_finetune_comparison_cpu_v1/completion.json": "1eaca5926aad5a3a343ad38c3f007dc6f1230b4a334c22efa63cf12db59352b6",
+    "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_finetune_comparison_cpu_v1/metrics.json": "468cb46c05b09c36e1608298b8360204705b606508d9a422e2c17329fad8f8d9",
+    "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_finetune_comparison_cpu_v1/ARTIFACT_MANIFEST.json": "e3ec7a3e1c645db966e9a79b86a9eefdd6c7e836ec79c130a40bed8267171569",
+    "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_finetune_comparison_cpu_v1/independent_validation.json": "245659edad6091e8ef43674678aa384086597cad619482bbf2b2308bba2b2cd1"
+  },
+  "sources": {
+    "/home/alex/research/PoseEstimationWithWearables/tools/compare_dip_finetuning.py": "c14acda83c252a71c245e1eaa195139885c9a622025e3ce96f502a217f1010bd",
+    "/home/alex/research/PoseEstimationWithWearables/tools/runtime.py": "5537415807cb10ce9520b2aebf30c0a6baa8777ed2882c71d244530c4ee71a4a",
+    "/home/alex/research/PoseEstimationWithWearables/tools/window_inference.py": "3b59047460cb8b579499f0cc449d2d7bf0377965f5c004415727566ce1220ece",
+    "/home/alex/research/PoseEstimationWithWearables/tools/paper_metrics.py": "fec683fe11d74e160735bab9233aacedbe25c345b757806b1659f2350b1afb97",
+    "/home/alex/research/PoseEstimationWithWearables/tools/dip_finetuning.py": "282da422bbc98438e4a3af3158cf9dce631a169429fa2b3e89ee238e8e0aa2f8",
+    "/home/alex/research/PoseEstimationWithWearables/tools/eval_wrist_pocket_dev.py": "c53ed06af2ba769706c83d4e14dcc83a4ce4f6954cec2559932003accd92c151",
+    "/home/alex/research/PoseEstimationWithWearables/tools/train_dip_finetuning.py": "c1ccbd8d6ec6eda8b333951389716da95abb7adf4d6c866e6276f2d9cdd4eeda",
+    "/home/alex/research/PoseEstimationWithWearables/tests/test_compare_dip_finetuning.py": "84ea0f2688cb6d65e737b477907b009a3f0b12af84e57d75654cd02b2609d264",
+    "/home/alex/research/IMUPoser/src/imuposer/__init__.py": "48a02a55f448f80cbd3e880ebd0b87205c62f3e64b95e657877b7edc71d88239",
+    "/home/alex/research/IMUPoser/src/imuposer/config.py": "84207bade683401b9c0e16e87a952ea43af99edd2dc334277fa5db5b29070a24",
+    "/home/alex/research/IMUPoser/src/imuposer/datasets/__init__.py": "682d6ba0836d298afb9142a61757d13bd4081df4ed3fd95b9059a3a9545f46e0",
+    "/home/alex/research/IMUPoser/src/imuposer/datasets/globalModelDataset.py": "76cd2a5940fe4b687a73d9e72394140e542291f3ed091822a10f6e2b7aeda588",
+    "/home/alex/research/IMUPoser/src/imuposer/datasets/globalModelDatasetFineTuneDIP.py": "0219109122dd74c248309880055ff5ce0869285ea9a347dddf33657dd799d409",
+    "/home/alex/research/IMUPoser/src/imuposer/datasets/utils.py": "58bb844d309789d2535fee87f3e008045416ce89e4130edd52499f994d155a87",
+    "/home/alex/research/IMUPoser/src/imuposer/math/__init__.py": "1bc6ca9838707e7c71429ae07246b9d60afa0952429828cd614deb2101a93f55",
+    "/home/alex/research/IMUPoser/src/imuposer/math/angular.py": "57f3757df2eb5da22684397b326217eeb590fcee22576459c506dd263877909d",
+    "/home/alex/research/IMUPoser/src/imuposer/math/general.py": "dde398a12d98265a1d5ecf8db2f11259a63e0bbbeb3da924dae70e5681893c98",
+    "/home/alex/research/IMUPoser/src/imuposer/math/spatial.py": "dc0557443f41cb1e4213b5f4175c70798a2489c6dd186071be896e349915fc99",
+    "/home/alex/research/IMUPoser/src/imuposer/models/LSTMs/IMUPoser_Model.py": "e9c7207c9fa1e3f77c1c344c4684964a5e4d8a50f8944b1c8dd25c1467f03f24",
+    "/home/alex/research/IMUPoser/src/imuposer/models/LSTMs/IMUPoser_Model_FineTune.py": "4a577d2abd941ed310a0a1ed27618258daf3564b17a20968c77eeba3a73a67c3",
+    "/home/alex/research/IMUPoser/src/imuposer/models/LSTMs/RNN.py": "513de4770fea869997e95771236ab0911e1ad589cbf12df02f189e04a3ae31e4",
+    "/home/alex/research/IMUPoser/src/imuposer/models/LSTMs/__init__.py": "b0957579ef0b20ae13a0b9cce3092784c2d89fc51428539925a1bd79ca4fcfa0",
+    "/home/alex/research/IMUPoser/src/imuposer/models/__init__.py": "34860f226daed0b5389246b58345e4378ce16ba9122a174c141a6d17cd192367",
+    "/home/alex/research/IMUPoser/src/imuposer/models/loss_functions.py": "c88acb29e22aee71a532847a080a3d6020e5a5cb026d72078a415a96f87013d5",
+    "/home/alex/research/IMUPoser/src/imuposer/models/utils.py": "c044d69deb6becddd7469331294d51f407d4d6f4e2a2c17834025903468157dd",
+    "/home/alex/research/IMUPoser/src/imuposer/smpl/__init__.py": "f94dc92ffef7446b3b3afcc5cac3736b869587b63c7ca156c231ea0aca6e4712",
+    "/home/alex/research/IMUPoser/src/imuposer/smpl/parametricModel.py": "275441939d8abdb95cd58c0f9b4ee1d36111a1b9a767432c45788c9ba1ca57e0",
+    "/home/alex/research/IMUPoser/src/imuposer/smpl/smpl_vert_segmentation.py": "03e680a605c7176c1abba9ae26f104d1294a01b1accecda141aed5d4a20181a2",
+    "/home/alex/research/IMUPoser/src/imuposer/utils.py": "d44a2b6c98372b8200b89d473d29670f135812657c9beda5ca2b74fc652f4e9a",
+    "/home/alex/research/PoseEstimationWithWearables/tools/compare_dip_finetuning_cpu.py": "1e7c74a9f891b4c11b29f6b562e172d7cebb07396366d8e44bd2b968eb708a95",
+    "/home/alex/research/PoseEstimationWithWearables/tools/imu_only_ik.py": "388f55267291fc7ab93a898d84d5cdad05078b548a4a65429a4639ff7864bfdb",
+    "/home/alex/research/PoseEstimationWithWearables/tools/eval_imu_only_ik.py": "f825bfa1973a7d0d2a3615234fece195aa565afad542d4aebc04493e8abce6a9",
+    "/home/alex/research/PoseEstimationWithWearables/tools/audit_imu_only_ik.py": "5f14b6d1ac0128eeaf859e54173575d02c3f6eeb1fdc3e157cd371964cf42887",
+    "/home/alex/research/PoseEstimationWithWearables/tools/validate_imu_only_ik.py": "bf7af8f46d1e1037f663133193fdda7b7a4a44cac5b59b8f5128046a54228352",
+    "/home/alex/research/PoseEstimationWithWearables/tests/test_imu_only_ik.py": "b99cc5715cfa2d0c32011302d248af4de7f99f45a361ec46b770d51ebb70064d",
+    "/home/alex/research/PoseEstimationWithWearables/tests/test_ik_aggregation.py": "808f9c9e61a97c93aa749570700b342f0b87f88140aeae5d6ea7a7411fc9befa"
+  },
+  "training_performed": false,
+  "test_tuning_performed": false,
+  "evidence": {
+    "imuposer_paper": "https://arxiv.org/html/2304.12518v1#S4.SS4",
+    "imuposer_commit": "a0e9d33b9c57d6737d711185b62084e17684b0e2",
+    "avatarposer_paper": "https://static.siplab.org/papers/eccv2022-avatarposer.pdf",
+    "avatarposer_commit": "0f97cb27fa7ad97ceb9c02e4d068d613eb315ba0",
+    "mapping_issue": "https://github.com/FIGLAB/IMUPoser/issues/16"
+  }
+}

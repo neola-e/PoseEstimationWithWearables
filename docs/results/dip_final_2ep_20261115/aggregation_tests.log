@@ -1,0 +1,13 @@
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+test_changed_recording_length_or_jerk_stencil_rejected (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_equal_mask_mean_and_frame_weighted_spatial_mean (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_jitter_uses_t_minus_three_and_100_unit_conversion (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_mismatched_target_trajectory_is_rejected (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_missing_duplicate_extra_and_global_results_rejected (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_result_order_does_not_change_spatial_aggregate (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.023s
+
+OK

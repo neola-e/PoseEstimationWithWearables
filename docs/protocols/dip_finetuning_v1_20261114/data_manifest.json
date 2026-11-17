@@ -1,0 +1,642 @@
+{
+  "data_path": "/home/alex/research/IMUPoser/data/processed_imuposer_25fps/dip_train.pt",
+  "data_sha256": "a9467600237d1b30019fa9b3c63141c6b03da8c03dde8bf67b2fd062a6d4702b",
+  "identity_method": "Bitwise acc/ori/pose match to locally licensed raw preprocessing",
+  "reservation_path": "/home/alex/research/PoseEstimationWithWearables/outputs/local_dip/wrist_pocket_dev_epoch59_20261110/split_manifest.json",
+  "reservation_sha256": "2a94e0e2124ad0c67f65590e484876e3cde733d1a0352aed09eee055219d25a5",
+  "records": [
+    {
+      "subject": "s_01",
+      "source_file": "01.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_01/01.pkl",
+      "raw_sha256": "01954b4ae991606cec2f41da262a46eb1abca1dd881b076a425a1045321bccd7",
+      "sequence_id": 0,
+      "frames": 5736,
+      "processed_sha256": {
+        "acc": "84f197a7c0ff19369190a4115d01dd5251e54b7b99581a022884bf1b40dd9ae9",
+        "ori": "54762749e19e688a61d92b8e8aef7fb8d36b4b74615d2fe9a1fd83571871c11a",
+        "pose": "8cc3783e6178852dade8a4f8a42b5e4c7a3976e8e3d795ae132ffca8b041470b"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_01",
+      "source_file": "03.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_01/03.pkl",
+      "raw_sha256": "c2f235b17d72a76b04994b668061f014967a6621892e2cdb91d8ef797908dd8c",
+      "sequence_id": 1,
+      "frames": 3303,
+      "processed_sha256": {
+        "acc": "8dfbd0da7cfa881294ac426ae38dc49593200e2ddf231d3f0a4b5b350a14c8fc",
+        "ori": "65469daf67441472a18e7423fc15a31c393e29628bf635e2c257bee14f929647",
+        "pose": "dad69837befd69c5623b51443a9f6e878f4c53c30704dcb27f652ede36bf9663"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_01",
+      "source_file": "04.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_01/04.pkl",
+      "raw_sha256": "f506fb8203754ba30b699793027a7f6db50e00bba470fba948b05686d1258831",
+      "sequence_id": 2,
+      "frames": 443,
+      "processed_sha256": {
+        "acc": "f22612e80adff6fdf728f821ae7f8c440441f4b31ceb67d1924acc8872a9e8e0",
+        "ori": "31bd7def8dee9ed55685a29e591da41ad800d4b21c2e564e7ee477688e1e969a",
+        "pose": "f0d2f8a799f8cbabed56800b2fecf8ed6f8a19236b1b0d452251ac40cc4b3346"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_01",
+      "source_file": "05.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_01/05.pkl",
+      "raw_sha256": "44688dd3e8d0d5f8b62e2581c182a8da961e9fd6c7ca08e97d61ec789a9a62dc",
+      "sequence_id": 3,
+      "frames": 2304,
+      "processed_sha256": {
+        "acc": "4a5e828aae903989631c85a9dc2c000d75dbd610b936bbbd8dbc41a93c0fc198",
+        "ori": "643a315a0fe7f16363e16b343e4cd22e95887d528b2127814bbe5b2eefe3497a",
+        "pose": "42bf8cffea49ee610d8ef7efe0d793a75ba6c4d3e8d909f46a782db72eac78de"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_02",
+      "source_file": "01.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_02/01.pkl",
+      "raw_sha256": "d3e2a43be4a21d6bbf2fcc893d9f12f68353e2f6d305806019a81ef43eeefbb8",
+      "sequence_id": 4,
+      "frames": 3793,
+      "processed_sha256": {
+        "acc": "4f10b81cf84d43ef946b0f65884bb09cc37213df091ba192c75b1e6a1c1fd603",
+        "ori": "7ef8ea6bb975c3e23b38e65649e43b324512b9625f643ba1e06ebe1f13be8a20",
+        "pose": "b98aba414a9f7fee8b70c92994d772a60508079112e2a346099d38d7c161ac5d"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_02",
+      "source_file": "02.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_02/02.pkl",
+      "raw_sha256": "f52e6e2f9cc46dbeed5c54d689b6595563d142540194448541d116b35d28d580",
+      "sequence_id": 5,
+      "frames": 2694,
+      "processed_sha256": {
+        "acc": "19c5f23ebbb9a0b60407bf9a849e1975887f684ea3b2a8facc3f655c0b92d618",
+        "ori": "b622e6079cdf40001f478831d8c6ad0853daf73c98dd9c09bc7d94f7543725cb",
+        "pose": "6f13dcb8a4b4daa1208c58e1ee54c9ed1fe72bfc95a37c75c4f756bfa0d9881e"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_02",
+      "source_file": "03.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_02/03.pkl",
+      "raw_sha256": "06d07af990a77d1902b7bd34ac17a368c63dd9fd78d62a45ef7e84e79e183b9a",
+      "sequence_id": 6,
+      "frames": 2907,
+      "processed_sha256": {
+        "acc": "fdc2d4b35dbdecc117a44943457520a8fa1a43848f727fa7998ef5f7f4e5939a",
+        "ori": "bdf258c550092749d4a0a639fd8af15215ebefc4ffbeb8680e135d0218c8582c",
+        "pose": "1ddbb37c3c790dff3b951e32db3b555de1d35c1e9bf7e4ccb27af74a365939f7"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_02",
+      "source_file": "04.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_02/04.pkl",
+      "raw_sha256": "aeb867ff39c1e40bcf54240e16936cef9c9248489a26bdc5ce93f72741788fc8",
+      "sequence_id": 7,
+      "frames": 1738,
+      "processed_sha256": {
+        "acc": "c007719c11b071bf90a1448000df5ee4f720224b11cade6654fafee52f48d986",
+        "ori": "2d64c0bc77a805d72faeed2c51525e744069ce874e1e812dcc9d70bd2c97732a",
+        "pose": "2b6f1db67a2cab00a9c7ef5795a12fab86a1b993307f49cdc7a83f75f0cee2ed"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_02",
+      "source_file": "05.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_02/05.pkl",
+      "raw_sha256": "ba347a6fce4b08a60b651acf247338d90dc436b2753c4ea0279068397205a00b",
+      "sequence_id": 8,
+      "frames": 2424,
+      "processed_sha256": {
+        "acc": "7dc63b5dc4987d46f8dbc94f0e163bc0e2dc4e63e3775a3ccaa16441f28aedce",
+        "ori": "af20a9cd14a90acd1bbbf3a976a5f13c9864bc31b557f3dceb5dd99111d2c915",
+        "pose": "4421f9f37e9c7f5f878992f66ebbb1c11dc376eb6a07ddfdfdeac00f9d1763e5"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_03",
+      "source_file": "01.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_03/01.pkl",
+      "raw_sha256": "bd4300cc41e82b1351c5485d65efdacc3f8039e942260f374710bc294c2cbca3",
+      "sequence_id": 9,
+      "frames": 6840,
+      "processed_sha256": {
+        "acc": "6b0ed94940637b458608966d88baaf91727baa25d2343d6c9b02ec4cda35b24d",
+        "ori": "c551d40864da9c196c6386a8763e4a1cbc2c1b607d6bd3ddf073e8ce1d3fc09d",
+        "pose": "3f38b24c878ebec70b2f3cf7ad77ca29fac04b35d429112eb95569b880bdf774"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_03",
+      "source_file": "03.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_03/03.pkl",
+      "raw_sha256": "e3d929ae777e17cff0471f432367f1baef597a98544a93193470cd727ad092a5",
+      "sequence_id": 10,
+      "frames": 3938,
+      "processed_sha256": {
+        "acc": "ea2daf1e63b290912a01622bd497922402281824e9a6c24b6413050e8f2c3167",
+        "ori": "1c312eedc59342bf278c63755b0d3bd4dcfb8681eabdfa0bdf6b45acd56a3b8f",
+        "pose": "6ea9bbed45f46a29c104df7d1ae0f5f1ec41f96211bce224eae343547fd738e4"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_03",
+      "source_file": "04.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_03/04.pkl",
+      "raw_sha256": "c15463d31a7f626c843dac224f73a2ade13b1a1cd86d1a4fed3fa55390b38ac8",
+      "sequence_id": 11,
+      "frames": 510,
+      "processed_sha256": {
+        "acc": "2c1fd8c89792dd341239389b4a7aa488ba4e626a39ce74fd3db30b015b9c5f32",
+        "ori": "60e864ad126a72b1ce055112d019fb83b6a2a368898c03a12abc06a4350708ad",
+        "pose": "f34f43b633c2979138dce3a2be66fe0084265321b4851db8dc79f4df46e9a76d"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_03",
+      "source_file": "05.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_03/05.pkl",
+      "raw_sha256": "67b90ee6e071a415ddf4a0cf20e56c53a085646078112536985e834195785ba7",
+      "sequence_id": 12,
+      "frames": 2736,
+      "processed_sha256": {
+        "acc": "b7b760f31027e32cdeef83df7d95adad4794bcd3c41a8237870d15fa73bd81f6",
+        "ori": "8c8c88ea5afe3375e8a44dbc73c4ea811e9d43018e927f7a6ac5a2f4dfe67aca",
+        "pose": "71985d5f1ae5494930476fd275801ee7db844f3d0b586d51bb715deb999a8dd7"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_04",
+      "source_file": "01.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_04/01.pkl",
+      "raw_sha256": "dbc272c80d1c672a3010209f2cc765166bba6c98b4b9ede8e229187d068bd993",
+      "sequence_id": 13,
+      "frames": 3959,
+      "processed_sha256": {
+        "acc": "eec6285bfc0e0a44200714dc6f803336e3c101847f6418a73c9f1d602daad8b9",
+        "ori": "782be2cf3b7f38b88c2b9976478bf48542f47c27df4de5200c5caa5e592ff07a",
+        "pose": "253f160e8febaa83f5b093c31658b4f04d2e0270eee736ddcc0e6da6f6934ba6"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_04",
+      "source_file": "02.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_04/02.pkl",
+      "raw_sha256": "0621963b26a9af4f860931f6de3f0c3c3c55cf9762d96c380cd25d824270d621",
+      "sequence_id": 14,
+      "frames": 2670,
+      "processed_sha256": {
+        "acc": "be00b6ae95b8a12c93c25b6c49df1b75f5d669b412abe0c0046a0fd48d28611b",
+        "ori": "d53fde86eb1c9b38a492717204be2ae929ef80f7a5a7831520a6e64d2b3f5428",
+        "pose": "6322dc6415e8f65506c9651d21253dfabfecbe0adcc91c63582de332efe1512a"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_04",
+      "source_file": "03.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_04/03.pkl",
+      "raw_sha256": "c2b1930d4284b084b0d20482ead2db95cefea769295c3b4101d596389e5592af",
+      "sequence_id": 15,
+      "frames": 3283,
+      "processed_sha256": {
+        "acc": "58c826659535409565a446bad516744a4072a9959e7ff0740bd2589410a14b5a",
+        "ori": "b75323944d6dd3167eb93785dcbd02cc5aafdfa52e0ba62af7248b9a843be228",
+        "pose": "c98d33032c8966a63f0ae28990fa1ceb50ee30227df070ba090f3143aaf05875"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_04",
+      "source_file": "04.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_04/04.pkl",
+      "raw_sha256": "2a2df73cf2c945a4924d26f607e421ae15490c0b29106beb3ea815958c70f647",
+      "sequence_id": 16,
+      "frames": 483,
+      "processed_sha256": {
+        "acc": "aeb1d97e0d917326ef3f5d3ccb30a25903774c28795d511a472c84c95effad83",
+        "ori": "213c57b78418baddc6de7ab367365e37ce11bd7785aaea1398e3d8e1ec1644ce",
+        "pose": "402f8498f2985c453790bdda759522291d4ea6115c09134ac2ac3e38af1825a8"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_04",
+      "source_file": "05.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_04/05.pkl",
+      "raw_sha256": "b349e6c3f6a75315d1d24d2d61ea45687c8cd863605583b495b1142351cb34af",
+      "sequence_id": 17,
+      "frames": 2422,
+      "processed_sha256": {
+        "acc": "098d43865423f015f6097182010dd180c42098b2eaa1bcdf7290eadb42c8502c",
+        "ori": "00193892ab05bb84ea722d01a80d7b968125d704e3de1aa8aac3e7049052c315",
+        "pose": "1dc1631ac4c6f767b7b0ac6f6712342e41f7286f9e5df250ae191641ac9aecc2"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_05",
+      "source_file": "01_a.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_05/01_a.pkl",
+      "raw_sha256": "82d998136f9ad347890eb1a9c81846b1422574e705bf635346972ae32bc98ee5",
+      "sequence_id": 18,
+      "frames": 2416,
+      "processed_sha256": {
+        "acc": "0cfa51c6edd8ca507c9915b0e0272dcd0e147cf7cbaa567735a1b235436ef350",
+        "ori": "8a44d92251756a327a947d03bc70aa2e09f992bfac563d7f64a784f469558095",
+        "pose": "4664281b59c60f6352e9deeda91343cb062f1bdcf7de531628227121bcbc0588"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_05",
+      "source_file": "01_b.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_05/01_b.pkl",
+      "raw_sha256": "506601070c93b189980e9293bc5a74ad4a9759f3b2299d0ff31581d6e956455d",
+      "sequence_id": 19,
+      "frames": 2138,
+      "processed_sha256": {
+        "acc": "db5d6210cd47f2f257bbeffe5ffaef4779b431add6be549050082c6936c63975",
+        "ori": "2e1ea3de470e50e66d3f46910915b1dc9313859648c2522658020a15b4993e0c",
+        "pose": "de95e017f5c7f1f74266c9c7b07d072407e81e177b6aa3ee1227a1f563d65dd6"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_05",
+      "source_file": "02.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_05/02.pkl",
+      "raw_sha256": "3e2cc4f336a9e76aa4ec9d221bce92090fc429aa53304e33a523d22b4a2b2228",
+      "sequence_id": 20,
+      "frames": 2878,
+      "processed_sha256": {
+        "acc": "3114192f75f916bb8035c3e0f27f3ee20f7c3b24bbd5b0b2f1cfe2911f37bf70",
+        "ori": "758f45547e4a8c7f01d3828aa0e1f7bf906884cb358b4f8a189d59f9d38669af",
+        "pose": "71914682578ea5990933025502de7854a3ff076d7c6a094c32440ccd7894f6ac"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_05",
+      "source_file": "03.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_05/03.pkl",
+      "raw_sha256": "75ba81550c1a4873071412ff74003f39c788e2ef7c4a9e820b9c805bb679b8c7",
+      "sequence_id": 21,
+      "frames": 3245,
+      "processed_sha256": {
+        "acc": "992637338359656c660d9793ad53d6454046a01f2475b3fd7e772f5b0fcf66dd",
+        "ori": "1b217e152516f561228002d5099ca0fbdf2c318b689edec6bf1f1efcc02cf493",
+        "pose": "754aaa22f9800404aa6d2e85c0fe001531f43916077d1664b7cac93a1122c171"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_05",
+      "source_file": "04.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_05/04.pkl",
+      "raw_sha256": "e85e3395ed9fa0ee27a88fae3428a98d0d7c18d2fbdb2331b7f5f6c3fd5350ce",
+      "sequence_id": 22,
+      "frames": 1105,
+      "processed_sha256": {
+        "acc": "9ac6f67d55d51fff0c7fa06e691a216f239293eec9015b218dc79611274e0480",
+        "ori": "13fe54e25dfc2b63be935188601e4bb665c6c96ee23d2f9d44bd169711e85161",
+        "pose": "01565fcf1a9e4f296b2444e42170243af2a013cdb9e9921b5728f717b91ac7ed"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_05",
+      "source_file": "05.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_05/05.pkl",
+      "raw_sha256": "ba959bb399cf78cbc5834e65864ffc92ccb740d01edfa7cdccb6058f7c597c7a",
+      "sequence_id": 23,
+      "frames": 2235,
+      "processed_sha256": {
+        "acc": "667852f0df400d506cba878e6ce94abb9a6a94025ce1ab63c14d9b0720fab4f6",
+        "ori": "c8000b11e5e6cc0cc60339307500b6920f15ec104f45a970e3da7b20b0cd8308",
+        "pose": "d5063d8af0138197cf2647574af09ff0bbc0ecaf1fe288a3bc0aab307a219a68"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_06",
+      "source_file": "01_a.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_06/01_a.pkl",
+      "raw_sha256": "0072d95dad2608e44c73a5e6ec09976ea38297ded1c099ce144fef075465f508",
+      "sequence_id": 24,
+      "frames": 2507,
+      "processed_sha256": {
+        "acc": "dcc17e212cd1b759f97bd29ac619758b9c7642a74f59b8dd703a22a434cd4d66",
+        "ori": "70989a6bb47cea851ad936c288cb030a49222cb4d4ef58ca8d4b5e03f09f5180",
+        "pose": "5d877fcf06de96dbd674da357989315654dba79aa8639e93c06dc3f8f6fe2b61"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_06",
+      "source_file": "01_b.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_06/01_b.pkl",
+      "raw_sha256": "5ebe0d1ede6fda7edb5c5c0dc0123459c2c99c5f43e3457eacf4777bd9660840",
+      "sequence_id": 25,
+      "frames": 2651,
+      "processed_sha256": {
+        "acc": "94545509407bbefaca7c010a5dcd5304228499529e93bbd84d94a8890276c16d",
+        "ori": "7720d8f0100aff43744f582850f8c0c0ee40e7f99e78ff7166ca01770ca2bbd6",
+        "pose": "36e833884fd756dad75b7f063ccae5ce80bd07335f6f1e396813a22db1a357fe"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_06",
+      "source_file": "02.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_06/02.pkl",
+      "raw_sha256": "1d86b1a5a51ffc79b0fd83b5f95f63ada77a826586e591565ef294cbfdd55cf3",
+      "sequence_id": 26,
+      "frames": 3527,
+      "processed_sha256": {
+        "acc": "64dfb654c587e649f55a2eb4b8497fd82a300208585d239ab15b3ea13963383f",
+        "ori": "904d674dec4bed1f5ba6571908e78de6e72eaf65a6207b8a0d93c1cd3a24ab84",
+        "pose": "fa85577d24b7960cb7d8867d06a26a75c58d11589bf9ef5913ce25e48fe64f25"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_06",
+      "source_file": "03.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_06/03.pkl",
+      "raw_sha256": "3a8bcbac360eac2bc4d97c1ab8bfcfa5a2de173c7278fa28245dbfac98ab1cc4",
+      "sequence_id": 27,
+      "frames": 2603,
+      "processed_sha256": {
+        "acc": "47c61ae6c2158ef4fb7e38683d3ba237fb20019db11eac58f979163750971e13",
+        "ori": "aaea81946413be8ee20409647f2197e722206d69f180fb4f8f1d0b8674a38abf",
+        "pose": "bf8aeaa2e9c05381b2e3beeed7d93fc5e407e55bc3ec697d6af4c3529c694db4"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_06",
+      "source_file": "04.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_06/04.pkl",
+      "raw_sha256": "339e529508c3a329501ee5420496afc10e03c59d60b594e1396179cad85340b3",
+      "sequence_id": 28,
+      "frames": 348,
+      "processed_sha256": {
+        "acc": "98cfa2a1a48027627e97b2e0a08688276e5edf2d145626f71b7f3a6942f7b856",
+        "ori": "4aecd253716fba9c94d98b7b5e04ea0c87127e729f5bbe5f483c242416885396",
+        "pose": "7cb113902ab45262dfb3e157155240e3cf8afc0697e760e43a2f7432ff7bc9d1"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_06",
+      "source_file": "05.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_06/05.pkl",
+      "raw_sha256": "c728a2044604c7c5411d230b9c01a16c6c658cfcbb245a06aee90ec49eb62d2d",
+      "sequence_id": 29,
+      "frames": 2234,
+      "processed_sha256": {
+        "acc": "94685980e99dd7a9a19447e688f0ae604e6ef99fd5ce7d0db63f4dcea141024d",
+        "ori": "ae3de249159f3433aa8b43628a5f73ab53e396614ebb481efec60f94654064e4",
+        "pose": "ab68b7df46fefa134effdd550badb08e14ef78eb45c77d6f850255c52178c01c"
+      },
+      "role": "train"
+    },
+    {
+      "subject": "s_07",
+      "source_file": "01.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_07/01.pkl",
+      "raw_sha256": "3e691eb54996c323eee24034fa5cddcc7dd8fd018a0b5e9f9ab73b62d5c353a4",
+      "sequence_id": 30,
+      "frames": 2800,
+      "processed_sha256": {
+        "acc": "bb9d0afabf83c97b3e8b252ab6c8fb32f373aee6cfb9c1edc826c5a068377196",
+        "ori": "94771721e411774c15c624e3c2590d3103a74b7c321a2f31c723a46a50a2b5f5",
+        "pose": "b48df2f47738c3786072be4b8da675776f0154a96b20acb9e51b238446bc16ac"
+      },
+      "role": "validation"
+    },
+    {
+      "subject": "s_07",
+      "source_file": "02.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_07/02.pkl",
+      "raw_sha256": "bdcd58408d4f62baa4fc1c47a2d1e202ef8154051ea9b60e9c3722369e351c09",
+      "sequence_id": 31,
+      "frames": 3663,
+      "processed_sha256": {
+        "acc": "aeb3186fcd930311fd738845809d71e1d1d7407a9fba55034a227cb828121eb7",
+        "ori": "2790da91b0176b37e4847d4ea6a3e2f1a1c80729f6bbf078bf59e9eb03f9c564",
+        "pose": "ab37933e7261e220cda67f35c6c2c525d0a89a1f3754abeabc8d1e6c6f4b0591"
+      },
+      "role": "validation"
+    },
+    {
+      "subject": "s_07",
+      "source_file": "03.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_07/03.pkl",
+      "raw_sha256": "ee7932e0a43e78c00846f95b5017b0ebf6f600c1142bb87ea74401c0c643f9b5",
+      "sequence_id": 32,
+      "frames": 3317,
+      "processed_sha256": {
+        "acc": "44b5d78ecd48a54a1efe64903db3b8d21d98733e4454d4b699ef3290b4acadd5",
+        "ori": "e5e2926e01244ab30d191a285eec9400e136a1c5349744427b622201fef4d47f",
+        "pose": "d321329a2524884377b59a94e78fd11cf2a203c6987abac843385c76fc20df8f"
+      },
+      "role": "validation"
+    },
+    {
+      "subject": "s_07",
+      "source_file": "04.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_07/04.pkl",
+      "raw_sha256": "2a91176e5ffd0f45b15a173265cce158ca228bf0018f5bb8ace2316163b7b873",
+      "sequence_id": 33,
+      "frames": 411,
+      "processed_sha256": {
+        "acc": "dcc0866c806ee7efdce1fe4bfc475ae95a82a96aa043a7d5f0ba174976df75e2",
+        "ori": "fd1134eefd1d25b6db1c8c6dd02d454e88493ccc1d0f9fac6494d8aac65435f1",
+        "pose": "b36eecd58bef3f1a4ca9b53d9d5b9469c3476ac56a5d6af09ef52296a5ebe47b"
+      },
+      "role": "validation"
+    },
+    {
+      "subject": "s_07",
+      "source_file": "05.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_07/05.pkl",
+      "raw_sha256": "bc759db35c42cbe933a7fdba82548df15840337981d28c5c85a3233c5b0618ea",
+      "sequence_id": 34,
+      "frames": 2439,
+      "processed_sha256": {
+        "acc": "507294a4d480055702c7b3bbb2c930631b86880d8237bb68ddb5dedb5b094dd9",
+        "ori": "647d2c165b81245919eab60c45d2a01b1aa80ca9561efb8df16ea5da99665615",
+        "pose": "298304d70fe147241170cfb1d45e5c0250d03b52f46da62cf3d0936cc53bec4e"
+      },
+      "role": "validation"
+    },
+    {
+      "subject": "s_08",
+      "source_file": "01_a.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_08/01_a.pkl",
+      "raw_sha256": "7f471f37a241d0775f814c2be4c8d9e8ea2ba5356659fa7a24cd810b306c6f6f",
+      "sequence_id": 35,
+      "frames": 2354,
+      "processed_sha256": {
+        "acc": "2f85dd94d8f6ffc931a4a62aeb272d44285172aece97384dadf113983007dd88",
+        "ori": "858aa5414731e6a0e7fd3fc790b125c11fc1dcfe203f4b63b0154c826e94963e",
+        "pose": "778be97f6fb2b4a504316b1a111e1af4e61c08123282addf05dff06a7f5306d1"
+      },
+      "role": "validation"
+    },
+    {
+      "subject": "s_08",
+      "source_file": "01_b.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_08/01_b.pkl",
+      "raw_sha256": "43e0f74d0bc4ac05049216219c6489476c1c1ea1e53a9bbc2bf8f012be3e82ab",
+      "sequence_id": 36,
+      "frames": 2122,
+      "processed_sha256": {
+        "acc": "4b55f9c7294bdab2c14b4835bfda9a9af988aa88e9cacc090695b5ea5119ce5e",
+        "ori": "08911242e8b20ee62b9222c2eb0e060169922855789034251510319541bfe6b7",
+        "pose": "1c0252c2e7b57a386bbcdaa42a7a5e2939172fa178ee5c03777711af0ba8cb26"
+      },
+      "role": "validation"
+    },
+    {
+      "subject": "s_08",
+      "source_file": "02.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_08/02.pkl",
+      "raw_sha256": "4806592647d6fdafda1ab3a6ee38e0a285144ef1b86eed6212ff5bcebfa5d8f7",
+      "sequence_id": 37,
+      "frames": 2790,
+      "processed_sha256": {
+        "acc": "c689138505e2eb6f8c8c5f7fc6cfdd8863d97bc2917a68e8d05b942d8406b4b3",
+        "ori": "c0de47f8c064a111a845c5a321de3f39f734ed267f11b7e6f0134859916b3f27",
+        "pose": "0b9fe0ae1e3037f632122239a8ce47912e2027dc3b1892e182baf0534410d119"
+      },
+      "role": "validation"
+    },
+    {
+      "subject": "s_08",
+      "source_file": "03.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_08/03.pkl",
+      "raw_sha256": "b0bb1d221af2d9b2a076447f67e0ebcdda406d60d78af4cda694d8a5cb29c608",
+      "sequence_id": 38,
+      "frames": 2878,
+      "processed_sha256": {
+        "acc": "da473a646610bb32cb99c4cbbba8ef54a3ab9be33dbfd6d5951f61a5a91569e4",
+        "ori": "43443ff7307ae5c0fb11c4e512e67bf969ef2ef10aa0485ef82da74f48b43ee7",
+        "pose": "0b7b31337a8321777441b6321079087a3a7ae9253954832cb7479899f926b238"
+      },
+      "role": "validation"
+    },
+    {
+      "subject": "s_08",
+      "source_file": "04.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_08/04.pkl",
+      "raw_sha256": "77c147fa93106cb522bc2ef49195ccc7774bd64668b8999e89745e11026cf230",
+      "sequence_id": 39,
+      "frames": 330,
+      "processed_sha256": {
+        "acc": "c3ac1d920e41f39134e8d3802860978472c723d3ff8792f37f4bb677e6cfc5e3",
+        "ori": "8c825f13c2c448c3ba8f5cb5100dc6bde2f3605b6e7c27a865d00d9ee5ff2731",
+        "pose": "3c6be423669571343f6838abd3bf25b289ca0b079676212df9ad145710ff1fc3"
+      },
+      "role": "validation"
+    },
+    {
+      "subject": "s_08",
+      "source_file": "05.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_08/05.pkl",
+      "raw_sha256": "b8c4ddb4330cc32d2bf0cc0dc9048df7ca58325af3ff8b05e87e5009838139e4",
+      "sequence_id": 40,
+      "frames": 2319,
+      "processed_sha256": {
+        "acc": "1df7d2c40325dd9dfec0c59a953c34538ddc43630b3bb8f6c5353ca45c640af9",
+        "ori": "819415ccfe86dc9992585c6326beae93e3c074f89f6d3044fb9d472c12a47bb1",
+        "pose": "0736fdbea4f4c7b13291c7f5fa1008a9dbe44a57488ffaedc4961200ee109f49"
+      },
+      "role": "validation"
+    }
+  ],
+  "excluded_raw_recordings": [
+    {
+      "subject": "s_01",
+      "source_file": "02.pkl",
+      "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_01/02.pkl",
+      "raw_sha256": "9f2a1b994c23d2dc58aa3dcd276af66e19308137ad79694e2510cd7110807c43",
+      "reason": "Fails inherited finite-value preprocessing after NaN filling/cropping"
+    }
+  ],
+  "statistics": {
+    "train": {
+      "subjects": [
+        "s_01",
+        "s_02",
+        "s_03",
+        "s_04",
+        "s_05",
+        "s_06"
+      ],
+      "sequences": 30,
+      "frames": 80070,
+      "motion_windows": 655,
+      "partial_windows": 30,
+      "masked_samples": 15720,
+      "batches_per_epoch_at_256": 62
+    },
+    "validation": {
+      "subjects": [
+        "s_07",
+        "s_08"
+      ],
+      "sequences": 11,
+      "frames": 25423,
+      "motion_windows": 209,
+      "partial_windows": 11,
+      "masked_samples": 5016,
+      "batches_per_epoch_at_256": 20
+    },
+    "final_first_eight": {
+      "subjects": [
+        "s_01",
+        "s_02",
+        "s_03",
+        "s_04",
+        "s_05",
+        "s_06",
+        "s_07",
+        "s_08"
+      ],
+      "sequences": 41,
+      "frames": 105493,
+      "motion_windows": 864,
+      "partial_windows": 41,
+      "masked_samples": 20736,
+      "batches_per_epoch_at_256": 81
+    }
+  },
+  "test_subjects_opened": [],
+  "test_data_opened": false
+}

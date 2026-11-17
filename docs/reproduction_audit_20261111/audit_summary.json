@@ -1,0 +1,267 @@
+{
+  "created_utc": "2026-11-11T21:21:59.444224+00:00",
+  "argv": [
+    "tools/audit_reproduction.py",
+    "--original-root",
+    "/home/alex/research/IMUPoser",
+    "--output-dir",
+    "docs/reproduction_audit_20261111"
+  ],
+  "original_root": "/home/alex/research/IMUPoser",
+  "imported_package": "/home/alex/research/IMUPoser/src/imuposer/__init__.py",
+  "original_git_head": "a0e9d33b9c57d6737d711185b62084e17684b0e2",
+  "current_software": {
+    "python": "3.10.21",
+    "torch": "2.7.0+cu128",
+    "numpy": "1.23.5",
+    "pytorch-lightning": "1.9.5",
+    "wandb": "0.30.0",
+    "scipy": "1.10.1"
+  },
+  "evidence_source_files": {
+    "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/best_model.txt": {
+      "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/best_model.txt",
+      "bytes": 1171,
+      "sha256": "84b45d64b40a031c1bdc0a9938227645cb5fae6bb857bb47eb976d999acde80e",
+      "mtime_utc": "2026-10-08T10:57:57.951412+00:00"
+    },
+    "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/files/config.yaml": {
+      "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/files/config.yaml",
+      "bytes": 2541,
+      "sha256": "98e1226ce581a2021f9ad4eb79f510cab1ce5995ccb97d765a598c576e9ee8ea",
+      "mtime_utc": "2026-10-08T10:57:57.967412+00:00"
+    },
+    "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/files/wandb-metadata.json": {
+      "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/files/wandb-metadata.json",
+      "bytes": 1367,
+      "sha256": "70b08fea11e4122f8eb042e2a17a0831fabedbb5db3401de9a60ad3742010dee",
+      "mtime_utc": "2026-10-06T07:13:34.423628+00:00"
+    },
+    "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/files/wandb-summary.json": {
+      "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/files/wandb-summary.json",
+      "bytes": 288,
+      "sha256": "9bbec0dab05b252c8a32c34867275689b3f467a936c306f06b39f7d0784a46e2",
+      "mtime_utc": "2026-10-08T10:57:57.963412+00:00"
+    },
+    "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/files/output.log": {
+      "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/files/output.log",
+      "bytes": 2683,
+      "sha256": "c2ecd225dd7b67a923be0c05eeff8935f90021f4b65eca05dfe040b7c1a1c2ad",
+      "mtime_utc": "2026-10-08T10:57:57.963412+00:00"
+    },
+    "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/files/requirements.txt": {
+      "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/files/requirements.txt",
+      "bytes": 1953,
+      "sha256": "de9f1e5a6cf14189aeb4e3fb3e1c4244f565fbe448807fa77a3db4f8757c4cf5",
+      "mtime_utc": "2026-10-06T07:13:34.407628+00:00"
+    },
+    "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/run-wk8tfuyl.wandb": {
+      "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/wandb/run-20261006_021333-wk8tfuyl/run-wk8tfuyl.wandb",
+      "bytes": 120727073,
+      "sha256": "cac6d317278528dc97294cd86d0121f1103f8c8551378a18d1006a69f7888621",
+      "mtime_utc": "2026-10-08T10:57:58.651412+00:00"
+    },
+    "/home/alex/research/IMUPoser/preprocess_full.log": {
+      "path": "/home/alex/research/IMUPoser/preprocess_full.log",
+      "bytes": 459066,
+      "sha256": "3adf1bba9fa23ec204c48a1e19e30ca93f820e98b4efd5af881e107592b34d22",
+      "mtime_utc": "2026-10-05T07:36:05.565809+00:00"
+    },
+    "/home/alex/research/IMUPoser/preprocess_full_retry.log": {
+      "path": "/home/alex/research/IMUPoser/preprocess_full_retry.log",
+      "bytes": 179934,
+      "sha256": "8bec7c4b91e2d082c938c94384cc838aa3e7d9b70c8719ff9b488de61a5656b9",
+      "mtime_utc": "2026-10-05T08:22:45.538638+00:00"
+    }
+  },
+  "configured_amass_subsets": [
+    "ACCAD",
+    "BioMotionLab_NTroje",
+    "BMLhandball",
+    "BMLmovi",
+    "CMU",
+    "DanceDB",
+    "DFaust_67",
+    "EKUT",
+    "Eyes_Japan_Dataset",
+    "HUMAN4D",
+    "HumanEva",
+    "KIT",
+    "MPI_HDM05",
+    "MPI_Limits",
+    "MPI_mosh",
+    "SFU",
+    "SSM_synced",
+    "TCD_handMocap",
+    "TotalCapture",
+    "Transitions_mocap"
+  ],
+  "processed_global_train_files_current_iteration_order": [
+    "CMU.pt",
+    "DanceDB.pt",
+    "MPI_mosh.pt",
+    "TotalCapture.pt",
+    "Eyes_Japan_Dataset.pt",
+    "DFaust_67.pt",
+    "BMLhandball.pt",
+    "SFU.pt",
+    "MPI_Limits.pt",
+    "SSM_synced.pt",
+    "MPI_HDM05.pt",
+    "TCD_handMocap.pt",
+    "HUMAN4D.pt",
+    "ACCAD.pt",
+    "BMLmovi.pt",
+    "Transitions_mocap.pt",
+    "BioMotionLab_NTroje.pt",
+    "HumanEva.pt"
+  ],
+  "missing_configured_processed_subsets": [
+    "EKUT",
+    "KIT"
+  ],
+  "global_train_subset_count": 18,
+  "global_train_sequences": 9554,
+  "global_train_frames_25fps": 3395598,
+  "global_train_hours": 37.72886666666667,
+  "unmasked_motion_windows": 31293,
+  "mask_count_current_source": 25,
+  "mask_definitions_current_source": {
+    "global": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "lw_rw_h": [
+      0,
+      1,
+      4
+    ],
+    "rw_lp_rp": [
+      1,
+      2,
+      3
+    ],
+    "lw_rw_rp": [
+      0,
+      1,
+      3
+    ],
+    "lw_rp_h": [
+      0,
+      3,
+      4
+    ],
+    "rw_rp_h": [
+      1,
+      3,
+      4
+    ],
+    "lw_lp_rp": [
+      0,
+      2,
+      3
+    ],
+    "lw_rw_lp": [
+      0,
+      1,
+      2
+    ],
+    "lw_lp_h": [
+      0,
+      2,
+      4
+    ],
+    "rw_lp_h": [
+      1,
+      2,
+      4
+    ],
+    "lw_rw": [
+      0,
+      1
+    ],
+    "lw_lp": [
+      0,
+      2
+    ],
+    "lw_rp": [
+      0,
+      3
+    ],
+    "lw_h": [
+      0,
+      4
+    ],
+    "rw_lp": [
+      1,
+      2
+    ],
+    "rw_rp": [
+      1,
+      3
+    ],
+    "rw_h": [
+      1,
+      4
+    ],
+    "lp_rp": [
+      2,
+      3
+    ],
+    "lp_h": [
+      2,
+      4
+    ],
+    "rp_h": [
+      3,
+      4
+    ],
+    "lw": [
+      0
+    ],
+    "rw": [
+      1
+    ],
+    "lp": [
+      2
+    ],
+    "rp": [
+      3
+    ],
+    "h": [
+      4
+    ]
+  },
+  "one_two_three_five_location_mask_counts": {
+    "1": 5,
+    "2": 10,
+    "3": 9,
+    "5": 1
+  },
+  "enumerated_samples_25_masks_before_split": 782325,
+  "current_rule_training_samples": 704092,
+  "current_rule_validation_samples": 78233,
+  "current_rule_train_batches_per_epoch": 2751,
+  "current_rule_val_batches": 306,
+  "epoch59_global_step": 165060,
+  "last_global_step": 178815,
+  "epoch59_steps_match_current_inventory": true,
+  "last_steps_match_current_inventory": true,
+  "all_stage2_reconstructions_bitwise_equal": true,
+  "all_stage2_reconstructions_within_1e_6": true,
+  "reconstruction_sequence_field_checks": 28842,
+  "full_raw_archives_sha256_computed": false,
+  "historical_limits": [
+    "Current processed hashes were recorded now, not at training time.",
+    "Exact historical data ordering, split indices, RNG state and per-mask batch exposure were not recovered.",
+    "Current-source reconstruction and step-count agreement support consistency but do not prove historical data identity.",
+    "W&B git commit does not capture uncommitted source changes.",
+    "AMASS release/archive versions and original per-recording preprocessing identity mapping are not archived."
+  ],
+  "training_performed": false,
+  "model_inference_performed": false,
+  "peak_process_rss_mib": 2445.34
+}

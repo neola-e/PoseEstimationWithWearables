@@ -1,0 +1,177 @@
+{
+  "purpose": "Source/measurement sanity only; no calibration, parameter fitting, solver selection, or test-data access",
+  "data_path": "/home/alex/research/IMUPoser/data/processed_imuposer_25fps/dip_train.pt",
+  "data_sha256": "a9467600237d1b30019fa9b3c63141c6b03da8c03dde8bf67b2fd062a6d4702b",
+  "manifest_sha256": "88148bf6768804f967706c3226074f4e9bc8607ac1f4812e2119dee21894c6ff",
+  "sequences": 41,
+  "frames": 105493,
+  "provided_shape_betas_unique": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  ],
+  "current_metric_shape_betas": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "shape_conclusion": "Public processed DIP data uses provided betas; F03 canonical measurement deliberately uses shared mean male shape. Author evaluation betas not published.",
+  "orientation_handling": "Original entrywise-interpolated matrices retained in dataset/network input; SVD projection only for IK target",
+  "projection": {
+    "lw": {
+      "segment_joint": 18,
+      "orthogonality_frobenius_mean": 0.0004051603574906151,
+      "orthogonality_frobenius_max": 0.04103052405098815,
+      "fraction_orthogonality_error_above_1e_4": 0.3548007924696425,
+      "determinant_min": 0.9709870300620117,
+      "projection_frobenius_mean": 0.00020270827698722036,
+      "projection_frobenius_max": 0.020666262703716826
+    },
+    "rw": {
+      "segment_joint": 19,
+      "orthogonality_frobenius_mean": 0.0003847460618437372,
+      "orthogonality_frobenius_max": 0.04715402627247051,
+      "fraction_orthogonality_error_above_1e_4": 0.32834406074336686,
+      "determinant_min": 0.9666570712068497,
+      "projection_frobenius_mean": 0.00019250952197717087,
+      "projection_frobenius_max": 0.023776891206452145
+    },
+    "lp": {
+      "segment_joint": 1,
+      "orthogonality_frobenius_mean": 8.110401104252833e-05,
+      "orthogonality_frobenius_max": 0.03324809873496591,
+      "fraction_orthogonality_error_above_1e_4": 0.18249552102983135,
+      "determinant_min": 0.9764900461640544,
+      "projection_frobenius_mean": 4.055893625165975e-05,
+      "projection_frobenius_max": 0.01672292274580586
+    },
+    "rp": {
+      "segment_joint": 2,
+      "orthogonality_frobenius_mean": 8.06847826064113e-05,
+      "orthogonality_frobenius_max": 0.01628290849041656,
+      "fraction_orthogonality_error_above_1e_4": 0.18429658839923027,
+      "determinant_min": 0.9884862496653952,
+      "projection_frobenius_mean": 4.034844675376937e-05,
+      "projection_frobenius_max": 0.008165024811901697
+    },
+    "h": {
+      "segment_joint": 15,
+      "orthogonality_frobenius_mean": 2.791089491856181e-05,
+      "orthogonality_frobenius_max": 0.008801157664440262,
+      "fraction_orthogonality_error_above_1e_4": 0.05312200809532386,
+      "determinant_min": 0.9937766434247114,
+      "projection_frobenius_mean": 1.3956801920072066e-05,
+      "projection_frobenius_max": 0.004407446814518242
+    }
+  },
+  "train_only_mapping_sanity": {
+    "sampling": "every25th frame of each first-eight recording, fixed in advance",
+    "samples": 4241,
+    "no_gt_derived_calibration_applied": true,
+    "mean_segment_orientation_error_deg": {
+      "lw": 1.502829405520318,
+      "rw": 1.3961269343848082,
+      "lp": 3.3558673199093,
+      "rp": 2.5185509057467335,
+      "h": 0.36549285108964935
+    },
+    "per_subject_mean_deg": {
+      "s_01": {
+        "lw": 1.4326992962169747,
+        "rw": 1.4535231567273688,
+        "lp": 2.6078938568630243,
+        "rp": 4.669439829233878,
+        "h": 0.33338100694876505
+      },
+      "s_02": {
+        "lw": 1.5527417465651747,
+        "rw": 1.7597831878943722,
+        "lp": 3.9213544857229046,
+        "rp": 3.2949269339040144,
+        "h": 0.3879933934157374
+      },
+      "s_03": {
+        "lw": 1.4747957894964607,
+        "rw": 1.3837032374110338,
+        "lp": 3.1921976100465317,
+        "rp": 1.4688417886626115,
+        "h": 0.2735218515605782
+      },
+      "s_04": {
+        "lw": 2.067982966779076,
+        "rw": 1.606503821230739,
+        "lp": 3.8620902326468682,
+        "rp": 1.9465166960200317,
+        "h": 0.3843973110826984
+      },
+      "s_05": {
+        "lw": 1.7292589285138502,
+        "rw": 1.6016307647532495,
+        "lp": 4.3527627025418765,
+        "rp": 2.278323404174521,
+        "h": 0.5792094059864471
+      },
+      "s_06": {
+        "lw": 1.1221875721451886,
+        "rw": 1.0683787829278537,
+        "lp": 1.6542089465374241,
+        "rp": 1.6959894084024727,
+        "h": 0.2586735749473031
+      },
+      "s_07": {
+        "lw": 1.1569359840692044,
+        "rw": 0.9863380424158805,
+        "lp": 2.957560020990091,
+        "rp": 2.11095078514759,
+        "h": 0.3490610072298437
+      },
+      "s_08": {
+        "lw": 1.4858560047797613,
+        "rw": 1.2964874352311908,
+        "lp": 4.267081854543021,
+        "rp": 2.995574965791548,
+        "h": 0.3509906727877723
+      }
+    }
+  },
+  "public_mapping": {
+    "raw_DIP_indices": [
+      7,
+      8,
+      9,
+      10,
+      0
+    ],
+    "SMPL_segment_joints": [
+      18,
+      19,
+      1,
+      2,
+      15
+    ],
+    "stale_leaf_joints_not_used": [
+      20,
+      21,
+      7,
+      8,
+      12
+    ],
+    "author_clarification_status": "Issue16 contains another user question; no author confirmation recovered"
+  }
+}

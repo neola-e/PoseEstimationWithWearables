@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "pairs": 456,
+  "joint_recording_mask_cells": 10944,
+  "per_joint_max_abs_difference": 1.4210854715202004e-14,
+  "independent_increase": 0.1730954882567814,
+  "accounting_max_abs_difference": 1.6653345369377348e-16,
+  "all_group_totals_reproduce_delta": true,
+  "frequency_checks": "Known 1Hz/7Hz signal tests passed; high frequency is descriptive, not an action/noise ground truth",
+  "counterfactual_status": "Controlled removal/retention of pose components; nonlinear effects not additive",
+  "source_sha256": "c7716fa41a1f19833fbf3a650737ccc1b2f4b0b54ec391dd38fd439a92dbba2b"
+}

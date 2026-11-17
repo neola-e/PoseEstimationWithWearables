@@ -18,6 +18,7 @@ from imuposer.utils import get_parser
 seed_everything(42, workers=True)
 
 parser = get_parser()
+parser.add_argument('--resume_from', default=None, help='Path to a full training checkpoint to resume from')
 args = parser.parse_args()
 combo_id = args.combo_id
 fast_dev_run = args.fast_dev_run
@@ -26,7 +27,7 @@ _experiment = args.experiment
 # %%
 config = Config(experiment=f"{_experiment}_{combo_id}", model="GlobalModelIMUPoser",
                 project_root_dir="../../", joints_set=amass_combos[combo_id], normalize="no_translation",
-                r6d=True, loss_type="mse", use_joint_loss=True, device="0") 
+                r6d=True, loss_type="mse", use_joint_loss=True, device="0", num_workers=args.num_workers)
 
 # %%
 # instantiate model and data
@@ -40,14 +41,14 @@ wandb_logger = WandbLogger(project=config.experiment, save_dir=checkpoint_path)
 early_stopping_callback = EarlyStopping(monitor="validation_step_loss", mode="min", verbose=False,
                                         min_delta=0.00001, patience=5)
 checkpoint_callback = ModelCheckpoint(monitor="validation_step_loss", mode="min", verbose=False, 
-                                      save_top_k=5, dirpath=checkpoint_path, save_weights_only=True, 
+                                      save_top_k=5, dirpath=checkpoint_path, save_weights_only=False, save_last=True,
                                       filename='epoch={epoch}-val_loss={validation_step_loss:.5f}')
 
 trainer = pl.Trainer(fast_dev_run=fast_dev_run, logger=wandb_logger, max_epochs=1000, accelerator="gpu", devices=[0],
                      callbacks=[early_stopping_callback, checkpoint_callback], deterministic=True)
 
 # %%
-trainer.fit(model, datamodule=datamodule)
+trainer.fit(model, datamodule=datamodule, ckpt_path=args.resume_from)
 
 # %%
 with open(checkpoint_path / "best_model.txt", "w") as f:

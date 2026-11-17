@@ -1,0 +1,286 @@
+{
+  "protocol_id": "DIP_FINETUNING_V1",
+  "frozen_utc": "2026-11-14T06:41:54.891609+00:00",
+  "argv": [
+    "tools/prepare_dip_finetuning.py",
+    "--checkpoint",
+    "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=59-val_loss=validation_step_loss=0.01017.ckpt",
+    "--data",
+    "/home/alex/research/IMUPoser/data/processed_imuposer_25fps/dip_train.pt",
+    "--reservation",
+    "outputs/local_dip/wrist_pocket_dev_epoch59_20261110/split_manifest.json",
+    "--raw-dip",
+    "/home/alex/research/IMUPoser/data/raw/DIP_IMU",
+    "--smpl-model",
+    "/home/alex/research/IMUPoser/src/imuposer/smpl/basicmodel_m_lbs_10_207_0_v1.0.0.pkl",
+    "--output",
+    "outputs/local_dip/dip_finetuning_v1_20261114"
+  ],
+  "scope": "Freeze future recipe and run engineering smoke only; no full training in this task",
+  "paper": "https://arxiv.org/html/2304.12518v1",
+  "paper_vs_choice": "Paper establishes 8/2 subject split and AMASS initialization. Our 30-epoch cap, seed, internal development split, and selection rule are explicit reproduction choices, not recovered author fine-tuning details.",
+  "checkpoint": {
+    "path": "/home/alex/research/IMUPoser/checkpoints/IMUPoserGlobalModel_global-10062026-021332/epoch=epoch=59-val_loss=validation_step_loss=0.01017.ckpt",
+    "sha256": "02b9211b57ca36ae3fb13dcacc4b008b49a31fd360ebea516b73d103bd2a5058",
+    "epoch": 59,
+    "global_step": 165060,
+    "known_difference": "Initialization trained with 25 masks including five-sensor global; 24-mask fine-tuning does not undo that exposure"
+  },
+  "data_manifest_sha256": "88148bf6768804f967706c3226074f4e9bc8607ac1f4812e2119dee21894c6ff",
+  "source_hashes_sha256": "0eb9bc09757b34583452f8f7d3908e51e8042bcdeb48e0f1f167764888ce946a",
+  "smpl_model": {
+    "path": "/home/alex/research/IMUPoser/src/imuposer/smpl/basicmodel_m_lbs_10_207_0_v1.0.0.pkl",
+    "sha256": "0e8c0bbbbc635dcb166ed29c303fb4bef16ea5f623e5a89263495a9e403575bd"
+  },
+  "data": {
+    "fps": 25,
+    "feature_dim": 60,
+    "sensor_order": [
+      "lw",
+      "rw",
+      "lp",
+      "rp",
+      "h"
+    ],
+    "acc_scale": 30,
+    "smoothing": "Inherited centered five-frame acceleration mean only; do not re-smooth",
+    "orientation": "Inherited elementwise resampling; no new orientation filter",
+    "window": 125,
+    "training_stride": 125,
+    "retain_partial_tail": true,
+    "batch_padding": "zero pad inputs and 6D targets to the batch maximum; pass valid lengths to packed LSTM"
+  },
+  "masks": {
+    "lw_rw_h": [
+      0,
+      1,
+      4
+    ],
+    "rw_lp_rp": [
+      1,
+      2,
+      3
+    ],
+    "lw_rw_rp": [
+      0,
+      1,
+      3
+    ],
+    "lw_rp_h": [
+      0,
+      3,
+      4
+    ],
+    "rw_rp_h": [
+      1,
+      3,
+      4
+    ],
+    "lw_lp_rp": [
+      0,
+      2,
+      3
+    ],
+    "lw_rw_lp": [
+      0,
+      1,
+      2
+    ],
+    "lw_lp_h": [
+      0,
+      2,
+      4
+    ],
+    "rw_lp_h": [
+      1,
+      2,
+      4
+    ],
+    "lw_rw": [
+      0,
+      1
+    ],
+    "lw_lp": [
+      0,
+      2
+    ],
+    "lw_rp": [
+      0,
+      3
+    ],
+    "lw_h": [
+      0,
+      4
+    ],
+    "rw_lp": [
+      1,
+      2
+    ],
+    "rw_rp": [
+      1,
+      3
+    ],
+    "rw_h": [
+      1,
+      4
+    ],
+    "lp_rp": [
+      2,
+      3
+    ],
+    "lp_h": [
+      2,
+      4
+    ],
+    "rp_h": [
+      3,
+      4
+    ],
+    "lw": [
+      0
+    ],
+    "rw": [
+      1
+    ],
+    "lp": [
+      2
+    ],
+    "rp": [
+      3
+    ],
+    "h": [
+      4
+    ]
+  },
+  "mask_order": [
+    "lw_rw_h",
+    "rw_lp_rp",
+    "lw_rw_rp",
+    "lw_rp_h",
+    "rw_rp_h",
+    "lw_lp_rp",
+    "lw_rw_lp",
+    "lw_lp_h",
+    "rw_lp_h",
+    "lw_rw",
+    "lw_lp",
+    "lw_rp",
+    "lw_h",
+    "rw_lp",
+    "rw_rp",
+    "rw_h",
+    "lp_rp",
+    "lp_h",
+    "rp_h",
+    "lw",
+    "rw",
+    "lp",
+    "rp",
+    "h"
+  ],
+  "mask_expansion": "All 24 masks per motion window, after subject split; exclude global",
+  "seed": 42,
+  "deterministic_algorithms": true,
+  "precision": "float32; no AMP or TF32",
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.0003,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0,
+    "amsgrad": false,
+    "foreach": false,
+    "initial_state": "Fresh Adam; never inherit AMASS optimizer moments"
+  },
+  "scheduler": null,
+  "gradient_clipping": null,
+  "loss": {
+    "pose": "MSE over 144 column-6D values",
+    "joint": "MSE over SMPL FK positions in meters, all 24 joints",
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "padding": "Include padding exactly as inherited public training loss; differs from padding-excluded reporting metrics",
+    "body": "Mean male shape, zero translation, pose blend shapes disabled"
+  },
+  "development": {
+    "train_subjects": [
+      "s_01",
+      "s_02",
+      "s_03",
+      "s_04",
+      "s_05",
+      "s_06"
+    ],
+    "validation_subjects": [
+      "s_07",
+      "s_08"
+    ],
+    "split_before_masks": true,
+    "maximum_epochs": 30,
+    "batch_size": 256,
+    "shuffle": true,
+    "workers": 0,
+    "drop_last": false,
+    "early_stopping": false,
+    "validation_every_epochs": 1,
+    "checkpoint_selection": "Smallest full-development combined validation loss; exact ties choose earlier completed epoch. Never use training loss or test metrics to select.",
+    "validation_loss_reduction": "Sum each batch mean times its padded B*T, divide by total padded B*T; do not average unequal batches equally",
+    "checkpoints": "Keep last and best with optimizer, RNG, epoch/step, sampler generator/cursor, protocol hash; save after every completed epoch"
+  },
+  "final_first_eight": {
+    "train_subjects": [
+      "s_01",
+      "s_02",
+      "s_03",
+      "s_04",
+      "s_05",
+      "s_06",
+      "s_07",
+      "s_08"
+    ],
+    "test_subjects": [
+      "s_09",
+      "s_10"
+    ],
+    "initialization": "Reset to the same Epoch59 and fresh optimizer/seed, not the development fine-tuned weights",
+    "epochs": "K = number of completed development epochs at selected checkpoint, 1..30; fixed before final training",
+    "checkpoint_selection": "The checkpoint after exactly K epochs; no test-driven early stopping or selection",
+    "reservation_role_change": "s07/s08 enter training only in this separately labeled final stage and no longer form independent validation for that model"
+  },
+  "reporting": {
+    "before_after": "Same frozen checkpoint-independent pipeline and same sequences/masks for both models",
+    "inference": "rolling last-frame, window125, stride1, prefix startup; no hidden-state carry",
+    "filter": "Retain inherited centered acceleration filter and disclose up to 80ms lookahead plus upstream interpolation/filling; trailing is separate sensitivity analysis",
+    "metrics": [
+      "mpjre_deg",
+      "mpjpe_cm",
+      "mpjve_cm",
+      "jitter_100_m_s3"
+    ],
+    "shape_alignment": "Same mean male SMPL, all24 joints/all6890 vertices, pelvis translation only for spatial errors; zero trajectory translation",
+    "aggregation": "Within each mask frame-weight spatial errors and T-3-weight jitter over recordings; arithmetic mean across 24 masks. Also retain per-recording and per-mask results.",
+    "refinement": "Raw network before/after; IMU-only IK is a separate future pipeline component",
+    "success": "Engineering checks and all four metrics with known differences; low training loss is not paper reproduction success"
+  },
+  "smoke": {
+    "steps": 3,
+    "batch_size": 8,
+    "samples": 24,
+    "coverage": "Exactly one sample for each mask; varied training windows, including a short tail",
+    "validation_use": "Loader sanity only; no checkpoint selection or tuning in smoke",
+    "additional_resume_probe_steps": 1,
+    "resume_probe": "Same prescribed next batch and RNG; compare uninterrupted/reloaded parameter and optimizer states",
+    "eligible_for_final_model": false
+  },
+  "environment": {
+    "torch": "2.7.0+cu128",
+    "imported_imuposer": "/home/alex/research/IMUPoser/src/imuposer/__init__.py",
+    "cuda_available_at_freeze": false
+  },
+  "changes": "Never silently alter this protocol in place. New recipe changes require a new protocol ID and run directory."
+}

@@ -1,0 +1,27 @@
+{
+  "source_sha256": "eb6a20b1cfd123a21fdfdb2b94689bebc7cd3cc2e566d9c6bef8382598ace17a",
+  "ik_protocol_sha256": "f53825004ea8baa917af4ee625e76806d6e2556fbb282b0d2d624fb7e056af02",
+  "scope": "Controlled pose-component removal/retention, not constrained inference; norm effects are not additive",
+  "variants": {
+    "restore_pelvis": [
+      0
+    ],
+    "restore_hips": [
+      1,
+      2
+    ],
+    "restore_arms": [
+      16,
+      17,
+      18,
+      19
+    ],
+    "restore_head": [
+      12,
+      15
+    ],
+    "pelvis_only": [
+      0
+    ]
+  }
+}

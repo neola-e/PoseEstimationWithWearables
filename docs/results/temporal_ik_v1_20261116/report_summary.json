@@ -1,0 +1,935 @@
+{
+  "overall": {
+    "raw": {
+      "mpjre_deg": 22.468695538949348,
+      "mpjpe_cm": 9.540189965441042,
+      "mpjve_cm": 11.968888162663644,
+      "jitter_100_m_s3": 1.0483555131716968
+    },
+    "framewise_ik": {
+      "mpjre_deg": 22.166202200337022,
+      "mpjpe_cm": 9.426361324729543,
+      "mpjve_cm": 11.822584249532738,
+      "jitter_100_m_s3": 1.221451001428478
+    },
+    "temporal_ik": {
+      "mpjre_deg": 22.16885967902508,
+      "mpjpe_cm": 9.428675176822319,
+      "mpjve_cm": 11.824658397628925,
+      "jitter_100_m_s3": 1.167420234119422
+    }
+  },
+  "vertex_gain_retained_fraction": 0.9858230169528652,
+  "jitter_drop_vs_framewise_percent": 4.423490360715862,
+  "jitter_change_vs_raw_percent": 11.357284761874958,
+  "predeclared_success": true,
+  "also_below_raw_jitter": false,
+  "per_mask_counts": {
+    "mpjre_deg": {
+      "lower_than_framewise": 1,
+      "lower_than_raw": 24
+    },
+    "mpjpe_cm": {
+      "lower_than_framewise": 3,
+      "lower_than_raw": 24
+    },
+    "mpjve_cm": {
+      "lower_than_framewise": 2,
+      "lower_than_raw": 24
+    },
+    "jitter_100_m_s3": {
+      "lower_than_framewise": 24,
+      "lower_than_raw": 0
+    }
+  },
+  "breakdown": {
+    "subject": [
+      {
+        "subject": "s_09",
+        "model": "raw",
+        "mpjre_deg": 22.95163286403964,
+        "mpjpe_cm": 9.90409973687349,
+        "mpjve_cm": 12.517256053825898,
+        "jitter_100_m_s3": 1.0036098477992055
+      },
+      {
+        "subject": "s_09",
+        "model": "framewise_ik",
+        "mpjre_deg": 22.68064672960681,
+        "mpjpe_cm": 9.80356773261189,
+        "mpjve_cm": 12.38824931132446,
+        "jitter_100_m_s3": 1.1757908502168275
+      },
+      {
+        "subject": "s_09",
+        "model": "temporal_ik",
+        "mpjre_deg": 22.68316646526431,
+        "mpjpe_cm": 9.805386638181925,
+        "mpjve_cm": 12.389681942929075,
+        "jitter_100_m_s3": 1.1220325625030163
+      },
+      {
+        "subject": "s_10",
+        "model": "raw",
+        "mpjre_deg": 22.06215340916899,
+        "mpjpe_cm": 9.233846583308855,
+        "mpjve_cm": 11.50726583861862,
+        "jitter_100_m_s3": 1.0860169341990074
+      },
+      {
+        "subject": "s_10",
+        "model": "framewise_ik",
+        "mpjre_deg": 21.733136947937876,
+        "mpjpe_cm": 9.108824682891768,
+        "mpjve_cm": 11.346400970635939,
+        "jitter_100_m_s3": 1.2598821246364444
+      },
+      {
+        "subject": "s_10",
+        "model": "temporal_ik",
+        "mpjre_deg": 21.735910380274774,
+        "mpjpe_cm": 9.111555186593412,
+        "mpjve_cm": 11.349015154606809,
+        "jitter_100_m_s3": 1.2056220173751837
+      }
+    ],
+    "category": [
+      {
+        "category": "freestyle",
+        "model": "raw",
+        "mpjre_deg": 28.546137198495035,
+        "mpjpe_cm": 10.533188077715439,
+        "mpjve_cm": 13.396005031644085,
+        "jitter_100_m_s3": 3.3189828342977172
+      },
+      {
+        "category": "freestyle",
+        "model": "framewise_ik",
+        "mpjre_deg": 28.210904959206513,
+        "mpjpe_cm": 10.407399361073287,
+        "mpjve_cm": 13.236117708595833,
+        "jitter_100_m_s3": 3.4796385492380577
+      },
+      {
+        "category": "freestyle",
+        "model": "temporal_ik",
+        "mpjre_deg": 28.221573807182054,
+        "mpjpe_cm": 10.419021082515547,
+        "mpjve_cm": 13.248154273919654,
+        "jitter_100_m_s3": 3.4189652318251196
+      },
+      {
+        "category": "interaction",
+        "model": "raw",
+        "mpjre_deg": 26.745247752166325,
+        "mpjpe_cm": 13.287704719178414,
+        "mpjve_cm": 15.815517243020926,
+        "jitter_100_m_s3": 0.31222837165078093
+      },
+      {
+        "category": "interaction",
+        "model": "framewise_ik",
+        "mpjre_deg": 26.450839547204723,
+        "mpjpe_cm": 13.205369509409934,
+        "mpjve_cm": 15.671484676574808,
+        "jitter_100_m_s3": 0.39585062053708747
+      },
+      {
+        "category": "interaction",
+        "model": "temporal_ik",
+        "mpjre_deg": 26.450973086053803,
+        "mpjpe_cm": 13.2055407538013,
+        "mpjve_cm": 15.671677231960592,
+        "jitter_100_m_s3": 0.3839517559141499
+      },
+      {
+        "category": "locomotion",
+        "model": "raw",
+        "mpjre_deg": 20.431530149790376,
+        "mpjpe_cm": 7.2588611036089015,
+        "mpjve_cm": 8.476390047498223,
+        "jitter_100_m_s3": 1.153877513005414
+      },
+      {
+        "category": "locomotion",
+        "model": "framewise_ik",
+        "mpjre_deg": 20.11421391541037,
+        "mpjpe_cm": 7.1313881663155,
+        "mpjve_cm": 8.322379209252125,
+        "jitter_100_m_s3": 1.3603705734294724
+      },
+      {
+        "category": "locomotion",
+        "model": "temporal_ik",
+        "mpjre_deg": 20.117953016432086,
+        "mpjpe_cm": 7.135424941821267,
+        "mpjve_cm": 8.32579372968685,
+        "jitter_100_m_s3": 1.2576042957019837
+      },
+      {
+        "category": "lower_body",
+        "model": "raw",
+        "mpjre_deg": 16.571637885513972,
+        "mpjpe_cm": 8.120690344652877,
+        "mpjve_cm": 9.509925940452863,
+        "jitter_100_m_s3": 0.8081602851798988
+      },
+      {
+        "category": "lower_body",
+        "model": "framewise_ik",
+        "mpjre_deg": 16.317000293950688,
+        "mpjpe_cm": 8.015176459823845,
+        "mpjve_cm": 9.376037003025994,
+        "jitter_100_m_s3": 0.9846677684610722
+      },
+      {
+        "category": "lower_body",
+        "model": "temporal_ik",
+        "mpjre_deg": 16.31779477310963,
+        "mpjpe_cm": 8.015588439353715,
+        "mpjve_cm": 9.376169768350387,
+        "jitter_100_m_s3": 0.924024081766076
+      },
+      {
+        "category": "upper_body",
+        "model": "raw",
+        "mpjre_deg": 22.563819585320257,
+        "mpjpe_cm": 9.479531889201187,
+        "mpjve_cm": 12.932790113603977,
+        "jitter_100_m_s3": 0.8318538744560802
+      },
+      {
+        "category": "upper_body",
+        "model": "framewise_ik",
+        "mpjre_deg": 22.254718620831046,
+        "mpjpe_cm": 9.3585578607809,
+        "mpjve_cm": 12.788422523800064,
+        "jitter_100_m_s3": 1.0294093878755135
+      },
+      {
+        "category": "upper_body",
+        "model": "temporal_ik",
+        "mpjre_deg": 22.256572728277053,
+        "mpjpe_cm": 9.359160214915752,
+        "mpjve_cm": 12.788734716298409,
+        "jitter_100_m_s3": 0.9895733307179787
+      }
+    ],
+    "sequence_id": [
+      {
+        "sequence_id": 0,
+        "model": "raw",
+        "mpjre_deg": 24.545791375487948,
+        "mpjpe_cm": 11.771373253293659,
+        "mpjve_cm": 16.102710376792146,
+        "jitter_100_m_s3": 0.7449195529011717
+      },
+      {
+        "sequence_id": 0,
+        "model": "framewise_ik",
+        "mpjre_deg": 24.315962837215906,
+        "mpjpe_cm": 11.721889151747968,
+        "mpjve_cm": 16.04662135545918,
+        "jitter_100_m_s3": 0.926041517144654
+      },
+      {
+        "sequence_id": 0,
+        "model": "temporal_ik",
+        "mpjre_deg": 24.31669451658691,
+        "mpjpe_cm": 11.71896366148785,
+        "mpjve_cm": 16.042819021008725,
+        "jitter_100_m_s3": 0.8901803665042213
+      },
+      {
+        "sequence_id": 1,
+        "model": "raw",
+        "mpjre_deg": 27.055080335175248,
+        "mpjpe_cm": 10.438147069379147,
+        "mpjve_cm": 14.170650848873649,
+        "jitter_100_m_s3": 1.3622761507246313
+      },
+      {
+        "sequence_id": 1,
+        "model": "framewise_ik",
+        "mpjre_deg": 26.706547450599047,
+        "mpjpe_cm": 10.260706911358149,
+        "mpjve_cm": 13.955842902921397,
+        "jitter_100_m_s3": 1.5297029607513721
+      },
+      {
+        "sequence_id": 1,
+        "model": "temporal_ik",
+        "mpjre_deg": 26.712753457046105,
+        "mpjpe_cm": 10.26635956561104,
+        "mpjve_cm": 13.962767352466008,
+        "jitter_100_m_s3": 1.510962040386837
+      },
+      {
+        "sequence_id": 2,
+        "model": "raw",
+        "mpjre_deg": 20.03670717488183,
+        "mpjpe_cm": 8.252125784233144,
+        "mpjve_cm": 11.257650735109094,
+        "jitter_100_m_s3": 0.9084486735054718
+      },
+      {
+        "sequence_id": 2,
+        "model": "framewise_ik",
+        "mpjre_deg": 19.737432741375738,
+        "mpjpe_cm": 8.148332309911579,
+        "mpjve_cm": 11.136128954709365,
+        "jitter_100_m_s3": 1.1134864629333556
+      },
+      {
+        "sequence_id": 2,
+        "model": "temporal_ik",
+        "mpjre_deg": 19.738911807785396,
+        "mpjpe_cm": 8.147753407264585,
+        "mpjve_cm": 11.135038807403925,
+        "jitter_100_m_s3": 1.0573294789451995
+      },
+      {
+        "sequence_id": 3,
+        "model": "raw",
+        "mpjre_deg": 16.22454926067743,
+        "mpjpe_cm": 7.991983184548647,
+        "mpjve_cm": 9.675821596374695,
+        "jitter_100_m_s3": 0.8298559205989587
+      },
+      {
+        "sequence_id": 3,
+        "model": "framewise_ik",
+        "mpjre_deg": 16.009789617223674,
+        "mpjpe_cm": 7.903908152707179,
+        "mpjve_cm": 9.555978100521468,
+        "jitter_100_m_s3": 1.0223835138569206
+      },
+      {
+        "sequence_id": 3,
+        "model": "temporal_ik",
+        "mpjre_deg": 16.009720974114085,
+        "mpjpe_cm": 7.903769909440009,
+        "mpjve_cm": 9.555499889477153,
+        "jitter_100_m_s3": 0.9547363039393755
+      },
+      {
+        "sequence_id": 4,
+        "model": "raw",
+        "mpjre_deg": 16.77569752798004,
+        "mpjpe_cm": 7.815173023550017,
+        "mpjve_cm": 8.978746317197269,
+        "jitter_100_m_s3": 1.0272855928737494
+      },
+      {
+        "sequence_id": 4,
+        "model": "framewise_ik",
+        "mpjre_deg": 16.52515631380169,
+        "mpjpe_cm": 7.693780157206351,
+        "mpjve_cm": 8.828493980198887,
+        "jitter_100_m_s3": 1.1893619609558514
+      },
+      {
+        "sequence_id": 4,
+        "model": "temporal_ik",
+        "mpjre_deg": 16.526903267810837,
+        "mpjpe_cm": 7.695096055038369,
+        "mpjve_cm": 8.829242899371863,
+        "jitter_100_m_s3": 1.1304794989625389
+      },
+      {
+        "sequence_id": 5,
+        "model": "raw",
+        "mpjre_deg": 19.25014587488257,
+        "mpjpe_cm": 7.228553322274312,
+        "mpjve_cm": 8.613819027094529,
+        "jitter_100_m_s3": 1.1668886154012637
+      },
+      {
+        "sequence_id": 5,
+        "model": "framewise_ik",
+        "mpjre_deg": 18.93339259124225,
+        "mpjpe_cm": 7.093071575135016,
+        "mpjve_cm": 8.455560745613246,
+        "jitter_100_m_s3": 1.402906530729988
+      },
+      {
+        "sequence_id": 5,
+        "model": "temporal_ik",
+        "mpjre_deg": 18.938939280905252,
+        "mpjpe_cm": 7.099462137429825,
+        "mpjve_cm": 8.46084162848165,
+        "jitter_100_m_s3": 1.2821539970403106
+      },
+      {
+        "sequence_id": 6,
+        "model": "raw",
+        "mpjre_deg": 24.360487594553902,
+        "mpjpe_cm": 8.517101332851048,
+        "mpjve_cm": 10.065251131899615,
+        "jitter_100_m_s3": 1.1099397019223864
+      },
+      {
+        "sequence_id": 6,
+        "model": "framewise_ik",
+        "mpjre_deg": 24.08254111388362,
+        "mpjpe_cm": 8.386115521702143,
+        "mpjve_cm": 9.931912342848172,
+        "jitter_100_m_s3": 1.305422187270447
+      },
+      {
+        "sequence_id": 6,
+        "model": "temporal_ik",
+        "mpjre_deg": 24.085016691849944,
+        "mpjpe_cm": 8.389861888778645,
+        "mpjve_cm": 9.93415234964651,
+        "jitter_100_m_s3": 1.2169765243150215
+      },
+      {
+        "sequence_id": 7,
+        "model": "raw",
+        "mpjre_deg": 25.744844158080486,
+        "mpjpe_cm": 10.368461914239383,
+        "mpjve_cm": 13.37922797801979,
+        "jitter_100_m_s3": 3.6375762070643405
+      },
+      {
+        "sequence_id": 7,
+        "model": "framewise_ik",
+        "mpjre_deg": 25.46643350331199,
+        "mpjpe_cm": 10.250577129356387,
+        "mpjve_cm": 13.220388938706945,
+        "jitter_100_m_s3": 3.8164743535013326
+      },
+      {
+        "sequence_id": 7,
+        "model": "temporal_ik",
+        "mpjre_deg": 25.47916359381829,
+        "mpjpe_cm": 10.262954147014323,
+        "mpjve_cm": 13.234087054554005,
+        "jitter_100_m_s3": 3.7652359338237624
+      },
+      {
+        "sequence_id": 8,
+        "model": "raw",
+        "mpjre_deg": 28.54026864235397,
+        "mpjpe_cm": 13.261350974365747,
+        "mpjve_cm": 16.009284601245003,
+        "jitter_100_m_s3": 0.3478580488123089
+      },
+      {
+        "sequence_id": 8,
+        "model": "framewise_ik",
+        "mpjre_deg": 28.274555140790188,
+        "mpjpe_cm": 13.204737351410401,
+        "mpjve_cm": 15.885881591929218,
+        "jitter_100_m_s3": 0.43337650522181836
+      },
+      {
+        "sequence_id": 8,
+        "model": "temporal_ik",
+        "mpjre_deg": 28.274747608741084,
+        "mpjpe_cm": 13.20495638488432,
+        "mpjve_cm": 15.886160211555413,
+        "jitter_100_m_s3": 0.41814399588626006
+      },
+      {
+        "sequence_id": 9,
+        "model": "raw",
+        "mpjre_deg": 22.371307398200372,
+        "mpjpe_cm": 9.016488963555016,
+        "mpjve_cm": 12.325079349057715,
+        "jitter_100_m_s3": 0.7054013770871222
+      },
+      {
+        "sequence_id": 9,
+        "model": "framewise_ik",
+        "mpjre_deg": 22.050784214585672,
+        "mpjpe_cm": 8.886673992401159,
+        "mpjve_cm": 12.170572848612716,
+        "jitter_100_m_s3": 0.8946262971247277
+      },
+      {
+        "sequence_id": 9,
+        "model": "temporal_ik",
+        "mpjre_deg": 22.052073921137666,
+        "mpjpe_cm": 8.887933637481991,
+        "mpjve_cm": 12.171440865251219,
+        "jitter_100_m_s3": 0.8610653849707489
+      },
+      {
+        "sequence_id": 10,
+        "model": "raw",
+        "mpjre_deg": 20.765825574768563,
+        "mpjpe_cm": 8.231388937903555,
+        "mpjve_cm": 11.177001814251561,
+        "jitter_100_m_s3": 0.7786913008031843
+      },
+      {
+        "sequence_id": 10,
+        "model": "framewise_ik",
+        "mpjre_deg": 20.374970275083257,
+        "mpjpe_cm": 8.069632202425051,
+        "mpjve_cm": 10.97068769703867,
+        "jitter_100_m_s3": 1.0055777132691546
+      },
+      {
+        "sequence_id": 10,
+        "model": "temporal_ik",
+        "mpjre_deg": 20.37734730667652,
+        "mpjpe_cm": 8.071225842828428,
+        "mpjve_cm": 10.972798154313528,
+        "jitter_100_m_s3": 0.969569095573768
+      },
+      {
+        "sequence_id": 11,
+        "model": "raw",
+        "mpjre_deg": 18.687884157219838,
+        "mpjpe_cm": 7.693693234949769,
+        "mpjve_cm": 10.505910636536424,
+        "jitter_100_m_s3": 0.7178557757892613
+      },
+      {
+        "sequence_id": 11,
+        "model": "framewise_ik",
+        "mpjre_deg": 18.397193254223456,
+        "mpjpe_cm": 7.554032211351021,
+        "mpjve_cm": 10.352773465436423,
+        "jitter_100_m_s3": 0.9553701948090132
+      },
+      {
+        "sequence_id": 11,
+        "model": "temporal_ik",
+        "mpjre_deg": 18.39733240489487,
+        "mpjpe_cm": 7.554195231641606,
+        "mpjve_cm": 10.351342081803283,
+        "jitter_100_m_s3": 0.8769585849634834
+      },
+      {
+        "sequence_id": 12,
+        "model": "raw",
+        "mpjre_deg": 16.692560308011235,
+        "mpjpe_cm": 8.43487212430084,
+        "mpjve_cm": 9.758538413439677,
+        "jitter_100_m_s3": 0.6368968162448246
+      },
+      {
+        "sequence_id": 12,
+        "model": "framewise_ik",
+        "mpjre_deg": 16.40456926520874,
+        "mpjpe_cm": 8.327258222930771,
+        "mpjve_cm": 9.625483649943881,
+        "jitter_100_m_s3": 0.8113639829075937
+      },
+      {
+        "sequence_id": 12,
+        "model": "temporal_ik",
+        "mpjre_deg": 16.405349995913493,
+        "mpjpe_cm": 8.327451769016944,
+        "mpjve_cm": 9.625647716322222,
+        "jitter_100_m_s3": 0.7548228942997545
+      },
+      {
+        "sequence_id": 13,
+        "model": "raw",
+        "mpjre_deg": 17.570341856960635,
+        "mpjpe_cm": 6.34906447371785,
+        "mpjve_cm": 7.583221420287118,
+        "jitter_100_m_s3": 1.1558234457464858
+      },
+      {
+        "sequence_id": 13,
+        "model": "framewise_ik",
+        "mpjre_deg": 17.21338715990269,
+        "mpjpe_cm": 6.21175628838886,
+        "mpjve_cm": 7.399283559077144,
+        "jitter_100_m_s3": 1.3578539524130981
+      },
+      {
+        "sequence_id": 13,
+        "model": "temporal_ik",
+        "mpjre_deg": 17.218418687327148,
+        "mpjpe_cm": 6.2157325722403955,
+        "mpjve_cm": 7.403350753180348,
+        "jitter_100_m_s3": 1.2556804996315962
+      },
+      {
+        "sequence_id": 14,
+        "model": "raw",
+        "mpjre_deg": 20.50523652734371,
+        "mpjpe_cm": 7.007589136569298,
+        "mpjve_cm": 7.8160272637176815,
+        "jitter_100_m_s3": 1.1775205839827962
+      },
+      {
+        "sequence_id": 14,
+        "model": "framewise_ik",
+        "mpjre_deg": 20.187929078746436,
+        "mpjpe_cm": 6.897104003720035,
+        "mpjve_cm": 7.672917089367998,
+        "jitter_100_m_s3": 1.3736073264593118
+      },
+      {
+        "sequence_id": 14,
+        "model": "temporal_ik",
+        "mpjre_deg": 20.190237128215824,
+        "mpjpe_cm": 6.89959960507628,
+        "mpjve_cm": 7.675301295373554,
+        "jitter_100_m_s3": 1.2727852484399371
+      },
+      {
+        "sequence_id": 15,
+        "model": "raw",
+        "mpjre_deg": 17.14223960762587,
+        "mpjpe_cm": 6.505901824853705,
+        "mpjve_cm": 8.48066915320048,
+        "jitter_100_m_s3": 3.866518862037428
+      },
+      {
+        "sequence_id": 15,
+        "model": "framewise_ik",
+        "mpjre_deg": 16.841723143035647,
+        "mpjpe_cm": 6.353717210133148,
+        "mpjve_cm": 8.279501539746816,
+        "jitter_100_m_s3": 4.03763490215282
+      },
+      {
+        "sequence_id": 15,
+        "model": "temporal_ik",
+        "mpjre_deg": 16.856297448273295,
+        "mpjpe_cm": 6.37409984416067,
+        "mpjve_cm": 8.300470062864115,
+        "jitter_100_m_s3": 3.9504196920677974
+      },
+      {
+        "sequence_id": 16,
+        "model": "raw",
+        "mpjre_deg": 27.492974361576554,
+        "mpjpe_cm": 8.530188318307664,
+        "mpjve_cm": 11.075015182257628,
+        "jitter_100_m_s3": 4.187987662875243
+      },
+      {
+        "sequence_id": 16,
+        "model": "framewise_ik",
+        "mpjre_deg": 27.162349889612855,
+        "mpjpe_cm": 8.394290668894298,
+        "mpjve_cm": 10.899997650400328,
+        "jitter_100_m_s3": 4.353733143405643
+      },
+      {
+        "sequence_id": 16,
+        "model": "temporal_ik",
+        "mpjre_deg": 27.176194302447083,
+        "mpjpe_cm": 8.410112039914724,
+        "mpjve_cm": 10.91602311132509,
+        "jitter_100_m_s3": 4.28401212761521
+      },
+      {
+        "sequence_id": 17,
+        "model": "raw",
+        "mpjre_deg": 35.71160532229104,
+        "mpjpe_cm": 13.787664049188265,
+        "mpjve_cm": 17.17094501384216,
+        "jitter_100_m_s3": 2.2694477767951375
+      },
+      {
+        "sequence_id": 17,
+        "model": "framewise_ik",
+        "mpjre_deg": 35.32568926325495,
+        "mpjpe_cm": 13.6758072103531,
+        "mpjve_cm": 17.038867696511122,
+        "jitter_100_m_s3": 2.4115174313781242
+      },
+      {
+        "sequence_id": 17,
+        "model": "temporal_ik",
+        "mpjre_deg": 35.331199193981014,
+        "mpjpe_cm": 13.680236271780783,
+        "mpjve_cm": 17.04327250126853,
+        "jitter_100_m_s3": 2.363125296145734
+      },
+      {
+        "sequence_id": 18,
+        "model": "raw",
+        "mpjre_deg": 25.244492581681573,
+        "mpjpe_cm": 13.30973817795622,
+        "mpjve_cm": 15.65351502548932,
+        "jitter_100_m_s3": 0.28244739925844786
+      },
+      {
+        "sequence_id": 18,
+        "model": "framewise_ik",
+        "mpjre_deg": 24.9260937230595,
+        "mpjpe_cm": 13.205898034950527,
+        "mpjve_cm": 15.492234796524402,
+        "jitter_100_m_s3": 0.36448470804993877
+      },
+      {
+        "sequence_id": 18,
+        "model": "temporal_ik",
+        "mpjre_deg": 24.92617799331526,
+        "mpjpe_cm": 13.206029324535166,
+        "mpjve_cm": 15.49235539656164,
+        "jitter_100_m_s3": 0.355372261634001
+      }
+    ]
+  },
+  "joint_jitter": [
+    {
+      "joint": 0,
+      "joint_name": "Pelvis",
+      "raw": 0.0,
+      "framewise_ik": 0.0,
+      "temporal_ik": 0.0,
+      "drop_vs_framewise": 0.0
+    },
+    {
+      "joint": 1,
+      "joint_name": "L Hip",
+      "raw": 0.13365773970029773,
+      "framewise_ik": 0.17342603126139877,
+      "temporal_ik": 0.1646294375487566,
+      "drop_vs_framewise": 0.008796593712642159
+    },
+    {
+      "joint": 2,
+      "joint_name": "R Hip",
+      "raw": 0.13918272534973952,
+      "framewise_ik": 0.18211417625476617,
+      "temporal_ik": 0.17260416460804925,
+      "drop_vs_framewise": 0.009510011646716915
+    },
+    {
+      "joint": 3,
+      "joint_name": "Spine1",
+      "raw": 0.13694313640969533,
+      "framewise_ik": 0.18841776671084115,
+      "temporal_ik": 0.1751745019651082,
+      "drop_vs_framewise": 0.013243264745732952
+    },
+    {
+      "joint": 4,
+      "joint_name": "L Knee",
+      "raw": 0.8371514606470783,
+      "framewise_ik": 1.0176902965594619,
+      "temporal_ik": 0.9645130470817462,
+      "drop_vs_framewise": 0.05317724947771563
+    },
+    {
+      "joint": 5,
+      "joint_name": "R Knee",
+      "raw": 0.8342861166263975,
+      "framewise_ik": 1.0112537649350288,
+      "temporal_ik": 0.9548315521766578,
+      "drop_vs_framewise": 0.056422212758371004
+    },
+    {
+      "joint": 6,
+      "joint_name": "Spine2",
+      "raw": 0.2800743873506093,
+      "framewise_ik": 0.3783940622367986,
+      "temporal_ik": 0.3517788815871564,
+      "drop_vs_framewise": 0.02661518064964219
+    },
+    {
+      "joint": 7,
+      "joint_name": "L Ankle",
+      "raw": 1.3797217053051023,
+      "framewise_ik": 1.7503269971605087,
+      "temporal_ik": 1.636144466670181,
+      "drop_vs_framewise": 0.11418253049032767
+    },
+    {
+      "joint": 8,
+      "joint_name": "R Ankle",
+      "raw": 1.3271886823706756,
+      "framewise_ik": 1.7092082032358162,
+      "temporal_ik": 1.5915377901411587,
+      "drop_vs_framewise": 0.11767041309465753
+    },
+    {
+      "joint": 9,
+      "joint_name": "Spine3",
+      "raw": 0.35048168142869124,
+      "framewise_ik": 0.46830969661690136,
+      "temporal_ik": 0.43495762056426857,
+      "drop_vs_framewise": 0.033352076052632795
+    },
+    {
+      "joint": 10,
+      "joint_name": "L Foot",
+      "raw": 1.5293806544904578,
+      "framewise_ik": 1.9264147584945805,
+      "temporal_ik": 1.804070688705962,
+      "drop_vs_framewise": 0.12234406978861845
+    },
+    {
+      "joint": 11,
+      "joint_name": "R Foot",
+      "raw": 1.513900108913988,
+      "framewise_ik": 1.9297803899032482,
+      "temporal_ik": 1.7998072451863303,
+      "drop_vs_framewise": 0.1299731447169179
+    },
+    {
+      "joint": 12,
+      "joint_name": "Neck",
+      "raw": 0.6505020196650212,
+      "framewise_ik": 0.838595494798327,
+      "temporal_ik": 0.7789173050491667,
+      "drop_vs_framewise": 0.05967818974916028
+    },
+    {
+      "joint": 13,
+      "joint_name": "L Collar",
+      "raw": 0.5277240667529846,
+      "framewise_ik": 0.6873490188788688,
+      "temporal_ik": 0.6388342079434289,
+      "drop_vs_framewise": 0.048514810935439856
+    },
+    {
+      "joint": 14,
+      "joint_name": "R Collar",
+      "raw": 0.544069006052237,
+      "framewise_ik": 0.6997735173217641,
+      "temporal_ik": 0.6519639690440164,
+      "drop_vs_framewise": 0.04780954827774764
+    },
+    {
+      "joint": 15,
+      "joint_name": "Head",
+      "raw": 0.7938221996840633,
+      "framewise_ik": 1.0069608619033787,
+      "temporal_ik": 0.939054419683417,
+      "drop_vs_framewise": 0.06790644221996178
+    },
+    {
+      "joint": 16,
+      "joint_name": "L Shoulder",
+      "raw": 0.7600554468062009,
+      "framewise_ik": 0.9265919694836419,
+      "temporal_ik": 0.8745247558162791,
+      "drop_vs_framewise": 0.05206721366736278
+    },
+    {
+      "joint": 17,
+      "joint_name": "R Shoulder",
+      "raw": 0.7783197016061252,
+      "framewise_ik": 0.9393197124890265,
+      "temporal_ik": 0.8889865683062161,
+      "drop_vs_framewise": 0.05033314418281032
+    },
+    {
+      "joint": 18,
+      "joint_name": "L Elbow",
+      "raw": 1.2781118651497356,
+      "framewise_ik": 1.4015659046650248,
+      "temporal_ik": 1.3621133230312588,
+      "drop_vs_framewise": 0.03945258163376608
+    },
+    {
+      "joint": 19,
+      "joint_name": "R Elbow",
+      "raw": 1.3892828028478592,
+      "framewise_ik": 1.5075725415596897,
+      "temporal_ik": 1.4710256107754005,
+      "drop_vs_framewise": 0.03654693078428917
+    },
+    {
+      "joint": 20,
+      "joint_name": "L Wrist",
+      "raw": 2.228129281965546,
+      "framewise_ik": 2.378960207502997,
+      "temporal_ik": 2.327610484639751,
+      "drop_vs_framewise": 0.05134972286324624
+    },
+    {
+      "joint": 21,
+      "joint_name": "R Wrist",
+      "raw": 2.3589094265572608,
+      "framewise_ik": 2.489226781573606,
+      "temporal_ik": 2.441827093341436,
+      "drop_vs_framewise": 0.047399688232170334
+    },
+    {
+      "joint": 22,
+      "joint_name": "L Hand",
+      "raw": 2.620445519557016,
+      "framewise_ik": 2.789965726214173,
+      "temporal_ik": 2.732682390398219,
+      "drop_vs_framewise": 0.057283335815953684
+    },
+    {
+      "joint": 23,
+      "joint_name": "R Hand",
+      "raw": 2.769192580883941,
+      "framewise_ik": 2.913606154523629,
+      "temporal_ik": 2.860496094602162,
+      "drop_vs_framewise": 0.05311005992146711
+    }
+  ],
+  "selection": {
+    "chosen_weight": 0.001,
+    "eligible": true,
+    "targets": {
+      "mpjre_deg": 19.91028953111503,
+      "mpjpe_cm": 8.493649423916402,
+      "mpjve_cm": 10.528788812286326
+    },
+    "candidates": [
+      {
+        "weight": 0.001,
+        "eligible": true,
+        "spatial_violation": 0,
+        "jitter": 1.3494803540893232,
+        "metrics": {
+          "mpjre_deg": 19.647338889826944,
+          "mpjpe_cm": 8.410287515911232,
+          "mpjve_cm": 10.47713377828196,
+          "jitter_100_m_s3": 1.3494803540893232
+        }
+      },
+      {
+        "weight": 0.01,
+        "eligible": false,
+        "spatial_violation": 0,
+        "jitter": 1.4346234695468105,
+        "metrics": {
+          "mpjre_deg": 19.693964906572827,
+          "mpjpe_cm": 8.448134292545337,
+          "mpjve_cm": 10.513172064073702,
+          "jitter_100_m_s3": 1.4346234695468105
+        }
+      },
+      {
+        "weight": 0.1,
+        "eligible": false,
+        "spatial_violation": 0.003538336376631978,
+        "jitter": 1.442149699158165,
+        "metrics": {
+          "mpjre_deg": 19.79163413013181,
+          "mpjpe_cm": 8.486920000005822,
+          "mpjve_cm": 10.566043208742714,
+          "jitter_100_m_s3": 1.442149699158165
+        }
+      },
+      {
+        "weight": 1.0,
+        "eligible": false,
+        "spatial_violation": 0.006503842128729659,
+        "jitter": 1.4281199513038156,
+        "metrics": {
+          "mpjre_deg": 19.862139175275104,
+          "mpjpe_cm": 8.500074496838065,
+          "mpjve_cm": 10.589301826000943,
+          "jitter_100_m_s3": 1.4281199513038156
+        }
+      }
+    ],
+    "rule": "Prefer all3 errors no worse than raw and retain >=50% framewise-IK vertex gain, with jitter lower than framewise IK. Among eligible minimize jitter; if none, minimize normalized spatial violation then jitter. Positive weights only; no test selection.",
+    "calibration_protocol_sha256": "a8f05acc0be366588ad32eb3aa391f307441e33c6f21aa988c78896513680d4e",
+    "test_data_opened": false,
+    "elapsed_seconds": 153.47630070298328
+  },
+  "causality": "5 past/current pose/IMU frames, no added future; original upstream dependencies remain"
+}

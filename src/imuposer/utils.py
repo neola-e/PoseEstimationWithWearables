@@ -13,6 +13,8 @@ def get_parser():
     parser.add_argument('--resume', default=False, help='resume training from checkpoint', action="store_true")
     parser.add_argument('--experiment', help='Experiment name')
     parser.add_argument('--device', help='Device ID', default="0")
+    parser.add_argument('--num_workers', type=int, default=0,
+                        help='DataLoader workers (default: 0 to limit host RAM use)')
 
     return parser
 
