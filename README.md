@@ -2,7 +2,7 @@
 
 Our team builds on [FIGLAB/IMUPoser](https://github.com/FIGLAB/IMUPoser). The original attribution, LICENSE, and research instructions are retained below. The following section documents our tested post-training additions.
 
-Project research records and generated reports use **English**. See [record language and historical provenance](docs/RECORD_LANGUAGE.md) and the [framewise versus Temporal IK explanation](docs/IK_REFINEMENT_EXPLAINED.md).
+For project research records and generated reports, see [record language and historical provenance](docs/RECORD_LANGUAGE.md) and the [framewise versus Temporal IK explanation](docs/IK_REFINEMENT_EXPLAINED.md).
 
 ## Current reproduction work — November 16, 2026
 
