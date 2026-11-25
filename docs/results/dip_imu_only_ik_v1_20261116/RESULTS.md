@@ -1,16 +1,18 @@
-# IMU-only IK：最终 DIP 模型对照
+# IMU-only IK: final DIP model comparison
 
-同一最终两轮权重、s09/s10、19条录制、24mask。
+English presentation updated 2026-11-19; original experiment dates and bytes are preserved in [the language/provenance guide](../../RECORD_LANGUAGE.md).
 
-| 指标 | 无 IK | IMU-only IK | 相对下降 | 下降组合数 |
-|---|---:|---:|---:|---:|
+Same final two-epoch weights, s09/s10,19 recordings, 24 masks.
+
+| Metric | No IK | IMU-only IK | Relative decrease | Masks lower |
+|---|---: |---: |---: |---: |
 | MPJRE (°) | 22.46870 | 22.16620 | +1.35% | 24/24 |
-| MPJPE（关节） (cm) | 9.54019 | 9.42636 | +1.19% | 24/24 |
-| MPJVE（网格顶点） (cm) | 11.96889 | 11.82258 | +1.22% | 24/24 |
+| MPJPE (joints) (cm) | 9.54019 | 9.42636 | +1.19% | 24/24 |
+| MPJVE (mesh vertices) (cm) | 11.96889 | 11.82258 | +1.22% | 24/24 |
 | Jitter (100 m/s³) | 1.04836 | 1.22145 | -16.51% | 0/24 |
 
-正值表示下降，负值表示上升。Jitter只表示动作平滑性；MPJVE始终是网格顶点位置误差。
+Positive means decrease, negative increase. Jitter describes smoothness; MPJVE always means mesh-vertex position error.
 
-10次Adam、lr1e-3、方向矩阵MSE；无GT约束或GT校准、不改权重、不进行测试调参。头/髋索引、学习率和旋转参数化等缺失细节已明确冻结为重建约定；这不是已找回的作者逐行实现。
+Ten Adam steps, lr 1e-3, orientation-matrix MSE; no GT constraints/calibration, weight changes or test tuning. Head/hip indices, learning rate and rotation parameterization are frozen reconstruction conventions, not a recovered line-by-line author implementation.
 
 ![IK metrics](ik_four_metrics.png)

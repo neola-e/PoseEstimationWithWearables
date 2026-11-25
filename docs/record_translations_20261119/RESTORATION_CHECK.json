@@ -1,0 +1,191 @@
+{
+  "status": "passed",
+  "translated_files": 40,
+  "original_archive_sha256": "d61ed36c4631bdfd6e1e8c0af387fb811bddda2f87cca35b01e96ac9eb1e3543",
+  "translation_map_sha256": "b156354d59c551d12f7015abebbfe8de3671ada2f5763667216a72d44d94044c",
+  "audit_source_sha256": "a6093622bdac88c0e949630418928f74863dc9e2a89cc3d5b312e512bea05391",
+  "non_text_source_ASTs_unchanged": [
+    "outputs/local_dip/dip_finetune_comparison_cpu_v1/validation_source/report_dip_finetuning_comparison.py",
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/validation_source/report_imu_only_ik.py",
+    "outputs/local_dip/final_four_way_replay_v1_20261119/source_snapshot/tools/render_final_comparison.py",
+    "tools/render_final_comparison.py",
+    "tools/report_dip_finetuning_comparison.py",
+    "tools/report_imu_only_ik.py"
+  ],
+  "numeric_JSON_and_CSV_records_unchanged": [
+    "docs/reproduction_audit_20261111/paper_implementation_comparison.csv",
+    "docs/results/dip_imu_only_ik_v1_20261116/changes.csv",
+    "docs/results/dip_imu_only_ik_v1_20261116/paper_alignment.csv",
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/changes.csv",
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/paper_alignment.csv",
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/report_summary.json",
+    "docs/results/dip_imu_only_ik_v1_20261116/report_summary.json"
+  ],
+  "remaining_Chinese_text_files": [],
+  "historical_manifest_entries_verified_against_archived_originals": [
+    {
+      "manifest": "docs/results/dip_imu_only_ik_v1_20261116/RUN_VALIDATION_MANIFEST.json",
+      "path": "docs/results/dip_imu_only_ik_v1_20261116/RESULTS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "docs/results/dip_imu_only_ik_v1_20261116/RUN_VALIDATION_MANIFEST.json",
+      "path": "docs/results/dip_imu_only_ik_v1_20261116/changes.csv",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "docs/results/dip_imu_only_ik_v1_20261116/RUN_VALIDATION_MANIFEST.json",
+      "path": "docs/results/dip_imu_only_ik_v1_20261116/paper_alignment.csv",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "docs/results/dip_imu_only_ik_v1_20261116/RUN_VALIDATION_MANIFEST.json",
+      "path": "docs/results/dip_imu_only_ik_v1_20261116/report_summary.json",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "docs/results/dip_imu_only_ik_v1_20261116/MANIFEST.json",
+      "path": "docs/results/dip_imu_only_ik_v1_20261116/RESULTS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "docs/results/dip_imu_only_ik_v1_20261116/MANIFEST.json",
+      "path": "docs/results/dip_imu_only_ik_v1_20261116/SOURCE_FINDINGS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "docs/results/dip_imu_only_ik_v1_20261116/MANIFEST.json",
+      "path": "docs/results/dip_imu_only_ik_v1_20261116/changes.csv",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "docs/results/dip_imu_only_ik_v1_20261116/MANIFEST.json",
+      "path": "docs/results/dip_imu_only_ik_v1_20261116/paper_alignment.csv",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "docs/results/dip_imu_only_ik_v1_20261116/MANIFEST.json",
+      "path": "docs/results/dip_imu_only_ik_v1_20261116/report_summary.json",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "docs/results/dip_final_2ep_20261115/RUN_VALIDATION_MANIFEST.json",
+      "path": "docs/results/dip_final_2ep_20261115/RESULTS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "docs/results/dip_final_2ep_20261115/MANIFEST.json",
+      "path": "docs/results/dip_final_2ep_20261115/RESULTS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_training_launcher_validation_20261114/ARTIFACT_MANIFEST.json",
+      "path": "outputs/local_dip/dip_training_launcher_validation_20261114/source_snapshot/DIP_TRAINING_RUN.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/final_four_way_replay_v1_20261119/ARTIFACT_MANIFEST.json",
+      "path": "outputs/local_dip/final_four_way_replay_v1_20261119/index.html",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/final_four_way_replay_v1_20261119/ARTIFACT_MANIFEST.json",
+      "path": "outputs/local_dip/final_four_way_replay_v1_20261119/source_snapshot/tools/render_final_comparison.py",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/final_four_way_replay_v1_20261119/VALIDATION_MANIFEST.json",
+      "path": "outputs/local_dip/final_four_way_replay_v1_20261119/index.html",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/final_four_way_replay_v1_20261119/REVIEW_MANIFEST.json",
+      "path": "outputs/local_dip/final_four_way_replay_v1_20261119/index.html",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/final_four_way_replay_v1_20261119/REVIEW_MANIFEST.json",
+      "path": "outputs/local_dip/final_four_way_replay_v1_20261119/source_snapshot/tools/render_final_comparison.py",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/final_four_way_replay_v1_20261119/PREPARE_MANIFEST.json",
+      "path": "outputs/local_dip/final_four_way_replay_v1_20261119/source_snapshot/tools/render_final_comparison.py",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_dev_review_20261115/ARTIFACT_MANIFEST.json",
+      "path": "outputs/local_dip/dip_dev_review_20261115/DIP_DEVELOPMENT_RESULTS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_finetuning_v1_20261114/ARTIFACT_MANIFEST.json",
+      "path": "outputs/local_dip/dip_finetuning_v1_20261114/validation_source_snapshot/DIP_FINETUNING.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_finetune_comparison_cpu_v1/VALIDATION_MANIFEST.json",
+      "path": "outputs/local_dip/dip_finetune_comparison_cpu_v1/RESULTS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_finetune_comparison_cpu_v1/VALIDATION_MANIFEST.json",
+      "path": "outputs/local_dip/dip_finetune_comparison_cpu_v1/validation_source/report_dip_finetuning_comparison.py",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_imu_only_ik_v1_20261116/ARTIFACT_MANIFEST.json",
+      "path": "outputs/local_dip/dip_imu_only_ik_v1_20261116/evidence/SOURCE_FINDINGS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_imu_only_ik_v1_20261116/VALIDATION_MANIFEST.json",
+      "path": "outputs/local_dip/dip_imu_only_ik_v1_20261116/RESULTS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_imu_only_ik_v1_20261116/VALIDATION_MANIFEST.json",
+      "path": "outputs/local_dip/dip_imu_only_ik_v1_20261116/changes.csv",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_imu_only_ik_v1_20261116/VALIDATION_MANIFEST.json",
+      "path": "outputs/local_dip/dip_imu_only_ik_v1_20261116/evidence/SOURCE_FINDINGS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_imu_only_ik_v1_20261116/VALIDATION_MANIFEST.json",
+      "path": "outputs/local_dip/dip_imu_only_ik_v1_20261116/paper_alignment.csv",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_imu_only_ik_v1_20261116/VALIDATION_MANIFEST.json",
+      "path": "outputs/local_dip/dip_imu_only_ik_v1_20261116/report_generation.log",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_imu_only_ik_v1_20261116/VALIDATION_MANIFEST.json",
+      "path": "outputs/local_dip/dip_imu_only_ik_v1_20261116/report_summary.json",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_imu_only_ik_v1_20261116/VALIDATION_MANIFEST.json",
+      "path": "outputs/local_dip/dip_imu_only_ik_v1_20261116/validation_source/report_imu_only_ik.py",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/dip_imu_only_ik_v1_20261116/PREPARE_MANIFEST.json",
+      "path": "outputs/local_dip/dip_imu_only_ik_v1_20261116/evidence/SOURCE_FINDINGS.md",
+      "historical_sha256_preserved": true
+    },
+    {
+      "manifest": "outputs/local_dip/gpu_diagnostic_20261114/ARTIFACT_MANIFEST.json",
+      "path": "outputs/local_dip/gpu_diagnostic_20261114/source_snapshot/GPU_DIAGNOSTIC.md",
+      "historical_sha256_preserved": true
+    }
+  ],
+  "scientific_inputs_unchanged": 62,
+  "original_bytes_restorable": true,
+  "restored_to": "/tmp/imuposer-record-restore-if28izmx/originals",
+  "scope": "English presentation and original-byte provenance; does not rerun training, inference, IK or old numerical experiments"
+}

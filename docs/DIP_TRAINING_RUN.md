@@ -1,12 +1,14 @@
-# 在 WSL 启动 DIP 微调
+# Launch DIP fine-tuning in WSL
 
-日期：2026-11-14。入口为 [train_dip_finetuning.py](../tools/train_dip_finetuning.py)。本次只准备并验证启动代码，实际训练由 Alex 在普通 WSL Terminal 启动。冻结协议和 Epoch 59 不修改，已有 CPU 短跑不重复执行。
+English presentation updated 2026-11-19; original experiment dates and bytes are preserved in [the language/provenance guide](RECORD_LANGUAGE.md).
 
-本入口沿用 [DIP_FINETUNING_V1](protocols/dip_finetuning_v1_20261114/PROTOCOL.json)：Adam lr 3e-4、seed42、24 个 mask、batch256、开发训练 30 epochs、按独立开发集的最低 combined validation loss 选择轮数。同分保留较早完成的轮数。
+Date: 2026-11-14. Entry point: [train_dip_finetuning.py](../tools/train_dip_finetuning.py). This dated task prepared and validated the launcher; Alex launches actual training in an ordinary WSL Terminal. The frozen protocol and Epoch 59 are unchanged; the earlier CPU smoke is not repeated.
 
-## 第一步启动开发训练
+The launcher follows [DIP_FINETUNING_V1](protocols/dip_finetuning_v1_20261114/PROTOCOL.json): Adam lr 3e-4, seed42, 24 masks, batch 256, 30 development epochs, selection by minimum independent-development combined validation loss. Exact ties retain the earlier completed epoch.
 
-在普通 WSL Terminal 中先用 `nvidia-smi` 确认 GPU 的空闲显存。上次设备预检时已有 6,472/8,151 MiB 显存占用；代码不会自动结束其他程序或改变训练 batch。
+## Launch development training
+
+First inspect free GPU memory with `nvidia-smi` in an ordinary WSL Terminal. At the prior preflight, 6,472/8,151 MiB was already occupied. The code does not terminate other programs or alter the batch size.
 
 ```bash
 cd /home/alex/research/PoseEstimationWithWearables
@@ -17,13 +19,13 @@ conda run --no-capture-output -n imuposer python -u tools/train_dip_finetuning.p
   --output outputs/local_dip/dip_dev_v1
 ```
 
-默认读取 `outputs/local_dip/dip_finetuning_v1_20261114/` 的冻结协议、身份清单和源码哈希。s_01–s_06 训练，s_07/s_08 验证；每轮 62 个训练批、20 个验证批。不会加载 test 数据，也不会自动进入最终前八人训练。
+By default, read the frozen protocol, identity manifest, and source hashes in `outputs/local_dip/dip_finetuning_v1_20261114/`. Train s_01–s_06, validate s_07/s_08: 62 training and 20 validation batches per epoch. No test loading or automatic transition to final first-eight training.
 
-CUDA 不可用会退出，禁止 CPU fallback。运行中出现 CUDA OOM 会停止并记录错误，batch、学习率、精度和预算保持原样；先确认显存可用性，再恢复。入口不接受临时覆盖 epochs/batch/lr 的命令行参数。
+Unavailable CUDA exits with no CPU fallback. CUDA OOM stops execution and records the error; batch, learning rate, precision and budget remain fixed. Check free memory before resuming. No temporary CLI epochs/batch/lr overrides are accepted.
 
-输出目录必须不存在；重复使用同一目录须显式加 `--resume`。新目录与原冻结目录和已有 checkpoint 分开。
+A new output directory must not exist. Reuse requires explicit `--resume`. This directory is separate from frozen assets and existing checkpoints.
 
-## 断点恢复与结果文件
+## Resume and result files
 
 ```bash
 conda run --no-capture-output -n imuposer python -u tools/train_dip_finetuning.py \
@@ -33,32 +35,32 @@ conda run --no-capture-output -n imuposer python -u tools/train_dip_finetuning.p
   --resume
 ```
 
-恢复时核对协议、执行源码、Torch 版本、设备、数据及 checkpoint 哈希。恢复模型、Adam、Python/NumPy/Torch RNG、独立的训练/验证 DataLoader generator；从最后一个**完整提交的 epoch** 继续。未完成的一轮会重跑；若第一轮尚未完成，从原 Epoch 59 重新开始这一轮。代码、精度或训练设置改变时不会静默沿用旧状态。
+Resume verifies protocol, execution sources, Torch version, device, data and checkpoint hashes. Restore model, Adam, Python/NumPy/Torch RNG and independent training/validation DataLoader generators; continue after the last **fully committed epoch**. Incomplete epochs rerun; if epoch1 never completed, restart that epoch from the original Epoch 59. Changes to code, precision or training settings cannot silently reuse old state.
 
-| 文件 | 用途 |
+| File | Purpose |
 |---|---|
-| `train.log` | 实时批进度、每轮 train/validation loss、设备及显存信息；同时输出到终端 |
-| `history.csv`、`history.json` | 每轮 pose/joint/combined loss、有效/padding 帧数、耗时、最佳轮数 |
-| `best.ckpt` | 开发集最低验证损失的 checkpoint，符号链接 |
-| `last.ckpt` | 最后完整提交轮的 checkpoint，符号链接 |
-| `checkpoints/epoch_*.ckpt` | 每轮独立的完整模型/Adam/RNG/采样状态，文件不覆盖或删除 |
-| `STATE.json` | 原子提交的 last/best 位置和文件哈希；恢复时以此为准 |
-| `progress.json` | 已完成 epoch、step 和最佳分数，供查看进度 |
-| `completion.json` | 完成全部预算后给出 best_epoch 和最终阶段 K |
-| `failure.json` | 中断或训练异常；包含最后完整提交轮数和恢复提示 |
-| `RUN.json`、`source_snapshot/` | 本次执行命令、配置、源码哈希与快照；协议副本按原字节保留 |
+| `train.log` | Live batch progress, epoch train/validation loss, device and memory; also printed to terminal |
+| `history.csv`, `history.json` | Per-epoch pose/joint/combined loss, valid/padded frames, duration, best epoch |
+| `best.ckpt` | Symlink to minimum-development-validation checkpoint |
+| `last.ckpt` | Symlink to last fully committed epoch |
+| `checkpoints/epoch_*.ckpt` | Separate complete model/Adam/RNG/sampler state per epoch; never overwrite/delete |
+| `STATE.json` | Atomically committed last/best paths and hashes; authoritative resume state |
+| `progress.json` | Completed epochs, step and best score |
+| `completion.json` | Best epoch and final-stage K after the full budget completes |
+| `failure.json` | Interruption/training exception, last committed epoch and resume guidance |
+| `RUN.json`, `source_snapshot/` | Command, configuration, source hashes/snapshots; protocol copy preserves original bytes |
 
-每轮先写独立 checkpoint，再原子更新 `STATE.json`，最后更新链接与历史表。意外中断后，未提交文件不会被当作恢复点；链接和历史表可由已提交 checkpoint 重建。已有训练轮的 checkpoint 字节保持不变。保存 30 轮约需 4 GB 磁盘空间，best/last 符号链接不会复制权重数据。
+Write an independent checkpoint, atomically update `STATE.json`, then update links/history. Uncommitted files after interruption are not resume points; links/history can be reconstructed from committed checkpoints. Completed checkpoint bytes are unchanged. Thirty epochs require about 4 GB disk; best/last symlinks do not duplicate weights.
 
-可在另一个普通 WSL Terminal 查看：
+Monitor from another ordinary WSL Terminal:
 
 ```bash
 tail -f /home/alex/research/PoseEstimationWithWearables/outputs/local_dip/dip_dev_v1/train.log
 ```
 
-## 第二阶段按选定预算训练前八人
+## Final first-eight training with selected budget
 
-开发阶段完成 30 轮后，再启动：
+After all 30 development epochs finish:
 
 ```bash
 conda run --no-capture-output -n imuposer python -u tools/train_dip_finetuning.py \
@@ -68,17 +70,17 @@ conda run --no-capture-output -n imuposer python -u tools/train_dip_finetuning.p
   --output outputs/local_dip/dip_final_v1
 ```
 
-入口核对开发阶段确已完成，并从完整历史与 best checkpoint 复核选定 K。然后重新加载**原 AMASS Epoch 59**，重置 Adam 和 seed42，用 s_01–s_08 训练恰好 K 轮。不会从开发微调的 best 权重继续训练，不会使用 s_09/s_10 选模型。最终 pool 为 20,736 个 mask 样本，每轮 81 批，完成时生成 `final.ckpt` 链接。
+Verify completed development and selected K against full history and best checkpoint. Reload **original AMASS Epoch 59**, reset Adam/seed42, and train s_01–s_08 for exactly K epochs. Do not continue from development-best weights or select on s_09/s_10. Final pool: 20,736 masked samples, 81 batches per epoch; emit `final.ckpt` symlink at completion.
 
-最终阶段的恢复命令是在这条命令末尾加 `--resume`。s_07/s_08 在该阶段进入训练；这项角色变化已在冻结协议中单独标明。
+Add `--resume` for final-stage recovery. s_07/s_08 enter training in this stage, a role change explicitly recorded in the frozen protocol.
 
-训练后的滚动四指标、所有 mask 的测试汇总和 IK refinement 是后续工作，不由本训练命令自动执行。当前训练验证损失不能替代论文 MPJRE、MPJPE、网格 MPJVE 和 jitter。
+Rolling four-metric tests, all-mask aggregation and IK are subsequent work, not automatically executed by this command. Validation loss does not replace paper MPJRE, MPJPE, mesh MPJVE and jitter.
 
-## 已完成的代码验证
+## Completed code verification
 
-新增训练引擎的 **10 项测试全部通过**，覆盖不等长批的 padded B×T 加权、验证关闭梯度/dropout、精确同分选择、非有限 loss 拒绝、CUDA 不可见时禁止训练、禁止将旧 smoke 目录用作完整训练恢复目录、不可变 checkpoint 与损坏检查、提交状态与孤立文件处理，以及带 shuffle/dropout/Adam 的跨 epoch 确定性恢复。全部使用微型合成 CPU 网络，不是重复真实 IMUPoser 短跑。
+**All 10 training-engine tests pass**: padded B×T weighting for unequal batches; validation disables gradients/dropout; exact tie selection; nonfinite-loss rejection; refusal to train without CUDA; refusal to resume a full run from the old smoke directory; immutable checkpoint/tamper checks; commit state/orphan handling; deterministic epoch resume with shuffle/dropout/Adam. Tiny synthetic CPU networks are used, not another actual-model smoke.
 
-还执行了以下只读入口检查，核对冻结资产和真实 DIP 身份/样本数；不创建训练目录，不进行参数更新：
+The following read-only entry check verifies frozen assets and real DIP identities/sample counts without creating training output or updating parameters:
 
 ```bash
 conda run --no-capture-output -n imuposer python tools/train_dip_finetuning.py \
@@ -86,4 +88,4 @@ conda run --no-capture-output -n imuposer python tools/train_dip_finetuning.py \
   --output outputs/local_dip/dip_dev_v1 --check-only
 ```
 
-GPU tensor/模型前向已由 [G01](GPU_DIAGNOSTIC.md) 在普通 WSL 验证；当前 Codex 沙盒不能访问 GPU，因此本次没有声称完成该完整入口的 GPU 多轮训练，也未改变冻结协议以绕过显存或权限限制。
+GPU tensors/model forward were verified in an ordinary WSL Terminal by [G01](GPU_DIAGNOSTIC.md). This Codex sandbox cannot access the GPU; this dated launcher review does not claim multi-epoch GPU training or change the frozen recipe to bypass memory/permission limits.

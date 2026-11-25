@@ -1,0 +1,6 @@
+{
+  "tools/audit_record_translations.py": "a6093622bdac88c0e949630418928f74863dc9e2a89cc3d5b312e512bea05391",
+  "tools/render_final_comparison.py": "3ad41dc52889c19a844dbf3e17488288af9c63a67a7306ca1d87ff33259ac887",
+  "tools/report_dip_finetuning_comparison.py": "92b2efbc952e9aeab54a8a02fe2fc5c8c1d4a3527d09f8839ec6f1de77fdfe6e",
+  "tools/report_imu_only_ik.py": "9021c355ca058d629e0a14c831d6ee0f0b65d70eb98ae8127199c5333c8b4998"
+}

@@ -1,18 +1,18 @@
-项目,论文设置,当前设置及证据,差异与待办
-模型,两层 BiLSTM；60 输入、512 hidden、144 输出,"checkpoint 的 20 个网络张量共 10,680,976 参数；当前原始架构匹配",架构可继续使用；锁定实际导入路径
-训练语料,AMASS；文中描述约 63 小时,当前 loader 选择 18 个 AMASS `.pt` 文件，合计 37.7289 小时的保留帧,原始语料时长和预处理后时长口径不同；不能把两者相减当作缺失量。记录版本、过滤与遗漏，详见数据审计
-训练 mask,24 个位置组合,当前及所记录 Git 基线都枚举 25 个，额外包含五位置 `global`,属于论文与公开代码的配方差异；模型不是仅用 `global` 训练。严格 24-mask 对齐需新训练
-采样与输入,25 FPS；全局加速度、方向；加速度缩放 30；缺失位置置零,当前代码与输入约定一致，保留前五个位置，丢弃第六个 pelvis 输入,固定通道顺序、单位和 mask；不能因使用三位置 mask 就把网络输入改成 36 维
-合成与预处理,虚拟 SMPL 位置；5 帧平均平滑,两段预处理脚本与记录中的 Git HEAD 相同；当前中间数据可重建最终 acc/ori/pose,实际是 acc 五帧平滑、ori 矩阵逐元素插值、pose 轴角插值后转矩阵。论文对逐张量处理未完整细化，需记录和澄清
-帧率过滤,文中未给出当前文件过滤清单,第一段脚本只接受 int(fps) 为 59/60/120；120 下采样至 60；短序列丢弃,EKUT/KIT 的缺失需按原始帧率核查，不能默认为下载失败；不要在本次审计中擅自重写预处理
-训练窗口,125 帧非重叠窗口,当前代码为 125 帧，保留短尾，batch 内补零,当前训练 loss 没有按有效长度屏蔽 padding；标注与现有评估排除 padding 的区别
-优化器,Adam，lr 3e-4，batch 256,checkpoint 保存 lr、betas、eps、weight decay；当前实现为 Adam。batch 256 为未序列化类默认值，但步数交叉核查一致,维持 Adam 配方，不套用新 skill 的 LLM 优化器建议；batch 的历史证据等级单独标注
-训练轮数,80 epochs,实际运行覆盖 epoch 0–64；最佳 epoch 59；epoch 64 早停,65 个已完成 epoch 与论文 80 不同；先保留基线，严格配方训练时单独固定预算
-模型选择,主文未给出足以重建全部内部验证细节的说明,当前实现先展开 mask，再随机拆分样本 90/10；按 `validation_step_loss` 选最小值,不是独立动作/受试者验证；相同动作的不同 mask 可能跨训练/验证。历史 split indices 未保存
-DIP 微调,s_01–s_08 训练；s_09/s_10 测试,当前研究使用的 Epoch 59 是记录为 GlobalModel 的 AMASS 预训练权重；该运行无 DIP 微调记录,下一阶段需要可复现微调入口、数据拆分和模型选择记录；不能把模块存在等同于微调已完成
-推理,在线滚动 125 样本；文中另写 1-sample overlap,当前 E02–E04 是独立、不重叠 chunk，并使用 chunk 内全部上下文,必须明确步长、输出帧、暖启动和未来上下文；不要未经确认把 overlap 文字直接等同于某个 stride
-旋转 refinement,IMU 方向约束优化；每帧 10 次迭代,当前研究结果为 raw network 输出；GT-assisted 替换只是诊断,另实现并测试实际可用 IMU 输入驱动的 refinement；禁止用 GT 当推理输入
-旋转和位置指标,全局 MPJRE、root 对齐 MPJPE,已有全局/局部角度和 root-relative MPJPE,核对关节集合、root、shape 与加权；局部角度不能代替论文 MPJRE
-主指标及平滑性,MPJVE 为网格顶点误差；另报 jitter,当前研究未计算 MPJVE 和 jitter,补 mesh 误差及 jerk 指标，明确单位、采样间隔、序列边界。MPJVE 不是速度误差
-配置汇总,24 组合，结果按 12 类展示,当前主研究仅比较部分 mask，且包含论文设备预算外的五位置参照,导出全部 24 组合的每序列结果，再固定分组及平均规则；细节不足时保留待确认项
-消费设备与实时,作者设备数据及系统验证,当前主要为 DIP 代理位置与离线推理,放入第二阶段；当前 GIF 和 CPU 工作流耗时不能代替实机精度或端到端延迟
+Item,Paper setting,Current setting and evidence,Difference and next action
+Model,"Two-layer BiLSTM;60 input,512 hidden,144 output","20 checkpoint network tensors;10,680,976 parameters;original architecture matches",Keep architecture;lock actual import path
+Training corpus,AMASS;about63 hours in paper,"Current loader selects18 AMASS .pt files,37.7289h retained frames","Raw and processed durations differ;do not subtract as missing hours;record versions,filters,omissions"
+Training masks,24 location combinations,"Current and recorded Git baseline enumerate25,including extra five-location global",Paper/public-code recipe difference;not global-only training;strict24-mask alignment needs a new run
+Sampling/input,25FPS;global acceleration/orientation;acc scale30;missing-zero,"Current convention matches;retain first5 locations,discard sixth pelvis input","Fix channel order/units/masks;three locations still use60D,not36D"
+Synthesis/preprocessing,Virtual SMPL sites;five-frame mean,Both preprocessing scripts match recorded Git HEAD;intermediates reconstruct final acc/ori/pose,"Acc mean,entrywise orientation interpolation,axis-angle pose interpolation then matrices;paper tensor details incomplete"
+Frame-rate filtering,Current per-file exclusions not specified,Accept int(fps)59/60/120;120→60;drop short recordings,Check original fps for EKUT/KIT;do not assume failed download or silently rewrite preprocessing
+Training windows,Nonoverlapping125 frames,125 frames;retain short tails;batch zero padding,Training loss does not mask padding;distinguish reporting that excludes it
+Optimizer,"Adam,lr3e-4,batch256","Saved lr,betas,eps,decay;Adam source supported;batch256 unsaved class default supported by step counts","Retain Adam,not skill LLM optimizer advice;separate batch evidence level"
+Epoch budget,80 epochs,Epochs0–64 completed;best59;early stop64,"65 completed differs from80;retain baseline now,freeze strict-run budget separately"
+Selection,Internal validation details incomplete,Mask expansion then random90/10;minimum validation_step_loss,Not subject/motion independent;different masks can cross split;historical indices unavailable
+DIP fine-tuning,s_01–s_08 train;s_09/s_10 test,Audited Epoch59 is GlobalModel AMASS-pretrained;no DIP training recorded in that run,Build traceable fine-tuning/split/selection;module existence does not prove execution
+Inference,Online125 history;also says1-sample overlap,E02–E04 independent nonoverlapping chunks use full within-chunk context,Specify stride/output/startup/lookahead;do not equate overlap wording with an unverified stride
+Rotation refinement,"IMU-orientation optimization,10 iterations/frame","At audit date,raw network outputs;GT-assisted replacement is diagnostic",Implement available-IMU refinement;no GT inference constraints
+Rotation/position metrics,"Global MPJRE,root-aligned MPJPE",Global/local angle and root-relative MPJPE available,Check joints/root/shape/weights;local error does not replace MPJRE
+Main metric/smoothness,MPJVE is mesh-vertex error;also jitter,Neither mesh MPJVE nor jitter computed at audit date,"Add mesh/jerk;units,fps,boundaries,means;MPJVE not velocity"
+Configuration aggregation,"24 combinations,12 display classes","Only some masks in current study,plus five-location reference outside paper budget","Export all24 per-recording results,freeze grouping/reduction;mark missing author details"
+Consumer/live system,Consumer dataset and hardware validation,DIP proxy locations/offline inference,Phase2;GIF and CPU workflow time do not establish hardware accuracy/end-to-end latency

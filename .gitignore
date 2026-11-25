@@ -60,3 +60,5 @@ credentials*
 !/docs/results/temporal_ik_v1_20261116/
 !/docs/results/ik_jitter_diagnostics_v1_20261116/*.log
 !/docs/results/temporal_ik_v1_20261116/*.log
+!/docs/results/final_four_way_replay_v1_20261119/
+!/docs/results/final_four_way_replay_v1_20261119/*.log

@@ -1,43 +1,45 @@
-# DIP 开发训练结果与最终训练预算
+# DIP development training results and final training budget
 
-核查日期：2026-11-15。执行训练：Alex 在普通 WSL Terminal。结果与完整性核查：Codex 协助。
+English presentation updated 2026-11-19; original experiment dates and bytes are preserved in [the language/provenance guide](RECORD_LANGUAGE.md).
 
-**开发阶段已完成，按冻结规则选出的最终训练预算为 2 epochs。** 下一步从原 AMASS Epoch 59 重新初始化，用 s_01–s_08 固定训练 2 轮，之后才做 s_09/s_10 上同一评估协议的微调前后比较。本次核查没有启动最终训练或测试推理。
+Review date: 2026-11-15. Training executed by Alex in an ordinary WSL Terminal. Results and integrity reviewed with Codex assistance.
 
-## 训练结果
+**Development training is complete; the frozen selection rule chooses a final budget of 2 epochs.** Next, restart from the original AMASS Epoch 59 and train s_01–s_08 for exactly two epochs, then compare before/after on s_09/s_10 under one evaluation protocol. This review did not launch final training or test inference.
 
-运行目录为 `outputs/local_dip/dip_dev_v1`，run ID `58592e9dbc11470f9990bacb20d6aa9f`。使用 RTX 5060 Ti、cuda:0、batch256、24 个 mask、Adam lr3e-4，按 [冻结协议](protocols/dip_finetuning_v1_20261114/PROTOCOL.json) 完成 30 轮和 1,860 个 optimizer steps。s_01–s_06 训练，s_07/s_08 验证，test 数据未加载。
+## Training results
 
-| 完成轮数 | Training combined loss | Validation combined loss | 解释 |
-|---|---:|---:|---|
-| 1 | 0.02166910 | 0.02041846 | 开发微调第一轮 |
-| 2 | 0.01420470 | **0.01997489** | 全部 30 轮中的最小验证值 |
-| 30 | 0.00346574 | 0.02144157 | 最后完成轮；验证值比最优高 7.34% |
+Run directory: `outputs/local_dip/dip_dev_v1`; run ID: `58592e9dbc11470f9990bacb20d6aa9f`. RTX 5060 Ti, cuda: 0, batch 256, 24 masks, Adam lr 3e-4; 30 epochs and 1,860 optimizer steps completed under the [frozen protocol](protocols/dip_finetuning_v1_20261114/PROTOCOL.json). Training: s_01–s_06; validation: s_07/s_08. Test data was not loaded.
 
-![开发阶段训练与验证曲线](results/dip_dev_v1_20261115/learning_curve.png)
+| Completed epochs | Training combined loss | Validation combined loss | Interpretation |
+|---|---: |---: |---|
+| 1 | 0.02166910 | 0.02041846 | First development fine-tuning epoch |
+| 2 | 0.01420470 | **0.01997489** | Minimum validation value across all 30 epochs |
+| 30 | 0.00346574 | 0.02144157 | Last completed epoch; validation 7.34% above the minimum |
 
-训练 loss 继续下降，而独立开发集的最优点很早出现，之后没有更低值，这与过拟合倾向一致。该现象不能单独区分人物域差异、数据规模和输入配置等因素；当前不据此修改已冻结的学习率、mask、损失或选轮规则。
+![Development training and validation curves](results/dip_dev_v1_20261115/learning_curve.png)
 
-这些数值是包含公开代码 padding 项的 pose＋FK joint MSE，不能当作 cm 单位位置误差，也不能直接比较原 AMASS 的验证损失。四指标改善尚未测量，不从低 training loss 推断论文复现成功。
+Training loss keeps decreasing while the independent development minimum occurs early, consistent with an overfitting tendency. This alone cannot distinguish subject-domain differences, dataset size, or input-configuration effects. The frozen learning rate, masks, loss, and epoch-selection rule are unchanged.
 
-## 预算选择与完整性
+These values are pose plus FK-joint MSE including public-code padding terms. They are not position errors in cm and cannot be directly compared with AMASS validation loss. Four-metric improvement has not yet been measured in this dated review; low training loss does not establish paper reproduction.
 
-验证项包括：30 条历史顺序完整，step 等于 62×完成轮数；所有 loss 有限；每轮训练有效帧数为 80,070×24，验证有效帧数为 25,423×24；checkpoint 中 20 组 Adam step 均为 1,860；全部 31 个执行源码哈希吻合。完整历史与 last checkpoint 内嵌历史逐项相等。原初始化和冻结协议哈希也保持一致。
+## Budget selection and integrity
 
-| 产物 | 文件 | SHA-256 |
+Checks cover all 30 ordered history rows, step count = 62 × completed epochs, finite losses, 80,070×24 valid training frames and 25,423×24 validation frames per epoch, all 20 Adam step counters equal to 1,860, and all 31 execution-source hashes. The full history exactly matches history embedded in the last checkpoint. Initialization and frozen-protocol hashes are unchanged.
+
+| Artifact | File | SHA-256 |
 |---|---|---|
-| 最佳开发 checkpoint | `checkpoints/epoch_002_03a6585efa03.ckpt` | `4515e13ae95ee5ec49ff90d941c81149ec4c583ba293aadf21abe17de699ba16` |
-| 最后开发 checkpoint | `checkpoints/epoch_030_6da9e5d52b29.ckpt` | `298e8580decef1ca2ee9b08370a714116f336a5d652b8919770e30000aa21501` |
+| Best development checkpoint | `checkpoints/epoch_002_03a6585efa03.ckpt` | `4515e13ae95ee5ec49ff90d941c81149ec4c583ba293aadf21abe17de699ba16` |
+| Last development checkpoint | `checkpoints/epoch_030_6da9e5d52b29.ckpt` | `298e8580decef1ca2ee9b08370a714116f336a5d652b8919770e30000aa21501` |
 
-最佳 epoch 的内部零起始索引为 1，对应 **2 个完整 epochs**。最终阶段入口已通过 `--check-only` 复核：2 轮、20,736 个训练样本、每轮 81 批、batch256、无开发验证和测试数据加载；预计总更新数为 162。该检查没有构建或更新训练模型，也没有创建最终训练目录。
+The best epoch has internal zero-based index 1, corresponding to **2 completed epochs**. Final-stage `--check-only` verifies 2 epochs, 20,736 training samples, 81 batches per epoch, batch 256, and no development validation or test loading: 162 expected updates. This check neither constructs/updates the training model nor creates the final training directory.
 
-本轮实际从 2026-11-15 01:56:51 至 02:12:20（America/Chicago）完成，按 RUN 的 UTC 起始时间与 completion 文件时间约为 15 分 29 秒；记录的训练＋验证计算合计 921.19 秒。峰值 PyTorch GPU allocated 为 2,906.05 MiB（不等于全系统 GPU 总占用），进程峰值 RSS 为 2,147.19 MiB。启动时记录 GPU 空闲显存为 6,887 MiB。此次真实执行已验证该设备在当时资源条件下能够运行冻结 batch256 的完整 GPU 前向、反向和更新。
+The actual run lasted from 2026-11-15 01:56:51 to 02:12:20 America/Chicago, about 15 minutes 29 seconds from RUN UTC start and completion timestamps. Recorded training plus validation compute totals 921.19 seconds. Peak PyTorch GPU allocated memory: 2,906.05 MiB, distinct from system-wide GPU use; peak process RSS: 2,147.19 MiB. Free GPU memory at startup: 6,887 MiB. This execution verifies the frozen batch 256 forward/backward/update loop on this device under those resource conditions.
 
-元数据副本：[verification.json](results/dip_dev_v1_20261115/verification.json)、[30 轮历史](results/dip_dev_v1_20261115/history.csv)、[最终阶段只读计划](results/dip_dev_v1_20261115/final_stage_check.json)。完整核查记录与图保存在 `outputs/local_dip/dip_dev_review_20261115/`；原训练记录与 checkpoint 不改写。
+Metadata copies: [verification.json](results/dip_dev_v1_20261115/verification.json), [30-epoch history](results/dip_dev_v1_20261115/history.csv), [read-only final-stage plan](results/dip_dev_v1_20261115/final_stage_check.json). Full review and figures: `outputs/local_dip/dip_dev_review_20261115/`. Original training records and checkpoints are unchanged.
 
-## 启动最终前八人训练
+## Launch final first-eight training
 
-在普通 WSL Terminal 执行：
+Run in an ordinary WSL Terminal:
 
 ```bash
 cd /home/alex/research/PoseEstimationWithWearables
@@ -49,6 +51,6 @@ conda run --no-capture-output -n imuposer python -u tools/train_dip_finetuning.p
   --output outputs/local_dip/dip_final_v1
 ```
 
-入口自动读取开发阶段选择的 K=2，重置原 Epoch59、Adam 和 seed42，不需要手工修改 epoch 参数。s_07/s_08 在该阶段按预先约定进入训练；固定预算训练后不再将它们称作独立验证集。最终输出为 `outputs/local_dip/dip_final_v1/final.ckpt`。已有开发目录保持不变；中断时使用同一命令加 `--resume`。
+The launcher reads selected K=2, resets the original Epoch 59, Adam and seed42; no manual epoch override is needed. As predeclared, s_07/s_08 join training and are no longer independent validation for this final model. Final output: `outputs/local_dip/dip_final_v1/final.ckpt`. Development artifacts remain unchanged; add `--resume` to the same command after interruption.
 
-之后才能用固定的最终模型，在相同滚动窗口、平滑、身体模型、24 个 mask 及四指标下评估微调前后。测试结果不用于重新选择本轮 epoch 或 checkpoint。
+Only afterward evaluate the fixed final model before/after under identical rolling windows, smoothing, body model, 24 masks, and four metrics. Test outcomes do not reselect this run's epochs or checkpoint.

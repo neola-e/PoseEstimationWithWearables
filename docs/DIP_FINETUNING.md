@@ -1,36 +1,38 @@
-# DIP 微调协议与短跑验证
+# DIP fine-tuning protocol and engineering smoke
 
-日期：2026-11-14。状态：训练协议冻结、实际短跑和独立重载核查均已完成。由 Alex 指定执行两项工作：冻结训练协议，以及验证 Epoch 59 的数据加载、梯度更新、参数变化、checkpoint 保存和重载。正式多轮训练与最终测试不属于本次短跑。
+English presentation updated 2026-11-19; original experiment dates and bytes are preserved in [the language/provenance guide](RECORD_LANGUAGE.md).
 
-准备入口：[prepare_dip_finetuning.py](../tools/prepare_dip_finetuning.py)。训练状态与数据工具：[dip_finetuning.py](../tools/dip_finetuning.py)。短跑入口：[smoke_dip_finetuning.py](../tools/smoke_dip_finetuning.py)。单元检查：[test_dip_finetuning.py](../tests/test_dip_finetuning.py)。
+Date: 2026-11-14. Frozen protocol, actual smoke and independent reload checks complete. Alex requested protocol freezing plus Epoch 59 data-loading/gradient/update/save/reload verification. Formal multi-epoch training and final tests are outside this smoke.
 
-## 冻结的训练协议
+Preparation: [prepare_dip_finetuning.py](../tools/prepare_dip_finetuning.py); state/data: [dip_finetuning.py](../tools/dip_finetuning.py); smoke: [smoke_dip_finetuning.py](../tools/smoke_dip_finetuning.py); tests: [test_dip_finetuning.py](../tests/test_dip_finetuning.py).
 
-机器可读协议为 [PROTOCOL.json](protocols/dip_finetuning_v1_20261114/PROTOCOL.json)，编号 `DIP_FINETUNING_V1`，SHA-256 为 `79bde74ead3f596c5806e3fa1d0cd5b07fcfb6260b0c9e81c218771ba50441ad`。与实验目录原件逐位相同的协议、数据清单和源码哈希保存在 `docs/protocols/dip_finetuning_v1_20261114/`，便于纳入版本控制。原始模型代码、licensed 数据、Epoch 59 和既有研究记录不改写；新入口保留相同模型架构和权重键名。
+## Frozen training protocol
 
-[论文第 4.3、5.3 节](https://arxiv.org/html/2304.12518v1) 给出 AMASS 初始化、DIP 前八人训练与后两人测试，以及训练架构和损失等信息。论文没有完整冻结 DIP 微调的预算、内部验证与模型选择细节；下表中的 30 epochs 上限、seed、开发划分与选择规则是本次明确约定，不能冒充找回的作者设置。
+[PROTOCOL.json](protocols/dip_finetuning_v1_20261114/PROTOCOL.json), ID `DIP_FINETUNING_V1`, SHA-256 `79bde74ead3f596c5806e3fa1d0cd5b07fcfb6260b0c9e81c218771ba50441ad`. Byte-identical protocol/data/source-hash metadata is versioned in `docs/protocols/dip_finetuning_v1_20261114/`. Original model sources, licensed data, Epoch 59 and existing research records are unchanged; architecture/state keys are retained.
 
-| 项目 | 冻结设置 |
+[Paper §4.3/5.3](https://arxiv.org/html/2304.12518v1) specifies AMASS initialization, first-eight DIP training/last-two testing, architecture and losses. It does not fully freeze fine-tuning budget/internal validation/selection. The30-epoch cap, seed, development split and selection below are explicit local choices, not recovered author settings.
+
+| Item | Frozen setting |
 |---|---|
-| 初始化 | 原始 AMASS Epoch 59；step 165,060；SHA-256 `02b9211b57ca36ae3fb13dcacc4b008b49a31fd360ebea516b73d103bd2a5058` |
-| 训练参数 | 全部模型参数参与更新；从新 Adam 状态开始，不继承 AMASS 的动量和步数 |
-| 优化器 | Adam；lr `3e-4`；betas `(0.9,0.999)`；eps `1e-8`；weight decay 0；amsgrad/foreach 关闭 |
-| 调度、裁剪、精度 | 无 scheduler、无梯度裁剪；float32；无 AMP/TF32；遇到非有限 loss/梯度立即报错 |
-| 随机性 | Python、NumPy、PyTorch seed 均为 42；确定性算法开启；禁用 cuDNN benchmark |
-| 数据和输入 | 25 Hz；60 维，位置顺序 lw/rw/lp/rp/h；加速度除以 30；保留继承的居中五帧加速度平均和方向重采样，不重复平滑 |
-| 训练窗口 | 不重叠 125 帧，保留短尾；batch 内输入与目标补零；packed LSTM 接收实际长度 |
-| Mask | 每个动作窗口枚举 24 个稀疏 mask：5 单位置、10 双位置、9 三位置；不加入五位置 global；通道数保持 60 |
-| Loss | 144 维列向量 6D pose MSE＋全部 24 关节的 SMPL FK 位置 MSE，权重 1:1；位置以米为单位 |
-| Padding 约定 | 训练 loss 明确保留公开代码的 padding 项；报告四指标时排除 padding。两者含义不同，不悄悄改变继承的训练配方 |
-| 身体模型 | 现有 mean male SMPL、零平移、pose blend shapes 关闭；文件哈希进入协议 |
-| 正式 batch | 256，shuffle=True，workers=0，drop_last=False；不自动改变 batch 或学习率 |
-| 开发预算 | 最多 30 epochs，无早停，每个完整 epoch 做一次全开发集验证 |
-| 开发 checkpoint 选择 | 选择最小全开发集 combined validation loss；相同值选较早完成的 epoch；验证批按 padded B×T 加权，避免不等长批直接等权 |
-| 保存 | 每个 epoch 保存 last 和 best；记录模型、Adam、epoch/step、Python/NumPy/Torch RNG、采样器状态和协议哈希 |
+| Initialization | Original AMASS Epoch 59, step 165,060; SHA-256 `02b9211b57ca36ae3fb13dcacc4b008b49a31fd360ebea516b73d103bd2a5058` |
+| Trainable parameters | All model parameters; fresh Adam, no AMASS moments/steps |
+| Optimizer | Adam lr `3e-4`, betas `(0.9,0.999)`, eps `1e-8`, weight decay0, amsgrad/foreach off |
+| Schedule/clipping/precision | No scheduler/clipping; float32; no AMP/TF32; immediately reject nonfinite loss/gradients |
+| RNG | Python/NumPy/Torch seed42, deterministic algorithms, cuDNN benchmark off |
+| Data/input | 25 Hz, 60D, lw/rw/lp/rp/h, acc/30; retain centered-five acceleration mean/orientation resampling, no double smoothing |
+| Windows | Nonoverlapping125 frames, retain short tails; zero-pad input/target in batch; packed LSTM uses actual lengths |
+| Masks | 24 sparse masks per motion window: 5 single, 10 double, 9 triple; no five-location global; retain60 channels |
+| Loss | 144D column-convention6D pose MSE + all 24-joint SMPL FK position MSE, weights1:1; positions in meters |
+| Padding | Explicitly retain public-code padding terms during training; exclude padding in four-metric reporting; do not silently change inherited recipe |
+| Body | Existing mean male SMPL, zero translation, pose blend shapes off; asset hash in protocol |
+| Formal batch | 256, shuffle=True, workers=0, drop_last=False; no automatic batch/lr change |
+| Development budget | At most30 epochs, no early stop; full-development validation after each completed epoch |
+| Selection | Minimum full-development combined validation loss; earlier completed epoch wins exact ties; weight validation batches by padded B×T, not equally across unequal lengths |
+| Saving | Last/best each epoch; model, Adam, epoch/step, Python/NumPy/Torch RNG, sampler state, protocol hash |
 
-### 明确的 24 个训练 mask
+### Exact24-mask order
 
-顺序也是协议的一部分：
+Order is part of the protocol:
 
 ```text
 lw_rw_h, rw_lp_rp, lw_rw_rp, lw_rp_h, rw_rp_h,
@@ -39,67 +41,67 @@ lw_rw, lw_lp, lw_rp, lw_h, rw_lp, rw_rp, rw_h, lp_rp, lp_h, rp_h,
 lw, rw, lp, rp, h
 ```
 
-Epoch 59 原有的 25-mask 预训练差异仍然存在；本次排除 global 只改变新的 DIP 微调样本，不能消除初始化的既有训练经历。
+Epoch 59's historical25-mask pretraining remains a known difference. Removing global changes new DIP samples, not the initialization's past exposure.
 
-## 受试者与数据清单
+## Subjects and data manifest
 
-先按受试者拆分，再生成窗口与 24 个 mask，避免同一动作的不同 mask 跨训练和开发集。使用本地 raw DIP 按继承的填补、裁剪、重采样及平滑规则重建 acc/ori/pose，与 processed 容器逐位匹配。每条录制保存 raw 文件哈希和三个 processed 内容哈希，排除项也保留原因。
+Split subjects before window/mask expansion so masks of the same motion cannot cross train/development. Reconstruct acc/ori/pose from local raw DIP using inherited filling/trimming/resampling/smoothing and bitwise match processed containers. Record raw hashes, three processed-content hashes and excluded-record reasons.
 
-1. **开发阶段：** s_01–s_06 训练，s_07/s_08 验证。原来保留的开发集不进入短跑或开发训练的梯度。
-2. **最终论文划分阶段：** 开发阶段选定完成轮数 K（1–30）后，重新从同一个 Epoch 59 和新 Adam 开始，用 s_01–s_08 固定训练 K 轮。此时 s_07/s_08 的角色明确转为训练，不能再称为该最终模型的独立验证集。
-3. **测试：** s_09/s_10 只用于固定模型的微调前后报告，不参与超参数、轮数或 checkpoint 选择。本次准备与短跑不打开 test 容器或这两人的 raw 文件。
+1. **Development: **s_01–s_06 training, s_07/s_08 validation. Reserved development subjects contribute no smoke/development gradients.
+2. **Final paper split: **after selecting K completed epochs(1–30), reset to identical Epoch 59/fresh Adam and train s_01–s_08 exactly K epochs. s_07/s_08 explicitly become training and cannot remain independent validation for that model.
+3. **Test: **s_09/s_10 only for locked before/after reporting, never hyperparameter/epoch/checkpoint selection. Preparation/smoke did not open their raw files or test container.
 
-完整身份清单和统计见 [data_manifest.json](protocols/dip_finetuning_v1_20261114/data_manifest.json)。前八人全部 41 条 processed 录制均找到唯一 raw 内容匹配；42 条 raw 候选中，s_01/02.pkl 因继承的有限值规则被排除，原因与文件哈希保留。原 s_07/s_08 的 11 条保留录制身份保持不变。
+[data_manifest.json](protocols/dip_finetuning_v1_20261114/data_manifest.json) records all identities. All 41 first-eight processed recordings have unique raw-content matches. Of42 raw candidates, s_01/02.pkl fails inherited finite-value criteria; reason/hash retained. The11 reserved s_07/s_08 identities are unchanged.
 
-| 阶段 | 录制 | 帧数 | 动作窗口 | ×24 mask 后样本 | batch 256 的每轮批数 |
-|---|---:|---:|---:|---:|---:|
-| s_01–s_06 开发训练 | 30 | 80,070 | 655 | 15,720 | 62 |
-| s_07/s_08 开发验证 | 11 | 25,423 | 209 | 5,016 | 20 |
-| 前八人最终固定预算训练 | 41 | 105,493 | 864 | 20,736 | 81 |
+| Stage | Recordings | Frames | Motion windows | Samples ×24 | Batches/epoch at256 |
+|---|---: |---: |---: |---: |---: |
+| s_01–s_06 development training | 30 | 80,070 | 655 | 15,720 | 62 |
+| s_07/s_08 validation | 11 | 25,423 | 209 | 5,016 | 20 |
+| First-eight final fixed-budget training | 41 | 105,493 | 864 | 20,736 | 81 |
 
-现有测试结果曾参与此前研究讨论，因此后续也需保留这段历史，不能声称测试集从未被观察。
+Prior research discussions already used test observations; preserve this history rather than claim an untouched blind test.
 
-## 微调前后的评估约定
+## Before/after evaluation
 
-训练用 125 帧分块，报告用 [已核查的滚动末帧推理](ROLLING_INFERENCE.md)：窗口 125、步长 1、短前缀起始、状态不跨窗口或录制复用。前后都保留相同的居中加速度平滑，并披露其最多两帧的未来依赖；过去五帧平滑属于另列的敏感性分析。
+Train on125-frame chunks; report with [audited rolling last-frame inference](ROLLING_INFERENCE.md): 125-window, stride1, short prefixes, no state carry across windows/recordings. Both models retain identical centered acceleration averaging with disclosed two-frame lookahead; trailing-five smoothing is separate sensitivity analysis.
 
-四指标沿用 [POSE_METRICS.md](POSE_METRICS.md)：全局 MPJRE、pelvis 平移对齐的 MPJPE 和网格 MPJVE，以及按每条完整录制计算的 jitter。每个 mask 内按有效帧数加权空间误差、按 T−3 加权 jitter，然后对 24 个 mask 等权平均；逐录制、逐 mask 结果保留。前后都用相同 shape、关节/顶点集合、mesh 开关和零平移。IMU-only IK 尚属后续独立组件，本次仍比较原始网络。
+Use [POSE_METRICS.md](POSE_METRICS.md): global MPJRE, pelvis-aligned MPJPE/mesh MPJVE, whole-recording jitter. Within each mask, spatial errors use valid-frame weighting, jitter T−3 weighting; then equally average24 masks. Keep per-recording/per-mask rows. Fix shared shape, joints/vertices, mesh switch, zero translation. IMU-only IK is a later independent component; this dated comparison uses raw networks.
 
-开发 validation loss 用于选模型；论文复现结论需要四指标、固定协议与差异说明，不能由 training loss 降低单独推断。
+Development validation selects the model; paper-reproduction claims require four metrics, a fixed protocol and differences, not lower training loss alone.
 
-## 短跑检查与结果
+## Smoke checks and results
 
-短跑设置为 **3 个 Adam 步、batch 8、24 个样本**，每个 mask 恰好一次；从不同训练窗口取样，并确保包含一个短尾窗口。先检查训练与验证 loader 的身份、形状和长度，只让训练数据参与梯度。
+Smoke: **3 Adam steps, batch 8,24 samples**, exactly one per mask, varied training windows including a short tail. First verify training/validation identities, shapes, lengths; only training contributes gradients.
 
-保存第 3 步后，使用独立加载的模型与优化器检查：模型参数和 Adam 状态逐位相等、同一输入的预测一致、从相同 RNG 与规定输入继续一步得到相同的模型/Adam/RNG 状态。额外一步分别在不中断与重载两个分支执行，用于续训检查；不会改写保存的第 3 步 checkpoint。
+After step 3, independently reload model/optimizer: bitwise model/Adam states, matching same-input predictions, matching continuation from identical RNG and specified input. One extra update in uninterrupted and reloaded branches checks continuation without rewriting the saved step 3 checkpoint.
 
-短跑 checkpoint 的 `kind=engineering_smoke_only`、`selection_eligible=false`、`epoch=-1`；它不计为完成一个正式 epoch，也不进入 best 模型选择。
+Checkpoint metadata:`kind=engineering_smoke_only`,`selection_eligible=false`,`epoch=-1`; not a completed formal epoch or best-model candidate.
 
-实际使用现有 `imuposer` 环境的 **CPU、2 线程**。当前会话检测结果是 CUDA 不可见、GPU 数量为 0；这只描述本会话能力，不判定 PC 是否安装显卡。短跑本身约 **6.27 秒**，峰值 RSS **1,741 MiB**；此时间不含此前 raw 身份匹配，也不能外推正式 batch 256 或 GPU 的训练耗时。
+Actual imuposer **CPU, 2 threads**: this session sees no CUDA, device_count0, which does not establish missing host hardware. Smoke runtime **6.27 s**, peak RSS **1,741 MiB**, excluding earlier raw matching; not a formal batch 256/GPU timing estimate.
 
-| 检查 | 观测结果 |
+| Check | Observation |
 |---|---|
-| 训练与验证 loader | 分别仅包含 s_01–s_06 和 s_07/s_08；身份、形状、长度和内容哈希通过检查；验证数据不参与梯度；未打开 test 数据 |
-| 24 个 mask | 24 个短跑样本恰好覆盖全部 24 种稀疏组合 |
-| 第 1 步 | loss 0.02971774；951 有效帧、49 padding 帧；20/20 参数张量梯度非零、有限并发生更新 |
-| 第 2 步 | loss 0.03434055；839 有效帧、161 padding 帧；20/20 参数张量梯度非零、有限并发生更新 |
-| 第 3 步 | loss 0.04248882；1,000 有效帧、0 padding；20/20 参数张量梯度非零、有限并发生更新 |
-| 相对 Epoch 59 的参数变化 | 20/20 张量改变；最大绝对变化 0.000901447 |
-| 模型及 Adam 重载 | 模型权重、20 组 Adam 动量与 step 计数全部逐位相等；每组 Adam step=3 |
-| 重载后的预测 | 同一 probe 的最大绝对差 0 |
-| 随机性与续训 | 恢复相同 Python/NumPy/Torch RNG 后，同一指定输入继续一步的 loss、模型、Adam、最终 RNG 全部逐位一致 |
-| 独立进程复核 | 不调用新 dataset/collate/loss 工具，直接从容器重建 8 个 probe 输入；目标与长度逐位相等；初始模型和短跑 checkpoint 的预测与缓存分别完全一致 |
-| 单元检查 | 6 项通过，覆盖 24-mask 数量、受试者隔离、与公开 loader 的逐 mask/短尾一致性、共享数据不被污染、padding loss 的解析值、三类 RNG 恢复与状态差异检测 |
+| Loaders | Only s_01–s_06 training/s_07, s_08 validation; identities/shapes/lengths/content hashes pass; no validation gradients or test loading |
+| Masks | 24 samples cover every sparse mask exactly once |
+| Step1 | Loss0.02971774; 951 valid, 49 padded frames; 20/20 parameter tensors have finite nonzero gradients and update |
+| Step2 | Loss0.03434055; 839 valid, 161 padded; 20/20 tensors finite nonzero gradients/update |
+| Step3 | Loss0.04248882; 1,000 valid, 0 padded; 20/20 tensors finite nonzero gradients/update |
+| Change vs Epoch 59 | 20/20 tensors changed; max absolute0.000901447 |
+| Model/Adam reload | Weights, 20 Adam moment groups/step counters bitwise identical; each step=3 |
+| Reload predictions | Same probe max absolute difference0 |
+| RNG/continuation | Same restored Python/NumPy/Torch RNG, input, loss, model, Adam and final RNG bitwise match |
+| Independent process | Rebuild8 probe features directly from container without new dataset/collate/loss helpers; targets/lengths bitwise equal; initial and smoke predictions match caches exactly |
+| Unit checks | Six pass: 24 masks, subject isolation, public-loader mask/tail agreement, shared-data immutability, analytic padding loss, three-RNG replay/state-difference detection |
 
-三个训练 loss 来自不同动作和 mask，包含 dropout；不能从这三行的大小顺序判断是否收敛。短跑证明工程链路可用，尚不提供开发集/测试集精度改善或论文复现成功的证据。
+The three losses use different motions/masks and dropout; their order does not establish convergence. The smoke verifies engineering, not development/test accuracy improvement or paper reproduction.
 
-保存文件：[smoke_step3.ckpt](../outputs/local_dip/dip_finetuning_v1_20261114/smoke/smoke_step3.ckpt)，SHA-256 `10f9656573fb41c522bd5ca80c65d2830a24fe3e391e98de2590fd5802afda7c`。完整检查见 [results.json](../outputs/local_dip/dip_finetuning_v1_20261114/smoke/results.json)、[逐步梯度与更新](../outputs/local_dip/dip_finetuning_v1_20261114/smoke/steps.json)、[独立进程验证](../outputs/local_dip/dip_finetuning_v1_20261114/independent_validation.json)。
+Saved [smoke_step3.ckpt](../outputs/local_dip/dip_finetuning_v1_20261114/smoke/smoke_step3.ckpt), SHA-256 `10f9656573fb41c522bd5ca80c65d2830a24fe3e391e98de2590fd5802afda7c`. [Results](../outputs/local_dip/dip_finetuning_v1_20261114/smoke/results.json), [gradients/updates](../outputs/local_dip/dip_finetuning_v1_20261114/smoke/steps.json), [independent validation](../outputs/local_dip/dip_finetuning_v1_20261114/independent_validation.json).
 
-原冻结源码与输入清单为 `FREEZE_MANIFEST.json`；短跑文件为 `smoke/ARTIFACT_MANIFEST.json`。最终完整性清单、日志与独立验证器快照保存在实验根目录。模型/优化器 checkpoint、预测和原始资产属于忽略的大文件；`docs/protocols` 的元数据副本不替代实验目录备份。
+`FREEZE_MANIFEST.json` covers original frozen sources/inputs; `smoke/ARTIFACT_MANIFEST.json` covers smoke artifacts. Final integrity lists, logs and validator snapshots stay in the run root. Checkpoints, predictions, original assets are ignored large files; metadata copies in docs/protocols do not replace run backups.
 
-## 复跑命令
+## Rerun
 
-输出目录必须不存在，正式复跑应换一个新目录。先冻结协议，再执行短跑。
+Use a nonexistent new directory; freeze, then smoke:
 
 ```bash
 cd /home/alex/research/PoseEstimationWithWearables
@@ -123,4 +125,4 @@ conda run --no-capture-output -n imuposer python tools/validate_dip_finetuning_s
   --output /tmp/dip_finetuning_smoke_recheck.json
 ```
 
-`--device auto` 在可用时使用 CUDA，否则使用 CPU；显式 `--device cuda:0` 在 CUDA 不可见时会报错。短跑会核对冻结源码和输入哈希，拒绝在源码或数据已改变时沿用旧协议。正式训练预算已冻结，本次入口执行的仅是工程短跑。
+`--device auto` chooses CUDA if available, otherwise CPU; explicit `--device cuda:0` fails without CUDA. Frozen source/input hashes must match; changed code/data cannot reuse an old protocol. Formal budget is frozen; this entry executes only an engineering smoke.

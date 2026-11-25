@@ -1,0 +1,2502 @@
+[
+  {
+    "clip_frame": 0,
+    "recording_frame": 1246,
+    "recording_seconds": 49.84,
+    "clip_seconds": 0.0,
+    "network_source_frame": 1246,
+    "framewise_ik_source_frame": 1246,
+    "temporal_ik_source_frame": 1246,
+    "gt_source_frame": 1246
+  },
+  {
+    "clip_frame": 1,
+    "recording_frame": 1247,
+    "recording_seconds": 49.88,
+    "clip_seconds": 0.04,
+    "network_source_frame": 1247,
+    "framewise_ik_source_frame": 1247,
+    "temporal_ik_source_frame": 1247,
+    "gt_source_frame": 1247
+  },
+  {
+    "clip_frame": 2,
+    "recording_frame": 1248,
+    "recording_seconds": 49.92,
+    "clip_seconds": 0.08,
+    "network_source_frame": 1248,
+    "framewise_ik_source_frame": 1248,
+    "temporal_ik_source_frame": 1248,
+    "gt_source_frame": 1248
+  },
+  {
+    "clip_frame": 3,
+    "recording_frame": 1249,
+    "recording_seconds": 49.96,
+    "clip_seconds": 0.12,
+    "network_source_frame": 1249,
+    "framewise_ik_source_frame": 1249,
+    "temporal_ik_source_frame": 1249,
+    "gt_source_frame": 1249
+  },
+  {
+    "clip_frame": 4,
+    "recording_frame": 1250,
+    "recording_seconds": 50.0,
+    "clip_seconds": 0.16,
+    "network_source_frame": 1250,
+    "framewise_ik_source_frame": 1250,
+    "temporal_ik_source_frame": 1250,
+    "gt_source_frame": 1250
+  },
+  {
+    "clip_frame": 5,
+    "recording_frame": 1251,
+    "recording_seconds": 50.04,
+    "clip_seconds": 0.2,
+    "network_source_frame": 1251,
+    "framewise_ik_source_frame": 1251,
+    "temporal_ik_source_frame": 1251,
+    "gt_source_frame": 1251
+  },
+  {
+    "clip_frame": 6,
+    "recording_frame": 1252,
+    "recording_seconds": 50.08,
+    "clip_seconds": 0.24,
+    "network_source_frame": 1252,
+    "framewise_ik_source_frame": 1252,
+    "temporal_ik_source_frame": 1252,
+    "gt_source_frame": 1252
+  },
+  {
+    "clip_frame": 7,
+    "recording_frame": 1253,
+    "recording_seconds": 50.12,
+    "clip_seconds": 0.28,
+    "network_source_frame": 1253,
+    "framewise_ik_source_frame": 1253,
+    "temporal_ik_source_frame": 1253,
+    "gt_source_frame": 1253
+  },
+  {
+    "clip_frame": 8,
+    "recording_frame": 1254,
+    "recording_seconds": 50.16,
+    "clip_seconds": 0.32,
+    "network_source_frame": 1254,
+    "framewise_ik_source_frame": 1254,
+    "temporal_ik_source_frame": 1254,
+    "gt_source_frame": 1254
+  },
+  {
+    "clip_frame": 9,
+    "recording_frame": 1255,
+    "recording_seconds": 50.2,
+    "clip_seconds": 0.36,
+    "network_source_frame": 1255,
+    "framewise_ik_source_frame": 1255,
+    "temporal_ik_source_frame": 1255,
+    "gt_source_frame": 1255
+  },
+  {
+    "clip_frame": 10,
+    "recording_frame": 1256,
+    "recording_seconds": 50.24,
+    "clip_seconds": 0.4,
+    "network_source_frame": 1256,
+    "framewise_ik_source_frame": 1256,
+    "temporal_ik_source_frame": 1256,
+    "gt_source_frame": 1256
+  },
+  {
+    "clip_frame": 11,
+    "recording_frame": 1257,
+    "recording_seconds": 50.28,
+    "clip_seconds": 0.44,
+    "network_source_frame": 1257,
+    "framewise_ik_source_frame": 1257,
+    "temporal_ik_source_frame": 1257,
+    "gt_source_frame": 1257
+  },
+  {
+    "clip_frame": 12,
+    "recording_frame": 1258,
+    "recording_seconds": 50.32,
+    "clip_seconds": 0.48,
+    "network_source_frame": 1258,
+    "framewise_ik_source_frame": 1258,
+    "temporal_ik_source_frame": 1258,
+    "gt_source_frame": 1258
+  },
+  {
+    "clip_frame": 13,
+    "recording_frame": 1259,
+    "recording_seconds": 50.36,
+    "clip_seconds": 0.52,
+    "network_source_frame": 1259,
+    "framewise_ik_source_frame": 1259,
+    "temporal_ik_source_frame": 1259,
+    "gt_source_frame": 1259
+  },
+  {
+    "clip_frame": 14,
+    "recording_frame": 1260,
+    "recording_seconds": 50.4,
+    "clip_seconds": 0.56,
+    "network_source_frame": 1260,
+    "framewise_ik_source_frame": 1260,
+    "temporal_ik_source_frame": 1260,
+    "gt_source_frame": 1260
+  },
+  {
+    "clip_frame": 15,
+    "recording_frame": 1261,
+    "recording_seconds": 50.44,
+    "clip_seconds": 0.6,
+    "network_source_frame": 1261,
+    "framewise_ik_source_frame": 1261,
+    "temporal_ik_source_frame": 1261,
+    "gt_source_frame": 1261
+  },
+  {
+    "clip_frame": 16,
+    "recording_frame": 1262,
+    "recording_seconds": 50.48,
+    "clip_seconds": 0.64,
+    "network_source_frame": 1262,
+    "framewise_ik_source_frame": 1262,
+    "temporal_ik_source_frame": 1262,
+    "gt_source_frame": 1262
+  },
+  {
+    "clip_frame": 17,
+    "recording_frame": 1263,
+    "recording_seconds": 50.52,
+    "clip_seconds": 0.68,
+    "network_source_frame": 1263,
+    "framewise_ik_source_frame": 1263,
+    "temporal_ik_source_frame": 1263,
+    "gt_source_frame": 1263
+  },
+  {
+    "clip_frame": 18,
+    "recording_frame": 1264,
+    "recording_seconds": 50.56,
+    "clip_seconds": 0.72,
+    "network_source_frame": 1264,
+    "framewise_ik_source_frame": 1264,
+    "temporal_ik_source_frame": 1264,
+    "gt_source_frame": 1264
+  },
+  {
+    "clip_frame": 19,
+    "recording_frame": 1265,
+    "recording_seconds": 50.6,
+    "clip_seconds": 0.76,
+    "network_source_frame": 1265,
+    "framewise_ik_source_frame": 1265,
+    "temporal_ik_source_frame": 1265,
+    "gt_source_frame": 1265
+  },
+  {
+    "clip_frame": 20,
+    "recording_frame": 1266,
+    "recording_seconds": 50.64,
+    "clip_seconds": 0.8,
+    "network_source_frame": 1266,
+    "framewise_ik_source_frame": 1266,
+    "temporal_ik_source_frame": 1266,
+    "gt_source_frame": 1266
+  },
+  {
+    "clip_frame": 21,
+    "recording_frame": 1267,
+    "recording_seconds": 50.68,
+    "clip_seconds": 0.84,
+    "network_source_frame": 1267,
+    "framewise_ik_source_frame": 1267,
+    "temporal_ik_source_frame": 1267,
+    "gt_source_frame": 1267
+  },
+  {
+    "clip_frame": 22,
+    "recording_frame": 1268,
+    "recording_seconds": 50.72,
+    "clip_seconds": 0.88,
+    "network_source_frame": 1268,
+    "framewise_ik_source_frame": 1268,
+    "temporal_ik_source_frame": 1268,
+    "gt_source_frame": 1268
+  },
+  {
+    "clip_frame": 23,
+    "recording_frame": 1269,
+    "recording_seconds": 50.76,
+    "clip_seconds": 0.92,
+    "network_source_frame": 1269,
+    "framewise_ik_source_frame": 1269,
+    "temporal_ik_source_frame": 1269,
+    "gt_source_frame": 1269
+  },
+  {
+    "clip_frame": 24,
+    "recording_frame": 1270,
+    "recording_seconds": 50.8,
+    "clip_seconds": 0.96,
+    "network_source_frame": 1270,
+    "framewise_ik_source_frame": 1270,
+    "temporal_ik_source_frame": 1270,
+    "gt_source_frame": 1270
+  },
+  {
+    "clip_frame": 25,
+    "recording_frame": 1271,
+    "recording_seconds": 50.84,
+    "clip_seconds": 1.0,
+    "network_source_frame": 1271,
+    "framewise_ik_source_frame": 1271,
+    "temporal_ik_source_frame": 1271,
+    "gt_source_frame": 1271
+  },
+  {
+    "clip_frame": 26,
+    "recording_frame": 1272,
+    "recording_seconds": 50.88,
+    "clip_seconds": 1.04,
+    "network_source_frame": 1272,
+    "framewise_ik_source_frame": 1272,
+    "temporal_ik_source_frame": 1272,
+    "gt_source_frame": 1272
+  },
+  {
+    "clip_frame": 27,
+    "recording_frame": 1273,
+    "recording_seconds": 50.92,
+    "clip_seconds": 1.08,
+    "network_source_frame": 1273,
+    "framewise_ik_source_frame": 1273,
+    "temporal_ik_source_frame": 1273,
+    "gt_source_frame": 1273
+  },
+  {
+    "clip_frame": 28,
+    "recording_frame": 1274,
+    "recording_seconds": 50.96,
+    "clip_seconds": 1.12,
+    "network_source_frame": 1274,
+    "framewise_ik_source_frame": 1274,
+    "temporal_ik_source_frame": 1274,
+    "gt_source_frame": 1274
+  },
+  {
+    "clip_frame": 29,
+    "recording_frame": 1275,
+    "recording_seconds": 51.0,
+    "clip_seconds": 1.16,
+    "network_source_frame": 1275,
+    "framewise_ik_source_frame": 1275,
+    "temporal_ik_source_frame": 1275,
+    "gt_source_frame": 1275
+  },
+  {
+    "clip_frame": 30,
+    "recording_frame": 1276,
+    "recording_seconds": 51.04,
+    "clip_seconds": 1.2,
+    "network_source_frame": 1276,
+    "framewise_ik_source_frame": 1276,
+    "temporal_ik_source_frame": 1276,
+    "gt_source_frame": 1276
+  },
+  {
+    "clip_frame": 31,
+    "recording_frame": 1277,
+    "recording_seconds": 51.08,
+    "clip_seconds": 1.24,
+    "network_source_frame": 1277,
+    "framewise_ik_source_frame": 1277,
+    "temporal_ik_source_frame": 1277,
+    "gt_source_frame": 1277
+  },
+  {
+    "clip_frame": 32,
+    "recording_frame": 1278,
+    "recording_seconds": 51.12,
+    "clip_seconds": 1.28,
+    "network_source_frame": 1278,
+    "framewise_ik_source_frame": 1278,
+    "temporal_ik_source_frame": 1278,
+    "gt_source_frame": 1278
+  },
+  {
+    "clip_frame": 33,
+    "recording_frame": 1279,
+    "recording_seconds": 51.16,
+    "clip_seconds": 1.32,
+    "network_source_frame": 1279,
+    "framewise_ik_source_frame": 1279,
+    "temporal_ik_source_frame": 1279,
+    "gt_source_frame": 1279
+  },
+  {
+    "clip_frame": 34,
+    "recording_frame": 1280,
+    "recording_seconds": 51.2,
+    "clip_seconds": 1.36,
+    "network_source_frame": 1280,
+    "framewise_ik_source_frame": 1280,
+    "temporal_ik_source_frame": 1280,
+    "gt_source_frame": 1280
+  },
+  {
+    "clip_frame": 35,
+    "recording_frame": 1281,
+    "recording_seconds": 51.24,
+    "clip_seconds": 1.4,
+    "network_source_frame": 1281,
+    "framewise_ik_source_frame": 1281,
+    "temporal_ik_source_frame": 1281,
+    "gt_source_frame": 1281
+  },
+  {
+    "clip_frame": 36,
+    "recording_frame": 1282,
+    "recording_seconds": 51.28,
+    "clip_seconds": 1.44,
+    "network_source_frame": 1282,
+    "framewise_ik_source_frame": 1282,
+    "temporal_ik_source_frame": 1282,
+    "gt_source_frame": 1282
+  },
+  {
+    "clip_frame": 37,
+    "recording_frame": 1283,
+    "recording_seconds": 51.32,
+    "clip_seconds": 1.48,
+    "network_source_frame": 1283,
+    "framewise_ik_source_frame": 1283,
+    "temporal_ik_source_frame": 1283,
+    "gt_source_frame": 1283
+  },
+  {
+    "clip_frame": 38,
+    "recording_frame": 1284,
+    "recording_seconds": 51.36,
+    "clip_seconds": 1.52,
+    "network_source_frame": 1284,
+    "framewise_ik_source_frame": 1284,
+    "temporal_ik_source_frame": 1284,
+    "gt_source_frame": 1284
+  },
+  {
+    "clip_frame": 39,
+    "recording_frame": 1285,
+    "recording_seconds": 51.4,
+    "clip_seconds": 1.56,
+    "network_source_frame": 1285,
+    "framewise_ik_source_frame": 1285,
+    "temporal_ik_source_frame": 1285,
+    "gt_source_frame": 1285
+  },
+  {
+    "clip_frame": 40,
+    "recording_frame": 1286,
+    "recording_seconds": 51.44,
+    "clip_seconds": 1.6,
+    "network_source_frame": 1286,
+    "framewise_ik_source_frame": 1286,
+    "temporal_ik_source_frame": 1286,
+    "gt_source_frame": 1286
+  },
+  {
+    "clip_frame": 41,
+    "recording_frame": 1287,
+    "recording_seconds": 51.48,
+    "clip_seconds": 1.64,
+    "network_source_frame": 1287,
+    "framewise_ik_source_frame": 1287,
+    "temporal_ik_source_frame": 1287,
+    "gt_source_frame": 1287
+  },
+  {
+    "clip_frame": 42,
+    "recording_frame": 1288,
+    "recording_seconds": 51.52,
+    "clip_seconds": 1.68,
+    "network_source_frame": 1288,
+    "framewise_ik_source_frame": 1288,
+    "temporal_ik_source_frame": 1288,
+    "gt_source_frame": 1288
+  },
+  {
+    "clip_frame": 43,
+    "recording_frame": 1289,
+    "recording_seconds": 51.56,
+    "clip_seconds": 1.72,
+    "network_source_frame": 1289,
+    "framewise_ik_source_frame": 1289,
+    "temporal_ik_source_frame": 1289,
+    "gt_source_frame": 1289
+  },
+  {
+    "clip_frame": 44,
+    "recording_frame": 1290,
+    "recording_seconds": 51.6,
+    "clip_seconds": 1.76,
+    "network_source_frame": 1290,
+    "framewise_ik_source_frame": 1290,
+    "temporal_ik_source_frame": 1290,
+    "gt_source_frame": 1290
+  },
+  {
+    "clip_frame": 45,
+    "recording_frame": 1291,
+    "recording_seconds": 51.64,
+    "clip_seconds": 1.8,
+    "network_source_frame": 1291,
+    "framewise_ik_source_frame": 1291,
+    "temporal_ik_source_frame": 1291,
+    "gt_source_frame": 1291
+  },
+  {
+    "clip_frame": 46,
+    "recording_frame": 1292,
+    "recording_seconds": 51.68,
+    "clip_seconds": 1.84,
+    "network_source_frame": 1292,
+    "framewise_ik_source_frame": 1292,
+    "temporal_ik_source_frame": 1292,
+    "gt_source_frame": 1292
+  },
+  {
+    "clip_frame": 47,
+    "recording_frame": 1293,
+    "recording_seconds": 51.72,
+    "clip_seconds": 1.88,
+    "network_source_frame": 1293,
+    "framewise_ik_source_frame": 1293,
+    "temporal_ik_source_frame": 1293,
+    "gt_source_frame": 1293
+  },
+  {
+    "clip_frame": 48,
+    "recording_frame": 1294,
+    "recording_seconds": 51.76,
+    "clip_seconds": 1.92,
+    "network_source_frame": 1294,
+    "framewise_ik_source_frame": 1294,
+    "temporal_ik_source_frame": 1294,
+    "gt_source_frame": 1294
+  },
+  {
+    "clip_frame": 49,
+    "recording_frame": 1295,
+    "recording_seconds": 51.8,
+    "clip_seconds": 1.96,
+    "network_source_frame": 1295,
+    "framewise_ik_source_frame": 1295,
+    "temporal_ik_source_frame": 1295,
+    "gt_source_frame": 1295
+  },
+  {
+    "clip_frame": 50,
+    "recording_frame": 1296,
+    "recording_seconds": 51.84,
+    "clip_seconds": 2.0,
+    "network_source_frame": 1296,
+    "framewise_ik_source_frame": 1296,
+    "temporal_ik_source_frame": 1296,
+    "gt_source_frame": 1296
+  },
+  {
+    "clip_frame": 51,
+    "recording_frame": 1297,
+    "recording_seconds": 51.88,
+    "clip_seconds": 2.04,
+    "network_source_frame": 1297,
+    "framewise_ik_source_frame": 1297,
+    "temporal_ik_source_frame": 1297,
+    "gt_source_frame": 1297
+  },
+  {
+    "clip_frame": 52,
+    "recording_frame": 1298,
+    "recording_seconds": 51.92,
+    "clip_seconds": 2.08,
+    "network_source_frame": 1298,
+    "framewise_ik_source_frame": 1298,
+    "temporal_ik_source_frame": 1298,
+    "gt_source_frame": 1298
+  },
+  {
+    "clip_frame": 53,
+    "recording_frame": 1299,
+    "recording_seconds": 51.96,
+    "clip_seconds": 2.12,
+    "network_source_frame": 1299,
+    "framewise_ik_source_frame": 1299,
+    "temporal_ik_source_frame": 1299,
+    "gt_source_frame": 1299
+  },
+  {
+    "clip_frame": 54,
+    "recording_frame": 1300,
+    "recording_seconds": 52.0,
+    "clip_seconds": 2.16,
+    "network_source_frame": 1300,
+    "framewise_ik_source_frame": 1300,
+    "temporal_ik_source_frame": 1300,
+    "gt_source_frame": 1300
+  },
+  {
+    "clip_frame": 55,
+    "recording_frame": 1301,
+    "recording_seconds": 52.04,
+    "clip_seconds": 2.2,
+    "network_source_frame": 1301,
+    "framewise_ik_source_frame": 1301,
+    "temporal_ik_source_frame": 1301,
+    "gt_source_frame": 1301
+  },
+  {
+    "clip_frame": 56,
+    "recording_frame": 1302,
+    "recording_seconds": 52.08,
+    "clip_seconds": 2.24,
+    "network_source_frame": 1302,
+    "framewise_ik_source_frame": 1302,
+    "temporal_ik_source_frame": 1302,
+    "gt_source_frame": 1302
+  },
+  {
+    "clip_frame": 57,
+    "recording_frame": 1303,
+    "recording_seconds": 52.12,
+    "clip_seconds": 2.28,
+    "network_source_frame": 1303,
+    "framewise_ik_source_frame": 1303,
+    "temporal_ik_source_frame": 1303,
+    "gt_source_frame": 1303
+  },
+  {
+    "clip_frame": 58,
+    "recording_frame": 1304,
+    "recording_seconds": 52.16,
+    "clip_seconds": 2.32,
+    "network_source_frame": 1304,
+    "framewise_ik_source_frame": 1304,
+    "temporal_ik_source_frame": 1304,
+    "gt_source_frame": 1304
+  },
+  {
+    "clip_frame": 59,
+    "recording_frame": 1305,
+    "recording_seconds": 52.2,
+    "clip_seconds": 2.36,
+    "network_source_frame": 1305,
+    "framewise_ik_source_frame": 1305,
+    "temporal_ik_source_frame": 1305,
+    "gt_source_frame": 1305
+  },
+  {
+    "clip_frame": 60,
+    "recording_frame": 1306,
+    "recording_seconds": 52.24,
+    "clip_seconds": 2.4,
+    "network_source_frame": 1306,
+    "framewise_ik_source_frame": 1306,
+    "temporal_ik_source_frame": 1306,
+    "gt_source_frame": 1306
+  },
+  {
+    "clip_frame": 61,
+    "recording_frame": 1307,
+    "recording_seconds": 52.28,
+    "clip_seconds": 2.44,
+    "network_source_frame": 1307,
+    "framewise_ik_source_frame": 1307,
+    "temporal_ik_source_frame": 1307,
+    "gt_source_frame": 1307
+  },
+  {
+    "clip_frame": 62,
+    "recording_frame": 1308,
+    "recording_seconds": 52.32,
+    "clip_seconds": 2.48,
+    "network_source_frame": 1308,
+    "framewise_ik_source_frame": 1308,
+    "temporal_ik_source_frame": 1308,
+    "gt_source_frame": 1308
+  },
+  {
+    "clip_frame": 63,
+    "recording_frame": 1309,
+    "recording_seconds": 52.36,
+    "clip_seconds": 2.52,
+    "network_source_frame": 1309,
+    "framewise_ik_source_frame": 1309,
+    "temporal_ik_source_frame": 1309,
+    "gt_source_frame": 1309
+  },
+  {
+    "clip_frame": 64,
+    "recording_frame": 1310,
+    "recording_seconds": 52.4,
+    "clip_seconds": 2.56,
+    "network_source_frame": 1310,
+    "framewise_ik_source_frame": 1310,
+    "temporal_ik_source_frame": 1310,
+    "gt_source_frame": 1310
+  },
+  {
+    "clip_frame": 65,
+    "recording_frame": 1311,
+    "recording_seconds": 52.44,
+    "clip_seconds": 2.6,
+    "network_source_frame": 1311,
+    "framewise_ik_source_frame": 1311,
+    "temporal_ik_source_frame": 1311,
+    "gt_source_frame": 1311
+  },
+  {
+    "clip_frame": 66,
+    "recording_frame": 1312,
+    "recording_seconds": 52.48,
+    "clip_seconds": 2.64,
+    "network_source_frame": 1312,
+    "framewise_ik_source_frame": 1312,
+    "temporal_ik_source_frame": 1312,
+    "gt_source_frame": 1312
+  },
+  {
+    "clip_frame": 67,
+    "recording_frame": 1313,
+    "recording_seconds": 52.52,
+    "clip_seconds": 2.68,
+    "network_source_frame": 1313,
+    "framewise_ik_source_frame": 1313,
+    "temporal_ik_source_frame": 1313,
+    "gt_source_frame": 1313
+  },
+  {
+    "clip_frame": 68,
+    "recording_frame": 1314,
+    "recording_seconds": 52.56,
+    "clip_seconds": 2.72,
+    "network_source_frame": 1314,
+    "framewise_ik_source_frame": 1314,
+    "temporal_ik_source_frame": 1314,
+    "gt_source_frame": 1314
+  },
+  {
+    "clip_frame": 69,
+    "recording_frame": 1315,
+    "recording_seconds": 52.6,
+    "clip_seconds": 2.76,
+    "network_source_frame": 1315,
+    "framewise_ik_source_frame": 1315,
+    "temporal_ik_source_frame": 1315,
+    "gt_source_frame": 1315
+  },
+  {
+    "clip_frame": 70,
+    "recording_frame": 1316,
+    "recording_seconds": 52.64,
+    "clip_seconds": 2.8,
+    "network_source_frame": 1316,
+    "framewise_ik_source_frame": 1316,
+    "temporal_ik_source_frame": 1316,
+    "gt_source_frame": 1316
+  },
+  {
+    "clip_frame": 71,
+    "recording_frame": 1317,
+    "recording_seconds": 52.68,
+    "clip_seconds": 2.84,
+    "network_source_frame": 1317,
+    "framewise_ik_source_frame": 1317,
+    "temporal_ik_source_frame": 1317,
+    "gt_source_frame": 1317
+  },
+  {
+    "clip_frame": 72,
+    "recording_frame": 1318,
+    "recording_seconds": 52.72,
+    "clip_seconds": 2.88,
+    "network_source_frame": 1318,
+    "framewise_ik_source_frame": 1318,
+    "temporal_ik_source_frame": 1318,
+    "gt_source_frame": 1318
+  },
+  {
+    "clip_frame": 73,
+    "recording_frame": 1319,
+    "recording_seconds": 52.76,
+    "clip_seconds": 2.92,
+    "network_source_frame": 1319,
+    "framewise_ik_source_frame": 1319,
+    "temporal_ik_source_frame": 1319,
+    "gt_source_frame": 1319
+  },
+  {
+    "clip_frame": 74,
+    "recording_frame": 1320,
+    "recording_seconds": 52.8,
+    "clip_seconds": 2.96,
+    "network_source_frame": 1320,
+    "framewise_ik_source_frame": 1320,
+    "temporal_ik_source_frame": 1320,
+    "gt_source_frame": 1320
+  },
+  {
+    "clip_frame": 75,
+    "recording_frame": 1321,
+    "recording_seconds": 52.84,
+    "clip_seconds": 3.0,
+    "network_source_frame": 1321,
+    "framewise_ik_source_frame": 1321,
+    "temporal_ik_source_frame": 1321,
+    "gt_source_frame": 1321
+  },
+  {
+    "clip_frame": 76,
+    "recording_frame": 1322,
+    "recording_seconds": 52.88,
+    "clip_seconds": 3.04,
+    "network_source_frame": 1322,
+    "framewise_ik_source_frame": 1322,
+    "temporal_ik_source_frame": 1322,
+    "gt_source_frame": 1322
+  },
+  {
+    "clip_frame": 77,
+    "recording_frame": 1323,
+    "recording_seconds": 52.92,
+    "clip_seconds": 3.08,
+    "network_source_frame": 1323,
+    "framewise_ik_source_frame": 1323,
+    "temporal_ik_source_frame": 1323,
+    "gt_source_frame": 1323
+  },
+  {
+    "clip_frame": 78,
+    "recording_frame": 1324,
+    "recording_seconds": 52.96,
+    "clip_seconds": 3.12,
+    "network_source_frame": 1324,
+    "framewise_ik_source_frame": 1324,
+    "temporal_ik_source_frame": 1324,
+    "gt_source_frame": 1324
+  },
+  {
+    "clip_frame": 79,
+    "recording_frame": 1325,
+    "recording_seconds": 53.0,
+    "clip_seconds": 3.16,
+    "network_source_frame": 1325,
+    "framewise_ik_source_frame": 1325,
+    "temporal_ik_source_frame": 1325,
+    "gt_source_frame": 1325
+  },
+  {
+    "clip_frame": 80,
+    "recording_frame": 1326,
+    "recording_seconds": 53.04,
+    "clip_seconds": 3.2,
+    "network_source_frame": 1326,
+    "framewise_ik_source_frame": 1326,
+    "temporal_ik_source_frame": 1326,
+    "gt_source_frame": 1326
+  },
+  {
+    "clip_frame": 81,
+    "recording_frame": 1327,
+    "recording_seconds": 53.08,
+    "clip_seconds": 3.24,
+    "network_source_frame": 1327,
+    "framewise_ik_source_frame": 1327,
+    "temporal_ik_source_frame": 1327,
+    "gt_source_frame": 1327
+  },
+  {
+    "clip_frame": 82,
+    "recording_frame": 1328,
+    "recording_seconds": 53.12,
+    "clip_seconds": 3.28,
+    "network_source_frame": 1328,
+    "framewise_ik_source_frame": 1328,
+    "temporal_ik_source_frame": 1328,
+    "gt_source_frame": 1328
+  },
+  {
+    "clip_frame": 83,
+    "recording_frame": 1329,
+    "recording_seconds": 53.16,
+    "clip_seconds": 3.32,
+    "network_source_frame": 1329,
+    "framewise_ik_source_frame": 1329,
+    "temporal_ik_source_frame": 1329,
+    "gt_source_frame": 1329
+  },
+  {
+    "clip_frame": 84,
+    "recording_frame": 1330,
+    "recording_seconds": 53.2,
+    "clip_seconds": 3.36,
+    "network_source_frame": 1330,
+    "framewise_ik_source_frame": 1330,
+    "temporal_ik_source_frame": 1330,
+    "gt_source_frame": 1330
+  },
+  {
+    "clip_frame": 85,
+    "recording_frame": 1331,
+    "recording_seconds": 53.24,
+    "clip_seconds": 3.4,
+    "network_source_frame": 1331,
+    "framewise_ik_source_frame": 1331,
+    "temporal_ik_source_frame": 1331,
+    "gt_source_frame": 1331
+  },
+  {
+    "clip_frame": 86,
+    "recording_frame": 1332,
+    "recording_seconds": 53.28,
+    "clip_seconds": 3.44,
+    "network_source_frame": 1332,
+    "framewise_ik_source_frame": 1332,
+    "temporal_ik_source_frame": 1332,
+    "gt_source_frame": 1332
+  },
+  {
+    "clip_frame": 87,
+    "recording_frame": 1333,
+    "recording_seconds": 53.32,
+    "clip_seconds": 3.48,
+    "network_source_frame": 1333,
+    "framewise_ik_source_frame": 1333,
+    "temporal_ik_source_frame": 1333,
+    "gt_source_frame": 1333
+  },
+  {
+    "clip_frame": 88,
+    "recording_frame": 1334,
+    "recording_seconds": 53.36,
+    "clip_seconds": 3.52,
+    "network_source_frame": 1334,
+    "framewise_ik_source_frame": 1334,
+    "temporal_ik_source_frame": 1334,
+    "gt_source_frame": 1334
+  },
+  {
+    "clip_frame": 89,
+    "recording_frame": 1335,
+    "recording_seconds": 53.4,
+    "clip_seconds": 3.56,
+    "network_source_frame": 1335,
+    "framewise_ik_source_frame": 1335,
+    "temporal_ik_source_frame": 1335,
+    "gt_source_frame": 1335
+  },
+  {
+    "clip_frame": 90,
+    "recording_frame": 1336,
+    "recording_seconds": 53.44,
+    "clip_seconds": 3.6,
+    "network_source_frame": 1336,
+    "framewise_ik_source_frame": 1336,
+    "temporal_ik_source_frame": 1336,
+    "gt_source_frame": 1336
+  },
+  {
+    "clip_frame": 91,
+    "recording_frame": 1337,
+    "recording_seconds": 53.48,
+    "clip_seconds": 3.64,
+    "network_source_frame": 1337,
+    "framewise_ik_source_frame": 1337,
+    "temporal_ik_source_frame": 1337,
+    "gt_source_frame": 1337
+  },
+  {
+    "clip_frame": 92,
+    "recording_frame": 1338,
+    "recording_seconds": 53.52,
+    "clip_seconds": 3.68,
+    "network_source_frame": 1338,
+    "framewise_ik_source_frame": 1338,
+    "temporal_ik_source_frame": 1338,
+    "gt_source_frame": 1338
+  },
+  {
+    "clip_frame": 93,
+    "recording_frame": 1339,
+    "recording_seconds": 53.56,
+    "clip_seconds": 3.72,
+    "network_source_frame": 1339,
+    "framewise_ik_source_frame": 1339,
+    "temporal_ik_source_frame": 1339,
+    "gt_source_frame": 1339
+  },
+  {
+    "clip_frame": 94,
+    "recording_frame": 1340,
+    "recording_seconds": 53.6,
+    "clip_seconds": 3.76,
+    "network_source_frame": 1340,
+    "framewise_ik_source_frame": 1340,
+    "temporal_ik_source_frame": 1340,
+    "gt_source_frame": 1340
+  },
+  {
+    "clip_frame": 95,
+    "recording_frame": 1341,
+    "recording_seconds": 53.64,
+    "clip_seconds": 3.8,
+    "network_source_frame": 1341,
+    "framewise_ik_source_frame": 1341,
+    "temporal_ik_source_frame": 1341,
+    "gt_source_frame": 1341
+  },
+  {
+    "clip_frame": 96,
+    "recording_frame": 1342,
+    "recording_seconds": 53.68,
+    "clip_seconds": 3.84,
+    "network_source_frame": 1342,
+    "framewise_ik_source_frame": 1342,
+    "temporal_ik_source_frame": 1342,
+    "gt_source_frame": 1342
+  },
+  {
+    "clip_frame": 97,
+    "recording_frame": 1343,
+    "recording_seconds": 53.72,
+    "clip_seconds": 3.88,
+    "network_source_frame": 1343,
+    "framewise_ik_source_frame": 1343,
+    "temporal_ik_source_frame": 1343,
+    "gt_source_frame": 1343
+  },
+  {
+    "clip_frame": 98,
+    "recording_frame": 1344,
+    "recording_seconds": 53.76,
+    "clip_seconds": 3.92,
+    "network_source_frame": 1344,
+    "framewise_ik_source_frame": 1344,
+    "temporal_ik_source_frame": 1344,
+    "gt_source_frame": 1344
+  },
+  {
+    "clip_frame": 99,
+    "recording_frame": 1345,
+    "recording_seconds": 53.8,
+    "clip_seconds": 3.96,
+    "network_source_frame": 1345,
+    "framewise_ik_source_frame": 1345,
+    "temporal_ik_source_frame": 1345,
+    "gt_source_frame": 1345
+  },
+  {
+    "clip_frame": 100,
+    "recording_frame": 1346,
+    "recording_seconds": 53.84,
+    "clip_seconds": 4.0,
+    "network_source_frame": 1346,
+    "framewise_ik_source_frame": 1346,
+    "temporal_ik_source_frame": 1346,
+    "gt_source_frame": 1346
+  },
+  {
+    "clip_frame": 101,
+    "recording_frame": 1347,
+    "recording_seconds": 53.88,
+    "clip_seconds": 4.04,
+    "network_source_frame": 1347,
+    "framewise_ik_source_frame": 1347,
+    "temporal_ik_source_frame": 1347,
+    "gt_source_frame": 1347
+  },
+  {
+    "clip_frame": 102,
+    "recording_frame": 1348,
+    "recording_seconds": 53.92,
+    "clip_seconds": 4.08,
+    "network_source_frame": 1348,
+    "framewise_ik_source_frame": 1348,
+    "temporal_ik_source_frame": 1348,
+    "gt_source_frame": 1348
+  },
+  {
+    "clip_frame": 103,
+    "recording_frame": 1349,
+    "recording_seconds": 53.96,
+    "clip_seconds": 4.12,
+    "network_source_frame": 1349,
+    "framewise_ik_source_frame": 1349,
+    "temporal_ik_source_frame": 1349,
+    "gt_source_frame": 1349
+  },
+  {
+    "clip_frame": 104,
+    "recording_frame": 1350,
+    "recording_seconds": 54.0,
+    "clip_seconds": 4.16,
+    "network_source_frame": 1350,
+    "framewise_ik_source_frame": 1350,
+    "temporal_ik_source_frame": 1350,
+    "gt_source_frame": 1350
+  },
+  {
+    "clip_frame": 105,
+    "recording_frame": 1351,
+    "recording_seconds": 54.04,
+    "clip_seconds": 4.2,
+    "network_source_frame": 1351,
+    "framewise_ik_source_frame": 1351,
+    "temporal_ik_source_frame": 1351,
+    "gt_source_frame": 1351
+  },
+  {
+    "clip_frame": 106,
+    "recording_frame": 1352,
+    "recording_seconds": 54.08,
+    "clip_seconds": 4.24,
+    "network_source_frame": 1352,
+    "framewise_ik_source_frame": 1352,
+    "temporal_ik_source_frame": 1352,
+    "gt_source_frame": 1352
+  },
+  {
+    "clip_frame": 107,
+    "recording_frame": 1353,
+    "recording_seconds": 54.12,
+    "clip_seconds": 4.28,
+    "network_source_frame": 1353,
+    "framewise_ik_source_frame": 1353,
+    "temporal_ik_source_frame": 1353,
+    "gt_source_frame": 1353
+  },
+  {
+    "clip_frame": 108,
+    "recording_frame": 1354,
+    "recording_seconds": 54.16,
+    "clip_seconds": 4.32,
+    "network_source_frame": 1354,
+    "framewise_ik_source_frame": 1354,
+    "temporal_ik_source_frame": 1354,
+    "gt_source_frame": 1354
+  },
+  {
+    "clip_frame": 109,
+    "recording_frame": 1355,
+    "recording_seconds": 54.2,
+    "clip_seconds": 4.36,
+    "network_source_frame": 1355,
+    "framewise_ik_source_frame": 1355,
+    "temporal_ik_source_frame": 1355,
+    "gt_source_frame": 1355
+  },
+  {
+    "clip_frame": 110,
+    "recording_frame": 1356,
+    "recording_seconds": 54.24,
+    "clip_seconds": 4.4,
+    "network_source_frame": 1356,
+    "framewise_ik_source_frame": 1356,
+    "temporal_ik_source_frame": 1356,
+    "gt_source_frame": 1356
+  },
+  {
+    "clip_frame": 111,
+    "recording_frame": 1357,
+    "recording_seconds": 54.28,
+    "clip_seconds": 4.44,
+    "network_source_frame": 1357,
+    "framewise_ik_source_frame": 1357,
+    "temporal_ik_source_frame": 1357,
+    "gt_source_frame": 1357
+  },
+  {
+    "clip_frame": 112,
+    "recording_frame": 1358,
+    "recording_seconds": 54.32,
+    "clip_seconds": 4.48,
+    "network_source_frame": 1358,
+    "framewise_ik_source_frame": 1358,
+    "temporal_ik_source_frame": 1358,
+    "gt_source_frame": 1358
+  },
+  {
+    "clip_frame": 113,
+    "recording_frame": 1359,
+    "recording_seconds": 54.36,
+    "clip_seconds": 4.52,
+    "network_source_frame": 1359,
+    "framewise_ik_source_frame": 1359,
+    "temporal_ik_source_frame": 1359,
+    "gt_source_frame": 1359
+  },
+  {
+    "clip_frame": 114,
+    "recording_frame": 1360,
+    "recording_seconds": 54.4,
+    "clip_seconds": 4.56,
+    "network_source_frame": 1360,
+    "framewise_ik_source_frame": 1360,
+    "temporal_ik_source_frame": 1360,
+    "gt_source_frame": 1360
+  },
+  {
+    "clip_frame": 115,
+    "recording_frame": 1361,
+    "recording_seconds": 54.44,
+    "clip_seconds": 4.6,
+    "network_source_frame": 1361,
+    "framewise_ik_source_frame": 1361,
+    "temporal_ik_source_frame": 1361,
+    "gt_source_frame": 1361
+  },
+  {
+    "clip_frame": 116,
+    "recording_frame": 1362,
+    "recording_seconds": 54.48,
+    "clip_seconds": 4.64,
+    "network_source_frame": 1362,
+    "framewise_ik_source_frame": 1362,
+    "temporal_ik_source_frame": 1362,
+    "gt_source_frame": 1362
+  },
+  {
+    "clip_frame": 117,
+    "recording_frame": 1363,
+    "recording_seconds": 54.52,
+    "clip_seconds": 4.68,
+    "network_source_frame": 1363,
+    "framewise_ik_source_frame": 1363,
+    "temporal_ik_source_frame": 1363,
+    "gt_source_frame": 1363
+  },
+  {
+    "clip_frame": 118,
+    "recording_frame": 1364,
+    "recording_seconds": 54.56,
+    "clip_seconds": 4.72,
+    "network_source_frame": 1364,
+    "framewise_ik_source_frame": 1364,
+    "temporal_ik_source_frame": 1364,
+    "gt_source_frame": 1364
+  },
+  {
+    "clip_frame": 119,
+    "recording_frame": 1365,
+    "recording_seconds": 54.6,
+    "clip_seconds": 4.76,
+    "network_source_frame": 1365,
+    "framewise_ik_source_frame": 1365,
+    "temporal_ik_source_frame": 1365,
+    "gt_source_frame": 1365
+  },
+  {
+    "clip_frame": 120,
+    "recording_frame": 1366,
+    "recording_seconds": 54.64,
+    "clip_seconds": 4.8,
+    "network_source_frame": 1366,
+    "framewise_ik_source_frame": 1366,
+    "temporal_ik_source_frame": 1366,
+    "gt_source_frame": 1366
+  },
+  {
+    "clip_frame": 121,
+    "recording_frame": 1367,
+    "recording_seconds": 54.68,
+    "clip_seconds": 4.84,
+    "network_source_frame": 1367,
+    "framewise_ik_source_frame": 1367,
+    "temporal_ik_source_frame": 1367,
+    "gt_source_frame": 1367
+  },
+  {
+    "clip_frame": 122,
+    "recording_frame": 1368,
+    "recording_seconds": 54.72,
+    "clip_seconds": 4.88,
+    "network_source_frame": 1368,
+    "framewise_ik_source_frame": 1368,
+    "temporal_ik_source_frame": 1368,
+    "gt_source_frame": 1368
+  },
+  {
+    "clip_frame": 123,
+    "recording_frame": 1369,
+    "recording_seconds": 54.76,
+    "clip_seconds": 4.92,
+    "network_source_frame": 1369,
+    "framewise_ik_source_frame": 1369,
+    "temporal_ik_source_frame": 1369,
+    "gt_source_frame": 1369
+  },
+  {
+    "clip_frame": 124,
+    "recording_frame": 1370,
+    "recording_seconds": 54.8,
+    "clip_seconds": 4.96,
+    "network_source_frame": 1370,
+    "framewise_ik_source_frame": 1370,
+    "temporal_ik_source_frame": 1370,
+    "gt_source_frame": 1370
+  },
+  {
+    "clip_frame": 125,
+    "recording_frame": 1371,
+    "recording_seconds": 54.84,
+    "clip_seconds": 5.0,
+    "network_source_frame": 1371,
+    "framewise_ik_source_frame": 1371,
+    "temporal_ik_source_frame": 1371,
+    "gt_source_frame": 1371
+  },
+  {
+    "clip_frame": 126,
+    "recording_frame": 1372,
+    "recording_seconds": 54.88,
+    "clip_seconds": 5.04,
+    "network_source_frame": 1372,
+    "framewise_ik_source_frame": 1372,
+    "temporal_ik_source_frame": 1372,
+    "gt_source_frame": 1372
+  },
+  {
+    "clip_frame": 127,
+    "recording_frame": 1373,
+    "recording_seconds": 54.92,
+    "clip_seconds": 5.08,
+    "network_source_frame": 1373,
+    "framewise_ik_source_frame": 1373,
+    "temporal_ik_source_frame": 1373,
+    "gt_source_frame": 1373
+  },
+  {
+    "clip_frame": 128,
+    "recording_frame": 1374,
+    "recording_seconds": 54.96,
+    "clip_seconds": 5.12,
+    "network_source_frame": 1374,
+    "framewise_ik_source_frame": 1374,
+    "temporal_ik_source_frame": 1374,
+    "gt_source_frame": 1374
+  },
+  {
+    "clip_frame": 129,
+    "recording_frame": 1375,
+    "recording_seconds": 55.0,
+    "clip_seconds": 5.16,
+    "network_source_frame": 1375,
+    "framewise_ik_source_frame": 1375,
+    "temporal_ik_source_frame": 1375,
+    "gt_source_frame": 1375
+  },
+  {
+    "clip_frame": 130,
+    "recording_frame": 1376,
+    "recording_seconds": 55.04,
+    "clip_seconds": 5.2,
+    "network_source_frame": 1376,
+    "framewise_ik_source_frame": 1376,
+    "temporal_ik_source_frame": 1376,
+    "gt_source_frame": 1376
+  },
+  {
+    "clip_frame": 131,
+    "recording_frame": 1377,
+    "recording_seconds": 55.08,
+    "clip_seconds": 5.24,
+    "network_source_frame": 1377,
+    "framewise_ik_source_frame": 1377,
+    "temporal_ik_source_frame": 1377,
+    "gt_source_frame": 1377
+  },
+  {
+    "clip_frame": 132,
+    "recording_frame": 1378,
+    "recording_seconds": 55.12,
+    "clip_seconds": 5.28,
+    "network_source_frame": 1378,
+    "framewise_ik_source_frame": 1378,
+    "temporal_ik_source_frame": 1378,
+    "gt_source_frame": 1378
+  },
+  {
+    "clip_frame": 133,
+    "recording_frame": 1379,
+    "recording_seconds": 55.16,
+    "clip_seconds": 5.32,
+    "network_source_frame": 1379,
+    "framewise_ik_source_frame": 1379,
+    "temporal_ik_source_frame": 1379,
+    "gt_source_frame": 1379
+  },
+  {
+    "clip_frame": 134,
+    "recording_frame": 1380,
+    "recording_seconds": 55.2,
+    "clip_seconds": 5.36,
+    "network_source_frame": 1380,
+    "framewise_ik_source_frame": 1380,
+    "temporal_ik_source_frame": 1380,
+    "gt_source_frame": 1380
+  },
+  {
+    "clip_frame": 135,
+    "recording_frame": 1381,
+    "recording_seconds": 55.24,
+    "clip_seconds": 5.4,
+    "network_source_frame": 1381,
+    "framewise_ik_source_frame": 1381,
+    "temporal_ik_source_frame": 1381,
+    "gt_source_frame": 1381
+  },
+  {
+    "clip_frame": 136,
+    "recording_frame": 1382,
+    "recording_seconds": 55.28,
+    "clip_seconds": 5.44,
+    "network_source_frame": 1382,
+    "framewise_ik_source_frame": 1382,
+    "temporal_ik_source_frame": 1382,
+    "gt_source_frame": 1382
+  },
+  {
+    "clip_frame": 137,
+    "recording_frame": 1383,
+    "recording_seconds": 55.32,
+    "clip_seconds": 5.48,
+    "network_source_frame": 1383,
+    "framewise_ik_source_frame": 1383,
+    "temporal_ik_source_frame": 1383,
+    "gt_source_frame": 1383
+  },
+  {
+    "clip_frame": 138,
+    "recording_frame": 1384,
+    "recording_seconds": 55.36,
+    "clip_seconds": 5.52,
+    "network_source_frame": 1384,
+    "framewise_ik_source_frame": 1384,
+    "temporal_ik_source_frame": 1384,
+    "gt_source_frame": 1384
+  },
+  {
+    "clip_frame": 139,
+    "recording_frame": 1385,
+    "recording_seconds": 55.4,
+    "clip_seconds": 5.56,
+    "network_source_frame": 1385,
+    "framewise_ik_source_frame": 1385,
+    "temporal_ik_source_frame": 1385,
+    "gt_source_frame": 1385
+  },
+  {
+    "clip_frame": 140,
+    "recording_frame": 1386,
+    "recording_seconds": 55.44,
+    "clip_seconds": 5.6,
+    "network_source_frame": 1386,
+    "framewise_ik_source_frame": 1386,
+    "temporal_ik_source_frame": 1386,
+    "gt_source_frame": 1386
+  },
+  {
+    "clip_frame": 141,
+    "recording_frame": 1387,
+    "recording_seconds": 55.48,
+    "clip_seconds": 5.64,
+    "network_source_frame": 1387,
+    "framewise_ik_source_frame": 1387,
+    "temporal_ik_source_frame": 1387,
+    "gt_source_frame": 1387
+  },
+  {
+    "clip_frame": 142,
+    "recording_frame": 1388,
+    "recording_seconds": 55.52,
+    "clip_seconds": 5.68,
+    "network_source_frame": 1388,
+    "framewise_ik_source_frame": 1388,
+    "temporal_ik_source_frame": 1388,
+    "gt_source_frame": 1388
+  },
+  {
+    "clip_frame": 143,
+    "recording_frame": 1389,
+    "recording_seconds": 55.56,
+    "clip_seconds": 5.72,
+    "network_source_frame": 1389,
+    "framewise_ik_source_frame": 1389,
+    "temporal_ik_source_frame": 1389,
+    "gt_source_frame": 1389
+  },
+  {
+    "clip_frame": 144,
+    "recording_frame": 1390,
+    "recording_seconds": 55.6,
+    "clip_seconds": 5.76,
+    "network_source_frame": 1390,
+    "framewise_ik_source_frame": 1390,
+    "temporal_ik_source_frame": 1390,
+    "gt_source_frame": 1390
+  },
+  {
+    "clip_frame": 145,
+    "recording_frame": 1391,
+    "recording_seconds": 55.64,
+    "clip_seconds": 5.8,
+    "network_source_frame": 1391,
+    "framewise_ik_source_frame": 1391,
+    "temporal_ik_source_frame": 1391,
+    "gt_source_frame": 1391
+  },
+  {
+    "clip_frame": 146,
+    "recording_frame": 1392,
+    "recording_seconds": 55.68,
+    "clip_seconds": 5.84,
+    "network_source_frame": 1392,
+    "framewise_ik_source_frame": 1392,
+    "temporal_ik_source_frame": 1392,
+    "gt_source_frame": 1392
+  },
+  {
+    "clip_frame": 147,
+    "recording_frame": 1393,
+    "recording_seconds": 55.72,
+    "clip_seconds": 5.88,
+    "network_source_frame": 1393,
+    "framewise_ik_source_frame": 1393,
+    "temporal_ik_source_frame": 1393,
+    "gt_source_frame": 1393
+  },
+  {
+    "clip_frame": 148,
+    "recording_frame": 1394,
+    "recording_seconds": 55.76,
+    "clip_seconds": 5.92,
+    "network_source_frame": 1394,
+    "framewise_ik_source_frame": 1394,
+    "temporal_ik_source_frame": 1394,
+    "gt_source_frame": 1394
+  },
+  {
+    "clip_frame": 149,
+    "recording_frame": 1395,
+    "recording_seconds": 55.8,
+    "clip_seconds": 5.96,
+    "network_source_frame": 1395,
+    "framewise_ik_source_frame": 1395,
+    "temporal_ik_source_frame": 1395,
+    "gt_source_frame": 1395
+  },
+  {
+    "clip_frame": 150,
+    "recording_frame": 1396,
+    "recording_seconds": 55.84,
+    "clip_seconds": 6.0,
+    "network_source_frame": 1396,
+    "framewise_ik_source_frame": 1396,
+    "temporal_ik_source_frame": 1396,
+    "gt_source_frame": 1396
+  },
+  {
+    "clip_frame": 151,
+    "recording_frame": 1397,
+    "recording_seconds": 55.88,
+    "clip_seconds": 6.04,
+    "network_source_frame": 1397,
+    "framewise_ik_source_frame": 1397,
+    "temporal_ik_source_frame": 1397,
+    "gt_source_frame": 1397
+  },
+  {
+    "clip_frame": 152,
+    "recording_frame": 1398,
+    "recording_seconds": 55.92,
+    "clip_seconds": 6.08,
+    "network_source_frame": 1398,
+    "framewise_ik_source_frame": 1398,
+    "temporal_ik_source_frame": 1398,
+    "gt_source_frame": 1398
+  },
+  {
+    "clip_frame": 153,
+    "recording_frame": 1399,
+    "recording_seconds": 55.96,
+    "clip_seconds": 6.12,
+    "network_source_frame": 1399,
+    "framewise_ik_source_frame": 1399,
+    "temporal_ik_source_frame": 1399,
+    "gt_source_frame": 1399
+  },
+  {
+    "clip_frame": 154,
+    "recording_frame": 1400,
+    "recording_seconds": 56.0,
+    "clip_seconds": 6.16,
+    "network_source_frame": 1400,
+    "framewise_ik_source_frame": 1400,
+    "temporal_ik_source_frame": 1400,
+    "gt_source_frame": 1400
+  },
+  {
+    "clip_frame": 155,
+    "recording_frame": 1401,
+    "recording_seconds": 56.04,
+    "clip_seconds": 6.2,
+    "network_source_frame": 1401,
+    "framewise_ik_source_frame": 1401,
+    "temporal_ik_source_frame": 1401,
+    "gt_source_frame": 1401
+  },
+  {
+    "clip_frame": 156,
+    "recording_frame": 1402,
+    "recording_seconds": 56.08,
+    "clip_seconds": 6.24,
+    "network_source_frame": 1402,
+    "framewise_ik_source_frame": 1402,
+    "temporal_ik_source_frame": 1402,
+    "gt_source_frame": 1402
+  },
+  {
+    "clip_frame": 157,
+    "recording_frame": 1403,
+    "recording_seconds": 56.12,
+    "clip_seconds": 6.28,
+    "network_source_frame": 1403,
+    "framewise_ik_source_frame": 1403,
+    "temporal_ik_source_frame": 1403,
+    "gt_source_frame": 1403
+  },
+  {
+    "clip_frame": 158,
+    "recording_frame": 1404,
+    "recording_seconds": 56.16,
+    "clip_seconds": 6.32,
+    "network_source_frame": 1404,
+    "framewise_ik_source_frame": 1404,
+    "temporal_ik_source_frame": 1404,
+    "gt_source_frame": 1404
+  },
+  {
+    "clip_frame": 159,
+    "recording_frame": 1405,
+    "recording_seconds": 56.2,
+    "clip_seconds": 6.36,
+    "network_source_frame": 1405,
+    "framewise_ik_source_frame": 1405,
+    "temporal_ik_source_frame": 1405,
+    "gt_source_frame": 1405
+  },
+  {
+    "clip_frame": 160,
+    "recording_frame": 1406,
+    "recording_seconds": 56.24,
+    "clip_seconds": 6.4,
+    "network_source_frame": 1406,
+    "framewise_ik_source_frame": 1406,
+    "temporal_ik_source_frame": 1406,
+    "gt_source_frame": 1406
+  },
+  {
+    "clip_frame": 161,
+    "recording_frame": 1407,
+    "recording_seconds": 56.28,
+    "clip_seconds": 6.44,
+    "network_source_frame": 1407,
+    "framewise_ik_source_frame": 1407,
+    "temporal_ik_source_frame": 1407,
+    "gt_source_frame": 1407
+  },
+  {
+    "clip_frame": 162,
+    "recording_frame": 1408,
+    "recording_seconds": 56.32,
+    "clip_seconds": 6.48,
+    "network_source_frame": 1408,
+    "framewise_ik_source_frame": 1408,
+    "temporal_ik_source_frame": 1408,
+    "gt_source_frame": 1408
+  },
+  {
+    "clip_frame": 163,
+    "recording_frame": 1409,
+    "recording_seconds": 56.36,
+    "clip_seconds": 6.52,
+    "network_source_frame": 1409,
+    "framewise_ik_source_frame": 1409,
+    "temporal_ik_source_frame": 1409,
+    "gt_source_frame": 1409
+  },
+  {
+    "clip_frame": 164,
+    "recording_frame": 1410,
+    "recording_seconds": 56.4,
+    "clip_seconds": 6.56,
+    "network_source_frame": 1410,
+    "framewise_ik_source_frame": 1410,
+    "temporal_ik_source_frame": 1410,
+    "gt_source_frame": 1410
+  },
+  {
+    "clip_frame": 165,
+    "recording_frame": 1411,
+    "recording_seconds": 56.44,
+    "clip_seconds": 6.6,
+    "network_source_frame": 1411,
+    "framewise_ik_source_frame": 1411,
+    "temporal_ik_source_frame": 1411,
+    "gt_source_frame": 1411
+  },
+  {
+    "clip_frame": 166,
+    "recording_frame": 1412,
+    "recording_seconds": 56.48,
+    "clip_seconds": 6.64,
+    "network_source_frame": 1412,
+    "framewise_ik_source_frame": 1412,
+    "temporal_ik_source_frame": 1412,
+    "gt_source_frame": 1412
+  },
+  {
+    "clip_frame": 167,
+    "recording_frame": 1413,
+    "recording_seconds": 56.52,
+    "clip_seconds": 6.68,
+    "network_source_frame": 1413,
+    "framewise_ik_source_frame": 1413,
+    "temporal_ik_source_frame": 1413,
+    "gt_source_frame": 1413
+  },
+  {
+    "clip_frame": 168,
+    "recording_frame": 1414,
+    "recording_seconds": 56.56,
+    "clip_seconds": 6.72,
+    "network_source_frame": 1414,
+    "framewise_ik_source_frame": 1414,
+    "temporal_ik_source_frame": 1414,
+    "gt_source_frame": 1414
+  },
+  {
+    "clip_frame": 169,
+    "recording_frame": 1415,
+    "recording_seconds": 56.6,
+    "clip_seconds": 6.76,
+    "network_source_frame": 1415,
+    "framewise_ik_source_frame": 1415,
+    "temporal_ik_source_frame": 1415,
+    "gt_source_frame": 1415
+  },
+  {
+    "clip_frame": 170,
+    "recording_frame": 1416,
+    "recording_seconds": 56.64,
+    "clip_seconds": 6.8,
+    "network_source_frame": 1416,
+    "framewise_ik_source_frame": 1416,
+    "temporal_ik_source_frame": 1416,
+    "gt_source_frame": 1416
+  },
+  {
+    "clip_frame": 171,
+    "recording_frame": 1417,
+    "recording_seconds": 56.68,
+    "clip_seconds": 6.84,
+    "network_source_frame": 1417,
+    "framewise_ik_source_frame": 1417,
+    "temporal_ik_source_frame": 1417,
+    "gt_source_frame": 1417
+  },
+  {
+    "clip_frame": 172,
+    "recording_frame": 1418,
+    "recording_seconds": 56.72,
+    "clip_seconds": 6.88,
+    "network_source_frame": 1418,
+    "framewise_ik_source_frame": 1418,
+    "temporal_ik_source_frame": 1418,
+    "gt_source_frame": 1418
+  },
+  {
+    "clip_frame": 173,
+    "recording_frame": 1419,
+    "recording_seconds": 56.76,
+    "clip_seconds": 6.92,
+    "network_source_frame": 1419,
+    "framewise_ik_source_frame": 1419,
+    "temporal_ik_source_frame": 1419,
+    "gt_source_frame": 1419
+  },
+  {
+    "clip_frame": 174,
+    "recording_frame": 1420,
+    "recording_seconds": 56.8,
+    "clip_seconds": 6.96,
+    "network_source_frame": 1420,
+    "framewise_ik_source_frame": 1420,
+    "temporal_ik_source_frame": 1420,
+    "gt_source_frame": 1420
+  },
+  {
+    "clip_frame": 175,
+    "recording_frame": 1421,
+    "recording_seconds": 56.84,
+    "clip_seconds": 7.0,
+    "network_source_frame": 1421,
+    "framewise_ik_source_frame": 1421,
+    "temporal_ik_source_frame": 1421,
+    "gt_source_frame": 1421
+  },
+  {
+    "clip_frame": 176,
+    "recording_frame": 1422,
+    "recording_seconds": 56.88,
+    "clip_seconds": 7.04,
+    "network_source_frame": 1422,
+    "framewise_ik_source_frame": 1422,
+    "temporal_ik_source_frame": 1422,
+    "gt_source_frame": 1422
+  },
+  {
+    "clip_frame": 177,
+    "recording_frame": 1423,
+    "recording_seconds": 56.92,
+    "clip_seconds": 7.08,
+    "network_source_frame": 1423,
+    "framewise_ik_source_frame": 1423,
+    "temporal_ik_source_frame": 1423,
+    "gt_source_frame": 1423
+  },
+  {
+    "clip_frame": 178,
+    "recording_frame": 1424,
+    "recording_seconds": 56.96,
+    "clip_seconds": 7.12,
+    "network_source_frame": 1424,
+    "framewise_ik_source_frame": 1424,
+    "temporal_ik_source_frame": 1424,
+    "gt_source_frame": 1424
+  },
+  {
+    "clip_frame": 179,
+    "recording_frame": 1425,
+    "recording_seconds": 57.0,
+    "clip_seconds": 7.16,
+    "network_source_frame": 1425,
+    "framewise_ik_source_frame": 1425,
+    "temporal_ik_source_frame": 1425,
+    "gt_source_frame": 1425
+  },
+  {
+    "clip_frame": 180,
+    "recording_frame": 1426,
+    "recording_seconds": 57.04,
+    "clip_seconds": 7.2,
+    "network_source_frame": 1426,
+    "framewise_ik_source_frame": 1426,
+    "temporal_ik_source_frame": 1426,
+    "gt_source_frame": 1426
+  },
+  {
+    "clip_frame": 181,
+    "recording_frame": 1427,
+    "recording_seconds": 57.08,
+    "clip_seconds": 7.24,
+    "network_source_frame": 1427,
+    "framewise_ik_source_frame": 1427,
+    "temporal_ik_source_frame": 1427,
+    "gt_source_frame": 1427
+  },
+  {
+    "clip_frame": 182,
+    "recording_frame": 1428,
+    "recording_seconds": 57.12,
+    "clip_seconds": 7.28,
+    "network_source_frame": 1428,
+    "framewise_ik_source_frame": 1428,
+    "temporal_ik_source_frame": 1428,
+    "gt_source_frame": 1428
+  },
+  {
+    "clip_frame": 183,
+    "recording_frame": 1429,
+    "recording_seconds": 57.16,
+    "clip_seconds": 7.32,
+    "network_source_frame": 1429,
+    "framewise_ik_source_frame": 1429,
+    "temporal_ik_source_frame": 1429,
+    "gt_source_frame": 1429
+  },
+  {
+    "clip_frame": 184,
+    "recording_frame": 1430,
+    "recording_seconds": 57.2,
+    "clip_seconds": 7.36,
+    "network_source_frame": 1430,
+    "framewise_ik_source_frame": 1430,
+    "temporal_ik_source_frame": 1430,
+    "gt_source_frame": 1430
+  },
+  {
+    "clip_frame": 185,
+    "recording_frame": 1431,
+    "recording_seconds": 57.24,
+    "clip_seconds": 7.4,
+    "network_source_frame": 1431,
+    "framewise_ik_source_frame": 1431,
+    "temporal_ik_source_frame": 1431,
+    "gt_source_frame": 1431
+  },
+  {
+    "clip_frame": 186,
+    "recording_frame": 1432,
+    "recording_seconds": 57.28,
+    "clip_seconds": 7.44,
+    "network_source_frame": 1432,
+    "framewise_ik_source_frame": 1432,
+    "temporal_ik_source_frame": 1432,
+    "gt_source_frame": 1432
+  },
+  {
+    "clip_frame": 187,
+    "recording_frame": 1433,
+    "recording_seconds": 57.32,
+    "clip_seconds": 7.48,
+    "network_source_frame": 1433,
+    "framewise_ik_source_frame": 1433,
+    "temporal_ik_source_frame": 1433,
+    "gt_source_frame": 1433
+  },
+  {
+    "clip_frame": 188,
+    "recording_frame": 1434,
+    "recording_seconds": 57.36,
+    "clip_seconds": 7.52,
+    "network_source_frame": 1434,
+    "framewise_ik_source_frame": 1434,
+    "temporal_ik_source_frame": 1434,
+    "gt_source_frame": 1434
+  },
+  {
+    "clip_frame": 189,
+    "recording_frame": 1435,
+    "recording_seconds": 57.4,
+    "clip_seconds": 7.56,
+    "network_source_frame": 1435,
+    "framewise_ik_source_frame": 1435,
+    "temporal_ik_source_frame": 1435,
+    "gt_source_frame": 1435
+  },
+  {
+    "clip_frame": 190,
+    "recording_frame": 1436,
+    "recording_seconds": 57.44,
+    "clip_seconds": 7.6,
+    "network_source_frame": 1436,
+    "framewise_ik_source_frame": 1436,
+    "temporal_ik_source_frame": 1436,
+    "gt_source_frame": 1436
+  },
+  {
+    "clip_frame": 191,
+    "recording_frame": 1437,
+    "recording_seconds": 57.48,
+    "clip_seconds": 7.64,
+    "network_source_frame": 1437,
+    "framewise_ik_source_frame": 1437,
+    "temporal_ik_source_frame": 1437,
+    "gt_source_frame": 1437
+  },
+  {
+    "clip_frame": 192,
+    "recording_frame": 1438,
+    "recording_seconds": 57.52,
+    "clip_seconds": 7.68,
+    "network_source_frame": 1438,
+    "framewise_ik_source_frame": 1438,
+    "temporal_ik_source_frame": 1438,
+    "gt_source_frame": 1438
+  },
+  {
+    "clip_frame": 193,
+    "recording_frame": 1439,
+    "recording_seconds": 57.56,
+    "clip_seconds": 7.72,
+    "network_source_frame": 1439,
+    "framewise_ik_source_frame": 1439,
+    "temporal_ik_source_frame": 1439,
+    "gt_source_frame": 1439
+  },
+  {
+    "clip_frame": 194,
+    "recording_frame": 1440,
+    "recording_seconds": 57.6,
+    "clip_seconds": 7.76,
+    "network_source_frame": 1440,
+    "framewise_ik_source_frame": 1440,
+    "temporal_ik_source_frame": 1440,
+    "gt_source_frame": 1440
+  },
+  {
+    "clip_frame": 195,
+    "recording_frame": 1441,
+    "recording_seconds": 57.64,
+    "clip_seconds": 7.8,
+    "network_source_frame": 1441,
+    "framewise_ik_source_frame": 1441,
+    "temporal_ik_source_frame": 1441,
+    "gt_source_frame": 1441
+  },
+  {
+    "clip_frame": 196,
+    "recording_frame": 1442,
+    "recording_seconds": 57.68,
+    "clip_seconds": 7.84,
+    "network_source_frame": 1442,
+    "framewise_ik_source_frame": 1442,
+    "temporal_ik_source_frame": 1442,
+    "gt_source_frame": 1442
+  },
+  {
+    "clip_frame": 197,
+    "recording_frame": 1443,
+    "recording_seconds": 57.72,
+    "clip_seconds": 7.88,
+    "network_source_frame": 1443,
+    "framewise_ik_source_frame": 1443,
+    "temporal_ik_source_frame": 1443,
+    "gt_source_frame": 1443
+  },
+  {
+    "clip_frame": 198,
+    "recording_frame": 1444,
+    "recording_seconds": 57.76,
+    "clip_seconds": 7.92,
+    "network_source_frame": 1444,
+    "framewise_ik_source_frame": 1444,
+    "temporal_ik_source_frame": 1444,
+    "gt_source_frame": 1444
+  },
+  {
+    "clip_frame": 199,
+    "recording_frame": 1445,
+    "recording_seconds": 57.8,
+    "clip_seconds": 7.96,
+    "network_source_frame": 1445,
+    "framewise_ik_source_frame": 1445,
+    "temporal_ik_source_frame": 1445,
+    "gt_source_frame": 1445
+  },
+  {
+    "clip_frame": 200,
+    "recording_frame": 1446,
+    "recording_seconds": 57.84,
+    "clip_seconds": 8.0,
+    "network_source_frame": 1446,
+    "framewise_ik_source_frame": 1446,
+    "temporal_ik_source_frame": 1446,
+    "gt_source_frame": 1446
+  },
+  {
+    "clip_frame": 201,
+    "recording_frame": 1447,
+    "recording_seconds": 57.88,
+    "clip_seconds": 8.04,
+    "network_source_frame": 1447,
+    "framewise_ik_source_frame": 1447,
+    "temporal_ik_source_frame": 1447,
+    "gt_source_frame": 1447
+  },
+  {
+    "clip_frame": 202,
+    "recording_frame": 1448,
+    "recording_seconds": 57.92,
+    "clip_seconds": 8.08,
+    "network_source_frame": 1448,
+    "framewise_ik_source_frame": 1448,
+    "temporal_ik_source_frame": 1448,
+    "gt_source_frame": 1448
+  },
+  {
+    "clip_frame": 203,
+    "recording_frame": 1449,
+    "recording_seconds": 57.96,
+    "clip_seconds": 8.12,
+    "network_source_frame": 1449,
+    "framewise_ik_source_frame": 1449,
+    "temporal_ik_source_frame": 1449,
+    "gt_source_frame": 1449
+  },
+  {
+    "clip_frame": 204,
+    "recording_frame": 1450,
+    "recording_seconds": 58.0,
+    "clip_seconds": 8.16,
+    "network_source_frame": 1450,
+    "framewise_ik_source_frame": 1450,
+    "temporal_ik_source_frame": 1450,
+    "gt_source_frame": 1450
+  },
+  {
+    "clip_frame": 205,
+    "recording_frame": 1451,
+    "recording_seconds": 58.04,
+    "clip_seconds": 8.2,
+    "network_source_frame": 1451,
+    "framewise_ik_source_frame": 1451,
+    "temporal_ik_source_frame": 1451,
+    "gt_source_frame": 1451
+  },
+  {
+    "clip_frame": 206,
+    "recording_frame": 1452,
+    "recording_seconds": 58.08,
+    "clip_seconds": 8.24,
+    "network_source_frame": 1452,
+    "framewise_ik_source_frame": 1452,
+    "temporal_ik_source_frame": 1452,
+    "gt_source_frame": 1452
+  },
+  {
+    "clip_frame": 207,
+    "recording_frame": 1453,
+    "recording_seconds": 58.12,
+    "clip_seconds": 8.28,
+    "network_source_frame": 1453,
+    "framewise_ik_source_frame": 1453,
+    "temporal_ik_source_frame": 1453,
+    "gt_source_frame": 1453
+  },
+  {
+    "clip_frame": 208,
+    "recording_frame": 1454,
+    "recording_seconds": 58.16,
+    "clip_seconds": 8.32,
+    "network_source_frame": 1454,
+    "framewise_ik_source_frame": 1454,
+    "temporal_ik_source_frame": 1454,
+    "gt_source_frame": 1454
+  },
+  {
+    "clip_frame": 209,
+    "recording_frame": 1455,
+    "recording_seconds": 58.2,
+    "clip_seconds": 8.36,
+    "network_source_frame": 1455,
+    "framewise_ik_source_frame": 1455,
+    "temporal_ik_source_frame": 1455,
+    "gt_source_frame": 1455
+  },
+  {
+    "clip_frame": 210,
+    "recording_frame": 1456,
+    "recording_seconds": 58.24,
+    "clip_seconds": 8.4,
+    "network_source_frame": 1456,
+    "framewise_ik_source_frame": 1456,
+    "temporal_ik_source_frame": 1456,
+    "gt_source_frame": 1456
+  },
+  {
+    "clip_frame": 211,
+    "recording_frame": 1457,
+    "recording_seconds": 58.28,
+    "clip_seconds": 8.44,
+    "network_source_frame": 1457,
+    "framewise_ik_source_frame": 1457,
+    "temporal_ik_source_frame": 1457,
+    "gt_source_frame": 1457
+  },
+  {
+    "clip_frame": 212,
+    "recording_frame": 1458,
+    "recording_seconds": 58.32,
+    "clip_seconds": 8.48,
+    "network_source_frame": 1458,
+    "framewise_ik_source_frame": 1458,
+    "temporal_ik_source_frame": 1458,
+    "gt_source_frame": 1458
+  },
+  {
+    "clip_frame": 213,
+    "recording_frame": 1459,
+    "recording_seconds": 58.36,
+    "clip_seconds": 8.52,
+    "network_source_frame": 1459,
+    "framewise_ik_source_frame": 1459,
+    "temporal_ik_source_frame": 1459,
+    "gt_source_frame": 1459
+  },
+  {
+    "clip_frame": 214,
+    "recording_frame": 1460,
+    "recording_seconds": 58.4,
+    "clip_seconds": 8.56,
+    "network_source_frame": 1460,
+    "framewise_ik_source_frame": 1460,
+    "temporal_ik_source_frame": 1460,
+    "gt_source_frame": 1460
+  },
+  {
+    "clip_frame": 215,
+    "recording_frame": 1461,
+    "recording_seconds": 58.44,
+    "clip_seconds": 8.6,
+    "network_source_frame": 1461,
+    "framewise_ik_source_frame": 1461,
+    "temporal_ik_source_frame": 1461,
+    "gt_source_frame": 1461
+  },
+  {
+    "clip_frame": 216,
+    "recording_frame": 1462,
+    "recording_seconds": 58.48,
+    "clip_seconds": 8.64,
+    "network_source_frame": 1462,
+    "framewise_ik_source_frame": 1462,
+    "temporal_ik_source_frame": 1462,
+    "gt_source_frame": 1462
+  },
+  {
+    "clip_frame": 217,
+    "recording_frame": 1463,
+    "recording_seconds": 58.52,
+    "clip_seconds": 8.68,
+    "network_source_frame": 1463,
+    "framewise_ik_source_frame": 1463,
+    "temporal_ik_source_frame": 1463,
+    "gt_source_frame": 1463
+  },
+  {
+    "clip_frame": 218,
+    "recording_frame": 1464,
+    "recording_seconds": 58.56,
+    "clip_seconds": 8.72,
+    "network_source_frame": 1464,
+    "framewise_ik_source_frame": 1464,
+    "temporal_ik_source_frame": 1464,
+    "gt_source_frame": 1464
+  },
+  {
+    "clip_frame": 219,
+    "recording_frame": 1465,
+    "recording_seconds": 58.6,
+    "clip_seconds": 8.76,
+    "network_source_frame": 1465,
+    "framewise_ik_source_frame": 1465,
+    "temporal_ik_source_frame": 1465,
+    "gt_source_frame": 1465
+  },
+  {
+    "clip_frame": 220,
+    "recording_frame": 1466,
+    "recording_seconds": 58.64,
+    "clip_seconds": 8.8,
+    "network_source_frame": 1466,
+    "framewise_ik_source_frame": 1466,
+    "temporal_ik_source_frame": 1466,
+    "gt_source_frame": 1466
+  },
+  {
+    "clip_frame": 221,
+    "recording_frame": 1467,
+    "recording_seconds": 58.68,
+    "clip_seconds": 8.84,
+    "network_source_frame": 1467,
+    "framewise_ik_source_frame": 1467,
+    "temporal_ik_source_frame": 1467,
+    "gt_source_frame": 1467
+  },
+  {
+    "clip_frame": 222,
+    "recording_frame": 1468,
+    "recording_seconds": 58.72,
+    "clip_seconds": 8.88,
+    "network_source_frame": 1468,
+    "framewise_ik_source_frame": 1468,
+    "temporal_ik_source_frame": 1468,
+    "gt_source_frame": 1468
+  },
+  {
+    "clip_frame": 223,
+    "recording_frame": 1469,
+    "recording_seconds": 58.76,
+    "clip_seconds": 8.92,
+    "network_source_frame": 1469,
+    "framewise_ik_source_frame": 1469,
+    "temporal_ik_source_frame": 1469,
+    "gt_source_frame": 1469
+  },
+  {
+    "clip_frame": 224,
+    "recording_frame": 1470,
+    "recording_seconds": 58.8,
+    "clip_seconds": 8.96,
+    "network_source_frame": 1470,
+    "framewise_ik_source_frame": 1470,
+    "temporal_ik_source_frame": 1470,
+    "gt_source_frame": 1470
+  },
+  {
+    "clip_frame": 225,
+    "recording_frame": 1471,
+    "recording_seconds": 58.84,
+    "clip_seconds": 9.0,
+    "network_source_frame": 1471,
+    "framewise_ik_source_frame": 1471,
+    "temporal_ik_source_frame": 1471,
+    "gt_source_frame": 1471
+  },
+  {
+    "clip_frame": 226,
+    "recording_frame": 1472,
+    "recording_seconds": 58.88,
+    "clip_seconds": 9.04,
+    "network_source_frame": 1472,
+    "framewise_ik_source_frame": 1472,
+    "temporal_ik_source_frame": 1472,
+    "gt_source_frame": 1472
+  },
+  {
+    "clip_frame": 227,
+    "recording_frame": 1473,
+    "recording_seconds": 58.92,
+    "clip_seconds": 9.08,
+    "network_source_frame": 1473,
+    "framewise_ik_source_frame": 1473,
+    "temporal_ik_source_frame": 1473,
+    "gt_source_frame": 1473
+  },
+  {
+    "clip_frame": 228,
+    "recording_frame": 1474,
+    "recording_seconds": 58.96,
+    "clip_seconds": 9.12,
+    "network_source_frame": 1474,
+    "framewise_ik_source_frame": 1474,
+    "temporal_ik_source_frame": 1474,
+    "gt_source_frame": 1474
+  },
+  {
+    "clip_frame": 229,
+    "recording_frame": 1475,
+    "recording_seconds": 59.0,
+    "clip_seconds": 9.16,
+    "network_source_frame": 1475,
+    "framewise_ik_source_frame": 1475,
+    "temporal_ik_source_frame": 1475,
+    "gt_source_frame": 1475
+  },
+  {
+    "clip_frame": 230,
+    "recording_frame": 1476,
+    "recording_seconds": 59.04,
+    "clip_seconds": 9.2,
+    "network_source_frame": 1476,
+    "framewise_ik_source_frame": 1476,
+    "temporal_ik_source_frame": 1476,
+    "gt_source_frame": 1476
+  },
+  {
+    "clip_frame": 231,
+    "recording_frame": 1477,
+    "recording_seconds": 59.08,
+    "clip_seconds": 9.24,
+    "network_source_frame": 1477,
+    "framewise_ik_source_frame": 1477,
+    "temporal_ik_source_frame": 1477,
+    "gt_source_frame": 1477
+  },
+  {
+    "clip_frame": 232,
+    "recording_frame": 1478,
+    "recording_seconds": 59.12,
+    "clip_seconds": 9.28,
+    "network_source_frame": 1478,
+    "framewise_ik_source_frame": 1478,
+    "temporal_ik_source_frame": 1478,
+    "gt_source_frame": 1478
+  },
+  {
+    "clip_frame": 233,
+    "recording_frame": 1479,
+    "recording_seconds": 59.16,
+    "clip_seconds": 9.32,
+    "network_source_frame": 1479,
+    "framewise_ik_source_frame": 1479,
+    "temporal_ik_source_frame": 1479,
+    "gt_source_frame": 1479
+  },
+  {
+    "clip_frame": 234,
+    "recording_frame": 1480,
+    "recording_seconds": 59.2,
+    "clip_seconds": 9.36,
+    "network_source_frame": 1480,
+    "framewise_ik_source_frame": 1480,
+    "temporal_ik_source_frame": 1480,
+    "gt_source_frame": 1480
+  },
+  {
+    "clip_frame": 235,
+    "recording_frame": 1481,
+    "recording_seconds": 59.24,
+    "clip_seconds": 9.4,
+    "network_source_frame": 1481,
+    "framewise_ik_source_frame": 1481,
+    "temporal_ik_source_frame": 1481,
+    "gt_source_frame": 1481
+  },
+  {
+    "clip_frame": 236,
+    "recording_frame": 1482,
+    "recording_seconds": 59.28,
+    "clip_seconds": 9.44,
+    "network_source_frame": 1482,
+    "framewise_ik_source_frame": 1482,
+    "temporal_ik_source_frame": 1482,
+    "gt_source_frame": 1482
+  },
+  {
+    "clip_frame": 237,
+    "recording_frame": 1483,
+    "recording_seconds": 59.32,
+    "clip_seconds": 9.48,
+    "network_source_frame": 1483,
+    "framewise_ik_source_frame": 1483,
+    "temporal_ik_source_frame": 1483,
+    "gt_source_frame": 1483
+  },
+  {
+    "clip_frame": 238,
+    "recording_frame": 1484,
+    "recording_seconds": 59.36,
+    "clip_seconds": 9.52,
+    "network_source_frame": 1484,
+    "framewise_ik_source_frame": 1484,
+    "temporal_ik_source_frame": 1484,
+    "gt_source_frame": 1484
+  },
+  {
+    "clip_frame": 239,
+    "recording_frame": 1485,
+    "recording_seconds": 59.4,
+    "clip_seconds": 9.56,
+    "network_source_frame": 1485,
+    "framewise_ik_source_frame": 1485,
+    "temporal_ik_source_frame": 1485,
+    "gt_source_frame": 1485
+  },
+  {
+    "clip_frame": 240,
+    "recording_frame": 1486,
+    "recording_seconds": 59.44,
+    "clip_seconds": 9.6,
+    "network_source_frame": 1486,
+    "framewise_ik_source_frame": 1486,
+    "temporal_ik_source_frame": 1486,
+    "gt_source_frame": 1486
+  },
+  {
+    "clip_frame": 241,
+    "recording_frame": 1487,
+    "recording_seconds": 59.48,
+    "clip_seconds": 9.64,
+    "network_source_frame": 1487,
+    "framewise_ik_source_frame": 1487,
+    "temporal_ik_source_frame": 1487,
+    "gt_source_frame": 1487
+  },
+  {
+    "clip_frame": 242,
+    "recording_frame": 1488,
+    "recording_seconds": 59.52,
+    "clip_seconds": 9.68,
+    "network_source_frame": 1488,
+    "framewise_ik_source_frame": 1488,
+    "temporal_ik_source_frame": 1488,
+    "gt_source_frame": 1488
+  },
+  {
+    "clip_frame": 243,
+    "recording_frame": 1489,
+    "recording_seconds": 59.56,
+    "clip_seconds": 9.72,
+    "network_source_frame": 1489,
+    "framewise_ik_source_frame": 1489,
+    "temporal_ik_source_frame": 1489,
+    "gt_source_frame": 1489
+  },
+  {
+    "clip_frame": 244,
+    "recording_frame": 1490,
+    "recording_seconds": 59.6,
+    "clip_seconds": 9.76,
+    "network_source_frame": 1490,
+    "framewise_ik_source_frame": 1490,
+    "temporal_ik_source_frame": 1490,
+    "gt_source_frame": 1490
+  },
+  {
+    "clip_frame": 245,
+    "recording_frame": 1491,
+    "recording_seconds": 59.64,
+    "clip_seconds": 9.8,
+    "network_source_frame": 1491,
+    "framewise_ik_source_frame": 1491,
+    "temporal_ik_source_frame": 1491,
+    "gt_source_frame": 1491
+  },
+  {
+    "clip_frame": 246,
+    "recording_frame": 1492,
+    "recording_seconds": 59.68,
+    "clip_seconds": 9.84,
+    "network_source_frame": 1492,
+    "framewise_ik_source_frame": 1492,
+    "temporal_ik_source_frame": 1492,
+    "gt_source_frame": 1492
+  },
+  {
+    "clip_frame": 247,
+    "recording_frame": 1493,
+    "recording_seconds": 59.72,
+    "clip_seconds": 9.88,
+    "network_source_frame": 1493,
+    "framewise_ik_source_frame": 1493,
+    "temporal_ik_source_frame": 1493,
+    "gt_source_frame": 1493
+  },
+  {
+    "clip_frame": 248,
+    "recording_frame": 1494,
+    "recording_seconds": 59.76,
+    "clip_seconds": 9.92,
+    "network_source_frame": 1494,
+    "framewise_ik_source_frame": 1494,
+    "temporal_ik_source_frame": 1494,
+    "gt_source_frame": 1494
+  },
+  {
+    "clip_frame": 249,
+    "recording_frame": 1495,
+    "recording_seconds": 59.8,
+    "clip_seconds": 9.96,
+    "network_source_frame": 1495,
+    "framewise_ik_source_frame": 1495,
+    "temporal_ik_source_frame": 1495,
+    "gt_source_frame": 1495
+  }
+]

@@ -1,0 +1,206 @@
+{
+  "format": "imuposer-english-record-translation-v1",
+  "date": "2026-11-19 America/Chicago",
+  "files": {
+    "docs/DIP_DEVELOPMENT_RESULTS.md": {
+      "original_sha256": "faa9c829a8ef9d75b62e4d4c5b9f3e874995223548709afba9bf9996e98bae59",
+      "english_sha256": "527a9b774ac81b18fec84d6439926c51c1df6c8fb3082394f2f931eb773f5f6c",
+      "change_type": "research_record_presentation"
+    },
+    "docs/DIP_FINETUNING.md": {
+      "original_sha256": "a4fbc503a6d3b97b18264a33058d4a07508d1cb7766e1b45b94db3dc2c400d9d",
+      "english_sha256": "495b14c44a837136c9f3f9eecfef23944ce86e104b95df3c5eca9b1c233fe566",
+      "change_type": "research_record_presentation"
+    },
+    "docs/DIP_FINETUNING_COMPARISON.md": {
+      "original_sha256": "908f24d27d3f186ec615a0ee588bcf2699d893fcacd2cf4c4da58b953b65af1f",
+      "english_sha256": "26132c4edb0ccf313781a956e3f1267d971c26ceb6ee1c80257db9e1edb3635e",
+      "change_type": "research_record_presentation"
+    },
+    "docs/DIP_TRAINING_RUN.md": {
+      "original_sha256": "17027e69dba70d32fa196578e9251de2633da7942839a51428c0c7fccec820c4",
+      "english_sha256": "5c8ed313752e78a7580ac117f58f6768958eac25c8f919d4079ac522ae60cc25",
+      "change_type": "research_record_presentation"
+    },
+    "docs/FINAL_MODEL_REPLAY.md": {
+      "original_sha256": "6b3c8083ce5f01d67c6cbf61e4020bb2a318772081876712e69b577d70453f55",
+      "english_sha256": "d78a1b37db40a476f762c58c46a670320e6774c691110b9e0060aee85cf1f007",
+      "change_type": "research_record_presentation"
+    },
+    "docs/GPU_DIAGNOSTIC.md": {
+      "original_sha256": "2e911fe3b4adeb0320014dd58ed14fae2a994d600c6d46b2d10cd60127f816df",
+      "english_sha256": "5e2ad9e8dfd3faee19563d9d84905b2bdd2c59c64031d8601498d7c90f685c98",
+      "change_type": "research_record_presentation"
+    },
+    "docs/IK_JITTER_DIAGNOSIS.md": {
+      "original_sha256": "57bb2f1573e622301ad11b6979fce689bf2ce8ccc6f678d78c8fa36429c43639",
+      "english_sha256": "716c7aafabb8e8b06b2adb6ff5571504a3f47c150b9c18e83e1c6de5e164dff8",
+      "change_type": "research_record_presentation"
+    },
+    "docs/IMU_ONLY_IK.md": {
+      "original_sha256": "87a0056c3ca4f02c6b6f14b97fe0d2ed411345a7fbd49e3ad11c8f4ce4d949ab",
+      "english_sha256": "bdf9f47cc3551bb8067c4d79c5c5c90121b03cf7be46e7023737c979de4a389f",
+      "change_type": "research_record_presentation"
+    },
+    "docs/PAPER_EVALUATION_ALIGNMENT.md": {
+      "original_sha256": "3346ca05081829edfef07c36af6a31c42ed56a5a5bbec784ac0a1ad1948fa2bf",
+      "english_sha256": "e048b102ded3ddfee7efe06e04e3621a49f456f3ee2cfff5c8210293e847e834",
+      "change_type": "research_record_presentation"
+    },
+    "docs/POSE_METRICS.md": {
+      "original_sha256": "607b1a4759e8240d8a356a2e4b7135a20d3a4f70de05a598ac8b736a6d49dee7",
+      "english_sha256": "d3fd0859b4c9f5e94f22b3e740d00f9b4312d5a76cd65b70eebe92f36b16ec9a",
+      "change_type": "research_record_presentation"
+    },
+    "docs/REPRODUCTION_AUDIT.md": {
+      "original_sha256": "9dcc51bd08d576f36c469eb8e7cc5b738eb1afe85e8763c38792dbf64125037e",
+      "english_sha256": "633af02750907bd58ca4a04d407deb41ba54af8b242ce764b2c3360dbe58eee9",
+      "change_type": "research_record_presentation"
+    },
+    "docs/RESEARCH_LOG.md": {
+      "original_sha256": "af130c96958ec1d9a046e9d9822a71fa2e6018050dd3cb03f1ef95c9c5cefb3c",
+      "english_sha256": "086f97fac3b28abfcdd9d20492d93425fa3c25e76735e3d527a27c09b763e653",
+      "change_type": "research_record_presentation"
+    },
+    "docs/ROLLING_INFERENCE.md": {
+      "original_sha256": "37984226f9200a9e37e0a6189ffd594c36971bd280ae1b2e9dcfb03b3d4b20e2",
+      "english_sha256": "c369baf069c0d10295910e347a1abbbbe4f1d6398bc37d23a97847e6e048d678",
+      "change_type": "research_record_presentation"
+    },
+    "docs/TEMPORAL_IK_EXPERIMENT.md": {
+      "original_sha256": "da30050ee661275e38f93125fed862c7fb20383a2385465bb9813f47fb47c633",
+      "english_sha256": "fc108bec128cc6a20474fd9d40ee48258b1aa8483cb4ba9fa0323d1b5eb4e09d",
+      "change_type": "research_record_presentation"
+    },
+    "docs/reproduction_audit_20261111/paper_implementation_comparison.csv": {
+      "original_sha256": "3ce91d692f567fa4b108d1610ddaf7dd0f87f7a4fdbac6f4b127b742b18787b8",
+      "english_sha256": "a960aa1f0b1eb9ef03e04d7e1f4cc9ff11be011a030a6b42d3f9ee9d9667d2d2",
+      "change_type": "research_record_presentation"
+    },
+    "docs/results/dip_final_2ep_20261115/RESULTS.md": {
+      "original_sha256": "f4a10ed555e61e12f65c31085784ccb57a591aea13a057cd1b680847c9d7d70b",
+      "english_sha256": "35c4b11a642489a2075f211c687720a9552084b97783ccfb8f4c592c3e67cf1d",
+      "change_type": "research_record_presentation"
+    },
+    "docs/results/dip_imu_only_ik_v1_20261116/RESULTS.md": {
+      "original_sha256": "5d779c27516fcb8d682fb209b4b8d1460febd49c2a973b81ad5f288190fee4ce",
+      "english_sha256": "c015ccc568e3809750671580c95761f5eea4bfdd8b40ada65605921fee48aae6",
+      "change_type": "research_record_presentation"
+    },
+    "docs/results/dip_imu_only_ik_v1_20261116/SOURCE_FINDINGS.md": {
+      "original_sha256": "0e591721e1f36b50e907ea1e5baf90a00045a2341aa8951007c0541582546a2e",
+      "english_sha256": "262d25c6b647aa19ce79c1061a0320475976d5a2f897175a8f407ce7936afbf2",
+      "change_type": "research_record_presentation"
+    },
+    "docs/results/dip_imu_only_ik_v1_20261116/changes.csv": {
+      "original_sha256": "b65b1d7561d18ec18cd667168ff4682e7f6a63409faac390a83ba1e701c1a680",
+      "english_sha256": "b13fba92772487447549903af5a84d5dab3c1fca6525d748db1e6f97e1745c42",
+      "change_type": "research_record_presentation"
+    },
+    "docs/results/dip_imu_only_ik_v1_20261116/paper_alignment.csv": {
+      "original_sha256": "5f7141b067606224e7b78aa6c5c3c040c47cb197d8e569885e8e255662c37e3b",
+      "english_sha256": "b5aef8af43fae6985db9201b16210d6db50007a00e21b56ce7d9eb7fffac97f5",
+      "change_type": "research_record_presentation"
+    },
+    "outputs/local_dip/dip_dev_review_20261115/DIP_DEVELOPMENT_RESULTS.md": {
+      "original_sha256": "faa9c829a8ef9d75b62e4d4c5b9f3e874995223548709afba9bf9996e98bae59",
+      "english_sha256": "e42231543a5ab19bbec8ab4ab615092cf42c7a10ba8be99eec0392bf77147ef6",
+      "change_type": "research_record_presentation"
+    },
+    "outputs/local_dip/dip_finetune_comparison_cpu_v1/RESULTS.md": {
+      "original_sha256": "f4a10ed555e61e12f65c31085784ccb57a591aea13a057cd1b680847c9d7d70b",
+      "english_sha256": "65c6c788b60a6161fa2311c8598e3100e3031d13639c6e52a505d6ac29445d4c",
+      "change_type": "research_record_presentation"
+    },
+    "outputs/local_dip/dip_finetune_comparison_cpu_v1/validation_source/report_dip_finetuning_comparison.py": {
+      "original_sha256": "082fe2c0d6168e1ed173a8fb157513ed56c0c7263a8f1d842eab9d03c77fb55e",
+      "english_sha256": "92b2efbc952e9aeab54a8a02fe2fc5c8c1d4a3527d09f8839ec6f1de77fdfe6e",
+      "change_type": "translated_historical_reading_copy"
+    },
+    "outputs/local_dip/dip_finetuning_v1_20261114/validation_source_snapshot/DIP_FINETUNING.md": {
+      "original_sha256": "a4fbc503a6d3b97b18264a33058d4a07508d1cb7766e1b45b94db3dc2c400d9d",
+      "english_sha256": "a850ac7eccd3d373efea1d6ddeeeb88137c156082499bbcc1514d2b7a807d5d2",
+      "change_type": "translated_historical_reading_copy"
+    },
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/RESULTS.md": {
+      "original_sha256": "5d779c27516fcb8d682fb209b4b8d1460febd49c2a973b81ad5f288190fee4ce",
+      "english_sha256": "15f17ad8124344d8064936becdcf4f19b523557c12e9d21f829989a542de883c",
+      "change_type": "research_record_presentation"
+    },
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/changes.csv": {
+      "original_sha256": "b65b1d7561d18ec18cd667168ff4682e7f6a63409faac390a83ba1e701c1a680",
+      "english_sha256": "b13fba92772487447549903af5a84d5dab3c1fca6525d748db1e6f97e1745c42",
+      "change_type": "research_record_presentation"
+    },
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/evidence/SOURCE_FINDINGS.md": {
+      "original_sha256": "0e591721e1f36b50e907ea1e5baf90a00045a2341aa8951007c0541582546a2e",
+      "english_sha256": "41fefd3e95b77e1dd55ad6f0bb5756ad86ad3e1a4978d80fc2e391e19c21e40f",
+      "change_type": "research_record_presentation"
+    },
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/paper_alignment.csv": {
+      "original_sha256": "5f7141b067606224e7b78aa6c5c3c040c47cb197d8e569885e8e255662c37e3b",
+      "english_sha256": "b5aef8af43fae6985db9201b16210d6db50007a00e21b56ce7d9eb7fffac97f5",
+      "change_type": "research_record_presentation"
+    },
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/validation_source/report_imu_only_ik.py": {
+      "original_sha256": "1e825f556082f3c72a686a264e6636d5d78e9e68e8cffcff2a1a7eaa45bfd7f3",
+      "english_sha256": "9021c355ca058d629e0a14c831d6ee0f0b65d70eb98ae8127199c5333c8b4998",
+      "change_type": "translated_historical_reading_copy"
+    },
+    "outputs/local_dip/dip_training_launcher_validation_20261114/source_snapshot/DIP_TRAINING_RUN.md": {
+      "original_sha256": "17027e69dba70d32fa196578e9251de2633da7942839a51428c0c7fccec820c4",
+      "english_sha256": "091c94470f69c84ec3ce366d4cafc80cf92e34c324c248e14e61a183d030a688",
+      "change_type": "translated_historical_reading_copy"
+    },
+    "outputs/local_dip/final_four_way_replay_v1_20261119/index.html": {
+      "original_sha256": "a90ea3ac8bf54a6084141220086e7a5af4e2844b66d740323df1ac5fb04d8b3c",
+      "english_sha256": "94a36bcbdf8bbb9965ed26a1e233bcca4210f6c49889e05e5667e138c069c838",
+      "change_type": "research_record_presentation"
+    },
+    "outputs/local_dip/final_four_way_replay_v1_20261119/source_snapshot/tools/render_final_comparison.py": {
+      "original_sha256": "027973f9f531ed40286565facfaa4a85978e5ed6bb5996e836b828fdd1331634",
+      "english_sha256": "3ad41dc52889c19a844dbf3e17488288af9c63a67a7306ca1d87ff33259ac887",
+      "change_type": "translated_historical_reading_copy"
+    },
+    "outputs/local_dip/gpu_diagnostic_20261114/source_snapshot/GPU_DIAGNOSTIC.md": {
+      "original_sha256": "2e911fe3b4adeb0320014dd58ed14fae2a994d600c6d46b2d10cd60127f816df",
+      "english_sha256": "19605a1cb77ec9fcad4b025ccd9338c4f69d9a5a30bb3f15c174b4afa691fc3d",
+      "change_type": "translated_historical_reading_copy"
+    },
+    "outputs/local_dip/ik_refinement_audit_20261116/SOURCE_FINDINGS.md": {
+      "original_sha256": "0e591721e1f36b50e907ea1e5baf90a00045a2341aa8951007c0541582546a2e",
+      "english_sha256": "41fefd3e95b77e1dd55ad6f0bb5756ad86ad3e1a4978d80fc2e391e19c21e40f",
+      "change_type": "research_record_presentation"
+    },
+    "tools/render_final_comparison.py": {
+      "original_sha256": "027973f9f531ed40286565facfaa4a85978e5ed6bb5996e836b828fdd1331634",
+      "english_sha256": "3ad41dc52889c19a844dbf3e17488288af9c63a67a7306ca1d87ff33259ac887",
+      "change_type": "localized_generator_source"
+    },
+    "tools/report_dip_finetuning_comparison.py": {
+      "original_sha256": "082fe2c0d6168e1ed173a8fb157513ed56c0c7263a8f1d842eab9d03c77fb55e",
+      "english_sha256": "92b2efbc952e9aeab54a8a02fe2fc5c8c1d4a3527d09f8839ec6f1de77fdfe6e",
+      "change_type": "localized_generator_source"
+    },
+    "tools/report_imu_only_ik.py": {
+      "original_sha256": "1e825f556082f3c72a686a264e6636d5d78e9e68e8cffcff2a1a7eaa45bfd7f3",
+      "english_sha256": "9021c355ca058d629e0a14c831d6ee0f0b65d70eb98ae8127199c5333c8b4998",
+      "change_type": "localized_generator_source"
+    },
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/report_summary.json": {
+      "original_sha256": "eb4e768d390a2c710a3d7035a21738280859f7be7695ae18322659b85da1ed08",
+      "english_sha256": "c20e0d4e890a1a1563da28abde1af319136b929554026859772ec539067d99f7",
+      "change_type": "research_record_presentation"
+    },
+    "docs/results/dip_imu_only_ik_v1_20261116/report_summary.json": {
+      "original_sha256": "eb4e768d390a2c710a3d7035a21738280859f7be7695ae18322659b85da1ed08",
+      "english_sha256": "c20e0d4e890a1a1563da28abde1af319136b929554026859772ec539067d99f7",
+      "change_type": "research_record_presentation"
+    },
+    "outputs/local_dip/dip_imu_only_ik_v1_20261116/report_generation.log": {
+      "original_sha256": "eb4e768d390a2c710a3d7035a21738280859f7be7695ae18322659b85da1ed08",
+      "english_sha256": "c20e0d4e890a1a1563da28abde1af319136b929554026859772ec539067d99f7",
+      "change_type": "research_record_presentation"
+    }
+  }
+}

@@ -1,59 +1,61 @@
-# IMUPoser 评估指标与数值验证
+# IMUPoser evaluation metrics and numerical validation
 
-完成日期：2026-11-13。状态：四项指标实现、已知姿态检查及缓存预测复核完成。入口为 [eval_pose_metrics.py](../tools/eval_pose_metrics.py)，计算模块为 [paper_metrics.py](../tools/paper_metrics.py)。本次只测量现有预测，没有训练或重新运行姿态网络。
+English presentation updated 2026-11-19; original experiment dates and bytes are preserved in [the language/provenance guide](RECORD_LANGUAGE.md).
 
-定义依据为 [IMUPoser 第 5.3 节及 Table 2](https://arxiv.org/html/2304.12518v1)。Jitter 的离散公式、平移处理及 mesh 默认开关参照论文引用的 [TransPose FullMotionEvaluator](https://github.com/Xinyu-Yi/TransPose/blob/37be773ceceda49160717311a4f74a695817b8d3/articulate/evaluator.py)。这使细节可复核，但不代表已找回 IMUPoser 作者未公开的全部评估设置。
+Completed: 2026-11-13. Four metrics, known-pose checks and cached-prediction rechecks are complete. Entry: [eval_pose_metrics.py](../tools/eval_pose_metrics.py); implementation: [paper_metrics.py](../tools/paper_metrics.py). This task measures existing predictions only, without training or network inference.
 
-## 指标定义
+Definitions follow [IMUPoser §5.3 and Table2](https://arxiv.org/html/2304.12518v1). Discrete jerk, translation handling and default mesh switch follow the cited [TransPose FullMotionEvaluator](https://github.com/Xinyu-Yi/TransPose/blob/37be773ceceda49160717311a4f74a695817b8d3/articulate/evaluator.py). These choices are auditable, not proof of recovering every unpublished IMUPoser evaluation setting.
 
-所有 SMPL 位置与输入平移都以米为单位，方向为全局坐标系中的方向。对每帧、每个选定点先计算误差，再平均。当前选用全部 24 个 SMPL 关节，包括 pelvis，以及全部 6,890 个对应网格顶点。
+## Definitions
 
-| 输出字段 | 意义与单位 | 对齐和平均 |
+SMPL positions/input translations use meters; orientations use the global frame. Compute errors per frame/point, then average. Use all 24 SMPL joints including pelvis, and all 6,890 corresponding vertices.
+
+| Field | Meaning/unit | Alignment and reduction |
 |---|---|---|
-| `mpjre_deg` | MPJRE：全局关节旋转的 SO(3) 测地角误差，度 | 先由局部旋转做 FK；不消除根旋转。每帧平均 24 个关节 |
-| `mpjpe_cm` | MPJPE：关节欧氏位置误差，cm | 每个姿态减去自己的 pelvis 位置后比较，24 个关节含零误差 root |
-| `mpjve_cm` | MPJVE：网格顶点欧氏位置误差，cm | 使用与 MPJPE 相同的 pelvis 平移对齐，平均全部 6,890 顶点；不是速度或关节位置误差 |
-| `jitter_m_s3` | 预测关节轨迹的平均 jerk，m/s³ | 使用空间对齐前的全局关节位置，包含提供的平移；不与 GT 相减 |
-| `jitter_100_m_s3` | 同一 jitter 除以 100 | 对应论文表格的 (10^2\,m/s^3) 单位；不是乘以 100 |
-| `local_rotation_deg` | 局部关节旋转误差，度 | 仅作附加诊断，不替代全局 MPJRE |
-| `reference_jitter_m_s3` / `reference_jitter_100_m_s3` | GT 轨迹自身的 jerk | 作为参考单独报告，不从预测 jitter 中扣除 |
+| `mpjre_deg` | MPJRE: SO(3) geodesic error of global joint rotations, degrees | FK from local rotations; retain root rotation; average24 joints per frame |
+| `mpjpe_cm` | MPJPE: joint Euclidean position error, cm | Subtract each pose's own pelvis; 24 joints including zero-error root |
+| `mpjve_cm` | MPJVE: mesh-vertex Euclidean position error, cm | Same pelvis translation alignment; 6,890 vertices; neither velocity nor joint-position error |
+| `jitter_m_s3` | Mean jerk of predicted joint trajectories, m/s³ | Global joints before spatial alignment, including supplied translation; not prediction minus GT |
+| `jitter_100_m_s3` | Same jitter divided by100 | Matches paper table units(10^2 m/s^3); do not multiply by100 |
+| `local_rotation_deg` | Local joint-rotation error, degrees | Supplementary diagnostic, not global MPJRE |
+| `reference_jitter_m_s3` / `reference_jitter_100_m_s3` | GT trajectory's own jerk | Separate reference, not subtracted from prediction jitter |
 
-空间误差只对齐 pelvis 平移，不做 heading、root 旋转、尺度或 Procrustes 对齐，也不对齐网格质心。厘米距离等于米距离乘以 100。使用 atan2 形式计算旋转测地角，与合法 SO(3) 上的 trace/acos 定义等价，并改善零角和小角的数值稳定性。对明显非正交、反射或非有限矩阵直接拒绝，不静默修复。
+Spatial errors align pelvis translation only: no heading, root rotation, scale, Procrustes or mesh-centroid alignment. Meter distances ×100 give centimeters. atan2 geodesics equal trace/acos on valid SO(3), with improved zero/small-angle stability. Clearly nonorthogonal, reflected or nonfinite matrices are rejected rather than silently repaired.
 
-## Jitter 的时间约定
+## Jitter timing
 
-对于均匀采样的位置 (p_t)，本实现计算：
+For uniformly sampled positions p_t:
 
 ```text
 jerk[t] = (p[t+3] - 3*p[t+2] + 3*p[t+1] - p[t]) * fps^3
 jitter = mean over valid time samples and 24 joints of ||jerk[t]||_2
 ```
 
-长度 T 的完整录制提供 `max(T-3, 0)` 个时间样本。长度不足四帧时 jitter 为 JSON `null`，计数为零，不伪装为零抖动；这种录制仍参与空间误差统计。
+A complete T-frame recording supplies `max(T-3,0)` jerk samples. Under four frames, jitter is JSON `null`, count0, not artificial zero jitter; spatial errors still contribute.
 
-预测与 GT 相同并不意味着 jitter 为零：相同但有加加速度的运动，其空间和旋转误差均为零，而两者各自的 jitter 都可大于零。反之，完全不动的错误姿态可以有零 jitter，因此 jitter 低不能单独证明姿态准确。
+Identical prediction/GT does not imply zero jitter: matching accelerated-changing motion can have zero spatial/angular error and nonzero equal jerk. Conversely, a wrong static pose can have zero jitter; smoothness alone does not establish accuracy.
 
-计算 mesh 的批大小不会切断时间轨迹。已有缓存的 `sequence_ids`、`start_frames` 和 `offsets` 必须逐录制从零连续覆盖，才能拼回完整录制后计算 jerk；间隙、重叠和重复窗口会被拒绝。不同录制之间不求导。若只有 offsets，则每个区间视为独立序列，不猜测它们相邻。只有单序列的 `lengths` 时先去掉 padding；不支持把不带有效边界的 padded batch 当成一条轨迹。
+Mesh computation chunks do not break temporal trajectories. Cache `sequence_ids`, `start_frames`, `offsets` must continuously cover each recording from 0 before reconstruction and differentiation. Gaps/overlaps/duplicate windows are rejected. Never differentiate across recordings. With offsets alone, intervals are independent sequences; adjacency is not guessed. Single-sequence `lengths` trims padding; an unbounded padded batch cannot be treated as one trajectory.
 
-独立网络窗口之间若产生跳变，只要它们属于同一连续录制，就应在 jitter 中体现。本工具不会额外平滑预测以降低指标，也不会用计算批边界掩盖这些跳变。
+Discontinuities between network windows within one continuous recording must appear in jitter. No extra smoothing or computational-boundary exclusions hide them.
 
-## 身体形状与 mesh 约定
+## Shape and mesh
 
-- 默认使用提供的 SMPL 模型的 mean shape，预测与 GT 使用同一个身体。当前验证资产为已有 male SMPL，文件 SHA-256 随结果保存。
-- 可通过 `--betas` 提供十个固定形状系数，仍共享给一对预测与 GT；不接受随帧变化的身体形状。
-- pose blend shapes 默认为关闭，与继承的 SMPL 和所核查 TransPose evaluator 默认一致。可用 `--pose-blendshape` 显式开启，结果中记录这个设置。测试确认该开关可改变 mesh 误差而不改变关节位置误差。
-- IMUPoser 正文没有明确该开关和全部 shape 细节，因此此默认是已公开、可切换的实现约定，不冒充已证实的作者设置。未来论文数字比较必须保持这一设置一致，必要时报告敏感性分析。
-- 可在 NPZ 中提供 `predicted_translation_m`、`target_translation_m`，形状均为 `[T,3]`；省略时为零。空间指标消除其 pelvis 平移，jitter 则保留平移运动。当前 IMUPoser 缓存没有预测轨迹，所以采用零平移。
+- Default: supplied SMPL mean shape, shared by prediction/GT. Current validation uses licensed male SMPL; asset SHA-256 is recorded.
+- `--betas` accepts10 fixed shared coefficients, not per-frame shape.
+- Pose blend shapes default off, matching inherited SMPL and inspected TransPose defaults. `--pose-blendshape` explicitly enables and records them; tests confirm mesh error can change while joint-position error does not.
+- IMUPoser text does not specify this switch/all shape details. This is an explicit configurable convention, not confirmed author behavior. Paper comparison must hold it fixed and report sensitivity when needed.
+- Optional NPZ `predicted_translation_m`/`target_translation_m` each use `[T,3]`, zero if omitted. Spatial metrics remove pelvis translation; jitter retains trajectory motion. Current IMUPoser caches have no predicted trajectory and use zero translation.
 
-## 汇总规则
+## Aggregation
 
-主输出 `frame_weighted` 对旋转、关节和顶点误差按有效帧数加权；jitter 按每条录制的有效三阶差分样本数 T−3 加权。这两类分母不能混用。`sequence_equal` 是辅助汇总，每条有定义的序列给同等权重；没有 jerk 样本的序列不进入 jitter 平均。
+Primary `frame_weighted` uses valid frames for angular/joint/vertex errors and valid T−3 stencils for jitter; these denominators differ. Auxiliary `sequence_equal` gives each defined sequence equal weight; sequences without jerk samples do not enter jitter means.
 
-每条录制保留帧数、jerk 样本数、各指标及逐关节统计。当前工具一次测量一个配置，不把某个三位置配置的结果冒充论文全部设备组合的平均值。论文没有充分给出所有跨配置权重细节，后续完整基准应先固定配置汇总协议。
+Keep per-recording frames, jerk counts, metrics and per-joint statistics. This tool measures one configuration at a time; one three-location mask is not the mean over paper device combinations. The paper does not fully specify cross-configuration weights; freeze the full benchmark aggregation separately.
 
-## 使用方式
+## Usage
 
-输入 NPZ 中预测和参考必须已配对，支持 `[T,144]`、`[T,24,6]` 或 `[T,24,3,3]` 局部姿态。6D 旋转遵循仓库的列向量约定。矩阵输入必须是合法 SO(3)。若有标量 `fps` 字段，必须与 `--fps` 一致；所有时间样本按该固定采样间隔解释。
+NPZ prediction/reference must be paired local poses: `[T,144]`, `[T,24,6]` or `[T,24,3,3]`. 6D follows repository column conventions; matrices must be valid SO(3). Scalar `fps`, if supplied, must match `--fps`; interpret all samples at that fixed interval.
 
 ```bash
 cd /home/alex/research/PoseEstimationWithWearables
@@ -67,44 +69,42 @@ conda run --no-capture-output -n imuposer python tools/eval_pose_metrics.py \
   --output outputs/local_dip/metric_validation_20261113_recheck/metrics.json
 ```
 
-工具拒绝覆盖已有输出。JSON 包含输入、模型与源码哈希、实际导入路径、软件版本、shape 和 mesh 设置。仅有 CPU 和已有授权 SMPL 资产即可测量；无需 checkpoint、训练集或网络推理。旧实验工具及结果未改写。
+Existing outputs cannot be overwritten. JSON records input/model/source hashes, actual imports, software versions, shape and mesh settings. CPU and licensed SMPL suffice: no checkpoint, training set or network inference. Prior tools/results are unchanged.
 
-## 已完成的验证
+## Completed validation
 
-[test_paper_metrics.py](../tests/test_paper_metrics.py) 的 **20 项测试通过**，包括 13 项不依赖 SMPL 资产的检查和 7 项使用现有 SMPL 的检查；没有资产时后七项明确跳过。旧 sensor metrics 的 7 项回归测试也通过。
+**20 tests pass** in [test_paper_metrics.py](../tests/test_paper_metrics.py): 13 asset-independent and7 licensed-SMPL checks. Without SMPL, the latter explicitly skip. Seven existing sensor-metric regressions also pass.
 
-检查覆盖以下可解析情况：
-
-| 情况 | 预期与检查结果 |
+| Analytic case | Expected and verified |
 |---|---|
-| 相同静态姿态 | 四项指标及附加局部误差均为零 |
-| 相同但变化的姿态 | 姿态误差为零；预测/GT jitter 相同且可为非零 |
-| 根关节绕 Z 轴 90° | 全局 MPJRE 为 90°；局部关节平均误差为 90/24°；空间误差与静态几何解析式一致 |
-| 仅旋转末端关节 | 关节位置不动，MPJPE 近零；表面顶点移动，MPJVE 非零 |
-| 关节位移 0.01 m / 顶点位移 0.02 m | 验证 ×100 的厘米转换、root 是否计入、关节与顶点分母不同 |
-| 整体平移 | pelvis 对齐后的空间误差为零；平移中的 jerk 仍计入 jitter |
-| 常数、线性、二次轨迹 | 三阶差分为零，允许浮点容差 |
-| 单轴 (p(t)=t^3) | jerk 为 6 m/s³；同一离散数组的 fps 翻倍，数值变为 48 m/s³ |
-| 时间边界与短序列 | 不跨录制差分；短序列返回 null；padding 排除；非法 offsets/间隙/重叠拒绝 |
-| 计算批大小及形状开关 | 固定输入重复计算稳定；共享固定 shape；pose blendshape 设置显式记录 |
+| Identical static poses | Four metrics and supplementary local error zero |
+| Identical changing poses | Pose errors zero; predicted/GT jerk equal, possibly nonzero |
+| Root Z rotation90° | Global MPJRE90°; average local error90/24°; spatial errors match static geometry |
+| Rotate terminal joint only | Joint positions unchanged, MPJPE near0; vertices move, MPJVE nonzero |
+| Joint shift0.01m / vertex shift0.02m | ×100 cm conversion, included root, distinct point denominators |
+| Whole-body translation | Pelvis-aligned spatial errors zero; translational jerk retained |
+| Constant/linear/quadratic trajectories | Third difference zero within floating tolerance |
+| Single-axis p(t)=t^3 | Jerk6m/s³; double fps for same discrete array gives48m/s³ |
+| Boundaries and short sequences | No cross-recording differentiation; short jitter null; exclude padding; reject invalid offsets/gaps/overlaps |
+| Compute chunks and shape switches | Repeatable fixed-input results; shared fixed shape; explicit pose-blendshape setting |
 
-端到端使用 E04 的同一份冻结开发集预测：**11 条录制、25,423 帧、25,390 个 jerk 时间样本**。计算批大小 32 与 11 的所有汇总指标完全相同。第三次使用批大小 19，通过独立 NumPy 距离、trace/acos 和第三差分重算，最大差异为 **0.00005493**（对应指标单位），低于 0.0001 容差；角度细小差异来自稳定 atan2 与 trace/acos 的浮点处理。
+End-to-end recheck uses the same frozen E04 development predictions: **11 recordings, 25,423 frames, 25,390 jerk samples**. Chunks32/11 give identical aggregate metrics. A third run with chunk 19 independently reconstructs NumPy distances, trace/acos and third differences: maximum discrepancy **0.00005493**, in the corresponding metric units, below0.0001. Small angular discrepancies reflect atan2 versus trace/acos floating-point handling.
 
-| 指标 | 同一份开发集缓存的 frame-weighted 结果 |
-|---|---:|
+| Metric | Same development cache, frame weighted |
+|---|---: |
 | MPJRE | 21.292074° |
 | MPJPE | 9.451584 cm |
 | MPJVE | 10.257982 cm |
-| 预测 jitter | 78.290040 m/s³，即 0.782900 × (10^2\,m/s^3) |
-| GT jitter | 82.186566 m/s³，即 0.821866 × (10^2\,m/s^3) |
-| 附加局部旋转误差 | 19.802034° |
+| Prediction jitter | 78.290040m/s³ =0.782900×(10^2 m/s^3) |
+| GT jitter | 82.186566m/s³ =0.821866×(10^2 m/s^3) |
+| Supplementary local rotation | 19.802034° |
 
-新 MPJPE 与旧 E04 同为 frame-weighted 的结果相差约 0.000000011 cm。这里使用 frame-weighted，而 E04 教学报告的主表使用 subject-equal；两种平均口径不要混为性能变化。
+New MPJPE differs from frame-weighted E04 by about 0.000000011 cm. This table is frame weighted; the E04 teaching report's primary table is subject equal. Do not interpret different reductions as performance changes.
 
-这些数字用于验证测量工具，仍来自 AMASS 预训练模型的离线窗口开发集缓存；没有完成 DIP 微调、在线推理或 refinement，**不直接对比论文 Table 2**。
+These numbers validate the measuring tool on AMASS-pretrained offline-window development caches. At this historical point, DIP fine-tuning, online inference and refinement were not complete; **do not directly compare with paper Table2**.
 
-证据：[冻结测量约定](../outputs/local_dip/metric_validation_20261113/PROTOCOL.json)、[批大小 32 结果](../outputs/local_dip/metric_validation_20261113/metrics_chunk32_checked.json)、[批大小 11 结果](../outputs/local_dip/metric_validation_20261113/metrics_chunk11_checked.json)、[独立验证结果](../outputs/local_dip/metric_validation_20261113/validation.json)、[独立验证代码](../outputs/local_dip/metric_validation_20261113/validate_metrics.py)。原始测量输出保存在忽略的本地目录，不复制授权数据或模型资产。
+Evidence: [frozen measurement protocol](../outputs/local_dip/metric_validation_20261113/PROTOCOL.json), [chunk 32](../outputs/local_dip/metric_validation_20261113/metrics_chunk32_checked.json), [chunk 11](../outputs/local_dip/metric_validation_20261113/metrics_chunk11_checked.json), [independent validation](../outputs/local_dip/metric_validation_20261113/validation.json), [validation code](../outputs/local_dip/metric_validation_20261113/validate_metrics.py). Original outputs stay in ignored local storage; licensed data/model assets are not copied.
 
-## 2026-11-16 后续测量
+## Follow-up: 2026-11-16
 
-同一原指标实现现已用于全24mask的最终DIP微调前后比较及IMU-only IK对照，并通过独立缓存/汇总/分块核验，见[微调结果](DIP_FINETUNING_COMPARISON.md)、[IK结果](IMU_ONLY_IK.md)及[shape、mesh和平均方式敏感性](PAPER_EVALUATION_ALIGNMENT.md)。本文件保留早期M01已知姿态验证的原记录；Python指标源码未改动。
+This unchanged metric implementation now measures all 24-mask final-DIP before/after and IMU-only-IK comparisons, independently audited for caches/aggregation/chunks. See [fine-tuning](DIP_FINETUNING_COMPARISON.md), [IK](IMU_ONLY_IK.md), and [shape/mesh/reduction sensitivity](PAPER_EVALUATION_ALIGNMENT.md). This document preserves M01's earlier known-pose record; metric Python sources are unchanged.

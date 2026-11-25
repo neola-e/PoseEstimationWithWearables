@@ -1,6 +1,6 @@
 # IMUPoser research progress and experiment log
 
-Created: 2026-11-10. Last updated: 2026-11-16. Calendar dates use America/Chicago unless a source specifies UTC. Prepared for Alex with Codex assistance.
+Created: 2026-11-10. Last updated: 2026-11-19. Calendar dates use America/Chicago unless a source specifies UTC. Prepared for Alex with Codex assistance.
 
 This is the running research notebook for reproducing IMUPoser and investigating how wearable sensor placement affects pose estimation. As of 2026-11-11, the priority is paper reproduction: first DIP quantitative evaluation, then consumer-device data and the real-time system. The [reproduction audit](REPRODUCTION_AUDIT.md) defines the scope, implementation gaps, data evidence, and retraining decision. Completed placement studies remain preserved as supplementary analysis.
 
@@ -8,7 +8,7 @@ Entries E00–E03 and the initial E04 proposal were reconstructed from saved rep
 
 ## Current project status
 
-| Area | Status as of 2026-11-16 | Evidence or next action |
+| Area | Status as of 2026-11-19 | Evidence or next action |
 |---|---|---|
 | Reproduction scope and Epoch 59 audit | Completed | Audit A01 below; [paper comparison and decision](REPRODUCTION_AUDIT.md) |
 | Four pose metrics and numerical checks | Completed | M01 below; [metric conventions and validation](POSE_METRICS.md) |
@@ -25,10 +25,11 @@ Entries E00–E03 and the initial E04 proposal were reconstructed from saved rep
 | Paper evaluation conventions | Audited, with unresolved author details explicitly recorded | [21-item alignment and sensitivity](PAPER_EVALUATION_ALIGNMENT.md); 24-to12 grouping verified; exact IK/shape/window/reduction settings remain uncertain |
 | Paper-aligned DIP pipeline | Fine-tuning, rolling, IK and full four-metric baseline exercised | F03/I01 complete the DIP engineering chain; strict author-equivalent numerical reproduction remains unproven |
 | CPU inference and visualization | Implemented and validated | [Handoff validation](VALIDATION.md); [model card](MODEL_CARD.md) |
+| Final-model four-way offline replay | Three fixed clips rendered and independently validated | V01 below; [animations, numerical checks and interpretation](FINAL_MODEL_REPLAY.md); raw / framewise IK / Temporal IK / GT, same source frames |
 | Five versus three locations | Completed; supplementary priority | Experiment E02 below; results preserved |
 | Wrist side and pocket side | Completed; supplementary priority | Experiment E03 below; results preserved |
 | Head plus both wrists | Completed; supplementary priority | Experiment E04 below; better wrist accuracy with worse leg accuracy |
-| Team handoff | [PR 1](https://github.com/neola-e/PoseEstimationWithWearables/pull/1) open and mergeable when checked on 2026-11-10 | Contains the Epoch 55 inference handoff; newer research tools and guides remain uncommitted locally |
+| Team handoff | Research code/reports recorded in commit8519e9c; V01 additions currently uncommitted | [Team guide](TEAM_HANDOFF.md); original [PR 1](https://github.com/neola-e/PoseEstimationWithWearables/pull/1) history in E01; no new remote-state claim from this visualization task |
 | Live consumer-device evaluation | Future work | Offline calibration, timing, and an explicit latency policy are needed |
 
 ## How to maintain this notebook
@@ -41,6 +42,7 @@ The structure adapts laboratory notebook practice: dated entries, objectives, me
 4. Link the exact command, code revision and any uncommitted source snapshot, environment, seeds, input hashes, metrics, and figures. Keep large artifacts in their run directory.
 5. Preserve completed entries. Add dated corrections or follow-ups referencing the original entry instead of silently replacing the history. Refresh the status table and action list as work advances.
 6. Keep this text log under version control when committing project work. Preserve run artifacts separately: the linked output directories are ignored by Git, so this file alone is not a backup of the experiments.
+7. Use English for research entries, documentation, report/table labels and generated HTML. When translating historical records, preserve original bytes and hashes separately and distinguish the English presentation from original execution evidence; see [record language and provenance](RECORD_LANGUAGE.md).
 
 ## Shared experimental context
 
@@ -75,6 +77,8 @@ The structure adapts laboratory notebook practice: dated entries, objectives, me
 | I01 | 2026-11-16 | Does IMU-only IK honor available orientations, and what changes under the remaining paper conventions? | 14 tests plus full456-pair independent validation pass; pose errors decrease around1.2–1.35%, jitter increases16.51%; unknown author settings preserved |
 | J01 | 2026-11-16 | Where does I01 extra jitter arise, and is it associated with rotation high frequencies? | All10,944 joint-mask-recording cells verified; pelvis component is dominant; action and mask rankings/plots saved |
 | I02 | 2026-11-16 | Can causal Temporal IK preserve spatial gains while reducing extra jitter? | Development-onlyλ0.001 selected; fixed all24 test completed;98.58% vertex gain retained and4.42% lower jitter thanI01, but not below raw |
+| V01 | 2026-11-19 | What do the final network, framewise IK and Temporal IK outputs look like against identical-frame GT? | Three10-second four-panel animations plus0.25x jitter replay;750 source frames,1,000 encoded frames, independent pairing/FK/timing audit passed |
+| L01 | 2026-11-19 | Can all readable project records be shared in English without losing historical evidence? | English migration of documentation, overview, tables, report generators and historical reading copies; lossless original-byte archive and translation audit |
 
 ## E00 Reproduction environment
 
@@ -402,8 +406,8 @@ All24 individual mask aggregates improve in all four metrics. Minimum mask-level
 | Metric | Final network, no IK | IMU-only IK | Change |
 |---|---:|---:|---:|
 | MPJRE, ° | 22.46870 | 22.16620 | 1.35% decrease |
-| MPJPE（关节）, cm | 9.54019 | 9.42636 | 1.19% decrease |
-| MPJVE（网格顶点）, cm | 11.96889 | 11.82258 | 1.22% decrease |
+| MPJPE (joints), cm | 9.54019 | 9.42636 | 1.19% decrease |
+| MPJVE (mesh vertices), cm | 11.96889 | 11.82258 | 1.22% decrease |
 | Jitter, 100 m/s³ | 1.04836 | 1.22145 | 16.51% increase |
 
 All24 mask-level recording aggregates and both subject-level aggregates show the same direction: three pose errors decrease, jitter increases. MPJVE improves0.14630cm, about1.46mm. Available-IMU angular residual falls12.60312°→10.95081°; no direction-MSE increase occurs among577,872 mask-frames. This establishes optimization toward the IMU objective, not an across-the-board motion-quality improvement. Independent-frame corrections can increase high-order temporal changes; this is a plausible explanation rather than an isolated causal result. No test-directed tuning follows this result.
@@ -453,16 +457,49 @@ Temporal reduces total jitter4.42% relative toI01 and retains98.58% of I01's MPJ
 
 **Evidence and limitation.** [Independent experiment report](TEMPORAL_IK_EXPERIMENT.md), [frozen test protocol](results/temporal_ik_v1_20261116/PROTOCOL.json), [development selection](results/temporal_ik_v1_20261116/calibration_selection.json), [three-way metrics](results/temporal_ik_v1_20261116/comparison.csv), [joint jitter](results/temporal_ik_v1_20261116/joint_jitter.csv), [independent validation](results/temporal_ik_v1_20261116/independent_validation.json). Full calibration/test directories are `outputs/local_dip/temporal_ik_v1_20261116/`; original and appended validation manifests are distinct. The limited calibration panel and fixed10-step budget do not establish an optimal regularizer. Upstream preprocessing future dependence persists; this past-only IK does not add future access. Further iteration/weight/form changes require another development-selected experiment, preserving this result andI01.
 
+## V01 Final-model four-way offline replay
+
+**Work/entry date:** 2026-11-19, America/Chicago. **Requested by:** Alex. **Execution/review:** Codex. **Status:** Completed and independently validated; explanatory visualization of existing F03/I01/I02 test predictions, no model or optimizer updates.
+
+**Question and fixed selection.** Inspect motion direction, exact frame alignment, local joint errors and extra jitter using one common mask, `rw_lp` (right wrist + left pocket). Before rendering, freeze s09/03_a.pkl seq5 central250 frames[478,728), s09/01_a.pkl seq0 central250 frames[864,1114), and archived J01's largest-contribution pair s10/01_a.pkl seq9[1246,1496), centered on recorded single-joint excess-jerk peak1371. The third clip is an upper-body failure example, selected exploratorily from the prior diagnosis; it is not a third action class or an unbiased performance sample. No new clip score or visual appearance changes the selection. Category names describe recordings, not verified per-frame actions.
+
+**Inputs, geometry and display.** Reuse final two-epoch checkpoint lineage SHA996a3e2df21ac675df8f777d975d0700f3836c1d835bb898044a714e6cb5f7d8 and unchanged raw/framewise/Temporal caches. All four panels use the same source frame, mean male body, zero root translation, inherited mesh settings, one camera and a common scale across every case. The proper display rotation(X,Y,Z)→(X,−Z,Y) preserves handedness; there is no heading fitting, lag adjustment, interpolation or output smoothing. Gray dashed GT overlays and common0–40cm joint-error colors expose mismatches. Each clip has250 frames at25Hz; numerical jerk uses only247 complete in-clip stencils. Three original-speed GIFs use40ms/frame; the additional jitter slow replay uses the exact same250 frames at160ms/frame, without interpolation. Full curves are explanatory offline plots, not online-availability claims.
+
+**Observed clip results.** MPJPE(network/framewise/Temporal) is7.82913/7.60993/7.61921cm for walking,10.94494/10.83118/10.83377cm for upper-body, and7.97335/7.83514/7.83759cm for the jitter example. Jitter is1.45791/1.74066/1.57023,1.09042/1.64525/1.38254, and1.20962/1.69896/1.55713 respectively, in100m/s³. Temporal reduces framewise jitter9.79%,15.97%,8.35% within these clips, while remaining above raw. These are clip summaries, not substitutes for I02's full-test4.42% result. All four canonical metrics are in the linked CSV.
+
+**Joint errors and direction.** Left wrist/hand, unobserved by this mask, are the main position-error points. Upper-body network left-hand mean error50.60cm contrasts with whole-body10.94cm, and framewise IK leaves50.56cm. Direction checks find no overall180° root reversal in the selected frames; maximum root-angle error over all branches/clips is22.69°. Larger walking root steps also occur in GT. GT jitter is nonzero and exceeds network jitter in the walking clip, reinforcing that low jerk alone does not establish accuracy. These observations describe the fixed cases; they do not select a new mask or refinement policy.
+
+**Verification and review.** Four new analytic checks cover fixed selection, proper display rotation, source-frame clocks and cubic-trajectory jerk/pelvis alignment. The full suite passes109 tests with no failures/skips using the team checkout source and trusted local integration assets. The independent process checks64 rendered artifacts,750 source frames and72,000 four-panel joint-frames; saved poses match original caches bitwise and GT matches processed DIP. FKchunk11 differs from saved FK by0m; independent MPJPE/jitter summaries differ by≤1.78e-15. All1,000 encoded GIF frames decode with correct40/160ms durations; five fixed frame images per clip match their quantized PNGs exactly, and slow/normal counterparts match. Protected original data, weights, protocol and baseline cache hashes are unchanged. Codex additionally visually inspects the15 fixed-time four-panel screenshots(0/62/125/187/249); this is distinguished from viewing every animated frame.
+
+**Execution and evidence.** CPU rendering peak RSS838.88MiB; zero network forward calls and optimizer steps. Entry points are `tools/render_final_comparison.py prepare`, `render`, and `tools/validate_final_comparison.py --output`, using `outputs/local_dip/final_four_way_replay_v1_20261119`; [exact commands and protocol](FINAL_MODEL_REPLAY.md) record all arguments. Protocol stores base Git revision8519e9c, hashes and snapshots of the uncommitted execution sources, input/model/cache identities, selection rules and geometry. Large animations/poses stay local;20 compact reports/metadata/preview files plus their own manifest are mirrored under `docs/results/final_four_way_replay_v1_20261119/`. Original artifact/validation manifests are retained; final review state and an additional review manifest are separate.
+
+**Interpretation and next action.** The replay explains the existing accuracy/jitter compromise and substantial unobserved-arm failures. It does not establish consumer-device accuracy, strict author-equivalent evaluation, global trajectory or real-time latency. Next implement an explicit real-device log adapter with units, mounting/world-frame calibration, timestamps and25Hz resampling, then replay one physical-device recording through the fixed model. [Animation/report](FINAL_MODEL_REPLAY.md), [clip metrics](results/final_four_way_replay_v1_20261119/clip_metrics.csv), [independent validation](results/final_four_way_replay_v1_20261119/independent_validation.json), [visual review](results/final_four_way_replay_v1_20261119/VISUAL_REVIEW.json), [compact manifest](results/final_four_way_replay_v1_20261119/MANIFEST.json).
+
+## L01 English research records and presentation migration
+
+**Work/entry date:** 2026-11-19, America/Chicago. **Requested by:** Alex, to support record keeping and group sharing. **Status:** Completed; English translation and provenance audit passed, separately from numerical experiments.
+
+**Scope and method.** Translate the remaining Chinese documentation, research-log labels, result tables, report text, generated four-way replay overview, and corresponding readable local report/source snapshots. Also inspect JSON/logs for Chinese stored as escaped Unicode. Update report generators so future presentation uses English. Preserve each original file's exact bytes in a base64 archive, recording original and English SHA-256 values; do not attribute the new language to old experimental execution. Historical protocols/manifests retain their original hashes. The migration audit verifies both versions explicitly rather than silently replacing historical digests.
+
+**Scientific boundary and validation.** No neural training, network inference, IK optimization, metric recomputation, checkpoint edit or GIF regeneration. Localized Python generators must have identical AST structure after replacing string constants, preserving computations and numerical constants. Numeric JSON values and numeric CSV cells must match, and readable project text is scanned for residual Chinese, including Unicode escapes in JSON/logs. Selected original checkpoints/data/caches, the original replay protocol and all four GIF hashes are checked separately. Full-suite results and the translation audit are archived with this migration.
+
+The final migration covers 40 files, including Unicode-escaped labels in two JSON files and one log. Six localized source copies preserve their complete non-string AST; seven JSON/CSV copies preserve numerical data. The scan finds zero remaining Chinese text files. Thirty-two historical manifest entries match the losslessly archived pre-translation bytes; 62 scientific inputs, unchanged sources and animations match original hashes. All 109 unit/integration tests pass with no skips or failures. Original-byte restoration is checked in a new temporary directory.
+
+**Sharing and replay.** [English overview](../outputs/local_dip/final_four_way_replay_v1_20261119/index.html) uses the same existing animations and links. [Language/provenance guide](RECORD_LANGUAGE.md), [translation map](record_translations_20261119/TRANSLATION_MAP.json), [lossless originals](record_translations_20261119/ORIGINAL_BYTES.json), [migration validation](record_translations_20261119/VALIDATION.json). A legacy byte-exact validator can correctly flag localized presentation/source files; use the translation audit and restore archived originals into a new directory when inspecting historical bytes. No old model result is reclassified as a fresh experiment.
+
+**Method clarification.** [Framewise versus Temporal IK](IK_REFINEMENT_EXPLAINED.md) documents the same final network with two refinement methods: independent current-frame orientation correction versus joint past/current five-frame optimization with a third-difference position penalty, emitting only the current frame. Both use ten Adam updates and no added future access. I02 is a separate extension, not the original paper baseline; it lowers full-test framewise jitter by 4.42%, retaining 98.58% vertex-error gain, still 11.36% above raw-network jitter.
+
 ## Open questions and action tracking
 
 | Priority | Item | Status and next step |
 |---|---|---|
+| Current engineering step | Replay real consumer-device logs on the PC | V01 final DIP four-way replay complete; next freeze device log schema, unit/frame/mounting calibration, timestamps and resampling before one physical recording |
 | Current priority | Establish paper-aligned DIP quantitative evaluation | I01 IK and21-item convention audit completed; seek author settings for strict equivalence and separately plan any strict AMASS recipe |
 | Later research | Does the E04 wrist benefit justify its leg and root-orientation costs? | Supplementary until reproduction baseline is complete |
 | Later error diagnosis | Why does substantial error remain with both wrists? | Preserve cached predictions and the sequence 38 exception; revisit after complete baseline |
 | Temporal stability extension | Can jitter return to raw-network level while preserving IK gains? | I02 achieves4.42% lower jitter thanI01 with98.58% vertex gain retained; still11.36% above raw. Further changes require separate development-side selection |
 | Test evaluation | Measure the locked final model against original Epoch59 | F03 andI01 raw/IK full24-mask reports complete. IK improves three errors and worsens jitter in all24 aggregates; no test-driven recipe or K change |
-| Reproducibility | Review newer study tools and guides for the team repository | Uncommitted locally; review and validate any code changes before a source handoff |
+| Reproducibility | Review newer study tools and guides for the team repository | Earlier work committed in8519e9c; V01 tools/log/compact results currently uncommitted,109-test suite and artifact validation pass |
 | Generalization | Do the effects hold for additional people and consumer devices? | Future independent confirmation; F03 final-model comparison covers two test subjects |
 | Live operation | What accuracy is retained under a usable latency policy? | R01 measures last-frame rolling and filter direction; raw-stream causal filling/resampling and end-to-end timing remain future work |
 

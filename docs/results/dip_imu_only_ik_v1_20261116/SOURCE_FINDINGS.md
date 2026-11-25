@@ -1,15 +1,16 @@
-# IK 与评估口径：执行前证据和决定
+# IK and evaluation conventions: pre-execution evidence and decisions
 
-工作日期：2026-11-16，America/Chicago。本文件在任何新测试集 IK 结果产生前保存。
+English presentation updated 2026-11-19; original experiment dates and bytes are preserved in [the language/provenance guide](../../RECORD_LANGUAGE.md).
 
-- IMUPoser v1 §4.4：以 IMU 的绝对方向约束骨骼，MSE + Adam，每帧 10 次；腕部优化肩、肘。未给出 IK 学习率、全部头/髋索引、参数化、优化状态重置及目标投影细节。https://arxiv.org/html/2304.12518v1#S4.SS4
-- FIGLAB/IMUPoser `a0e9d33b9c57d6737d711185b62084e17684b0e2` 的公开目录和 Python 源码未提供相应姿态 IK 优化器或论文评估循环；数学 inverse_kinematics_R 仅是 global/local 旋转转换。https://github.com/FIGLAB/IMUPoser/tree/a0e9d33b9c57d6737d711185b62084e17684b0e2
-- 公开预处理 `ji_mask=[18,19,1,2,15,0]`，前五项用于本任务。raw DIP 使用 `[7,8,9,10,0,2]`；腕部设备对应前臂段。旧 `leaf_joints=[20,21,7,8,12]` 不适用于该输入。Issue16 的跟帖是其他用户提问，不能当作作者确认。https://github.com/FIGLAB/IMUPoser/issues/16
-- 被引用的 AvatarPoser 论文 §3 的 IK 学习率是 1e-3；其公开代码 `models/network.py` 默认 1e-1、5次，且优化手位置。不能把那个位置目标或其 MPJVE（速度）的定义移用于 IMUPoser 的网格顶点指标。论文：https://static.siplab.org/papers/eccv2022-avatarposer.pdf ，代码 commit `0f97cb27fa7ad97ceb9c02e4d068d613eb315ba0`。
+Work date: 2026-11-16, America/Chicago. Saved before any new test-set IK results.
 
-本次预先决定：保持最终两轮 checkpoint、原 F03 全24mask测试数据/预测和四指标。只增加每帧10次 Adam、lr1e-3、3×3方向MSE。选择感知段及直接父关节，联合处理全部可用传感器；头/髋索引是明确披露的重建约定。用局部旋转向量增量，FP64优化、FP32输出；无额外关节/时间先验，未优化局部量保持原值。每帧初始化与 Adam 独立；批量 loss 对每帧MSE求和，避免batch size改变Adam epsilon的有效意义。取最终更新，无 GT 校准、GT损失、测试调参、最优迭代选择或回退。
+- IMUPoser v1 §4.4: constrain bones with absolute IMU orientation, MSE+Adam, 10 iterations/frame; wrist input optimizes shoulder/elbow. IK learning rate, complete head/hip indices, parameterization, state reset and target projection are unspecified. https://arxiv.org/html/2304.12518v1#S4.SS4
+- FIGLAB/IMUPoser public directories/Python at `a0e9d33b9c57d6737d711185b62084e17684b0e2` lack the corresponding pose optimizer/paper evaluation loop. Math inverse_kinematics_R only converts global/local rotations. https://github.com/FIGLAB/IMUPoser/tree/a0e9d33b9c57d6737d711185b62084e17684b0e2
+- Public preprocessing `ji_mask=[18,19,1,2,15,0]`; use first five. Raw DIP indices `[7,8,9,10,0,2]`; wrist devices correspond to forearm segments. Old `leaf_joints=[20,21,7,8,12]` does not match these inputs. Issue16 replies are other users' questions, not author confirmation. https://github.com/FIGLAB/IMUPoser/issues/16
+- Cited AvatarPoser §3 gives IK lr 1e-3; public models/network.py defaults1e-1, five iterations, and hand-position optimization. Do not import that position objective or velocity-MPJVE definition into IMUPoser's vertex metric. Paper:https://static.siplab.org/papers/eccv2022-avatarposer.pdf ; code commit `0f97cb27fa7ad97ceb9c02e4d068d613eb315ba0`.
 
-原 ori 是矩阵逐元素插值，可能不严格位于 SO(3)。仅在 IK 目标中投影到最近旋转，原网络输入和 processed 文件保持不变。训练池 first8 的检查仅检验既定映射/数据约定，不拟合任何校准量；具体结果另见 train_conventions.json。
+Predeclared decision: retain final two-epoch checkpoint, F03 full 24-mask data/predictions, four metrics. Add only ten Adam steps/frame, lr 1e-3,3×3 orientation MSE. Jointly handle available sensors; optimize sensed segments/direct parents. Head/hip indices explicitly reconstructed. Local rotvec increments, FP64 optimize/FP32 output, no extra joint/temporal prior, unoptimized entries retained. Independent initialization/Adam per frame; sum per-frame MSE to preserve Adam-epsilon behavior across batching. Emit final update, no GT calibration/loss, test tuning, best-iterate selection or fallback.
 
-论文24组合到12展示类：忽略左右，按腕/口袋/头的数量分组。保留主汇总24mask等权，并输出12组等权、序列等权和按受试者的辅助汇总，不能凭哪个更接近论文而更换主规则。作者的精确聚合、rolling overlap/startup、shape betas仍待确认；已知AMASS历史25mask/训练语料与epoch差异保留。无IK和有IK均使用相同规范指标，MPJVE始终为网格顶点位置误差。
+Original orientations use entrywise matrix interpolation and may leave SO(3). Project only IK targets to nearest proper rotation; network inputs/processed files unchanged. First-eight training-pool checks diagnose fixed mapping/conventions without fitting calibration; results in train_conventions.json.
 
+Map24 combinations to12 display classes by wrist/pocket/head counts, ignoring left/right. Keep equal24-mask primary mean; also report equal12 groups, equal recordings, subject reductions. Do not switch primary to whichever is closest to paper. Exact author aggregation, rolling overlap/startup, shape betas unresolved; historical25-mask/corpus/epoch differences retained. Raw/IK share canonical metrics; MPJVE always means mesh-vertex position error.

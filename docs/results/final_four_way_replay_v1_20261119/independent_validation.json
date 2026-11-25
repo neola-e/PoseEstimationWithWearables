@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "artifact_files_verified": 64,
+  "cases": [
+    {
+      "case": "walking",
+      "mask": "rw_lp",
+      "source_frames": [
+        478,
+        728
+      ],
+      "poses_bitwise_equal_to_original_caches": true,
+      "timeline_pairing": "exact",
+      "gt_matches_processed_recording": true,
+      "jerk_stencils": 247
+    },
+    {
+      "case": "upper_body",
+      "mask": "rw_lp",
+      "source_frames": [
+        864,
+        1114
+      ],
+      "poses_bitwise_equal_to_original_caches": true,
+      "timeline_pairing": "exact",
+      "gt_matches_processed_recording": true,
+      "jerk_stencils": 247
+    },
+    {
+      "case": "high_jitter",
+      "mask": "rw_lp",
+      "source_frames": [
+        1246,
+        1496
+      ],
+      "poses_bitwise_equal_to_original_caches": true,
+      "timeline_pairing": "exact",
+      "gt_matches_processed_recording": true,
+      "jerk_stencils": 247
+    }
+  ],
+  "gifs": [
+    {
+      "file": "walking.gif",
+      "frames": 250,
+      "duration_ms_per_frame": 40,
+      "total_duration_s": 10.0,
+      "all_frames_decoded": true
+    },
+    {
+      "file": "upper_body.gif",
+      "frames": 250,
+      "duration_ms_per_frame": 40,
+      "total_duration_s": 10.0,
+      "all_frames_decoded": true
+    },
+    {
+      "file": "high_jitter.gif",
+      "frames": 250,
+      "duration_ms_per_frame": 40,
+      "total_duration_s": 10.0,
+      "all_frames_decoded": true
+    },
+    {
+      "file": "high_jitter_slow_025x.gif",
+      "frames": 250,
+      "duration_ms_per_frame": 160,
+      "total_duration_s": 40.0,
+      "all_frames_decoded": true
+    }
+  ],
+  "unique_source_frames": 750,
+  "all_panel_joint_frames": 72000,
+  "independent_fk_max_difference_m": 0.0,
+  "independent_clip_summary_max_difference": 1.7763568394002505e-15,
+  "display_transform_is_proper_rotation": true,
+  "protected_files_unchanged": true,
+  "network_forward_calls": 0,
+  "optimizer_steps": 0,
+  "scope": "Artifact identity, numerical and encoded timing checks; visual interpretation recorded separately"
+}

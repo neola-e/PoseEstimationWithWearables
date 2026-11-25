@@ -1,26 +1,28 @@
-# J01：逐帧 IK 的 jitter 来源与高频诊断
+# J01: framewise-IK jitter sources and high-frequency diagnosis
 
-日期：2026-11-16，America/Chicago。范围为原 I01 全部19条录制×24个传感器组合×24关节。保留原网络和逐帧IK缓存，不改权重、输入、指标或baseline。总体jitter增量为0.17309549（100 m/s³），即16.51%。逐关节/录制/组合的有符号贡献精确加总回这个增量。
+English presentation updated 2026-11-19; original experiment dates and bytes are preserved in [the language/provenance guide](RECORD_LANGUAGE.md).
 
-**主要发现：额外抖动主要出现在远端关节，通过 pelvis/髋部修正沿运动链传播。** 17个含口袋输入的组合贡献95.95%的净增量；双脚和双踝四个接收关节贡献37.68%。受控地恢复原pelvis局部旋转后，总体jitter从1.22145降至1.09072，消除约75.53%的额外增量。该反事实只隔离姿态分量，不是重新优化后的可用IK方案；各分量效果不可相加。
+Date: 2026-11-16, America/Chicago. All 19 recordings×24 masks×24 joints from I01. Preserve raw/IK caches, weights, inputs, metrics/baseline. Overall jitter increase0.17309549(100m/s³), 16.51%. Signed joint/recording/mask contributions sum exactly to that increase.
 
-## 哪些关节和组合
+**Extra jitter is concentrated at distal joints, propagating from pelvis/hip corrections along the kinematic chain.** Seventeen pocket-containing masks contribute95.95% of net increase; feet/ankles37.68%. Restoring only original pelvis local rotation reduces jitter1.22145→1.09072, removing75.53% of excess in that intervention. This isolates a pose component, not a newly optimized usable IK scheme; component effects are not additive.
 
-| 接收关节 | 本关节平均 jitter 增量 | 总体增量占比 |
-|---|---:|---:|
-| R Foot (11) | 0.41588 | 10.01% |
-| L Foot (10) | 0.39703 | 9.56% |
-| R Ankle (8) | 0.38202 | 9.20% |
-| L Ankle (7) | 0.37061 | 8.92% |
-| Head (15) | 0.21314 | 5.13% |
-| Neck (12) | 0.18809 | 4.53% |
-| L Knee (4) | 0.18054 | 4.35% |
-| R Knee (5) | 0.17697 | 4.26% |
+## Receiving joints and masks
 
-脚/踝的局部旋转没有被IK修改；变化来自其祖先节点。pelvis位置固定在原点，所以pelvis本身的“位置jitter”可以为零，但pelvis旋转仍使脚和头的世界位置变化。不能仅按哪个关节的局部参数改变来判断位置抖动来源。
+| Receiving joint | Mean joint jitter increase | Share of total increase |
+|---|---: |---: |
+| R Foot(11) | 0.41588 | 10.01% |
+| L Foot(10) | 0.39703 | 9.56% |
+| R Ankle(8) | 0.38202 | 9.20% |
+| L Ankle(7) | 0.37061 | 8.92% |
+| Head(15) | 0.21314 | 5.13% |
+| Neck(12) | 0.18809 | 4.53% |
+| L Knee(4) | 0.18054 | 4.35% |
+| R Knee(5) | 0.17697 | 4.26% |
 
-| 组合 | 平均 jitter 增量 |
-|---|---:|
+Foot/ankle local rotations are unchanged; ancestors drive their world-position changes. Pelvis stays at the origin, so its own position jitter can be zero while its rotation moves feet/head. Changed local parameters alone do not identify receiving-position jitter sources.
+
+| Mask | Mean jitter increase |
+|---|---: |
 | rw_rp | 0.29447 |
 | lw_rp | 0.28841 |
 | rw_lp | 0.28530 |
@@ -28,70 +30,70 @@
 | lw_rw_lp | 0.27158 |
 | lw_lp | 0.27030 |
 
-所有表格jitter单位均为100 m/s³。全量明细：[逐关节](results/ik_jitter_diagnostics_v1_20261116/by_joint.csv)、[逐组合](results/ik_jitter_diagnostics_v1_20261116/by_mask.csv)、[逐录制](results/ik_jitter_diagnostics_v1_20261116/by_sequence.csv)、[逐mask×录制](results/ik_jitter_diagnostics_v1_20261116/by_pair.csv)、[关节×动作类](results/ik_jitter_diagnostics_v1_20261116/by_joint_category.csv)。大体量的10,944个mask×录制×关节单元及逐帧轨迹在原运行目录保留。
+All jitter tables use100m/s³. Full [joints](results/ik_jitter_diagnostics_v1_20261116/by_joint.csv), [masks](results/ik_jitter_diagnostics_v1_20261116/by_mask.csv), [recordings](results/ik_jitter_diagnostics_v1_20261116/by_sequence.csv), [mask×recording](results/ik_jitter_diagnostics_v1_20261116/by_pair.csv), [joint×category](results/ik_jitter_diagnostics_v1_20261116/by_joint_category.csv). Full 10,944 mask-recording-joint cells/time series remain local.
 
-![贡献排序](results/ik_jitter_diagnostics_v1_20261116/jitter_attribution.png)
+![Contribution rankings](results/ik_jitter_diagnostics_v1_20261116/jitter_attribution.png)
 
-## 哪些动作类别和录制
+## Motion categories and recordings
 
-本地数据包 `overview_of_published_data.txt` 明确说明文件名前缀依 [DIP论文 Appendix F / Table6](https://arxiv.org/pdf/1810.04703) 的类别编号：01上肢、02下肢、03行走、04自由运动、05交互。字母后缀只是同类别的子录制。这里有可靠的录制类别，不伪造逐帧动作标签，也不把自由运动的某个峰值直接认定为开合跳或拳击。
+Dataset `overview_of_published_data.txt` explicitly maps filename prefixes to [DIP AppendixF/Table6](https://arxiv.org/pdf/1810.04703): 01 upper body, 02 lower body, 03 locomotion, 04 freestyle, 05 interaction. Letter suffixes denote same-class subrecordings. These are recording labels, not invented framewise actions; freestyle peaks are not automatically jumping jacks/punches.
 
-| 类别 | 每帧平均 jitter 增量 | 总体增量占比 |
-|---|---:|---:|
+| Category | Mean per-frame increase | Share of total increase |
+|---|---: |---: |
 | upper_body | 0.19756 | 40.88% |
 | locomotion | 0.20649 | 26.15% |
 | lower_body | 0.17651 | 15.72% |
 | freestyle | 0.16066 | 8.92% |
 | interaction | 0.08362 | 8.32% |
 
-按对总体净增量的贡献排序，上肢最多；按每帧平均增幅，行走略高于上肢。这两个排名不同，因为录制时长和样本权重不同。
+Upper body contributes most total excess; locomotion has slightly greater per-time increase. Different recording durations/weights explain different rankings.
 
-| 录制 | 动作类别 | 每帧平均增加 | 对总体增量的贡献 |
-|---|---|---:|---:|
+| Recording | Category | Mean per-frame increase | Share of total increase |
+|---|---|---: |---: |
 | s_10/01_a.pkl | upper_body | 0.18922 | 10.60% |
 | s_09/01_a.pkl | upper_body | 0.18112 | 8.60% |
 | s_10/01_b.pkl | upper_body | 0.22689 | 7.53% |
 | s_10/03_b.pkl | locomotion | 0.19609 | 7.33% |
 | s_09/03_a.pkl | locomotion | 0.23602 | 6.83% |
 
-## 相邻帧旋转与频谱
+## Adjacent rotations and spectra
 
-直接计算原始/IK局部与全局旋转的相邻帧相对旋转，及修正 Q[t]=Rraw[t]^T Rik[t] 的旋转向量。频谱分析使用相邻帧相对旋转向量×25形成角速度，逐录制去线性趋势和Hann加窗；报告5–12.5Hz的绝对积分功率。没有对绝对轴角做FFT，避免π分支跳变制造伪高频。高频描述波动，不自动等同于噪声。
+Compute raw/IK local/global adjacent relative rotations and correction vectors Q[t]=Rraw[t]^T Rik[t]. Spectra use adjacent relative rotvecs×25 as angular velocity, per-recording linear detrending/Hann windows, absolute integrated5–12.5 Hz power. Do not FFT absolute axis angles, avoiding artificial high frequencies from pi-branch jumps. High-frequency variation is not automatically noise.
 
-| 优化源关节 | 原相邻帧平均转角 ° | IK后 ° | 5–12.5 Hz 角速度功率变化 |
-|---|---:|---:|---:|
-| Pelvis (0) | 1.10943 | 1.13892 | +19.56% |
-| L Hip (1) | 1.28427 | 1.28695 | +7.51% |
-| R Hip (2) | 1.23356 | 1.24018 | +11.68% |
-| L Shoulder (16) | 1.58417 | 1.60362 | +7.51% |
-| R Shoulder (17) | 1.74192 | 1.75439 | +3.99% |
-| L Elbow (18) | 2.13922 | 2.15046 | +3.68% |
-| R Elbow (19) | 2.25677 | 2.26719 | +2.27% |
-| Neck (12) | 0.91236 | 0.91476 | +5.87% |
-| Head (15) | 0.69908 | 0.70654 | +11.96% |
+| Optimized source joint | Raw mean adjacent angle ° | IK ° | 5–12.5 Hz angular-velocity power change |
+|---|---: |---: |---: |
+| Pelvis(0) | 1.10943 | 1.13892 | +19.56% |
+| L Hip(1) | 1.28427 | 1.28695 | +7.51% |
+| R Hip(2) | 1.23356 | 1.24018 | +11.68% |
+| L Shoulder(16) | 1.58417 | 1.60362 | +7.51% |
+| R Shoulder(17) | 1.74192 | 1.75439 | +3.99% |
+| L Elbow(18) | 2.13922 | 2.15046 | +3.68% |
+| R Elbow(19) | 2.25677 | 2.26719 | +2.27% |
+| Neck(12) | 0.91236 | 0.91476 | +5.87% |
+| Head(15) | 0.69908 | 0.70654 | +11.96% |
 
-pelvis的平均相邻帧转角只上升约2.66%，但高频角速度功率增加约19.56%；平均幅度不足以揭示高频影响。修正分量发生大于0.015 rad跳变的pelvis相邻帧对有34,296个。示例图中修正多次在约±0.01rad（±0.57°）附近切换，符合零起点、短预算Adam近似固定步幅后逐帧梯度方向改变的现象；图像与统计支持这种机制，但并未单独证明所有变化都由某一个优化器特性引起。
+Pelvis mean adjacent angle rises only 2.66%, while high-frequency power rises19.56%; mean amplitude misses temporal effects. Pelvis correction components jump>0.015 rad at34,296 adjacent pairs. Example corrections repeatedly switch around±0.01 rad(±0.57°), consistent with zero-initialized short-budget Adam's approximately fixed update size and changing per-frame gradient directions. Figures/statistics support this mechanism, not sole causality of every fluctuation.
 
-下图案例按“对总体增量贡献最大”预先指定的排序规则选取：s10/01_a.pkl、rw_lp，峰值jerk的四帧支撑结束于1371帧（54.84s）。不把这个案例的峰值当作全部录制的平均行为。
+Example selected by predeclared largest-total-contribution ranking: s10/01_a.pkl, rw_lp; peak four-frame jerk support ends at1371(54.84 s). Its peak is not overall average behavior.
 
-![时序与频谱](results/ik_jitter_diagnostics_v1_20261116/rotation_time_frequency_example.png)
+![Time series and spectra](results/ik_jitter_diagnostics_v1_20261116/rotation_time_frequency_example.png)
 
-## 姿态分量反事实
+## Pose-component counterfactuals
 
-| 修改 | Jitter，100 m/s³ |
-|---|---:|
-| 原网络 | 1.04836 |
-| 完整逐帧IK | 1.22145 |
-| IK中仅恢复原pelvis旋转 | 1.09072 |
-| IK中恢复原左右髋旋转 | 1.20568 |
-| IK中恢复原肩肘旋转 | 1.20584 |
-| IK中恢复原颈/头旋转 | 1.22144 |
-| 原网络只保留IK的pelvis修正 | 1.19007 |
+| Intervention | Jitter, 100m/s³ |
+|---|---: |
+| Raw network | 1.04836 |
+| Full framewise IK | 1.22145 |
+| IK, restore original pelvis only | 1.09072 |
+| IK, restore original hips | 1.20568 |
+| IK, restore original shoulders/elbows | 1.20584 |
+| IK, restore original neck/head | 1.22144 |
+| Raw network, apply IK pelvis correction only | 1.19007 |
 
-pelvis是主要传播源，髋和肩肘也有影响；头部是明显的接收端，但直接颈/头修正对位置jitter的反事实影响很小。范数与运动链存在交互，75.53%不是可与其他百分比相加的独立因果份额。[全部反事实结果](results/ik_jitter_diagnostics_v1_20261116/counterfactual_results.json)。
+Pelvis is the main propagation source; hips/arms also matter. Head is a receiver, but direct neck/head correction has small counterfactual position-jitter effect. Norm/chain interactions mean75.53% is not an independently additive causal share.[All counterfactuals](results/ik_jitter_diagnostics_v1_20261116/counterfactual_results.json).
 
-## 验证与后续实验
+## Validation/follow-up
 
-已知多项式三阶差分、1Hz/7Hz频谱与有符号贡献解析测试通过。每个mask×录制的关节-only FK jitter都与原规范指标匹配；独立核对10,944个关节单元和所有分组贡献，误差与验证记录见[独立验证](results/ik_jitter_diagnostics_v1_20261116/independent_validation.json)。导数只在同一完整录制内部计算。
+Analytic polynomial third-difference, 1 Hz/7 Hz spectrum and signed-contribution tests pass. Joint-only FK jitter matches original canonical metrics for every mask/recording; independently audit10,944 cells/all grouped contributions: [validation](results/ik_jitter_diagnostics_v1_20261116/independent_validation.json). Differentiate within complete recordings only.
 
-该诊断是原测试集上的描述性误差分析，不重新挑选原IK设置。新Temporal IK独立记录于 [I02实验](TEMPORAL_IK_EXPERIMENT.md)，保持I01目录、权重、协议和结果不变。完整诊断目录：`outputs/local_dip/ik_jitter_diagnostics_v1_20261116/`；反事实目录：`outputs/local_dip/ik_jitter_counterfactuals_v1_20261116/`。
+Descriptive diagnosis on the existing test set, not IK retuning. [I02](TEMPORAL_IK_EXPERIMENT.md) is separate and retains I01 weights/protocol/results. Full diagnosis:`outputs/local_dip/ik_jitter_diagnostics_v1_20261116/`; counterfactuals:`outputs/local_dip/ik_jitter_counterfactuals_v1_20261116/`.

@@ -14,7 +14,7 @@
     },
     {
       "metric": "mpjpe_cm",
-      "label": "MPJPE\uff08\u5173\u8282\uff09",
+      "label": "MPJPE (joints)",
       "unit": "cm",
       "raw": 9.540189965441042,
       "ik": 9.426361324729543,
@@ -26,7 +26,7 @@
     },
     {
       "metric": "mpjve_cm",
-      "label": "MPJVE\uff08\u7f51\u683c\u9876\u70b9\uff09",
+      "label": "MPJVE (mesh vertices)",
       "unit": "cm",
       "raw": 11.968888162663644,
       "ik": 11.822584249532738,

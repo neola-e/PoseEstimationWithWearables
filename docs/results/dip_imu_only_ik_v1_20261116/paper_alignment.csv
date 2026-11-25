@@ -1,22 +1,22 @@
 item,paper,current,status,residual
-设备配置,24 个位置组合；按12类展示,24mask 全覆盖；按腕/口袋/头数量折叠成12类,已核对,3个单位置类、5个双位置类、4个三位置类；整体加权另列
-DIP 划分,前8训练，后2测试,最终s01–s08两轮162步；s09/s10只用于固定报告,已核对,预算由开发集选定，不由本轮测试选择
-采样与缩放,25Hz；acc/30；全局方向,保留原25Hz处理与60维通道，缺失置零,已核对,矩阵为逐元素插值，IK单独投影
-腕部方向映射,wrist/hand设备，优化肩肘,依公开合成ji_mask，实际约束前臂18/19，优化16/18或17/19,源码支持,"保留raw DIP [7,8,9,10,0]；无GT拟合的训练域检查约1.4–3.4°，头约0.37°"
-头/口袋优化索引,描述类似的头、髋 refinement，未列全部索引,头12/15；左口袋0/1；右口袋0/2,重建约定,尚未找回作者精确索引列表
-优化目标与次数,IMU全局方向、MSE、Adam、每帧10次,只用可用IMU方向矩阵MSE，10次，联合处理约束,已实现并验证,不输入GT、位置、预测未来帧或隐藏传感器
-IK学习率,IMUPoser未给出；引用AvatarPoser,固定1e-3，来自被引用论文,重建约定,AvatarPoser公开函数默认1e-1/5次且优化位置，不是IMUPoser实现
-旋转参数化,未说明,局部右乘旋转向量增量，FP64计算、FP32输出,重建约定,零增量初始化，SO(3)保证；未优化local参数原样保留
-迭代输出和状态,未说明细节,每帧独立Adam；取第10次更新后结果，无回退或best选择,重建约定,batch1/256实数据重算检查；无新增时间滤波
-在线窗口,125历史；另写1-sample overlap,保持F03 stride1、末帧输出、短前缀起步,作者细节未决,未找回公开评估循环；不把字面overlap自动当作stride1证据
-预处理未来信息,五帧平均；未细化方向,保留既有居中acc均值；填补与插值沿用原流程,已披露的差异,acc均值有2帧/80ms未来依赖；IK自身不新增未来信息
-MPJRE,全局关节旋转误差°,24关节FK global geodesic；local角误差另报,已核对,无root旋转对齐
-MPJPE,所有关节误差cm，pelvis对齐,24关节、pelvis平移对齐、root保留,已核对,非Procrustes对齐
-MPJVE,所有SMPL网格顶点误差cm，pelvis对齐,6890顶点；与joint velocity分开,已核对,被引用AvatarPoser的MPJVE代表速度，未移植其指标定义
-Jitter,预测平均jerk；表格100m/s³,25³三阶差分，序列内T−3加权，除100,已核对,不减GT jerk，不跨录制边界
-身体形状,主文未指定betas,固定mean male beta0，与F03一致,作者细节未决,公开processed DIP存全1；未以它替换已验证主口径
-mesh与平移,SMPL；不预测全局平移,继承公开FK默认pose-blendshape关闭；零轨迹平移,源码约定,作者实际测量开关未完整公开
-平均方式,跨设备组合给出总体均值；展示12组,主结果mask内帧/T−3加权再24mask等权,作者细节未决,同时给序列等权、12类等权、受试者等权敏感性
-AMASS训练配方,描述63小时、24mask、80epoch,历史Epoch59来自25mask初始化与已审计的语料/早停,已知训练差异,本轮不重训AMASS；严格配方对齐仍需单独规划
-DIP选轮与padding,主文未给完整内部选择/尾部规则,冻结开发集选K2；最终从Epoch59重启；训练保留padding损失,显式约定,评估排除padding；未用本轮分数改训练
-消费设备/实时系统,另有消费设备数据与实机演示,本轮只完成DIP离线测量与IK,第二阶段,CPU批量吞吐不等于实机延迟或消费者设备精度
+Device configurations,24 location combinations;12 display groups,All24 masks;collapse by wrist/pocket/head counts into12 groups,Verified,"Three single-location,five double,four triple classes;overall weighting separate"
+DIP split,"First8 train,last2 test","Final s01–s08,two epochs162 updates;s09/s10 locked reporting only",Verified,"Budget selected on development,not these test scores"
+Sampling/scaling,25Hz;acc/30;global orientations,"Original25Hz preprocessing,60D channels,missing-zero",Verified,Entrywise matrix interpolation;separate IK projection
+Wrist orientation mapping,Wrist/hand devices;optimize shoulders/elbows,"Public synthesis ji_mask constrains forearms18/19,optimizes16/18 or17/19",Source supported,"Retain raw DIP [7,8,9,10,0];training-domain check without GT fitting about1.4–3.4 degrees,head0.37"
+Head/pocket DOFs,Analogous head/hip refinement;full indices not listed,Head12/15;left pocket0/1;right pocket0/2,Reconstruction convention,Exact author index lists unavailable
+Objective/budget,"Global IMU orientation,MSE,Adam,10 steps/frame","Available orientation-matrix MSE only,10 steps,joint constraints",Implemented and verified,"No GT,positions,future predictions or hidden sensors"
+IK learning rate,Not specified in IMUPoser;cites AvatarPoser,Fixed1e-3 from cited paper,Reconstruction convention,"AvatarPoser public default1e-1/five steps,position objective;not IMUPoser implementation"
+Rotation parameterization,Unspecified,"Local right-multiplicative rotvec increments,FP64 optimize,FP32 output",Reconstruction convention,"Zero increments,SO(3);unoptimized local entries retained"
+Output/state,Details unspecified,"Independent Adam/frame;post-update10 output,no fallback/best iterate",Reconstruction convention,Actual-data batch1/256 recheck;no added temporal filter
+Online window,125 history;also1-sample overlap,"F03 stride1,last output,short-prefix startup",Author details unresolved,Public evaluation loop unavailable;literal overlap not proof of stride1
+Preprocessing future access,"Five-frame mean,direction unspecified","Retain centered acc mean,inherited filling/interpolation",Disclosed difference,Two-frame/80ms acceleration lookahead;IK adds no future access
+MPJRE,"Global joint-rotation error,degrees",24-joint FK global geodesic;local error separate,Verified,No root-rotation alignment
+MPJPE,"All-joint cm error,pelvis aligned","24 joints,pelvis translation alignment,root rotation retained",Verified,Not Procrustes alignment
+MPJVE,"All SMPL vertex cm error,pelvis aligned","6,890 vertices;separate from joint velocity",Verified,Cited AvatarPoser MPJVE means velocity;that definition not imported
+Jitter,Mean predicted jerk;table100m/s³,"25³ third differences,within-recording T−3 weights,divide100",Verified,No GT-jerk subtraction or cross-recording differences
+Body shape,Main text does not specify betas,"Fixed mean male beta0,same as F03",Author details unresolved,Public processed DIP stores all1;does not replace validated primary setting
+Mesh/translation,SMPL;no global translation prediction,"Inherited FK default pose-blendshape off,zero trajectory",Source convention,Author measurement switch not fully published
+Aggregation,Overall mean across configurations;12 display groups,"Primary frame/T−3 within masks,then equal24 masks",Author details unresolved,"Also report sequence-equal,12-group-equal,subject-equal sensitivity"
+AMASS recipe,"Described63h,24 masks,80 epochs","Historical Epoch59 from25 masks,audited corpus/early stop",Known training difference,No AMASS retraining here;strict recipe separately planned
+DIP epoch selection/padding,Internal selection/tail rules incomplete,Frozen development K2;final restarts Epoch59;retain training padding loss,Explicit convention,Evaluation excludes padding;test scores do not change training
+Consumer/live system,Separate consumer dataset/hardware demonstration,This task only DIP offline metrics/IK,Phase2,CPU batch throughput is not device latency or consumer accuracy

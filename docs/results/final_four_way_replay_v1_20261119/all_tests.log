@@ -1,0 +1,146 @@
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+test_changed_recording_length_or_jerk_stencil_rejected (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_equal_mask_mean_and_frame_weighted_spatial_mean (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_jitter_uses_t_minus_three_and_100_unit_conversion (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_mismatched_target_trajectory_is_rejected (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_missing_duplicate_extra_and_global_results_rejected (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_result_order_does_not_change_spatial_aggregate (test_compare_dip_finetuning.ComparisonAggregationTests) ... ok
+test_every_mask_and_tail_matches_inherited_public_loader (test_dip_finetuning.DipFineTuningTests) ... ok
+test_exact_sparse_mask_inventory_and_reject_global (test_dip_finetuning.DipFineTuningTests) ... ok
+test_inherited_padding_is_explicit_in_pose_and_joint_loss (test_dip_finetuning.DipFineTuningTests) ... ok
+test_mask_fetch_does_not_mutate_shared_features (test_dip_finetuning.DipFineTuningTests) ... ok
+test_python_numpy_and_torch_rng_replay (test_dip_finetuning.DipFineTuningTests) ... /home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+ok
+test_subject_split_precedes_mask_expansion_and_rejects_leakage (test_dip_finetuning.DipFineTuningTests) ... ok
+test_dual_wrist_mask_retains_both_feature_blocks_and_preserves_input (test_dual_wrist_dev.DualWristTests) ... ok
+test_equal_subjects_differs_from_frame_and_sequence_weighting (test_dual_wrist_dev.DualWristTests) ... ok
+test_pairing_rejects_target_subject_recording_or_window_change (test_dual_wrist_dev.DualWristTests) ... ok
+test_worse_wrist_is_computed_after_joint_aggregation (test_dual_wrist_dev.DualWristTests) ... ok
+test_all_panels_use_exact_frame_and_processed_clock (test_final_comparison.FinalReplayTests) ... ok
+test_display_preserves_handedness_distance_and_y_up (test_final_comparison.FinalReplayTests) ... ok
+test_fixed_selection_uses_identity_center_and_archived_peak (test_final_comparison.FinalReplayTests) ... ok
+test_known_trajectory_jerk_and_pelvis_alignment (test_final_comparison.FinalReplayTests) ... ok
+test_24_masks_collapse_to_12_groups_with_known_multiplicities (test_ik_aggregation.IkAggregationTests) ... ok
+test_jitter_denominator_and_sequence_equal_are_distinct (test_ik_aggregation.IkAggregationTests) ... ok
+test_missing_duplicate_wrong_count_and_reference_change_fail (test_ik_aggregation.IkAggregationTests) ... ok
+test_primary_weights_masks_and_auxiliary_weights_groups (test_ik_aggregation.IkAggregationTests) ... ok
+test_exp_has_known_angles_and_finite_correct_zero_derivative (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_final_update_returned_and_zero_iterations_bitwise_identity (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_independent_frame_batching_and_no_future_or_optimizer_state (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_invalid_settings_masks_shapes_and_degenerate_pose_rejected (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_joint_optimization_preserves_so3_and_does_not_update_input_gradients (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_matching_motion_is_fixed_and_zero_sensor_ablation_ignores_nan (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_missing_measurements_cannot_affect_available_constraint (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_projection_has_known_polar_factor_and_rejects_invalid_active_data (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_segment_mapping_and_global_rotation_chain (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_single_wrist_constraint_decreases_and_only_selected_local_joints_change (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_known_frequency_band_and_energy (test_jitter_diagnostics.JitterDiagnosticTests) ... ok
+test_signed_contributions_add_with_shared_denominator (test_jitter_diagnostics.JitterDiagnosticTests) ... ok
+test_third_difference_polynomials_and_no_cross_recording (test_jitter_diagnostics.JitterDiagnosticTests) ... ok
+test_cache_reassembles_windows_within_recordings_only (test_paper_metrics.AnalyticMetricTests) ... ok
+test_cache_rejects_gaps_overlaps_bad_offsets_and_partial_metadata (test_paper_metrics.AnalyticMetricTests) ... ok
+test_cm_units_root_inclusion_and_vertex_measure_are_distinct (test_paper_metrics.AnalyticMetricTests) ... ok
+test_cubic_trajectory_has_known_jerk_and_cubic_fps_scaling (test_paper_metrics.AnalyticMetricTests) ... ok
+test_identical_nontrivial_rotations_are_exactly_zero (test_paper_metrics.AnalyticMetricTests) ... ok
+test_jerk_static_linear_and_quadratic_are_zero (test_paper_metrics.AnalyticMetricTests) ... ok
+test_known_global_rotation_angles_at_identity_small_right_angle_and_pi (test_paper_metrics.AnalyticMetricTests) ... ok
+test_pelvis_alignment_removes_translation_but_not_rotation (test_paper_metrics.AnalyticMetricTests) ... ok
+test_rotation_rejects_scale_reflection_and_nonfinite (test_paper_metrics.AnalyticMetricTests) ... ok
+test_sequence_boundary_must_not_create_artificial_jerk (test_paper_metrics.AnalyticMetricTests) ... ok
+test_short_trajectories_have_no_jerk_samples (test_paper_metrics.AnalyticMetricTests) ... ok
+test_single_sequence_lengths_exclude_padding_and_reject_ambiguous_lengths (test_paper_metrics.AnalyticMetricTests) ... ok
+test_temporal_and_spatial_aggregates_use_their_own_counts (test_paper_metrics.AnalyticMetricTests) ... ok
+/home/alex/research/PoseEstimationWithWearables/src/imuposer/smpl/parametricModel.py:29: DeprecationWarning: Please use `csc_matrix` from the `scipy.sparse` namespace, the `scipy.sparse.csc` namespace is deprecated.
+  data = pickle.load(f, encoding='latin1')
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/chumpy/ch.py:20: DeprecationWarning: Please use `LinearOperator` from the `scipy.sparse.linalg` namespace, the `scipy.sparse.linalg.interface` namespace is deprecated.
+  from scipy.sparse.linalg.interface import LinearOperator
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/chumpy/ch.py:1203: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
+  want_out = 'out' in inspect.getargspec(func).args
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/chumpy/__init__.py:11: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import bool, int, float, complex, object, unicode, str, nan, inf
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/chumpy/__init__.py:11: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import bool, int, float, complex, object, unicode, str, nan, inf
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/chumpy/__init__.py:11: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import bool, int, float, complex, object, unicode, str, nan, inf
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/chumpy/__init__.py:11: DeprecationWarning: `np.complex` is a deprecated alias for the builtin `complex`. To silence this warning, use `complex` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.complex128` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import bool, int, float, complex, object, unicode, str, nan, inf
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/chumpy/__init__.py:11: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe. 
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import bool, int, float, complex, object, unicode, str, nan, inf
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/chumpy/__init__.py:11: DeprecationWarning: `np.unicode` is a deprecated alias for `np.compat.unicode`. To silence this warning, use `np.compat.unicode` by itself. In the likely event your code does not need to work on Python 2 you can use the builtin `str` for which `np.compat.unicode` is itself an alias. Doing this will not modify any behaviour and is safe. If you specifically wanted the numpy scalar type, use `np.str_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import bool, int, float, complex, object, unicode, str, nan, inf
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/chumpy/__init__.py:11: DeprecationWarning: `np.str` is a deprecated alias for the builtin `str`. To silence this warning, use `str` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.str_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  from numpy import bool, int, float, complex, object, unicode, str, nan, inf
+test_chunk_size_repeatability_shared_shape_and_pose_blendshape (test_paper_metrics.SmplMetricTests) ... ok
+test_identical_moving_pose_has_zero_errors_but_nonzero_jitter (test_paper_metrics.SmplMetricTests) ... ok
+test_identical_static_pose_is_zero_for_every_metric (test_paper_metrics.SmplMetricTests) ... ok
+test_leaf_rotation_moves_mesh_without_moving_joint_positions (test_paper_metrics.SmplMetricTests) ... ok
+test_root_rotation_distinguishes_global_and_local_and_matches_analytic_geometry (test_paper_metrics.SmplMetricTests) ... ok
+test_short_pose_sequence_returns_null_jitter_and_rejects_invalid_pose (test_paper_metrics.SmplMetricTests) ... ok
+test_translation_alignment_and_jitter_convention (test_paper_metrics.SmplMetricTests) ... ok
+test_checkpoint_metadata_and_architecture (test_post_training.PostTrainingTests) ... ok
+test_dip_preprocessing_and_missing_sensor_mask (test_post_training.PostTrainingTests) ... ok
+test_file_schemas_npz_and_pt (test_post_training.PostTrainingTests) ... ok
+test_fk_rest_pose_and_root_rotation (test_post_training.PostTrainingTests) ... ok
+test_inference_shapes_finite_and_repeatable (test_post_training.PostTrainingTests) ... ok
+test_invalid_lengths (test_post_training.PostTrainingTests) ... ok
+test_invalid_shapes_and_nonfinite (test_post_training.PostTrainingTests) ... ok
+test_padding_does_not_change_valid_predictions (test_post_training.PostTrainingTests) ... ok
+test_short_dip_evaluation (test_post_training.PostTrainingTests) ... ok
+test_streamed_gif (test_post_training.PostTrainingTests) ... ok
+test_degenerate_rotations_rejected (test_post_training.RotationAndMetricTests) ... ok
+test_mse_excludes_padding (test_post_training.RotationAndMetricTests) ... ok
+test_rotation_roundtrip_and_column_convention (test_post_training.RotationAndMetricTests) ... ok
+test_bootstrap_resamples_whole_paired_sequences (test_sensor_metrics.PairedSensorTests) ... ok
+test_coverage_partial_tail_and_failures (test_sensor_metrics.PairedSensorTests) ... ok
+test_frame_weighting_and_partition (test_sensor_metrics.PairedSensorTests) ... ok
+test_known_local_global_rotation_and_position (test_sensor_metrics.PairedSensorTests) ... ok
+test_mask_feature_layout_preserves_source (test_sensor_metrics.PairedSensorTests) ... ok
+test_pairs_reorder_but_require_identical_keys_and_lengths (test_sensor_metrics.PairedSensorTests) ... ok
+test_real_dataset_windowing_and_masking_on_synthetic_container (test_sensor_metrics.PairedSensorTests) ... ok
+test_fixed_spatial_guards_then_jitter_determine_selection (test_temporal_experiment.TemporalExperimentTests) ... ok
+test_interval_matches_canonical_rolling_last (test_temporal_experiment.TemporalExperimentTests) ... ok
+test_future_input_perturbation_cannot_change_earlier_outputs (test_temporal_ik.TemporalIKTests) ... ok
+test_identity_and_unavailable_channels_are_unchanged (test_temporal_ik.TemporalIKTests) ... ok
+test_jerk_penalty_known_cubic_and_invalid_settings (test_temporal_ik.TemporalIKTests) ... ok
+test_joint_kinematics_known_two_segment_chain (test_temporal_ik.TemporalIKTests) ... ok
+test_no_fake_startup_or_record_boundary_penalty (test_temporal_ik.TemporalIKTests) ... ok
+test_zero_weight_matches_frozen_framewise_algorithm (test_temporal_ik.TemporalIKTests) ... ok
+test_checkpoint_commit_preserves_bytes_and_recovers_missing_views (test_train_dip_finetuning.FullFineTuningLoopTests) ... ok
+test_committed_checkpoint_hash_tamper_is_rejected (test_train_dip_finetuning.FullFineTuningLoopTests) ... ok
+test_cuda_unavailable_refuses_training_before_output_creation (test_train_dip_finetuning.FullFineTuningLoopTests) ... ok
+test_exact_validation_tie_keeps_earlier_checkpoint (test_train_dip_finetuning.FullFineTuningLoopTests) ... ok
+test_final_budget_requires_completed_development_and_selects_completed_epochs (test_train_dip_finetuning.FullFineTuningLoopTests) ... ok
+test_nonfinite_training_loss_is_rejected_before_optimizer_update (test_train_dip_finetuning.FullFineTuningLoopTests) ... ok
+test_resume_rejects_smoke_run_without_touching_its_directory (test_train_dip_finetuning.FullFineTuningLoopTests) ... ok
+test_shuffled_dropout_adam_epoch_resume_matches_uninterrupted (test_train_dip_finetuning.FullFineTuningLoopTests) ... ok
+test_validation_disables_gradients_dropout_and_weight_updates (test_train_dip_finetuning.FullFineTuningLoopTests) ... ok
+test_validation_weights_unequal_padded_batch_sizes (test_train_dip_finetuning.FullFineTuningLoopTests) ... ok
+test_actual_checkpoint_live_batch_prefix_and_padding_invariance (test_window_inference.WindowInferenceTests) ... ok
+test_chunk_is_offline_and_short_tail_retained (test_window_inference.WindowInferenceTests) ... ok
+test_five_frame_average_edges_and_future_perturbation (test_window_inference.WindowInferenceTests) ... ok
+test_invalid_inputs_rejected (test_window_inference.WindowInferenceTests) ... ok
+test_live_push_equivalent_to_batched_windows_and_reset (test_window_inference.WindowInferenceTests) ... ok
+test_prefix_differs_from_repeat_startup_but_converges_at_125 (test_window_inference.WindowInferenceTests) ... ok
+test_recording_boundary_does_not_reuse_previous_motion (test_window_inference.WindowInferenceTests) ... ok
+test_rolling_matches_analytic_history_and_ignores_future (test_window_inference.WindowInferenceTests) ... ok
+test_rolling_trace_warmup_boundaries_and_last_frame (test_window_inference.WindowInferenceTests) ... ok
+test_dataset_excludes_unreserved_sequences_and_all_masks_preserve_targets (test_wrist_pocket_dev.PlacementStudyTests) ... ok
+test_factorial_additive_effects_and_interaction (test_wrist_pocket_dev.PlacementStudyTests) ... ok
+test_resampling_and_centered_smoothing_match_known_ramp (test_wrist_pocket_dev.PlacementStudyTests) ... ok
+test_reservation_uses_noncontiguous_original_ids_and_short_tails (test_wrist_pocket_dev.PlacementStudyTests) ... ok
+test_wrist_coverage_signs_are_opposite_for_left_and_right (test_wrist_pocket_dev.PlacementStudyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 109 tests in 6.369s
+
+OK
+checkpoint live/batch max absolute 6D difference: 2.41398811e-06

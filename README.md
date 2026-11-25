@@ -2,6 +2,8 @@
 
 Our team builds on [FIGLAB/IMUPoser](https://github.com/FIGLAB/IMUPoser). The original attribution, LICENSE, and research instructions are retained below. The following section documents our tested post-training additions.
 
+Project research records and generated reports use **English**. See [record language and historical provenance](docs/RECORD_LANGUAGE.md) and the [framewise versus Temporal IK explanation](docs/IK_REFINEMENT_EXPLAINED.md).
+
 ## Current reproduction work — November 16, 2026
 
 Start with the [team handoff](docs/TEAM_HANDOFF.md), [research log](docs/RESEARCH_LOG.md), and [paper alignment audit](docs/PAPER_EVALUATION_ALIGNMENT.md). We have completed the DIP fine-tuning comparison, IMU-only IK baseline, jitter diagnosis, and a separate Temporal IK experiment. Consumer-device deployment is planned; an iPhone client is not implemented yet.
@@ -18,6 +20,8 @@ The fixed evaluation covers both held-out DIP participants, all 19 recordings, a
 See the [fine-tuning comparison](docs/DIP_FINETUNING_COMPARISON.md), [IK baseline](docs/IMU_ONLY_IK.md), [jitter analysis](docs/IK_JITTER_DIAGNOSIS.md), and [Temporal IK report](docs/TEMPORAL_IK_EXPERIMENT.md) for provenance, per-mask results, figures, and independent validation. Versioned reports and compact result artifacts are included; datasets, new model assets, checkpoints, and full prediction caches must be obtained separately. Historical manifests retain the original local paths and hashes.
 
 The Epoch 55 quick start below is the earlier inference handoff. It is separate from the Epoch 59 initialization and final DIP weights in the current study. For the next deployment stage, see the [consumer-device roadmap](docs/CONSUMER_DEVICE_ROADMAP.md).
+
+The [final-model four-way replay](docs/FINAL_MODEL_REPLAY.md) now explains three fixed DIP clips using network / framewise IK / Temporal IK / GT animations, common source frames, joint-error colors, and jitter curves. Compact previews and validation are versioned; full GIFs and motion caches remain local.
 
 ## Pretrained Model — Quick Start
 
