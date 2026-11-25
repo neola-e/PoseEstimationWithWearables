@@ -1,0 +1,9 @@
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+test_fixed_spatial_guards_then_jitter_determine_selection (test_temporal_experiment.TemporalExperimentTests) ... ok
+test_interval_matches_canonical_rolling_last (test_temporal_experiment.TemporalExperimentTests) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.132s
+
+OK

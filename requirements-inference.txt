@@ -1,0 +1,8 @@
+# Python 3.10, CPU-only PyTorch; no training data or SMPL needed.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.7.0+cpu
+numpy==1.23.5
+pytorch-lightning==1.9.5
+torchmetrics==1.9.0
+# Lightning 1.x still imports pkg_resources.
+setuptools==80.9.0

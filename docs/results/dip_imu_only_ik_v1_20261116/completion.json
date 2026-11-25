@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "protocol_sha256": "f53825004ea8baa917af4ee625e76806d6e2556fbb282b0d2d624fb7e056af02",
+  "coverage": {
+    "masks": 24,
+    "sequences": 19,
+    "pairs": 456,
+    "frames_per_mask": 24078
+  },
+  "overall": {
+    "network_final": {
+      "mpjre_deg": 22.468695538949348,
+      "mpjpe_cm": 9.540189965441042,
+      "mpjve_cm": 11.968888162663644,
+      "jitter_100_m_s3": 1.0483555131716968
+    },
+    "network_final_ik": {
+      "mpjre_deg": 22.166202200337022,
+      "mpjpe_cm": 9.426361324729543,
+      "mpjve_cm": 11.822584249532738,
+      "jitter_100_m_s3": 1.221451001428478
+    }
+  },
+  "changes": {
+    "mpjre_deg": {
+      "after_minus_before": -0.30249333861232586,
+      "relative_decrease_percent": 1.3462879413179796
+    },
+    "mpjpe_cm": {
+      "after_minus_before": -0.11382864071149967,
+      "relative_decrease_percent": 1.193148575907182
+    },
+    "mpjve_cm": {
+      "after_minus_before": -0.14630391313090563,
+      "relative_decrease_percent": 1.2223684534649881
+    },
+    "jitter_100_m_s3": {
+      "after_minus_before": 0.17309548825678123,
+      "relative_decrease_percent": -16.511143985220986
+    }
+  },
+  "training_performed": false,
+  "network_inference_performed": false
+}

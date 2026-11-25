@@ -1,0 +1,24 @@
+{
+  "reviewer": "Codex visual inspection plus independent numerical validation",
+  "date": "2026-11-19 America/Chicago",
+  "frames_per_clip_reviewed": [
+    0,
+    62,
+    125,
+    187,
+    249
+  ],
+  "contact_sheets": [
+    "walking_contact_sheet.png",
+    "upper_body_contact_sheet.png",
+    "high_jitter_contact_sheet.png"
+  ],
+  "observations": {
+    "display": "Shared camera and scale; proper X,-Z,Y display rotation; no overall 180-degree root reversal in selected clips",
+    "timing": "All panels use exact same source frame; no time-shift fitting; same-frame GT verified against processed DIP",
+    "joint_errors": "Unobserved left wrist/hand dominate position errors; upper-body left-hand MPJPE approximately 50.60cm vs full-body 10.94cm",
+    "jitter": "Temporal below framewise IK in all three clips, above network in all three; small visual differences are supported by numeric traces",
+    "limits": "Visual inspection uses 15 fixed-time four-panel screenshots, not a claim of manually viewing every animated frame; all GIF frames decoded programmatically"
+  },
+  "independent_validation_sha256": "297ae119b0a72e1a4837837d0a7d5f7a21a706e8c5f4063f9ebe1893229b81e4"
+}

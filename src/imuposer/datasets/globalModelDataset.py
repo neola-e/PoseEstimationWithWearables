@@ -20,6 +20,13 @@ class GlobalModelDataset(Dataset):
 
         imu = []
         pose = []
+        imu_masks = []
+        combo_masks = {}
+        for combo, sensors in amass_combos.items():
+            mask = torch.zeros(60, dtype=torch.bool)
+            mask[:15].view(5, 3)[sensors] = True
+            mask[15:].view(5, 9)[sensors] = True
+            combo_masks[combo] = mask
 
         for fname in data_files:
             fdata = torch.load(self.config.processed_imu_poser_25fps / fname)
@@ -44,27 +51,25 @@ class GlobalModelDataset(Dataset):
                 # 25 is the data sampling rate
 
                 window_length = self.config.max_sample_len * 25 // 60
+                # Share input storage across combinations; apply masks when fetching samples.
+                imu_windows = torch.split(torch.cat([acc.flatten(1), ori.float().flatten(1)], dim=1), window_length)
+                pose_windows = torch.split(fpose, window_length)
 
                 for _combo in list(amass_combos):
                     # acc N, 5, 3
                     # ori N, 5, 3, 3
 
-                    _combo_acc = torch.zeros_like(acc)
-                    _combo_ori = torch.zeros((3, 3)).repeat(ori.shape[0], 5, 1, 1)
-
-                    _combo_acc[:, amass_combos[_combo]] = acc[:, amass_combos[_combo]]
-                    _combo_ori[:, amass_combos[_combo]] = ori[:, amass_combos[_combo]]
-
-                    imu_inputs = torch.cat([_combo_acc.flatten(1), _combo_ori.flatten(1)], dim=1)
-
-                    imu.extend(torch.split(imu_inputs, window_length))
-                    pose.extend(torch.split(fpose, window_length))
+                    imu.extend(imu_windows)
+                    pose.extend(pose_windows)
+                    imu_masks.extend([combo_masks[_combo]] * len(imu_windows))
 
         self.imu = imu
         self.pose = pose
+        self.imu_masks = imu_masks
 
     def __getitem__(self, idx):
-        _imu = self.imu[idx].float()
+        _imu = self.imu[idx].float().clone()
+        _imu[:, ~self.imu_masks[idx]] = 0
         _pose = self.pose[idx].float()
 
         _input = _imu

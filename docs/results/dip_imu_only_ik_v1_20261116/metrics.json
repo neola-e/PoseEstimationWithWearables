@@ -1,0 +1,3241 @@
+{
+  "coverage": {
+    "masks": 24,
+    "sequences": 19,
+    "pairs": 456,
+    "frames_per_mask": 24078
+  },
+  "overall_mask_equal": {
+    "network_final": {
+      "mpjre_deg": 22.468695538949348,
+      "mpjpe_cm": 9.540189965441042,
+      "mpjve_cm": 11.968888162663644,
+      "jitter_100_m_s3": 1.0483555131716968
+    },
+    "network_final_ik": {
+      "mpjre_deg": 22.166202200337022,
+      "mpjpe_cm": 9.426361324729543,
+      "mpjve_cm": 11.822584249532738,
+      "jitter_100_m_s3": 1.221451001428478
+    }
+  },
+  "changes": {
+    "mpjre_deg": {
+      "after_minus_before": -0.30249333861232586,
+      "relative_decrease_percent": 1.3462879413179796
+    },
+    "mpjpe_cm": {
+      "after_minus_before": -0.11382864071149967,
+      "relative_decrease_percent": 1.193148575907182
+    },
+    "mpjve_cm": {
+      "after_minus_before": -0.14630391313090563,
+      "relative_decrease_percent": 1.2223684534649881
+    },
+    "jitter_100_m_s3": {
+      "after_minus_before": 0.17309548825678123,
+      "relative_decrease_percent": -16.511143985220986
+    }
+  },
+  "per_mask": {
+    "lw_rw_h": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 17.85619536775726,
+            "mpjpe_cm": 8.14011809269106,
+            "mpjve_cm": 9.292081459919835,
+            "local_rotation_deg": 12.742066510588888,
+            "jitter_m_s3": 104.92123117552461,
+            "jitter_100_m_s3": 1.049212311755246,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 17.940579383012086,
+            "mpjpe_cm": 7.920700369108636,
+            "mpjve_cm": 9.088592442567302,
+            "local_rotation_deg": 12.501800549486466,
+            "jitter_m_s3": 141.03452726657792,
+            "jitter_100_m_s3": 1.4103452726657792,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 17.45530583722587,
+            "mpjpe_cm": 8.054437570052475,
+            "mpjve_cm": 9.122026084018032,
+            "local_rotation_deg": 12.671834827734939,
+            "jitter_m_s3": 109.11160214414565,
+            "jitter_100_m_s3": 1.0911160214414566,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 17.53586973938271,
+            "mpjpe_cm": 7.832145832921544,
+            "mpjve_cm": 8.911292591936022,
+            "local_rotation_deg": 12.431718654404115,
+            "jitter_m_s3": 144.57735061156114,
+            "jitter_100_m_s3": 1.4457735061156114,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "rw_lp_rp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.31064852275856,
+            "mpjpe_cm": 8.270051412654567,
+            "mpjve_cm": 10.56332119662065,
+            "local_rotation_deg": 12.73596160932541,
+            "jitter_m_s3": 114.91819253283319,
+            "jitter_100_m_s3": 1.149181925328332,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.8857070174074,
+            "mpjpe_cm": 7.823477023729906,
+            "mpjve_cm": 10.017091695642366,
+            "local_rotation_deg": 12.37323558336762,
+            "jitter_m_s3": 155.35574284167942,
+            "jitter_100_m_s3": 1.5535574284167941,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 19.906752411938147,
+            "mpjpe_cm": 8.057806340723085,
+            "mpjve_cm": 10.34905588119062,
+            "local_rotation_deg": 12.681977279029491,
+            "jitter_m_s3": 141.09246477756707,
+            "jitter_100_m_s3": 1.4109246477756707,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.481461027573527,
+            "mpjpe_cm": 7.601703882130861,
+            "mpjve_cm": 9.79676253137813,
+            "local_rotation_deg": 12.318808280686522,
+            "jitter_m_s3": 182.0992695041006,
+            "jitter_100_m_s3": 1.8209926950410058,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lw_rw_rp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 17.69537207917608,
+            "mpjpe_cm": 7.678594583500717,
+            "mpjve_cm": 9.261490746718952,
+            "local_rotation_deg": 12.465608123511277,
+            "jitter_m_s3": 111.254442924676,
+            "jitter_100_m_s3": 1.11254442924676,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 17.652035940446194,
+            "mpjpe_cm": 7.3931942288570776,
+            "mpjve_cm": 8.936611901603627,
+            "local_rotation_deg": 12.202704727818274,
+            "jitter_m_s3": 148.07089940498108,
+            "jitter_100_m_s3": 1.4807089940498108,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 17.20020225015763,
+            "mpjpe_cm": 7.487205615241437,
+            "mpjve_cm": 8.999952697363984,
+            "local_rotation_deg": 12.412745343675175,
+            "jitter_m_s3": 139.24028480992402,
+            "jitter_100_m_s3": 1.3924028480992403,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 17.145201770924142,
+            "mpjpe_cm": 7.188030880708943,
+            "mpjve_cm": 8.664716669342708,
+            "local_rotation_deg": 12.148929261195034,
+            "jitter_m_s3": 176.0421058409636,
+            "jitter_100_m_s3": 1.7604210584096358,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lw_rp_h": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 19.932209560406505,
+            "mpjpe_cm": 8.590385675404796,
+            "mpjve_cm": 10.653295582037298,
+            "local_rotation_deg": 12.773353895316719,
+            "jitter_m_s3": 104.19757002513883,
+            "jitter_100_m_s3": 1.0419757002513883,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.635571691125325,
+            "mpjpe_cm": 8.156545944839277,
+            "mpjve_cm": 10.10520487645454,
+            "local_rotation_deg": 12.451872032192897,
+            "jitter_m_s3": 138.97648106011042,
+            "jitter_100_m_s3": 1.3897648106011042,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 19.512737487902903,
+            "mpjpe_cm": 8.45623774893942,
+            "mpjve_cm": 10.459608748454915,
+            "local_rotation_deg": 12.715555523701154,
+            "jitter_m_s3": 126.05477560617571,
+            "jitter_100_m_s3": 1.260547756061757,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.215087718239722,
+            "mpjpe_cm": 8.017091499934049,
+            "mpjve_cm": 9.906231929977803,
+            "local_rotation_deg": 12.39311946042451,
+            "jitter_m_s3": 161.1425490971424,
+            "jitter_100_m_s3": 1.6114254909714238,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "rw_rp_h": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.195328887138757,
+            "mpjpe_cm": 8.65372838610687,
+            "mpjve_cm": 10.6687357716227,
+            "local_rotation_deg": 12.818802938115711,
+            "jitter_m_s3": 106.08658240160847,
+            "jitter_100_m_s3": 1.0608658240160846,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.851239385670485,
+            "mpjpe_cm": 8.251684945480115,
+            "mpjve_cm": 10.173193692974314,
+            "local_rotation_deg": 12.468357055047445,
+            "jitter_m_s3": 145.15284264590557,
+            "jitter_100_m_s3": 1.4515284264590556,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 19.792901166434415,
+            "mpjpe_cm": 8.518977919764094,
+            "mpjve_cm": 10.486597153900071,
+            "local_rotation_deg": 12.759793796835556,
+            "jitter_m_s3": 129.5258482573229,
+            "jitter_100_m_s3": 1.295258482573229,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.444899254894896,
+            "mpjpe_cm": 8.101636880105604,
+            "mpjve_cm": 9.972775207822236,
+            "local_rotation_deg": 12.408349638408223,
+            "jitter_m_s3": 169.0889416357367,
+            "jitter_100_m_s3": 1.690889416357367,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lw_lp_rp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.215477597689567,
+            "mpjpe_cm": 8.284240349976661,
+            "mpjve_cm": 10.668029570805457,
+            "local_rotation_deg": 12.723253820295888,
+            "jitter_m_s3": 110.53970880945347,
+            "jitter_100_m_s3": 1.1053970880945347,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.88923751440792,
+            "mpjpe_cm": 7.82495817615312,
+            "mpjve_cm": 10.11427697834994,
+            "local_rotation_deg": 12.39362434724581,
+            "jitter_m_s3": 147.65031452773644,
+            "jitter_100_m_s3": 1.4765031452773645,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 19.804803162736047,
+            "mpjpe_cm": 8.086661982984172,
+            "mpjve_cm": 10.459266373152959,
+            "local_rotation_deg": 12.670258338169932,
+            "jitter_m_s3": 135.98873795437194,
+            "jitter_100_m_s3": 1.3598873795437194,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.477473334500466,
+            "mpjpe_cm": 7.620550451664557,
+            "mpjve_cm": 9.901817266295295,
+            "local_rotation_deg": 12.340502893465304,
+            "jitter_m_s3": 173.40354198163394,
+            "jitter_100_m_s3": 1.7340354198163395,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lw_rw_lp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 17.712069086574207,
+            "mpjpe_cm": 7.63563429280331,
+            "mpjve_cm": 9.263931389688201,
+            "local_rotation_deg": 12.546403479554609,
+            "jitter_m_s3": 112.59338215105525,
+            "jitter_100_m_s3": 1.1259338215105525,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 17.68096884736363,
+            "mpjpe_cm": 7.309634859597296,
+            "mpjve_cm": 8.912340121052347,
+            "local_rotation_deg": 12.253022377963063,
+            "jitter_m_s3": 149.2260140947256,
+            "jitter_100_m_s3": 1.492260140947256,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 17.19878728756123,
+            "mpjpe_cm": 7.4493716881645575,
+            "mpjve_cm": 9.002644167533498,
+            "local_rotation_deg": 12.489625314585023,
+            "jitter_m_s3": 139.75115086805104,
+            "jitter_100_m_s3": 1.3975115086805103,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 17.148089492421306,
+            "mpjpe_cm": 7.107823571917982,
+            "mpjve_cm": 8.637523494808867,
+            "local_rotation_deg": 12.194751197915217,
+            "jitter_m_s3": 176.7895565446803,
+            "jitter_100_m_s3": 1.767895565446803,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lw_lp_h": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.005966086938223,
+            "mpjpe_cm": 8.586028532855527,
+            "mpjve_cm": 10.659328322912229,
+            "local_rotation_deg": 12.858299249548233,
+            "jitter_m_s3": 101.49351471027249,
+            "jitter_100_m_s3": 1.014935147102725,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.694084845324834,
+            "mpjpe_cm": 8.120912118039035,
+            "mpjve_cm": 10.102636391233908,
+            "local_rotation_deg": 12.525747990115496,
+            "jitter_m_s3": 135.40740695421692,
+            "jitter_100_m_s3": 1.3540740695421691,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 19.572615278073762,
+            "mpjpe_cm": 8.442803175016714,
+            "mpjve_cm": 10.459679060900122,
+            "local_rotation_deg": 12.795475739416972,
+            "jitter_m_s3": 123.61112780107966,
+            "jitter_100_m_s3": 1.2361112780107966,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.25457260477105,
+            "mpjpe_cm": 7.970120955960044,
+            "mpjve_cm": 9.89581509877585,
+            "local_rotation_deg": 12.462321990078914,
+            "jitter_m_s3": 157.98682543087966,
+            "jitter_100_m_s3": 1.5798682543087965,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "rw_lp_h": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 19.980366419812153,
+            "mpjpe_cm": 8.541398824530066,
+            "mpjve_cm": 10.558445125132371,
+            "local_rotation_deg": 12.796700011790293,
+            "jitter_m_s3": 104.63251182086599,
+            "jitter_100_m_s3": 1.04632511820866,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.615073206782206,
+            "mpjpe_cm": 8.132458512239081,
+            "mpjve_cm": 10.068884586469107,
+            "local_rotation_deg": 12.439130731743381,
+            "jitter_m_s3": 143.87532875838482,
+            "jitter_100_m_s3": 1.4387532875838482,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 19.562539259376948,
+            "mpjpe_cm": 8.405179395777827,
+            "mpjve_cm": 10.372389605891113,
+            "local_rotation_deg": 12.731400802806649,
+            "jitter_m_s3": 126.75283681132129,
+            "jitter_100_m_s3": 1.2675283681132128,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.191602653675346,
+            "mpjpe_cm": 7.979883142943737,
+            "mpjve_cm": 9.866238752763001,
+            "local_rotation_deg": 12.373003713209618,
+            "jitter_m_s3": 166.62140681894283,
+            "jitter_100_m_s3": 1.6662140681894284,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lw_rw": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 18.951610507276083,
+            "mpjpe_cm": 8.441848224929297,
+            "mpjve_cm": 9.809558012080508,
+            "local_rotation_deg": 13.096388993055141,
+            "jitter_m_s3": 109.6743292074303,
+            "jitter_100_m_s3": 1.096743292074303,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 19.185277936759377,
+            "mpjpe_cm": 8.295725781189725,
+            "mpjve_cm": 9.662568506617866,
+            "local_rotation_deg": 12.900233323929175,
+            "jitter_m_s3": 143.76631861813522,
+            "jitter_100_m_s3": 1.4376631861813522,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 18.641003330827356,
+            "mpjpe_cm": 8.356473009577453,
+            "mpjve_cm": 9.663074946721729,
+            "local_rotation_deg": 13.059902273179437,
+            "jitter_m_s3": 113.72219926713038,
+            "jitter_100_m_s3": 1.1372219926713039,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 18.871341066609908,
+            "mpjpe_cm": 8.207254825591209,
+            "mpjve_cm": 9.510832093517417,
+            "local_rotation_deg": 12.863008261696114,
+            "jitter_m_s3": 147.26456964118543,
+            "jitter_100_m_s3": 1.4726456964118544,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lw_lp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.878400166418032,
+            "mpjpe_cm": 8.757429346226695,
+            "mpjve_cm": 11.076025477691806,
+            "local_rotation_deg": 13.13592935822538,
+            "jitter_m_s3": 100.73933416185389,
+            "jitter_100_m_s3": 1.007393341618539,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 20.615717603450783,
+            "mpjpe_cm": 8.288995532987007,
+            "mpjve_cm": 10.52078364682859,
+            "local_rotation_deg": 12.797604909834721,
+            "jitter_m_s3": 130.50888702143425,
+            "jitter_100_m_s3": 1.3050888702143424,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.54900947647028,
+            "mpjpe_cm": 8.627265732275534,
+            "mpjve_cm": 10.909119965194977,
+            "local_rotation_deg": 13.105326637481278,
+            "jitter_m_s3": 127.76951829237507,
+            "jitter_100_m_s3": 1.2776951829237506,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 20.281790735621456,
+            "mpjpe_cm": 8.156610648727945,
+            "mpjve_cm": 10.352613724121952,
+            "local_rotation_deg": 12.766798305768596,
+            "jitter_m_s3": 158.07846751627608,
+            "jitter_100_m_s3": 1.5807846751627608,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lw_rp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.815370383649572,
+            "mpjpe_cm": 8.750041565169425,
+            "mpjve_cm": 11.041938677995171,
+            "local_rotation_deg": 13.017852180674968,
+            "jitter_m_s3": 102.36678148480536,
+            "jitter_100_m_s3": 1.0236678148480536,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 20.455784969606203,
+            "mpjpe_cm": 8.28052908568426,
+            "mpjve_cm": 10.441784566943477,
+            "local_rotation_deg": 12.680910375059057,
+            "jitter_m_s3": 133.1215864455998,
+            "jitter_100_m_s3": 1.331215864455998,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.49325089381666,
+            "mpjpe_cm": 8.617164616166265,
+            "mpjve_cm": 10.872932911808158,
+            "local_rotation_deg": 12.988671982739085,
+            "jitter_m_s3": 131.20774640391525,
+            "jitter_100_m_s3": 1.3120774640391526,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 20.137049902096386,
+            "mpjpe_cm": 8.143810755763047,
+            "mpjve_cm": 10.272665216711202,
+            "local_rotation_deg": 12.651138027263185,
+            "jitter_m_s3": 163.16631517391022,
+            "jitter_100_m_s3": 1.6316631517391023,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lw_h": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 21.744075655932697,
+            "mpjpe_cm": 9.490499765386637,
+            "mpjve_cm": 11.317905686296466,
+            "local_rotation_deg": 13.591147227641555,
+            "jitter_m_s3": 93.14235100285629,
+            "jitter_100_m_s3": 0.9314235100285628,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 21.534034227267014,
+            "mpjpe_cm": 9.105657522142636,
+            "mpjve_cm": 10.864665698631239,
+            "local_rotation_deg": 13.255302890197314,
+            "jitter_m_s3": 122.13583116674342,
+            "jitter_100_m_s3": 1.2213583116674342,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 21.500059487900835,
+            "mpjpe_cm": 9.450481697062202,
+            "mpjve_cm": 11.225407690725307,
+            "local_rotation_deg": 13.550808152507662,
+            "jitter_m_s3": 95.38509405691849,
+            "jitter_100_m_s3": 0.9538509405691848,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 21.28716648975344,
+            "mpjpe_cm": 9.063251387660207,
+            "mpjve_cm": 10.76638252608974,
+            "local_rotation_deg": 13.214247146023812,
+            "jitter_m_s3": 124.18543042206409,
+            "jitter_100_m_s3": 1.241854304220641,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "rw_lp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.860894860508697,
+            "mpjpe_cm": 8.758974190891983,
+            "mpjve_cm": 10.983601342394754,
+            "local_rotation_deg": 13.104534878900003,
+            "jitter_m_s3": 105.1210379352396,
+            "jitter_100_m_s3": 1.051210379352396,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 20.49318798172734,
+            "mpjpe_cm": 8.317369014665497,
+            "mpjve_cm": 10.439049980425496,
+            "local_rotation_deg": 12.761067417696909,
+            "jitter_m_s3": 140.19819658722017,
+            "jitter_100_m_s3": 1.4019819658722017,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.54810888657596,
+            "mpjpe_cm": 8.640438286011694,
+            "mpjve_cm": 10.831531649845317,
+            "local_rotation_deg": 13.07133423324268,
+            "jitter_m_s3": 133.65057636061653,
+            "jitter_100_m_s3": 1.3365057636061652,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 20.17594296329356,
+            "mpjpe_cm": 8.187431777172064,
+            "mpjve_cm": 10.27985216404786,
+            "local_rotation_deg": 12.727242531718796,
+            "jitter_m_s3": 169.50860082679867,
+            "jitter_100_m_s3": 1.6950860082679866,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "rw_rp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 21.190394081005792,
+            "mpjpe_cm": 8.838798584053647,
+            "mpjve_cm": 11.073562246025482,
+            "local_rotation_deg": 13.104416324149742,
+            "jitter_m_s3": 108.34390442928104,
+            "jitter_100_m_s3": 1.0834390442928103,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 20.83597820970262,
+            "mpjpe_cm": 8.415986623194078,
+            "mpjve_cm": 10.536394045757698,
+            "local_rotation_deg": 12.774709311701534,
+            "jitter_m_s3": 144.65074310710244,
+            "jitter_100_m_s3": 1.4465074310710244,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 20.871800426972666,
+            "mpjpe_cm": 8.710724683412643,
+            "mpjve_cm": 10.918287168149872,
+            "local_rotation_deg": 13.07408763701999,
+            "jitter_m_s3": 137.7906035307215,
+            "jitter_100_m_s3": 1.3779060353072152,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 20.51972742719694,
+            "mpjpe_cm": 8.279010785816883,
+            "mpjve_cm": 10.373371906696915,
+            "local_rotation_deg": 12.743588585893761,
+            "jitter_m_s3": 175.18318216021592,
+            "jitter_100_m_s3": 1.7518318216021591,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "rw_h": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 21.575963995894618,
+            "mpjpe_cm": 9.554493847055594,
+            "mpjve_cm": 11.27414932932768,
+            "local_rotation_deg": 13.532136771475185,
+            "jitter_m_s3": 96.93749721619888,
+            "jitter_100_m_s3": 0.9693749721619888,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 21.432472439468164,
+            "mpjpe_cm": 9.243060638283325,
+            "mpjve_cm": 10.935397059503861,
+            "local_rotation_deg": 13.221659423919888,
+            "jitter_m_s3": 132.01594591649464,
+            "jitter_100_m_s3": 1.3201594591649464,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 21.34893122475201,
+            "mpjpe_cm": 9.509219011889218,
+            "mpjve_cm": 11.180015721479357,
+            "local_rotation_deg": 13.48839081086726,
+            "jitter_m_s3": 99.06907263840792,
+            "jitter_100_m_s3": 0.9906907263840792,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 21.2043678075021,
+            "mpjpe_cm": 9.196543337644908,
+            "mpjve_cm": 10.835919876920729,
+            "local_rotation_deg": 13.177981572955874,
+            "jitter_m_s3": 133.8526701475782,
+            "jitter_100_m_s3": 1.338526701475782,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lp_rp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 27.694503545621608,
+            "mpjpe_cm": 11.160050120113395,
+            "mpjve_cm": 15.227160998382024,
+            "local_rotation_deg": 14.492605475222646,
+            "jitter_m_s3": 107.33183455693691,
+            "jitter_100_m_s3": 1.0733183455693691,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 27.691308796066902,
+            "mpjpe_cm": 10.85916421336685,
+            "mpjve_cm": 14.93428620152601,
+            "local_rotation_deg": 14.206506169308126,
+            "jitter_m_s3": 151.0109462021127,
+            "jitter_100_m_s3": 1.510109462021127,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 27.473902741510283,
+            "mpjpe_cm": 10.988938192935437,
+            "mpjve_cm": 15.100963926705623,
+            "local_rotation_deg": 14.454852025887053,
+            "jitter_m_s3": 125.2744001564058,
+            "jitter_100_m_s3": 1.252744001564058,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 27.481666554945676,
+            "mpjpe_cm": 10.693776536222884,
+            "mpjve_cm": 14.819599119152892,
+            "local_rotation_deg": 14.169632316684257,
+            "jitter_m_s3": 170.57511415370186,
+            "jitter_100_m_s3": 1.7057511415370186,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lp_h": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 26.964162033325902,
+            "mpjpe_cm": 11.338603213442129,
+            "mpjve_cm": 14.949832125307397,
+            "local_rotation_deg": 14.49741212544734,
+            "jitter_m_s3": 95.15312203314906,
+            "jitter_100_m_s3": 0.9515312203314906,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 26.94441272890421,
+            "mpjpe_cm": 10.980564341919298,
+            "mpjve_cm": 14.590871556174065,
+            "local_rotation_deg": 14.193155504902485,
+            "jitter_m_s3": 131.05129027015218,
+            "jitter_100_m_s3": 1.3105129027015219,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 26.692266890492785,
+            "mpjpe_cm": 11.218112492905455,
+            "mpjve_cm": 14.808492952488216,
+            "local_rotation_deg": 14.45390318153677,
+            "jitter_m_s3": 109.66451093664752,
+            "jitter_100_m_s3": 1.096645109366475,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 26.6754431186729,
+            "mpjpe_cm": 10.85297631489216,
+            "mpjve_cm": 14.44446973282839,
+            "local_rotation_deg": 14.15027279048638,
+            "jitter_m_s3": 146.25091507156537,
+            "jitter_100_m_s3": 1.4625091507156538,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "rp_h": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 27.331467375105078,
+            "mpjpe_cm": 11.479280110292683,
+            "mpjve_cm": 15.209425856581142,
+            "local_rotation_deg": 14.5351018642482,
+            "jitter_m_s3": 103.35377677917397,
+            "jitter_100_m_s3": 1.0335377677917397,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 27.429347561986017,
+            "mpjpe_cm": 11.237405397985869,
+            "mpjve_cm": 14.97954549116731,
+            "local_rotation_deg": 14.265930624061118,
+            "jitter_m_s3": 140.75253404091964,
+            "jitter_100_m_s3": 1.4075253404091965,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 27.11382891370212,
+            "mpjpe_cm": 11.394423054540608,
+            "mpjve_cm": 15.107649732952876,
+            "local_rotation_deg": 14.500581751716249,
+            "jitter_m_s3": 119.5947186786331,
+            "jitter_100_m_s3": 1.195947186786331,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 27.212382431274126,
+            "mpjpe_cm": 11.145524924559721,
+            "mpjve_cm": 14.866816424277042,
+            "local_rotation_deg": 14.229876613572138,
+            "jitter_m_s3": 158.1638401273529,
+            "jitter_100_m_s3": 1.581638401273529,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lw": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 25.05731926100888,
+            "mpjpe_cm": 10.290478201011522,
+            "mpjve_cm": 12.511482740325013,
+            "local_rotation_deg": 14.131876538560343,
+            "jitter_m_s3": 112.72726737932821,
+            "jitter_100_m_s3": 1.127272673793282,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 25.387285646544452,
+            "mpjpe_cm": 10.094258034415734,
+            "mpjve_cm": 12.264958639719124,
+            "local_rotation_deg": 13.932395931778238,
+            "jitter_m_s3": 143.44341574815115,
+            "jitter_100_m_s3": 1.4344341574815116,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 24.900544790792676,
+            "mpjpe_cm": 10.250234998373555,
+            "mpjve_cm": 12.441521455762365,
+            "local_rotation_deg": 14.120842887345708,
+            "jitter_m_s3": 114.84967588910062,
+            "jitter_100_m_s3": 1.1484967588910062,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 25.230214297657604,
+            "mpjpe_cm": 10.052287979217962,
+            "mpjve_cm": 12.191725565199102,
+            "local_rotation_deg": 13.920817140948893,
+            "jitter_m_s3": 145.3665293628456,
+            "jitter_100_m_s3": 1.453665293628456,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "rw": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 24.375018905993862,
+            "mpjpe_cm": 10.361448552959713,
+            "mpjve_cm": 12.391088246021477,
+            "local_rotation_deg": 14.196497337012149,
+            "jitter_m_s3": 111.08073353871977,
+            "jitter_100_m_s3": 1.1108073353871977,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 24.755997158980197,
+            "mpjpe_cm": 10.159509017201781,
+            "mpjve_cm": 12.180415875922964,
+            "local_rotation_deg": 13.948689710742054,
+            "jitter_m_s3": 148.82907849325727,
+            "jitter_100_m_s3": 1.4882907849325726,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 24.230603077941932,
+            "mpjpe_cm": 10.31807251430854,
+            "mpjve_cm": 12.320260303522598,
+            "local_rotation_deg": 14.18397789721204,
+            "jitter_m_s3": 113.14179194802252,
+            "jitter_100_m_s3": 1.1314179194802252,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 24.608828944439423,
+            "mpjpe_cm": 10.115138177788854,
+            "mpjve_cm": 12.107532705307934,
+            "local_rotation_deg": 13.934373317200402,
+            "jitter_m_s3": 150.63328364660623,
+            "jitter_100_m_s3": 1.5063328364660622,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "lp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 28.386689796545735,
+            "mpjpe_cm": 11.80917346830093,
+            "mpjve_cm": 15.832253294260608,
+            "local_rotation_deg": 14.839170881012233,
+            "jitter_m_s3": 97.06578048647259,
+            "jitter_100_m_s3": 0.9706578048647259,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 28.333690731668614,
+            "mpjpe_cm": 11.416391575596657,
+            "mpjve_cm": 15.442478726943827,
+            "local_rotation_deg": 14.56017285869388,
+            "jitter_m_s3": 131.8123939446991,
+            "jitter_100_m_s3": 1.318123939446991,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 28.269145030915983,
+            "mpjpe_cm": 11.719156186230002,
+            "mpjve_cm": 15.755654229428647,
+            "local_rotation_deg": 14.819745099400373,
+            "jitter_m_s3": 113.95462816698692,
+            "jitter_100_m_s3": 1.1395462816698692,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 28.223250379637648,
+            "mpjpe_cm": 11.328315447184476,
+            "mpjve_cm": 15.373434490022214,
+            "local_rotation_deg": 14.54219403794658,
+            "jitter_m_s3": 151.16193215261768,
+            "jitter_100_m_s3": 1.5116193215261768,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "rp": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 28.714164483296567,
+            "mpjpe_cm": 11.733095395470285,
+            "mpjve_cm": 15.848116503641958,
+            "local_rotation_deg": 14.884356951755425,
+            "jitter_m_s3": 102.19072536574862,
+            "jitter_100_m_s3": 1.0219072536574862,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 28.78505986556338,
+            "mpjpe_cm": 11.470357421817829,
+            "mpjve_cm": 15.595879230015044,
+            "local_rotation_deg": 14.607835920786272,
+            "jitter_m_s3": 139.46089914830202,
+            "jitter_100_m_s3": 1.3946089914830202,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 28.62675191016589,
+            "mpjpe_cm": 11.653854904784763,
+            "mpjve_cm": 15.793487651105846,
+            "local_rotation_deg": 14.87280367040131,
+            "jitter_m_s3": 125.04500625163745,
+            "jitter_100_m_s3": 1.2504500625163744,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 28.70067226661172,
+            "mpjpe_cm": 11.389269371390606,
+            "mpjve_cm": 15.541075609604482,
+            "local_rotation_deg": 14.595752948750036,
+            "jitter_m_s3": 164.69677106302015,
+            "jitter_100_m_s3": 1.6469677106302014,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    },
+    "h": {
+      "network_final": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 30.805024274949954,
+            "mpjpe_cm": 13.820164434757524,
+            "mpjve_cm": 17.118556202138272,
+            "local_rotation_deg": 16.68774096345362,
+            "jitter_m_s3": 100.1876194834496,
+            "jitter_100_m_s3": 1.0018761948344959,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 30.761891118873457,
+            "mpjpe_cm": 13.336229011026688,
+            "mpjve_cm": 16.73303867865774,
+            "local_rotation_deg": 16.19293184050782,
+            "jitter_m_s3": 162.109992294206,
+            "jitter_100_m_s3": 1.62109992294206,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      },
+      "network_final_ik": {
+        "sequences": 19,
+        "frames": 24078,
+        "jerk_samples": 24021,
+        "metrics": {
+          "frame_weighted": {
+            "mpjre_deg": 30.723001583844102,
+            "mpjpe_cm": 13.819430976371882,
+            "mpjve_cm": 17.10240191048955,
+            "local_rotation_deg": 16.66922738812969,
+            "jitter_m_s3": 100.23403182086942,
+            "jitter_100_m_s3": 1.0023403182086943,
+            "reference_jitter_m_s3": 105.81844226178718,
+            "reference_jitter_100_m_s3": 1.0581844226178718
+          },
+          "sequence_equal": {
+            "mpjre_deg": 30.678846114502658,
+            "mpjpe_cm": 13.335227439763726,
+            "mpjve_cm": 16.71364549890838,
+            "local_rotation_deg": 16.173927407328993,
+            "jitter_m_s3": 162.15143877411504,
+            "jitter_100_m_s3": 1.6215143877411504,
+            "reference_jitter_m_s3": 136.18360150617923,
+            "reference_jitter_100_m_s3": 1.3618360150617923
+          }
+        },
+        "settings": {
+          "fps": 25.0,
+          "joints": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "vertices": 6890,
+          "root_alignment": "pelvis translation only for spatial errors",
+          "jitter_alignment": "unaligned joint positions, including supplied translation",
+          "pose_blendshape": false
+        }
+      }
+    }
+  },
+  "mirror_groups": {
+    "w0_p0_h1": {
+      "masks": [
+        "h"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 30.805024274949954,
+          "mpjpe_cm": 13.820164434757524,
+          "mpjve_cm": 17.118556202138272,
+          "jitter_100_m_s3": 1.0018761948344959
+        },
+        "network_final_ik": {
+          "mpjre_deg": 30.723001583844102,
+          "mpjpe_cm": 13.819430976371882,
+          "mpjve_cm": 17.10240191048955,
+          "jitter_100_m_s3": 1.0023403182086943
+        }
+      }
+    },
+    "w0_p1_h0": {
+      "masks": [
+        "lp",
+        "rp"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 28.55042713992115,
+          "mpjpe_cm": 11.771134431885606,
+          "mpjve_cm": 15.840184898951282,
+          "jitter_100_m_s3": 0.996282529261106
+        },
+        "network_final_ik": {
+          "mpjre_deg": 28.447948470540936,
+          "mpjpe_cm": 11.686505545507384,
+          "mpjve_cm": 15.774570940267246,
+          "jitter_100_m_s3": 1.1949981720931218
+        }
+      }
+    },
+    "w0_p1_h1": {
+      "masks": [
+        "lp_h",
+        "rp_h"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 27.14781470421549,
+          "mpjpe_cm": 11.408941661867406,
+          "mpjve_cm": 15.079628990944268,
+          "jitter_100_m_s3": 0.9925344940616152
+        },
+        "network_final_ik": {
+          "mpjre_deg": 26.903047902097452,
+          "mpjpe_cm": 11.306267773723032,
+          "mpjve_cm": 14.958071342720546,
+          "jitter_100_m_s3": 1.1462961480764031
+        }
+      }
+    },
+    "w0_p2_h0": {
+      "masks": [
+        "lp_rp"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 27.694503545621608,
+          "mpjpe_cm": 11.160050120113395,
+          "mpjve_cm": 15.227160998382024,
+          "jitter_100_m_s3": 1.0733183455693691
+        },
+        "network_final_ik": {
+          "mpjre_deg": 27.473902741510283,
+          "mpjpe_cm": 10.988938192935437,
+          "mpjve_cm": 15.100963926705623,
+          "jitter_100_m_s3": 1.252744001564058
+        }
+      }
+    },
+    "w1_p0_h0": {
+      "masks": [
+        "lw",
+        "rw"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 24.71616908350137,
+          "mpjpe_cm": 10.325963376985618,
+          "mpjve_cm": 12.451285493173245,
+          "jitter_100_m_s3": 1.1190400045902398
+        },
+        "network_final_ik": {
+          "mpjre_deg": 24.565573934367304,
+          "mpjpe_cm": 10.284153756341048,
+          "mpjve_cm": 12.380890879642482,
+          "jitter_100_m_s3": 1.1399573391856157
+        }
+      }
+    },
+    "w1_p0_h1": {
+      "masks": [
+        "lw_h",
+        "rw_h"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 21.660019825913658,
+          "mpjpe_cm": 9.522496806221117,
+          "mpjve_cm": 11.296027507812074,
+          "jitter_100_m_s3": 0.9503992410952757
+        },
+        "network_final_ik": {
+          "mpjre_deg": 21.424495356326425,
+          "mpjpe_cm": 9.47985035447571,
+          "mpjve_cm": 11.202711706102331,
+          "jitter_100_m_s3": 0.972270833476632
+        }
+      }
+    },
+    "w1_p1_h0": {
+      "masks": [
+        "lw_lp",
+        "lw_rp",
+        "rw_lp",
+        "rw_rp"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 20.936264872895524,
+          "mpjpe_cm": 8.776310921585438,
+          "mpjve_cm": 11.043781936026804,
+          "jitter_100_m_s3": 1.0414276450279498
+        },
+        "network_final_ik": {
+          "mpjre_deg": 20.615542420958892,
+          "mpjpe_cm": 8.648898329466533,
+          "mpjve_cm": 10.882967923749582,
+          "jitter_100_m_s3": 1.326046111469071
+        }
+      }
+    },
+    "w1_p1_h1": {
+      "masks": [
+        "lw_rp_h",
+        "rw_rp_h",
+        "lw_lp_h",
+        "rw_lp_h"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 20.02846773857391,
+          "mpjpe_cm": 8.592885354724316,
+          "mpjve_cm": 10.63495120042615,
+          "jitter_100_m_s3": 1.0410254473947145
+        },
+        "network_final_ik": {
+          "mpjre_deg": 19.610198297947008,
+          "mpjpe_cm": 8.455799559874514,
+          "mpjve_cm": 10.444568642286555,
+          "jitter_100_m_s3": 1.2648614711897488
+        }
+      }
+    },
+    "w1_p2_h0": {
+      "masks": [
+        "rw_lp_rp",
+        "lw_lp_rp"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 20.263063060224063,
+          "mpjpe_cm": 8.277145881315615,
+          "mpjve_cm": 10.615675383713054,
+          "jitter_100_m_s3": 1.1272895067114335
+        },
+        "network_final_ik": {
+          "mpjre_deg": 19.855777787337097,
+          "mpjpe_cm": 8.072234161853629,
+          "mpjve_cm": 10.40416112717179,
+          "jitter_100_m_s3": 1.385406013659695
+        }
+      }
+    },
+    "w2_p0_h0": {
+      "masks": [
+        "lw_rw"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 18.951610507276083,
+          "mpjpe_cm": 8.441848224929297,
+          "mpjve_cm": 9.809558012080508,
+          "jitter_100_m_s3": 1.096743292074303
+        },
+        "network_final_ik": {
+          "mpjre_deg": 18.641003330827356,
+          "mpjpe_cm": 8.356473009577453,
+          "mpjve_cm": 9.663074946721729,
+          "jitter_100_m_s3": 1.1372219926713039
+        }
+      }
+    },
+    "w2_p0_h1": {
+      "masks": [
+        "lw_rw_h"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 17.85619536775726,
+          "mpjpe_cm": 8.14011809269106,
+          "mpjve_cm": 9.292081459919835,
+          "jitter_100_m_s3": 1.049212311755246
+        },
+        "network_final_ik": {
+          "mpjre_deg": 17.45530583722587,
+          "mpjpe_cm": 8.054437570052475,
+          "mpjve_cm": 9.122026084018032,
+          "jitter_100_m_s3": 1.0911160214414566
+        }
+      }
+    },
+    "w2_p1_h0": {
+      "masks": [
+        "lw_rw_rp",
+        "lw_rw_lp"
+      ],
+      "models": {
+        "network_final": {
+          "mpjre_deg": 17.703720582875142,
+          "mpjpe_cm": 7.657114438152014,
+          "mpjve_cm": 9.262711068203576,
+          "jitter_100_m_s3": 1.1192391253786562
+        },
+        "network_final_ik": {
+          "mpjre_deg": 17.19949476885943,
+          "mpjpe_cm": 7.468288651702997,
+          "mpjve_cm": 9.001298432448742,
+          "jitter_100_m_s3": 1.3949571783898753
+        }
+      }
+    }
+  },
+  "overall_12_groups_equal": {
+    "network_final": {
+      "mpjre_deg": 23.02610672531043,
+      "mpjpe_cm": 9.824514478769034,
+      "mpjve_cm": 12.305966929314259,
+      "jitter_100_m_s3": 1.0506990114795336
+    },
+    "network_final_ik": {
+      "mpjre_deg": 22.742941035986846,
+      "mpjpe_cm": 9.718439823490174,
+      "mpjve_cm": 12.169808988527016,
+      "jitter_100_m_s3": 1.1923513001188062
+    }
+  },
+  "reference_jitter_m_s3": 105.81844226178718,
+  "overall_sequence_equal": {
+    "network_final": {
+      "mpjre_deg": 22.3535810336712,
+      "mpjpe_cm": 9.1847820578967,
+      "mpjve_cm": 11.56837294129924,
+      "jitter_100_m_s3": 1.4165073402328534
+    },
+    "network_final_ik": {
+      "mpjre_deg": 22.049289504008282,
+      "mpjpe_cm": 9.065225700320166,
+      "mpjve_cm": 11.416796258187757,
+      "jitter_100_m_s3": 1.594996086543956
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "inference_device": "cpu",
+  "parts": 2,
+  "inference_threads_per_part": 8,
+  "metric_threads_per_part": 2
+}

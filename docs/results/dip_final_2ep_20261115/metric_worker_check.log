@@ -1,0 +1,3 @@
+/home/alex/miniconda3/envs/imuposer/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+{"passed": true, "synthetic_frames": 8, "models": 2, "metrics_zero_for_identity": true, "real_test_predictions_used": false}

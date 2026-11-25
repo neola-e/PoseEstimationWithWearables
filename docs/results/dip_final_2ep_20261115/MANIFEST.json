@@ -1,0 +1,21 @@
+{
+  "AUDIT_SUMMARY.json": "011f09d5a57fe6ad3912e3704132da2131991c5cb99acd35bd6669bd23a5d53f",
+  "FINAL_TRAINING_REVIEW.json": "869e03c1027f9a448d6d61c358ee13c8a26d2b17586398f52b27402f521c98bb",
+  "PROTOCOL.json": "2144b72d4061dd786f09870426d9158e1666ba9157c342fb232bf31309666aa4",
+  "RESULTS.md": "f4a10ed555e61e12f65c31085784ccb57a591aea13a057cd1b680847c9d7d70b",
+  "RUN_ARTIFACT_MANIFEST.json": "e3ec7a3e1c645db966e9a79b86a9eefdd6c7e836ec79c130a40bed8267171569",
+  "RUN_VALIDATION_MANIFEST.json": "4e6de9a4cceda74cad29ee575fe683c35fe20ec8f9bed7affe33f94dc0cb46c8",
+  "aggregation_tests.log": "b181b645ee64aff40cb63e1f748a14c2a355de3babffb83493bdabf4cbc51b63",
+  "comparison.csv": "8668b4090ad0b8ebf9635bb5eed7e7291fdd8f89252dbf41d600a4dc6ad4a4ce",
+  "comparison_with_changes.csv": "28bc6e6fac7293da11ab572584b5d59a24ceb064be9311e3727fc75d76a7f518",
+  "completion.json": "1eaca5926aad5a3a343ad38c3f007dc6f1230b4a334c22efa63cf12db59352b6",
+  "four_metrics.pdf": "4a6d28b9d759165a7d93a61dd6d195a72de85d970779a2fc1a1f4d4363dd2cd0",
+  "four_metrics.png": "40ef5f9e83c7ce6360745efc168378a0346723ba167403bb1f9eaa5330db34ae",
+  "independent_validation.json": "245659edad6091e8ef43674678aa384086597cad619482bbf2b2308bba2b2cd1",
+  "metric_worker_check.log": "30c066338ad686fb5e677ca49fcba10d38a6d1597ff6ccbfa5a2c885d5f8d0cc",
+  "metrics.json": "468cb46c05b09c36e1608298b8360204705b606508d9a422e2c17329fad8f8d9",
+  "per_mask.csv": "b60ea1584af661b39b31c3fb4fda69a1f3f94ae4c5ffd5a5a498193f47158efc",
+  "per_subject.csv": "5dc807392a14d1a373f2b6fe3c9926eba1ed62ed51c716846f9058b7dfdf41c2",
+  "report_summary.json": "759f06d56302415db71927ae289a5b644d255a89c6a4828ed415fc64b9dda151",
+  "resources.json": "9001d1f5c006ca8c353ce0bab07fbe3aba31b015c5e623808458a6820dc2df57"
+}

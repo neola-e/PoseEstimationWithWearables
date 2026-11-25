@@ -1,0 +1,15 @@
+test_exp_has_known_angles_and_finite_correct_zero_derivative (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_final_update_returned_and_zero_iterations_bitwise_identity (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_independent_frame_batching_and_no_future_or_optimizer_state (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_invalid_settings_masks_shapes_and_degenerate_pose_rejected (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_joint_optimization_preserves_so3_and_does_not_update_input_gradients (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_matching_motion_is_fixed_and_zero_sensor_ablation_ignores_nan (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_missing_measurements_cannot_affect_available_constraint (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_projection_has_known_polar_factor_and_rejects_invalid_active_data (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_segment_mapping_and_global_rotation_chain (test_imu_only_ik.ImuOnlyIKTests) ... ok
+test_single_wrist_constraint_decreases_and_only_selected_local_joints_change (test_imu_only_ik.ImuOnlyIKTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.275s
+
+OK

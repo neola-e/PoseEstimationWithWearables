@@ -1,0 +1,14 @@
+{
+  "completed_utc": "2026-11-16T23:30:25.613277+00:00",
+  "protocol_sha256": "f53825004ea8baa917af4ee625e76806d6e2556fbb282b0d2d624fb7e056af02",
+  "original_artifact_manifest_sha256": "7367cf3b7d221181fb5aa82f08969f105249d5871d8408a80dea9db9062090cd",
+  "training_performed": false,
+  "network_inference_performed": false,
+  "model_checkpoints_processed_data_and_F03_baseline_unchanged": true,
+  "solver_tests_passed": 10,
+  "aggregation_tests_passed": 4,
+  "independent_validation_passed": true,
+  "primary_result": "Three pose errors decrease around1.2\u20131.35%; jitter increases16.51%; direction consistent in all24 masks",
+  "method_status": "Paper-guided reconstruction, with missing author parameters/index lists/rotation representation explicitly frozen as conventions",
+  "mesh_sensitivity_status": "Exploratory fixed-case geometry audit, not a full24-mask alternative score; primary unchanged"
+}

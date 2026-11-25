@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "artifacts_verified": 922,
+  "pairs": 456,
+  "no_gt_solver_inputs": true,
+  "old_baseline_rows_and_protected_files_unchanged": true,
+  "frozen_joint_frames_checked": 11437050,
+  "development_selection_reproduced": true,
+  "independent_aggregate_max_abs_difference": 1.7763568394002505e-15,
+  "independent_aggregate": {
+    "raw": {
+      "mpjre_deg": 22.468695538949348,
+      "mpjpe_cm": 9.540189965441042,
+      "mpjve_cm": 11.968888162663644,
+      "jitter_100_m_s3": 1.0483555131716968
+    },
+    "framewise_ik": {
+      "mpjre_deg": 22.166202200337022,
+      "mpjpe_cm": 9.426361324729543,
+      "mpjve_cm": 11.82258424953274,
+      "jitter_100_m_s3": 1.221451001428478
+    },
+    "temporal_ik": {
+      "mpjre_deg": 22.16885967902508,
+      "mpjpe_cm": 9.428675176822319,
+      "mpjve_cm": 11.824658397628925,
+      "jitter_100_m_s3": 1.167420234119422
+    }
+  },
+  "fixed_causal_window_and_fk_checks": [
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 0,
+      "output_frames": [
+        0,
+        1,
+        3,
+        4,
+        124,
+        125,
+        1977
+      ],
+      "input_support": "[max(0,t-4),t], no future",
+      "maximum_pose_difference": 0.0,
+      "metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 0.0,
+        "jitter_100_m_s3": 0.0
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 18,
+      "output_frames": [
+        0,
+        1,
+        3,
+        4,
+        124,
+        125,
+        2256
+      ],
+      "input_support": "[max(0,t-4),t], no future",
+      "maximum_pose_difference": 0.0,
+      "metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 6.661338147750939e-13,
+        "jitter_100_m_s3": 0.0
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 0,
+      "output_frames": [
+        0,
+        1,
+        3,
+        4,
+        124,
+        125,
+        1977
+      ],
+      "input_support": "[max(0,t-4),t], no future",
+      "maximum_pose_difference": 0.0,
+      "metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 0.0,
+        "jitter_100_m_s3": 0.0
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 18,
+      "output_frames": [
+        0,
+        1,
+        3,
+        4,
+        124,
+        125,
+        2256
+      ],
+      "input_support": "[max(0,t-4),t], no future",
+      "maximum_pose_difference": 0.0,
+      "metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 1.2363443602225743e-12,
+        "jitter_100_m_s3": 0.0
+      }
+    }
+  ],
+  "validator_sha256": "65304d6ce88e724ca50050c950d0ecab7135a09ef36a89ae54b0eb62db138e7b"
+}

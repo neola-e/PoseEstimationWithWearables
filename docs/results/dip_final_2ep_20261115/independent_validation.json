@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "validator_sha256": "92dd1151ac695409f0d17b9c579caa49502e6d8653905d4852e0e4287c97a8a8",
+  "original_artifacts_verified": 955,
+  "paired_caches_checked": 456,
+  "prediction_frames_checked": 1155744,
+  "all_targets_bitwise_equal": true,
+  "independent_aggregate_max_abs_difference": 2.220446049250313e-16,
+  "independent_aggregate": {
+    "amass_epoch59": {
+      "mpjre_deg": 30.26336936232276,
+      "mpjpe_cm": 11.655862332170324,
+      "mpjve_cm": 14.595482185214328,
+      "jitter_100_m_s3": 1.6131986874530826
+    },
+    "dip_final_2ep": {
+      "mpjre_deg": 22.468695538949348,
+      "mpjpe_cm": 9.540189965441042,
+      "mpjve_cm": 11.968888162663644,
+      "jitter_100_m_s3": 1.0483555131716968
+    }
+  },
+  "fk_chunk_rechecks": [
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 0,
+      "model": "amass_epoch59",
+      "absolute_metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 0.0,
+        "jitter_100_m_s3": 0.0
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 0,
+      "model": "dip_final_2ep",
+      "absolute_metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 0.0,
+        "jitter_100_m_s3": 0.0
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 18,
+      "model": "amass_epoch59",
+      "absolute_metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 3.055333763768431e-13,
+        "jitter_100_m_s3": 0.0
+      }
+    },
+    {
+      "mask": "lw_rw_h",
+      "sequence_id": 18,
+      "model": "dip_final_2ep",
+      "absolute_metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 4.0678571622265736e-13,
+        "jitter_100_m_s3": 0.0
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 0,
+      "model": "amass_epoch59",
+      "absolute_metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 0.0,
+        "jitter_100_m_s3": 0.0
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 0,
+      "model": "dip_final_2ep",
+      "absolute_metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 0.0,
+        "jitter_100_m_s3": 0.0
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 18,
+      "model": "amass_epoch59",
+      "absolute_metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 1.573852159708622e-12,
+        "jitter_100_m_s3": 0.0
+      }
+    },
+    {
+      "mask": "h",
+      "sequence_id": 18,
+      "model": "dip_final_2ep",
+      "absolute_metric_differences": {
+        "mpjre_deg": 0.0,
+        "mpjpe_cm": 0.0,
+        "mpjve_cm": 1.1155520951433573e-12,
+        "jitter_100_m_s3": 0.0
+      }
+    }
+  ],
+  "recheck_atol": 0.0001,
+  "scope": "Cache/reference/reduction and fixed measurement checks; no inference or model selection"
+}

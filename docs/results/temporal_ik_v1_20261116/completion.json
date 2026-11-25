@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "pairs": 456,
+  "settings": {
+    "iterations": 10,
+    "learning_rate": 0.001,
+    "window": 5,
+    "jerk_weight": 0.001,
+    "jerk_scale_m": 0.01,
+    "frame_batch": 128
+  },
+  "overall": {
+    "raw": {
+      "mpjre_deg": 22.468695538949348,
+      "mpjpe_cm": 9.540189965441042,
+      "mpjve_cm": 11.968888162663644,
+      "jitter_100_m_s3": 1.0483555131716968
+    },
+    "framewise_ik": {
+      "mpjre_deg": 22.166202200337022,
+      "mpjpe_cm": 9.426361324729543,
+      "mpjve_cm": 11.822584249532738,
+      "jitter_100_m_s3": 1.221451001428478
+    },
+    "temporal_ik": {
+      "mpjre_deg": 22.16885967902508,
+      "mpjpe_cm": 9.428675176822319,
+      "mpjve_cm": 11.824658397628925,
+      "jitter_100_m_s3": 1.167420234119422
+    }
+  },
+  "predeclared_success": true,
+  "also_below_raw_jitter": false
+}

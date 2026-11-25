@@ -1,0 +1,16 @@
+{
+  "status": "complete_validated",
+  "source_frames": 750,
+  "encoded_gif_frames": 1000,
+  "gifs": 4,
+  "four_panel_joint_frames": 72000,
+  "all_unit_integration_tests": 109,
+  "test_failures": 0,
+  "test_skips": 0,
+  "protected_files_unchanged": true,
+  "optimizer_steps": 0,
+  "network_forward_calls": 0,
+  "independent_fk_max_difference_m": 0.0,
+  "independent_clip_summary_max_difference": 1.7763568394002505e-15,
+  "prior_completion_preserved": "completion.json describes rendering before independent validation; this record is the final review status"
+}

@@ -1,0 +1,23 @@
+{
+  "AUDIT_SUMMARY.json": "9cf540a30ebe696e5efb1856868e01bcefe6848cb2c1be2650d2d73e57842c18",
+  "PROTOCOL.json": "fd617e97c81fe365d1ee4a3e7b96c937cade055a7be0a911bdace184908c8da3",
+  "RUN_ARTIFACT_MANIFEST.json": "ceab6488740fe1f832e314dffc721db636006933a162bfe1752383ec4c6d906c",
+  "RUN_VALIDATION_MANIFEST.json": "b7f2e85a448aa37088c7e932da6645b0f333dd8308db2b0619c0efe5743d152e",
+  "by_category.csv": "e6072bed2262b63f9286b77905c85457be80c57096310ed55918d4a0c1d081ba",
+  "by_joint.csv": "4e943b4e8cba5305bcdfbf5ccff5b0833301847e58a5688d715b77317355c8fa",
+  "by_joint_category.csv": "274bc1a5a8b5aaae94e4a9ea7d1a564b6e2496ac56850e80dec6f80df971b8fb",
+  "by_mask.csv": "b5d18833be7a3c4c13664e79cea6df515985286bfaf54724ee2dd38067e3e8fe",
+  "by_pair.csv": "fafb29ae7d76f6f4888c982962a21162c80045fcee3d9532b0242197aa5fe35c",
+  "by_sequence.csv": "40f963fb940bb2cebda83a6315db515217f182969e7b3759eeac26fcdf94fb28",
+  "counterfactual_MANIFEST.json": "8c2f8a9f400ac37a2637239815bdb539bc783942778b5c8574533e9ef0e6826a",
+  "counterfactual_PROTOCOL.json": "d62bda07a112cb8ee96112a7934f0aad0d21f68d1318d2a8ac728ba1b791a8a4",
+  "counterfactual_results.json": "5b01ab65f65ded5eb2da29ddc32b40269e850699ac2be8654c90f8e355e8ab33",
+  "independent_validation.json": "b328f928d91a6ac0946e58b5ce454034a1f314c44e4c91dfe2c561a35be5f450",
+  "jitter_attribution.pdf": "1ca9758d71ece53b7bd14ec54f57f11e0a8ebbc40bee7277a15a3d3d7c99bbc8",
+  "jitter_attribution.png": "55ccf9a0c94243544ce0aaba1be1da83230eb045d17cb489125635a6e65b7036",
+  "report_summary.json": "c60f5a2b1d392a34cca5afa89193add6b612c76238bfac1368599ee3a0a1550f",
+  "rotation_time_frequency_example.pdf": "5f1dcb16f964fdd8202daefa9f699ae49008b8a805d4117e0503dba894bed47e",
+  "rotation_time_frequency_example.png": "b786e627e9c075be144f71be7552915ad201253fa5f1cbf2a3ae918971de6409",
+  "signal_tests.log": "e7f0ceaadcb9d24fe37f86e54b960a3fab85dbf014acbc2cf134164ed07dddce",
+  "summary.json": "e74bb71b0591d770182dfdd42e6e00b8d4ce4b2b0cb0d4a5d2436d2da6fe09ec"
+}

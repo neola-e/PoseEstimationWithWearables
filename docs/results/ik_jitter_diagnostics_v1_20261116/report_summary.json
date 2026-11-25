@@ -1,0 +1,28 @@
+{
+  "pelvis_restore_excess_reduction_percent": 75.5266261565998,
+  "pocket_masks_share_net_increase_percent": 95.94577369532057,
+  "four_foot_ankle_joints_share_net_increase_percent": 37.68486432643429,
+  "counterfactuals": {
+    "restore_pelvis": 1.0907178191188378,
+    "restore_hips": 1.205684165706709,
+    "restore_arms": 1.2058443295804357,
+    "restore_head": 1.2214404253576179,
+    "pelvis_only": 1.1900669177878054
+  },
+  "example": {
+    "mask": "rw_lp",
+    "sequence_id": 9,
+    "subject": "s_10",
+    "source_file": "01_a.pkl",
+    "category": "upper_body",
+    "frames": 2333,
+    "jerk_samples": 2330,
+    "raw_jitter": 0.6621206943082449,
+    "ik_jitter": 1.0595684940887171,
+    "mean_increase": 0.3974477997804722,
+    "overall_contribution": 0.0016063260159313723,
+    "peak_output_frame": 1371,
+    "peak_joint": 23,
+    "peak_single_joint_increase_m_s3": 1014.1598205566406
+  }
+}

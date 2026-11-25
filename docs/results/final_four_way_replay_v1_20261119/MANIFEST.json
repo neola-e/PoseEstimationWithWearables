@@ -1,0 +1,22 @@
+{
+  "DISPLAY.json": "e96a777cf92ad172819802ef16a39b6650e6b12bf645587ac379c0d363d4a9c4",
+  "PROTOCOL.json": "57fc222daf7ad59bb76f42e187aa17b367cba07376efd6aa668d8b4bd94b8c99",
+  "REVIEW_COMPLETION.json": "f5b8b3eb939b9e1a8b49a05e672616b433c65b4961c2a9b10908fad2e54c90d7",
+  "RUNTIME.json": "9b75cf33f6942e2f15e91bbf696171563c01535a40365dd5d9c9724f082313f5",
+  "RUN_ARTIFACT_MANIFEST.json": "7169ad8172ff52837ad5adb7456d27cb6e2b0f28b07df462bae1aa333ae4799c",
+  "RUN_REVIEW_MANIFEST.json": "5dc3a209a813b79b666816c8bd27d8e93a84d3046ad63b52861f0b745a7c67b0",
+  "RUN_VALIDATION_MANIFEST.json": "7f542c162b5255e0a61f647387a7272f0e85848e505c8a66f66182d779ff85a3",
+  "VISUAL_REVIEW.json": "f9f5add0b08339ca203bb0afe1fb6e21332ec1950d2c4e2c1ba85e6e261256a9",
+  "all_tests.log": "34b4703604bec01ef9e0256510fdc238edc60b1a5989b70fc0cf0373b2a4c14b",
+  "clip_metrics.csv": "2dc2cbcd1aedaa39f84e31f4a64fed6e0edc19e43a1538ab2dcf3534876ca800",
+  "high_jitter_preview.png": "5e5556dc65a4c824f35662cac74d4b741a42911c4f69de0f2d0803d0405b422f",
+  "high_jitter_summary.json": "61bcbc281595ef7df00343dd5c7dd91190a3474427fec547daa321a08aee4ad1",
+  "high_jitter_timeline.json": "2ab72f74399d4cb42038543b669caba9ba97cf03b6461cde471e90d0bda7a299",
+  "independent_validation.json": "297ae119b0a72e1a4837837d0a7d5f7a21a706e8c5f4063f9ebe1893229b81e4",
+  "upper_body_preview.png": "e75f17eaf32d474869d13a727ae8f12956af3728ad29e8a0dbd3ff0cc27e0cc5",
+  "upper_body_summary.json": "de728ac26046f486499fe44556ade1174db698bcefb747a00d5320a300241ecb",
+  "upper_body_timeline.json": "c0e8549e7ec29b77b4264491bf3cfffa90c60f24d116c726425cfeecca295cc9",
+  "walking_preview.png": "1f62c9a4c9276facc1c9a8d385a3c073d01a03f4c5cfc599dc17ed545c622fbb",
+  "walking_summary.json": "8b1db173fef70096bfeaf381073e9943b79581d7f0e732b00f7568c45a861eeb",
+  "walking_timeline.json": "05a7cabf30846975ba0f4e0fb57cd236d60936f90c81ea195f0f059d94b3752b"
+}

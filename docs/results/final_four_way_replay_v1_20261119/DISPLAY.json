@@ -1,0 +1,15 @@
+{
+  "symmetric_axis_limits_m": [
+    -1.2,
+    1.2
+  ],
+  "max_absolute_coordinate_m": 1.106284737586975,
+  "error_color_limits_cm": [
+    0,
+    40
+  ],
+  "camera": {
+    "elevation": 15,
+    "azimuth": -65
+  }
+}

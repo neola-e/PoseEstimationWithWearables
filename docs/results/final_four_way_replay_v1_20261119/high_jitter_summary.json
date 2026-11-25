@@ -1,0 +1,286 @@
+{
+  "case": {
+    "subject": "s_10",
+    "source_file": "01_a.pkl",
+    "raw_path": "/mnt/d/01_Downloads/DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU/DIP_IMU/s_10/01_a.pkl",
+    "raw_sha256": "373eae5c5e3fd9e8340b2c1d29e1028a9da823e6e438aa9b66e6891c2c2f4a8c",
+    "sequence_id": 9,
+    "frames": 2333,
+    "processed_sha256": {
+      "acc": "0a2c4c13c93d6b48ce47a968ec26544a5a3e3888b3a3a5aa19d82737904bcc7e",
+      "ori": "e0a062c49698973b5552b9a1598736a2084ce15433187b2175c25570e7fad25f",
+      "pose": "3eefcb0e7e256edc91f983412c1098dcbe26128cc5b8e6d5877a26e92bab285a"
+    },
+    "case": "high_jitter",
+    "mask": "rw_lp",
+    "category": "upper_body",
+    "start": 1246,
+    "stop": 1496,
+    "peak_output_frame": 1371,
+    "peak_joint": 23,
+    "selection": "Archived J01 largest net-contribution pair; center on its recorded jerk peak; exploratory"
+  },
+  "branches": {
+    "network": {
+      "case": "high_jitter",
+      "branch": "network",
+      "mpjre_deg": 22.481049191856485,
+      "mpjpe_cm": 7.9733473311437715,
+      "mpjve_cm": 10.90178905169034,
+      "jitter_100_m_s3": 1.2096175053503488,
+      "root_error_mean_deg": 3.8786345230489188,
+      "root_error_max_deg": 11.201205819488278,
+      "max_root_step_deg": 2.610890433074781,
+      "worst_position_joints": [
+        {
+          "joint": 22,
+          "name": "L Hand",
+          "mpjpe_cm": 39.37824958197961
+        },
+        {
+          "joint": 20,
+          "name": "L Wrist",
+          "mpjpe_cm": 33.66443026485505
+        },
+        {
+          "joint": 18,
+          "name": "L Elbow",
+          "mpjpe_cm": 20.355689056327055
+        },
+        {
+          "joint": 23,
+          "name": "R Hand",
+          "mpjpe_cm": 14.076799574754169
+        },
+        {
+          "joint": 21,
+          "name": "R Wrist",
+          "mpjpe_cm": 12.781864351334391
+        }
+      ],
+      "worst_jitter_joints": [
+        {
+          "joint": 22,
+          "name": "L Hand",
+          "jitter_100_m_s3": 4.245275148334036
+        },
+        {
+          "joint": 23,
+          "name": "R Hand",
+          "jitter_100_m_s3": 3.9384028016008013
+        },
+        {
+          "joint": 20,
+          "name": "L Wrist",
+          "jitter_100_m_s3": 3.6017432923655366
+        },
+        {
+          "joint": 21,
+          "name": "R Wrist",
+          "jitter_100_m_s3": 3.2952244257883914
+        },
+        {
+          "joint": 18,
+          "name": "L Elbow",
+          "jitter_100_m_s3": 1.8163801558300867
+        }
+      ]
+    },
+    "framewise_ik": {
+      "case": "high_jitter",
+      "branch": "framewise_ik",
+      "mpjre_deg": 22.101218135050186,
+      "mpjpe_cm": 7.835135355834904,
+      "mpjve_cm": 10.732524897259442,
+      "jitter_100_m_s3": 1.6989645189643305,
+      "root_error_mean_deg": 3.968926641681762,
+      "root_error_max_deg": 10.615768453858049,
+      "max_root_step_deg": 2.552433030716652,
+      "worst_position_joints": [
+        {
+          "joint": 22,
+          "name": "L Hand",
+          "mpjpe_cm": 39.13800301091929
+        },
+        {
+          "joint": 20,
+          "name": "L Wrist",
+          "mpjpe_cm": 33.471232234798286
+        },
+        {
+          "joint": 18,
+          "name": "L Elbow",
+          "mpjpe_cm": 20.3044853585445
+        },
+        {
+          "joint": 23,
+          "name": "R Hand",
+          "mpjpe_cm": 13.173901676325517
+        },
+        {
+          "joint": 21,
+          "name": "R Wrist",
+          "mpjpe_cm": 12.13319020984783
+        }
+      ],
+      "worst_jitter_joints": [
+        {
+          "joint": 22,
+          "name": "L Hand",
+          "jitter_100_m_s3": 4.515554441339665
+        },
+        {
+          "joint": 23,
+          "name": "R Hand",
+          "jitter_100_m_s3": 4.400844812960739
+        },
+        {
+          "joint": 20,
+          "name": "L Wrist",
+          "jitter_100_m_s3": 3.8520601011825955
+        },
+        {
+          "joint": 21,
+          "name": "R Wrist",
+          "jitter_100_m_s3": 3.737445909814429
+        },
+        {
+          "joint": 10,
+          "name": "L Foot",
+          "jitter_100_m_s3": 2.3426413326362163
+        }
+      ]
+    },
+    "temporal_ik": {
+      "case": "high_jitter",
+      "branch": "temporal_ik",
+      "mpjre_deg": 22.105467625503792,
+      "mpjpe_cm": 7.837594046474161,
+      "mpjve_cm": 10.734452750928074,
+      "jitter_100_m_s3": 1.5571340706784065,
+      "root_error_mean_deg": 3.9470358987492604,
+      "root_error_max_deg": 10.617178798016106,
+      "max_root_step_deg": 2.559875191686352,
+      "worst_position_joints": [
+        {
+          "joint": 22,
+          "name": "L Hand",
+          "mpjpe_cm": 39.15050515608041
+        },
+        {
+          "joint": 20,
+          "name": "L Wrist",
+          "mpjpe_cm": 33.48248553196386
+        },
+        {
+          "joint": 18,
+          "name": "L Elbow",
+          "mpjpe_cm": 20.310531687694137
+        },
+        {
+          "joint": 23,
+          "name": "R Hand",
+          "mpjpe_cm": 13.201069621389536
+        },
+        {
+          "joint": 21,
+          "name": "R Wrist",
+          "mpjpe_cm": 12.15353999893498
+        }
+      ],
+      "worst_jitter_joints": [
+        {
+          "joint": 22,
+          "name": "L Hand",
+          "jitter_100_m_s3": 4.361897803408856
+        },
+        {
+          "joint": 23,
+          "name": "R Hand",
+          "jitter_100_m_s3": 4.184610431622248
+        },
+        {
+          "joint": 20,
+          "name": "L Wrist",
+          "jitter_100_m_s3": 3.7196263536954914
+        },
+        {
+          "joint": 21,
+          "name": "R Wrist",
+          "jitter_100_m_s3": 3.5383198662374493
+        },
+        {
+          "joint": 19,
+          "name": "R Elbow",
+          "jitter_100_m_s3": 2.0771581261357523
+        }
+      ]
+    },
+    "gt": {
+      "case": "high_jitter",
+      "branch": "gt",
+      "mpjre_deg": 0.0,
+      "mpjpe_cm": 0.0,
+      "mpjve_cm": 0.0,
+      "jitter_100_m_s3": 0.43237804581040756,
+      "root_error_mean_deg": 0.0,
+      "root_error_max_deg": 0.0,
+      "max_root_step_deg": 0.6999721624947488,
+      "worst_position_joints": [
+        {
+          "joint": 23,
+          "name": "R Hand",
+          "mpjpe_cm": 0.0
+        },
+        {
+          "joint": 22,
+          "name": "L Hand",
+          "mpjpe_cm": 0.0
+        },
+        {
+          "joint": 1,
+          "name": "L Hip",
+          "mpjpe_cm": 0.0
+        },
+        {
+          "joint": 2,
+          "name": "R Hip",
+          "mpjpe_cm": 0.0
+        },
+        {
+          "joint": 3,
+          "name": "Spine1",
+          "mpjpe_cm": 0.0
+        }
+      ],
+      "worst_jitter_joints": [
+        {
+          "joint": 22,
+          "name": "L Hand",
+          "jitter_100_m_s3": 1.764996547184804
+        },
+        {
+          "joint": 23,
+          "name": "R Hand",
+          "jitter_100_m_s3": 1.7152574768760385
+        },
+        {
+          "joint": 21,
+          "name": "R Wrist",
+          "jitter_100_m_s3": 1.3923637302075207
+        },
+        {
+          "joint": 20,
+          "name": "L Wrist",
+          "jitter_100_m_s3": 1.3722686722046962
+        },
+        {
+          "joint": 18,
+          "name": "L Elbow",
+          "jitter_100_m_s3": 0.7655130165243247
+        }
+      ]
+    }
+  },
+  "jerk_samples": 247
+}
